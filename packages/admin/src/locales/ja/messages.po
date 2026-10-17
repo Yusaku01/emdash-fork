@@ -34,17 +34,17 @@ msgstr ""
 #. placeholder {0}: item.filename
 #: packages/admin/src/components/MediaDetailPanel.tsx:1924
 msgid "\"{0}\" will be deleted from {providerName}."
-msgstr ""
+msgstr "「{0}」を{providerName}から削除します。"
 
 #. placeholder {0}: item.filename
 #: packages/admin/src/components/MediaDetailPanel.tsx:1925
 msgid "\"{0}\" will be deleted from its media provider."
-msgstr ""
+msgstr "「{0}」をメディアの連携先から削除します。"
 
 #. placeholder {0}: item.filename
 #: packages/admin/src/components/MediaDetailPanel.tsx:1926
 msgid "\"{0}\" will be permanently deleted."
-msgstr ""
+msgstr "「{0}」を完全に削除します。"
 
 #: packages/admin/src/components/OptionalLabel.tsx:13
 msgid "(optional)"
@@ -3420,7 +3420,7 @@ msgstr ""
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1944
 msgid "Content using this media item may show a broken reference."
-msgstr ""
+msgstr "このメディアを使用しているコンテンツで、参照先が見つからなくなる場合があります。"
 
 #: packages/admin/src/components/WordPressImport.tsx:2364
 msgid "Content was skipped because it already exists"
@@ -4260,7 +4260,7 @@ msgstr "画像を削除"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1918
 msgid "Delete media?"
-msgstr ""
+msgstr "メディアを削除しますか？"
 
 #: packages/admin/src/components/MenuList.tsx:233
 msgid "Delete menu"
@@ -5209,11 +5209,11 @@ msgstr ""
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1980
 msgid "EmDash does not keep the previous image."
-msgstr ""
+msgstr "EmDashには置き換え前の画像は保存されません。"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:2014
 msgid "EmDash does not keep the uncropped image."
-msgstr ""
+msgstr "EmDashには切り抜き前の画像は保存されません。"
 
 #: packages/admin/src/components/WordPressImport.tsx:1361
 msgid "EmDash Exporter plugin detected! You can import directly."
@@ -5434,11 +5434,11 @@ msgstr ""
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1996
 msgid "Every place using this image will update to the cropped version."
-msgstr ""
+msgstr "この画像を使用しているすべての箇所が、切り抜いた画像に更新されます。"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1961
 msgid "Every place using this image will update to the selected version."
-msgstr ""
+msgstr "この画像を使用しているすべての箇所が、選択した画像に更新されます。"
 
 #: packages/admin/src/components/RegistryPluginDetail.tsx:680
 msgid "Every published release of this plugin has been withdrawn or could not be verified. Check back later, or contact the publisher."
@@ -11320,12 +11320,12 @@ msgstr "画像を置き換え"
 #: packages/admin/src/components/MediaDetailPanel.tsx:1868
 #: packages/admin/src/components/MediaDetailPanel.tsx:2000
 msgid "Replace original"
-msgstr ""
+msgstr "元の画像を置き換え"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1957
 #: packages/admin/src/components/MediaDetailPanel.tsx:1992
 msgid "Replace original image?"
-msgstr ""
+msgstr "元の画像を置き換えますか？"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1756
 msgid "Replace original is available with the Original aspect ratio."
@@ -11356,13 +11356,13 @@ msgstr ""
 #: packages/admin/src/components/MediaDetailPanel.tsx:942
 #: packages/admin/src/components/MediaDetailPanel.tsx:1966
 msgid "Replacing image..."
-msgstr ""
+msgstr "画像を置き換え中…"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:961
 #: packages/admin/src/components/MediaDetailPanel.tsx:2001
 #: packages/admin/src/components/MediaDetailPanel.tsx:2021
 msgid "Replacing original..."
-msgstr ""
+msgstr "元の画像を置き換え中…"
 
 #: packages/admin/src/components/comments/CommentDetail.tsx:120
 msgid "Reply to:"
@@ -13867,7 +13867,7 @@ msgstr ""
 #: packages/admin/src/components/MediaDetailPanel.tsx:1977
 #: packages/admin/src/components/MediaDetailPanel.tsx:2011
 msgid "This cannot be undone"
-msgstr ""
+msgstr "この操作は取り消せません"
 
 #: packages/admin/src/components/DeviceAuthorizePage.tsx:350
 msgid "This code has expired. Start the sign-in again from your terminal to get a new one."
