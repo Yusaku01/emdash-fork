@@ -3941,7 +3941,7 @@ msgstr "コンテンツタイプとフィールドを作成中…"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:961
 msgid "Creating cropped copy..."
-msgstr ""
+msgstr "切り抜いたコピーを作成中…"
 
 #: packages/admin/src/components/MenuList.tsx:187
 #: packages/admin/src/components/Redirects.tsx:191
