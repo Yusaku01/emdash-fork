@@ -8725,7 +8725,7 @@ msgstr "メニューの順序を更新しました。"
 
 #: packages/admin/src/components/MenuEditor.tsx:174
 msgid "Menu renamed"
-msgstr "メニュー名を変更しました"
+msgstr "メニューの名前を変更しました"
 
 #: packages/admin/src/components/AdminCommandPalette.tsx:173
 #: packages/admin/src/components/MenuList.tsx:101
@@ -11243,7 +11243,7 @@ msgstr "{0}の名前を変更"
 #: packages/admin/src/components/MenuEditor.tsx:423
 #: packages/admin/src/components/MenuEditor.tsx:430
 msgid "Rename menu"
-msgstr "メニュー名を変更"
+msgstr "メニューの名前を変更"
 
 #: packages/admin/src/components/settings/PasskeyItem.tsx:150
 msgid "Rename passkey"
@@ -13592,7 +13592,7 @@ msgstr "メニューを削除しました。"
 #. placeholder {0}: renamed.label
 #: packages/admin/src/components/MenuEditor.tsx:175
 msgid "The menu is now called \"{0}\"."
-msgstr "メニュー名を「{0}」に変更しました。"
+msgstr ""
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:281
 msgid "The name of your site, used in the header and metadata"
