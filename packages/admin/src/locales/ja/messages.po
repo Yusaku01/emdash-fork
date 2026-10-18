@@ -124,12 +124,12 @@ msgstr ""
 #. placeholder {0}: uploadQueue.jobs.filter( (job) => job.status === "queued" || job.status === "uploading", ).length
 #: packages/admin/src/components/MediaPickerModal.tsx:1618
 msgid "{0, plural, one {# file uploading} other {# files uploading}}"
-msgstr ""
+msgstr "{0, plural, one {#件のファイルをアップロード中} other {#件のファイルをアップロード中}}"
 
 #. placeholder {0}: uploadQueue.overflowCount
 #: packages/admin/src/components/MediaPickerModal.tsx:1299
 msgid "{0, plural, one {# file was not added because the upload list is full.} other {# files were not added because the upload list is full.}}"
-msgstr ""
+msgstr "{0, plural, one {アップロード一覧が上限に達したため、#件のファイルを追加できませんでした。} other {アップロード一覧が上限に達したため、#件のファイルを追加できませんでした。}}"
 
 #. placeholder {0}: locationFolders.length
 #. placeholder {0}: visibleFolders.length
@@ -244,7 +244,7 @@ msgstr "{0, plural, one {#件の分類グループを作成} other {#件の分�
 #. placeholder {0}: uploadQueue.failedCount
 #: packages/admin/src/components/MediaPickerModal.tsx:1625
 msgid "{0, plural, one {# upload failed} other {# uploads failed}}"
-msgstr ""
+msgstr "{0, plural, one {#件のアップロードに失敗} other {#件のアップロードに失敗}}"
 
 #. placeholder {0}: section.keywords.length - 3
 #: packages/admin/src/components/Sections.tsx:424
@@ -254,17 +254,17 @@ msgstr ""
 #. placeholder {0}: selectedItems.length
 #: packages/admin/src/components/MediaPickerModal.tsx:866
 msgid "{0, plural, one {Add # file} other {Add # files}}"
-msgstr ""
+msgstr "{0, plural, one {#件のファイルを追加} other {#件のファイルを追加}}"
 
 #. placeholder {0}: selectedItems.length
 #: packages/admin/src/components/MediaPickerModal.tsx:869
 msgid "{0, plural, one {Add # image} other {Add # images}}"
-msgstr ""
+msgstr "{0, plural, one {#件の画像を追加} other {#件の画像を追加}}"
 
 #. placeholder {0}: selectedItems.length
 #: packages/admin/src/components/MediaPickerModal.tsx:868
 msgid "{0, plural, one {Add # video} other {Add # videos}}"
-msgstr ""
+msgstr "{0, plural, one {#件の動画を追加} other {#件の動画を追加}}"
 
 #. placeholder {0}: bounds.min
 #: packages/admin/src/components/ContentEditor.tsx:3103
@@ -762,7 +762,7 @@ msgstr ""
 
 #: packages/admin/src/components/MediaPickerModal.tsx:933
 msgid "{rejectedCount, plural, one {# file was not added.} other {# files were not added.}}"
-msgstr ""
+msgstr "{rejectedCount, plural, one {#件のファイルを追加できませんでした。} other {#件のファイルを追加できませんでした。}}"
 
 #: packages/admin/src/components/MediaImportSummary.tsx:11
 msgid "{rewrittenUrls, plural, one {<rewrittenCount>#</rewrittenCount> image URL updated in {updatedContentItems, plural, one {<contentCount>#</contentCount> content item} other {<contentCount>#</contentCount> content items}}} other {<rewrittenCount>#</rewrittenCount> image URLs updated in {updatedContentItems, plural, one {<contentCount>#</contentCount> content item} other {<contentCount>#</contentCount> content items}}}}"
@@ -1147,7 +1147,7 @@ msgstr ""
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:535
 msgid "About focal point"
-msgstr ""
+msgstr "画像の焦点について"
 
 #: packages/admin/src/components/BylineFilter.tsx:184
 msgid "About inferred bylines"
@@ -1313,7 +1313,7 @@ msgstr "カスタムリンクを追加"
 
 #: packages/admin/src/components/ImageFieldRenderer.tsx:455
 msgid "Add dark mode variant"
-msgstr ""
+msgstr "ダークモード用の画像を追加"
 
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:220
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:315
@@ -1857,7 +1857,7 @@ msgstr "WordPressサイトを解析中…"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1771
 msgid "Animated WebP files become still images when cropped."
-msgstr ""
+msgstr "アニメーションWebPは、切り抜くと静止画像になります。"
 
 #: packages/admin/src/components/EntryLockNotice.tsx:27
 msgid "Another editor"
@@ -1988,7 +1988,7 @@ msgstr "管理者にこの設定を完了するよう依頼してください。
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1713
 msgid "Aspect ratio"
-msgstr ""
+msgstr "縦横比"
 
 #: packages/admin/src/components/WordPressImport.tsx:2510
 msgid "Assign WordPress authors to EmDash users. Posts will be attributed to the selected user."
@@ -2895,7 +2895,7 @@ msgstr ""
 #. placeholder {0}: formatFileFormat(item.mimeType)
 #: packages/admin/src/components/MediaDetailPanel.tsx:917
 msgid "Choose a non-empty {0} image."
-msgstr ""
+msgstr "空ではない{0}形式の画像を選択してください。"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:516
 msgid "Choose a recognized timezone for reliable date display."
@@ -2924,7 +2924,7 @@ msgstr ""
 
 #: packages/admin/src/components/MediaPickerModal.tsx:1103
 msgid "Choose files to upload"
-msgstr ""
+msgstr "アップロードするファイルを選択"
 
 #: packages/admin/src/components/settings/transfer/ImportSection.tsx:244
 #: packages/admin/src/components/settings/transfer/ImportSection.tsx:269
@@ -2933,7 +2933,7 @@ msgstr ""
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1846
 msgid "Choose replacement image"
-msgstr ""
+msgstr "置き換える画像を選択"
 
 #: packages/admin/src/components/settings/transfer/ImportSection.tsx:261
 msgid "Choose the same package file again to finish uploading it."
@@ -3111,7 +3111,7 @@ msgstr "ギャラリー設定を閉じる"
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:107
 msgid "Close image settings"
-msgstr ""
+msgstr "画像設定を閉じる"
 
 #: packages/admin/src/components/users/UserDetail.tsx:124
 msgid "Close panel"
@@ -3581,7 +3581,7 @@ msgstr ""
 
 #: packages/admin/src/components/MediaPickerModal.tsx:1211
 msgid "Could not load this folder."
-msgstr ""
+msgstr "このフォルダーを読み込めませんでした。"
 
 #: packages/admin/src/components/calendar/CalendarEntryPanel.tsx:183
 msgid "Could not publish"
@@ -3769,7 +3769,7 @@ msgstr "コンテンツタイプを作成"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1878
 msgid "Create cropped copy"
-msgstr ""
+msgstr "切り抜いたコピーを作成"
 
 #: packages/admin/src/components/BylineFieldEditor.tsx:313
 msgid "Create field"
@@ -3954,26 +3954,26 @@ msgstr "作成中…"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1639
 msgid "Crop"
-msgstr ""
+msgstr "切り抜き"
 
 #. placeholder {0}: pixels.width
 #. placeholder {1}: pixels.height
 #: packages/admin/src/components/MediaImageCropper.tsx:113
 msgid "Crop area {0} by {1} pixels."
-msgstr ""
+msgstr "切り抜き範囲：幅{0}ピクセル、高さ{1}ピクセル。"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1746
 msgid "Crop output dimensions"
-msgstr ""
+msgstr "切り抜き後のサイズ"
 
 #: packages/admin/src/components/MediaImageCropper.tsx:93
 msgid "Crop selection. Use the Arrow keys to move it."
-msgstr ""
+msgstr "切り抜き範囲。矢印キーで移動できます。"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:771
 #: packages/admin/src/components/MediaLibrary.tsx:1289
 msgid "Cropped copy created."
-msgstr ""
+msgstr "切り抜いたコピーを作成しました。"
 
 #: packages/admin/src/components/editor/codeBlockLanguages.ts:32
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:58
@@ -4037,7 +4037,7 @@ msgstr "毎日自動でバックアップする"
 #: packages/admin/src/components/FieldEditor.tsx:1366
 #: packages/admin/src/components/ImageFieldRenderer.tsx:399
 msgid "Dark mode variant"
-msgstr ""
+msgstr "ダークモード用の画像"
 
 #: packages/admin/src/components/AdminCommandPalette.tsx:135
 #: packages/admin/src/components/ContentTypeList.tsx:390
@@ -4410,7 +4410,7 @@ msgstr ""
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:522
 #: packages/admin/src/components/PortableTextEditor.tsx:5724
 msgid "Describe the image"
-msgstr ""
+msgstr "画像の説明を入力"
 
 #: packages/admin/src/components/editor/GalleryDetailPanel.tsx:488
 msgid "Describe the image..."
@@ -4418,7 +4418,7 @@ msgstr "画像の説明を入力…"
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:510
 msgid "Describe the image's purpose and relevant details for people who cannot see it."
-msgstr ""
+msgstr "画像を見ることができない人に向けて、画像の目的や重要な内容を説明してください。"
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:746
 #: packages/admin/src/components/MediaDetailPanel.tsx:1606
@@ -4604,7 +4604,7 @@ msgstr "表示名"
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:439
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:447
 msgid "Display size"
-msgstr ""
+msgstr "表示サイズ"
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:667
 msgid "Display Size"
@@ -4939,7 +4939,7 @@ msgstr "{title}を編集"
 #: packages/admin/src/components/ImageFieldRenderer.tsx:430
 #: packages/admin/src/components/MediaPickerModal.tsx:1595
 msgid "Edit asset"
-msgstr ""
+msgstr "メディアを編集"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:735
 #: packages/admin/src/components/BylineFormDialog.tsx:360
@@ -4952,7 +4952,7 @@ msgstr "執筆者情報の項目を編集"
 
 #: packages/admin/src/components/ImageFieldRenderer.tsx:428
 msgid "Edit dark mode asset"
-msgstr ""
+msgstr "ダークモード用のメディアを編集"
 
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:330
 msgid "Edit Domain"
@@ -4975,7 +4975,7 @@ msgstr "フォルダー「{0}」を編集"
 #: packages/admin/src/components/MediaDetailPanel.tsx:1159
 #: packages/admin/src/components/MediaDetailPanel.tsx:1199
 msgid "Edit image"
-msgstr ""
+msgstr "画像を編集"
 
 #. placeholder {0}: index + 1
 #: packages/admin/src/components/editor/GalleryNode.tsx:209
@@ -6846,7 +6846,7 @@ msgstr "焦点位置。矢印キーで移動できます。"
 
 #: packages/admin/src/components/MediaPickerModal.tsx:1205
 msgid "Folder"
-msgstr ""
+msgstr "フォルダー"
 
 #: packages/admin/src/components/MediaFolderDialog.tsx:67
 msgid "Folder deleted"
@@ -6863,7 +6863,7 @@ msgstr "フォルダーが見つかりません"
 
 #: packages/admin/src/components/MediaPickerModal.tsx:489
 msgid "Folder no longer exists. Returned to the main library."
-msgstr ""
+msgstr "フォルダーが存在しなくなったため、ライブラリのトップに戻りました。"
 
 #: packages/admin/src/components/MediaFolderDialog.tsx:50
 msgid "Folder successfully created"
@@ -6915,7 +6915,7 @@ msgstr "形式："
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:539
 msgid "Freeform"
-msgstr ""
+msgstr "自由"
 
 #. placeholder {0}: formatter.format(from)
 #: packages/admin/src/components/ContentList.tsx:1150
@@ -7257,7 +7257,7 @@ msgstr "https://example.com または /about"
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:548
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:773
 msgid "https://example.com or /page"
-msgstr ""
+msgstr "https://example.com または /page"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:404
 msgid "https://example.com/blog/my-post"
@@ -7341,11 +7341,11 @@ msgstr "画像{0}"
 #: packages/admin/src/components/ImageFieldRenderer.tsx:339
 #: packages/admin/src/components/SeoImageField.tsx:128
 msgid "Image actions"
-msgstr ""
+msgstr "画像の操作"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:5689
 msgid "Image controls"
-msgstr ""
+msgstr "画像の操作"
 
 #: packages/admin/src/components/FieldEditor.tsx:445
 msgid "Image from media library"
@@ -7353,7 +7353,7 @@ msgstr "メディアライブラリから画像"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:6249
 msgid "Image link"
-msgstr ""
+msgstr "画像のリンク"
 
 #: packages/admin/src/components/BlockKitMediaPickerField.tsx:70
 #: packages/admin/src/components/ImageFieldRenderer.tsx:476
@@ -7368,7 +7368,7 @@ msgstr ""
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:717
 msgid "Image replaced."
-msgstr ""
+msgstr "画像を置き換えました。"
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:391
 #: packages/admin/src/components/PortableTextEditor.tsx:5816
@@ -7652,7 +7652,7 @@ msgstr "HTMLを挿入"
 #: packages/admin/src/components/PortableTextEditor.tsx:4679
 #: packages/admin/src/components/PortableTextEditor.tsx:6392
 msgid "Insert image"
-msgstr ""
+msgstr "画像を挿入"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:691
 msgid "Insert or tap your security key when the browser asks."
@@ -7871,7 +7871,7 @@ msgstr "JSX"
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:462
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:463
 msgid "Keep aspect ratio"
-msgstr ""
+msgstr "縦横比を維持"
 
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:316
 msgid "Keep editing paused and deploy a compatible EmDash version before continuing."
@@ -8062,7 +8062,7 @@ msgstr "別のコンテンツへのリンク"
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:544
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:769
 msgid "Link URL"
-msgstr ""
+msgstr "リンク先URL"
 
 #. placeholder {0}: user.oauthAccounts.length
 #: packages/admin/src/components/users/UserDetail.tsx:294
@@ -8585,7 +8585,7 @@ msgstr "メディア"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1119
 msgid "Media details"
-msgstr ""
+msgstr "メディアの詳細"
 
 #. placeholder {0}: mediaResult.failed.length
 #: packages/admin/src/components/WordPressImport.tsx:2454
@@ -8639,7 +8639,7 @@ msgstr "メディア読み取り"
 
 #: packages/admin/src/components/MediaPickerModal.tsx:1385
 msgid "Media results"
-msgstr ""
+msgstr "メディアの検索結果"
 
 #: packages/admin/src/components/Settings.tsx:76
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:299
@@ -8846,11 +8846,11 @@ msgstr "{label}の詳細情報"
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:513
 msgid "More information about Alt text"
-msgstr ""
+msgstr "代替テキストの詳細"
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:437
 msgid "More information about Display size"
-msgstr ""
+msgstr "表示サイズの詳細"
 
 #: packages/admin/src/components/settings/transfer/labels.ts:144
 msgid "More issues were found than are listed"
@@ -8941,7 +8941,7 @@ msgstr "メディア詳細からここに移動できます。"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:534
 msgid "Move the focal point to choose what stays visible in cropped images."
-msgstr ""
+msgstr "焦点を移動して、切り抜き後の画像に表示する部分を選択します。"
 
 #: packages/admin/src/components/Settings.tsx:126
 msgid "Move this site to another EmDash installation, or import a site package"
@@ -8986,7 +8986,7 @@ msgstr ""
 #. placeholder {0}: to + 1
 #: packages/admin/src/components/MediaPickerModal.tsx:701
 msgid "Moved {filename} to position {0}."
-msgstr ""
+msgstr "「{filename}」を{0}番目に移動しました。"
 
 #: packages/admin/src/router.tsx:733
 msgid "Moved {total} items to draft"
@@ -9396,7 +9396,7 @@ msgstr "カスタムフィールドはまだありません"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:5785
 msgid "No description yet"
-msgstr ""
+msgstr "説明はまだありません"
 
 #: packages/admin/src/components/MarketplacePluginDetail.tsx:286
 msgid "No detailed description available."
@@ -9940,7 +9940,7 @@ msgstr "説明（任意）"
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:539
 msgid "Optional hover text"
-msgstr ""
+msgstr "ホバー時に表示するテキスト（任意）"
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:763
 msgid "Optional tooltip on hover"
@@ -9987,11 +9987,11 @@ msgstr ""
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:538
 msgid "Original"
-msgstr ""
+msgstr "元の比率"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:785
 msgid "Original image cropped."
-msgstr ""
+msgstr "元の画像を切り抜きました。"
 
 #: packages/admin/src/components/editor/GalleryDetailPanel.tsx:478
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:419
@@ -10010,7 +10010,7 @@ msgstr "アウトライン"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1744
 msgid "Output size"
-msgstr ""
+msgstr "出力サイズ"
 
 #: packages/admin/src/components/calendar/CalendarEntry.tsx:46
 msgid "Overdue"
@@ -11085,7 +11085,7 @@ msgstr "割り当てを削除"
 
 #: packages/admin/src/components/ImageFieldRenderer.tsx:440
 msgid "Remove dark mode variant"
-msgstr ""
+msgstr "ダークモード用の画像を削除"
 
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:383
 msgid "Remove Domain"
@@ -11111,7 +11111,7 @@ msgstr "画像{0}を削除"
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:356
 msgid "Remove image?"
-msgstr ""
+msgstr "画像を削除しますか？"
 
 #. placeholder {0}: index + 1
 #: packages/admin/src/components/PortableTextEditor.tsx:3115
@@ -11153,7 +11153,7 @@ msgstr ""
 #. placeholder {0}: selected.item.filename
 #: packages/admin/src/components/MediaPickerModal.tsx:706
 msgid "Removed {0} from selection."
-msgstr ""
+msgstr "{0}の選択を解除しました。"
 
 #: packages/admin/src/components/revisions/change-labels.ts:52
 msgid "Removed a code block"
@@ -11299,15 +11299,15 @@ msgstr "置き換え"
 #: packages/admin/src/components/SeoImageField.tsx:148
 #: packages/admin/src/components/SeoImageField.tsx:183
 msgid "Replace {label}"
-msgstr ""
+msgstr "{label}を置き換え"
 
 #: packages/admin/src/components/ImageFieldRenderer.tsx:413
 msgid "Replace dark mode image"
-msgstr ""
+msgstr "ダークモード用の画像を置き換え"
 
 #: packages/admin/src/components/ImageFieldRenderer.tsx:580
 msgid "Replace dark mode variant for {label}"
-msgstr ""
+msgstr "{label}のダークモード用画像を置き換え"
 
 #: packages/admin/src/components/editor/GalleryDetailPanel.tsx:505
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:372
@@ -11329,7 +11329,7 @@ msgstr ""
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1756
 msgid "Replace original is available with the Original aspect ratio."
-msgstr ""
+msgstr "「元の画像を置き換え」は、縦横比が「元の比率」の場合に利用できます。"
 
 #: packages/admin/src/components/ContentEditor.tsx:3015
 msgid "Replace reference"
@@ -11433,7 +11433,7 @@ msgstr ""
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1725
 msgid "Reset crop"
-msgstr ""
+msgstr "切り抜き範囲をリセット"
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:675
 msgid "Reset to original"
@@ -11441,35 +11441,35 @@ msgstr "元に戻す"
 
 #: packages/admin/src/components/MediaImageCropper.tsx:99
 msgid "Resize crop from bottom edge. Use the Arrow keys to resize."
-msgstr ""
+msgstr "切り抜き範囲の下辺からサイズを変更します。矢印キーでサイズを変更できます。"
 
 #: packages/admin/src/components/MediaImageCropper.tsx:100
 msgid "Resize crop from bottom-left corner. Use the Arrow keys to resize."
-msgstr ""
+msgstr "切り抜き範囲の左下の角からサイズを変更します。矢印キーでサイズを変更できます。"
 
 #: packages/admin/src/components/MediaImageCropper.tsx:98
 msgid "Resize crop from bottom-right corner. Use the Arrow keys to resize."
-msgstr ""
+msgstr "切り抜き範囲の右下の角からサイズを変更します。矢印キーでサイズを変更できます。"
 
 #: packages/admin/src/components/MediaImageCropper.tsx:101
 msgid "Resize crop from left edge. Use the Arrow keys to resize."
-msgstr ""
+msgstr "切り抜き範囲の左辺からサイズを変更します。矢印キーでサイズを変更できます。"
 
 #: packages/admin/src/components/MediaImageCropper.tsx:97
 msgid "Resize crop from right edge. Use the Arrow keys to resize."
-msgstr ""
+msgstr "切り抜き範囲の右辺からサイズを変更します。矢印キーでサイズを変更できます。"
 
 #: packages/admin/src/components/MediaImageCropper.tsx:95
 msgid "Resize crop from top edge. Use the Arrow keys to resize."
-msgstr ""
+msgstr "切り抜き範囲の上辺からサイズを変更します。矢印キーでサイズを変更できます。"
 
 #: packages/admin/src/components/MediaImageCropper.tsx:94
 msgid "Resize crop from top-left corner. Use the Arrow keys to resize."
-msgstr ""
+msgstr "切り抜き範囲の左上の角からサイズを変更します。矢印キーでサイズを変更できます。"
 
 #: packages/admin/src/components/MediaImageCropper.tsx:96
 msgid "Resize crop from top-right corner. Use the Arrow keys to resize."
-msgstr ""
+msgstr "切り抜き範囲の右上の角からサイズを変更します。矢印キーでサイズを変更できます。"
 
 #: packages/admin/src/components/ContentEditor.tsx:2009
 msgid "Resize settings panel"
@@ -11841,7 +11841,7 @@ msgstr "名前を保存"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1766
 msgid "Save or discard the other changes before cropping."
-msgstr ""
+msgstr "切り抜く前に、ほかの変更を保存するか破棄してください。"
 
 #: packages/admin/src/components/RelationFormPanel.tsx:113
 msgid "Save Relation"
@@ -12384,7 +12384,7 @@ msgstr ""
 
 #: packages/admin/src/components/ImageFieldRenderer.tsx:581
 msgid "Select dark mode variant for {label}"
-msgstr ""
+msgstr "{label}のダークモード用画像を選択"
 
 #: packages/admin/src/components/settings/SeoSettings.tsx:309
 msgid "Select default social image"
@@ -12405,7 +12405,7 @@ msgstr "ファイルを選択"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4707
 msgid "Select gallery images"
-msgstr ""
+msgstr "ギャラリーの画像を選択"
 
 #: packages/admin/src/components/ImageFieldRenderer.tsx:564
 #: packages/admin/src/components/MediaPickerModal.tsx:232
@@ -12472,7 +12472,7 @@ msgstr "選択した画像"
 
 #: packages/admin/src/components/MediaPickerModal.tsx:946
 msgid "Selected media"
-msgstr ""
+msgstr "選択済みのメディア"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:379
 msgid "Selected posts"
@@ -12574,7 +12574,7 @@ msgstr "この画像インスタンスのカスタム表示サイズを設定し
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:434
 msgid "Set a custom width and height for this image in the document. Reset uses the original media dimensions. The original media file is unchanged."
-msgstr ""
+msgstr "文書内での画像の幅と高さを指定します。リセットすると元のメディアのサイズに戻ります。元のメディアファイルは変更されません。"
 
 #: packages/admin/src/components/editor/CodeBlockNode.tsx:247
 msgid "Set language"
@@ -13062,7 +13062,7 @@ msgstr "正方形"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:540
 msgid "Square (1:1)"
-msgstr ""
+msgstr "正方形（1:1）"
 
 #: packages/admin/src/components/MenuList.tsx:173
 msgid "Stable identifier for your site, such as primary or footer."
@@ -13465,7 +13465,7 @@ msgstr ""
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:832
 msgid "The cropped image could not be created."
-msgstr ""
+msgstr "切り抜いた画像を作成できませんでした。"
 
 #: packages/admin/src/components/DeviceAuthorizePage.tsx:230
 msgid "The device will not be granted access."
@@ -13570,7 +13570,7 @@ msgstr ""
 
 #: packages/admin/src/components/MediaPickerModal.tsx:1307
 msgid "The latest media request failed. Showing the previous page."
-msgstr ""
+msgstr "最新のメディア取得に失敗したため、前のページを表示しています。"
 
 #: packages/admin/src/components/LoginPage.tsx:114
 #: packages/admin/src/components/SignupPage.tsx:156
@@ -13747,7 +13747,7 @@ msgstr "選択したフォルダーが見つかりません。別の保存場所
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:924
 msgid "The selected image could not be read."
-msgstr ""
+msgstr "選択した画像を読み込めませんでした。"
 
 #: packages/admin/src/components/settings/transfer/labels.ts:194
 msgid "The server was updated while this ran. Reload the page and try again."
@@ -13958,7 +13958,7 @@ msgstr ""
 
 #: packages/admin/src/components/MediaPickerModal.tsx:651
 msgid "This field does not accept {mimeType} files."
-msgstr ""
+msgstr "このフィールドでは{mimeType}形式のファイルを使用できません。"
 
 #: packages/admin/src/components/NonListFieldValue.tsx:27
 msgid "This field expects a list. The stored value stays unchanged until you replace it with an empty list, which deletes it. Copy anything you need from it first."
@@ -14005,11 +14005,11 @@ msgstr "このフォルダーは空です"
 
 #: packages/admin/src/components/MediaPickerModal.tsx:1420
 msgid "This folder is empty."
-msgstr ""
+msgstr "このフォルダーは空です。"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1761
 msgid "This image could not be loaded for cropping."
-msgstr ""
+msgstr "切り抜くための画像を読み込めませんでした。"
 
 #: packages/admin/src/components/settings/transfer/ImportReview.tsx:458
 msgid "This import has already started"
@@ -14361,7 +14361,7 @@ msgstr ""
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:536
 msgid "Tooltip text"
-msgstr ""
+msgstr "ツールチップのテキスト"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:97
 msgid "Track content history"
@@ -14849,7 +14849,7 @@ msgstr "まずファイルをアップロードしてください"
 
 #: packages/admin/src/components/MediaPickerModal.tsx:1424
 msgid "Upload a video to get started"
-msgstr ""
+msgstr "動画をアップロードして始めましょう"
 
 #: packages/admin/src/components/WordPressImport.tsx:1445
 msgid "Upload an export file"
@@ -15034,7 +15034,7 @@ msgstr ""
 
 #: packages/admin/src/components/MediaPickerModal.tsx:647
 msgid "Use a URL ending in a recognized image extension, such as .jpg or .png."
-msgstr ""
+msgstr ".jpgや.pngなど、認識できる画像の拡張子で終わるURLを使用してください。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:613
 msgid "Use another device"
@@ -15415,7 +15415,7 @@ msgstr ""
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:549
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:774
 msgid "When set, the image becomes a clickable link to this URL."
-msgstr ""
+msgstr "設定すると、画像をクリックしてこのURLを開けるようになります。"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:145
 msgid "When the entry was created"
