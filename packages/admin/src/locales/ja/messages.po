@@ -606,7 +606,7 @@ msgstr ""
 
 #: packages/admin/src/components/TaxonomySidebar.tsx:533
 msgid "{label} options"
-msgstr ""
+msgstr "{label}のオプション"
 
 #: packages/admin/src/components/revisions/RevisionList.tsx:246
 msgid "{label}, {restored}"
@@ -2873,7 +2873,7 @@ msgstr ""
 #: packages/admin/src/components/TaxonomySidebar.tsx:396
 #: packages/admin/src/components/TaxonomySidebar.tsx:489
 msgid "Choose {label}"
-msgstr ""
+msgstr "{label}を選択"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:577
 msgid "Choose a credential manager on this device, another device, or a security key."
@@ -3745,7 +3745,7 @@ msgstr "{0}を新規作成"
 
 #: packages/admin/src/components/TaxonomySidebar.tsx:584
 msgid "Create a new {singularLabel}"
-msgstr ""
+msgstr "新しい{singularLabel}を作成"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:2041
 msgid "Create a numbered list"
@@ -4926,7 +4926,7 @@ msgstr "{itemLabel}を編集"
 #: packages/admin/src/components/TaxonomySidebar.tsx:415
 #: packages/admin/src/components/TaxonomySidebar.tsx:424
 msgid "Edit {label}"
-msgstr ""
+msgstr "{label}を編集"
 
 #: packages/admin/src/components/ContentList.tsx:1505
 msgid "Edit {title}"
@@ -5634,7 +5634,7 @@ msgstr ""
 #. placeholder {0}: failedLabels.join(", ")
 #: packages/admin/src/components/TaxonomySidebar.tsx:753
 msgid "Failed to create {0}"
-msgstr ""
+msgstr "{0}の作成に失敗しました"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:146
 #: packages/admin/src/lib/api/settings.ts:96
@@ -9299,7 +9299,7 @@ msgstr "まだ{0}がありません。作成しましょう。"
 
 #: packages/admin/src/components/TaxonomySidebar.tsx:568
 msgid "No {label} found."
-msgstr ""
+msgstr "{label}が見つかりません。"
 
 #: packages/admin/src/components/Redirects.tsx:220
 msgid "No 404 errors recorded yet."
@@ -11872,7 +11872,7 @@ msgstr "「{0}」を保存しました。"
 
 #: packages/admin/src/components/TaxonomySidebar.tsx:681
 msgid "Saved immediately; term changes do not wait for Publish changes."
-msgstr ""
+msgstr "すぐに保存しました。分類項目の変更は、変更の公開を待たずに反映されます。"
 
 #: packages/admin/src/components/FieldEditor.tsx:1049
 msgid "Saving a collection here turns this field into an entry picker. Its stored entry IDs move to the relationship, and the field can no longer be searched or filtered on."
@@ -12046,11 +12046,11 @@ msgstr "{0}を検索…"
 
 #: packages/admin/src/components/TaxonomySidebar.tsx:500
 msgid "Search {label}"
-msgstr ""
+msgstr "{label}を検索"
 
 #: packages/admin/src/components/TaxonomySidebar.tsx:520
 msgid "Search {label}…"
-msgstr ""
+msgstr "{label}を検索…"
 
 #: packages/admin/src/components/BlocksField.tsx:184
 msgid "Search block types"
@@ -12458,7 +12458,7 @@ msgstr "選択…"
 
 #: packages/admin/src/components/TaxonomySidebar.tsx:429
 msgid "Selected {label}"
-msgstr ""
+msgstr "選択済みの{label}"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:2500
 msgid "Selected {selectedItemTitle}"
