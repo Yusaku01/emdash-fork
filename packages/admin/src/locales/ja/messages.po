@@ -2676,17 +2676,17 @@ msgstr "ロゴを変更"
 
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:629
 msgid "Change publication date"
-msgstr ""
+msgstr "公開日時を変更"
 
 #. placeholder {0}: isolate(formattedValue)
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:604
 msgid "Change publication date: {0}"
-msgstr ""
+msgstr "公開日時を変更：{0}"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:623
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:469
 msgid "Change schedule"
-msgstr ""
+msgstr "予約を変更"
 
 #: packages/admin/src/lib/api/marketplace.ts:436
 msgid "Change where visitors are sent"
@@ -2890,7 +2890,7 @@ msgstr ""
 
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:476
 msgid "Choose a new publication time for this draft."
-msgstr ""
+msgstr "この下書きを公開する新しい日時を選択してください。"
 
 #. placeholder {0}: formatFileFormat(item.mimeType)
 #: packages/admin/src/components/MediaDetailPanel.tsx:917
@@ -2945,11 +2945,11 @@ msgstr ""
 
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:474
 msgid "Choose when these changes replace the live version."
-msgstr ""
+msgstr "変更内容を公開版に反映する日時を選択してください。"
 
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:477
 msgid "Choose when this draft becomes public."
-msgstr ""
+msgstr "この下書きを公開する日時を選択してください。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:180
 msgid "Choose Windows Hello or another available credential manager, then confirm with your PIN, fingerprint, or face."
@@ -7204,7 +7204,7 @@ msgstr "水平方向{0}%、垂直方向{1}%"
 
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:194
 msgid "Hour"
-msgstr ""
+msgstr "時"
 
 #: packages/admin/src/components/SetupWizard.tsx:158
 msgid "How do you want to start?"
@@ -8355,7 +8355,7 @@ msgstr "読み込み中…"
 
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:112
 msgid "Local time"
-msgstr ""
+msgstr "ローカル時刻"
 
 #: packages/admin/src/components/calendar/CalendarEntryPanel.tsx:320
 #: packages/admin/src/components/calendar/CalendarFilters.tsx:80
@@ -8795,7 +8795,7 @@ msgstr "レベル5の見出し"
 
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:216
 msgid "Minute"
-msgstr ""
+msgstr "分"
 
 #: packages/admin/src/components/editor/TableControls.tsx:269
 msgid "Mixed"
@@ -10234,7 +10234,7 @@ msgstr "1ページあたり"
 
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:235
 msgid "Period"
-msgstr ""
+msgstr "午前・午後"
 
 #: packages/admin/src/components/ContentList.tsx:1718
 msgid "Permanently delete \"{title}\"? This cannot be undone."
@@ -10611,7 +10611,7 @@ msgstr ""
 #: packages/admin/src/components/ContentSettingsPanel.tsx:1003
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:633
 msgid "Publication date"
-msgstr ""
+msgstr "公開日時"
 
 #: packages/admin/src/components/Dashboard.tsx:164
 msgid "Publication policy blocked scheduled content"
@@ -11828,7 +11828,7 @@ msgstr "公開前にコンテンツを下書きとして保存"
 
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:635
 msgid "Save date"
-msgstr ""
+msgstr "日時を保存"
 
 #. js-lingui-explicit-id
 #: packages/admin/src/locales/server.ts:62
@@ -11849,7 +11849,7 @@ msgstr ""
 
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:478
 msgid "Save schedule"
-msgstr ""
+msgstr "予約を保存"
 
 #: packages/admin/src/components/PluginSettings.tsx:166
 #: packages/admin/src/components/PluginSettings.tsx:209
@@ -11925,15 +11925,15 @@ msgstr "予約公開"
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:471
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:478
 msgid "Schedule changes"
-msgstr ""
+msgstr "変更の公開を予約"
 
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:489
 msgid "Schedule date"
-msgstr ""
+msgstr "予約日時"
 
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:472
 msgid "Schedule publication"
-msgstr ""
+msgstr "公開を予約"
 
 #: packages/admin/src/components/calendar/CalendarEntryPanel.tsx:190
 msgid "Schedule removed"
@@ -14271,7 +14271,7 @@ msgstr "記事、チュートリアルなど"
 
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:184
 msgid "Time"
-msgstr ""
+msgstr "時刻"
 
 #: packages/admin/src/components/calendar/CalendarToolbar.tsx:41
 msgid "Times are in {zoneName}."
