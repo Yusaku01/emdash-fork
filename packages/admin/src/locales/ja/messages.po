@@ -475,12 +475,12 @@ msgstr "{0}/160文字"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:427
 msgid "{added} posts updated"
-msgstr ""
+msgstr "{added}件の投稿を更新しました"
 
 #. placeholder {0}: failed.length
 #: packages/admin/src/components/BulkTagDialog.tsx:424
 msgid "{added} updated · {0} failed"
-msgstr ""
+msgstr "{added}件を更新 · {0}件が失敗"
 
 #. placeholder {0}: allowedHosts.join(", ")
 #: packages/admin/src/lib/api/marketplace.ts:477
@@ -732,7 +732,7 @@ msgstr "{pluginName}の設定"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:488
 msgid "{plural} go live now; draft edits stay unpublished."
-msgstr ""
+msgstr "{plural}はすぐに公開版へ反映されます。下書きの変更は公開されません。"
 
 #: packages/admin/src/components/Dashboard.tsx:165
 msgid "{policyRejected, plural, one {Open the affected entry, resolve the policy reason, and schedule it again. A successful schedule or publish clears this notice.} other {Open the affected entries, resolve the policy reasons, and schedule them again. A successful schedule or publish clears each notice.}}"
@@ -754,7 +754,7 @@ msgstr "{readingTime, plural, one {約#分で読めます} other {約#分で読�
 #. placeholder {0}: results.length
 #: packages/admin/src/components/BulkTagDialog.tsx:439
 msgid "{ready} of {0} ready"
-msgstr ""
+msgstr "{0}件中{ready}件が追加可能"
 
 #: packages/admin/src/components/settings/transfer/ExportSection.tsx:359
 msgid "{records, plural, one {# record written} other {# records written}}"
@@ -925,7 +925,7 @@ msgstr ""
 
 #: packages/admin/src/components/BulkTagDialog.tsx:426
 msgid "1 post updated"
-msgstr ""
+msgstr "1件の投稿を更新しました"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:37
 msgid "1 year"
@@ -1248,15 +1248,15 @@ msgstr "{0}を追加"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:563
 msgid "Add {singularLower} to {ready} posts"
-msgstr ""
+msgstr "{ready}件の投稿に{singularLower}を追加"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:562
 msgid "Add {singularLower} to 1 post"
-msgstr ""
+msgstr "1件の投稿に{singularLower}を追加"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:264
 msgid "Add {singularLower} to posts"
-msgstr ""
+msgstr "投稿に{singularLower}を追加"
 
 #: packages/admin/src/components/settings/SecuritySettings.tsx:165
 msgid "Add a new passkey"
@@ -1440,7 +1440,7 @@ msgstr ""
 #: packages/admin/src/components/TaxonomyManager.tsx:1320
 #: packages/admin/src/components/TaxonomyManager.tsx:1336
 msgid "Add to posts"
-msgstr ""
+msgstr "投稿に追加"
 
 #: packages/admin/src/components/Widgets.tsx:404
 msgid "Add Widget Area"
@@ -1452,7 +1452,7 @@ msgstr "SNSアカウントを設定します。設定したアカウントへの
 
 #: packages/admin/src/components/BulkTagDialog.tsx:66
 msgid "Added"
-msgstr ""
+msgstr "追加済み"
 
 #: packages/admin/src/components/revisions/change-labels.ts:133
 msgid "Added “{snippet}”"
@@ -1527,7 +1527,7 @@ msgstr "追加中…"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:560
 msgid "Adding…"
-msgstr ""
+msgstr "追加中…"
 
 #: packages/admin/src/components/WordPressImport.tsx:1807
 msgid "Additional data to import."
@@ -1709,7 +1709,7 @@ msgstr "許可する種類"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:68
 msgid "Already assigned or duplicate"
-msgstr ""
+msgstr "設定済み、または重複"
 
 #: packages/admin/src/components/SignupPage.tsx:455
 msgid "Already have an account?"
@@ -2772,7 +2772,7 @@ msgstr ""
 
 #: packages/admin/src/components/BulkTagDialog.tsx:478
 msgid "Changes were saved, but cached pages may still show old {pluralLower}. Retry the cache refresh."
-msgstr ""
+msgstr "変更は保存されましたが、キャッシュされたページには以前の{pluralLower}が表示される場合があります。キャッシュの更新を再試行してください。"
 
 #: packages/admin/src/components/settings/SeoSettings.tsx:176
 msgid "Character between page title and site name (e.g., \"My Post | My Site\")"
@@ -2903,7 +2903,7 @@ msgstr ""
 
 #: packages/admin/src/components/BulkTagDialog.tsx:184
 msgid "Choose a term and enter between 1 and 50 posts."
-msgstr ""
+msgstr "分類項目を選択し、投稿のURLを1〜50件入力してください。"
 
 #: packages/admin/src/components/MediaPickerModal.tsx:236
 msgid "Choose a video from the library or upload a new one."
@@ -2961,7 +2961,7 @@ msgstr "管理画面の言語を選択"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:333
 msgid "Choose…"
-msgstr ""
+msgstr "選択…"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:556
 msgid "Choosing a byline replaces this automatic credit."
@@ -3533,7 +3533,7 @@ msgstr ""
 
 #: packages/admin/src/components/BulkTagDialog.tsx:241
 msgid "Could not add {singularLower}"
-msgstr ""
+msgstr "{singularLower}を追加できませんでした"
 
 #: packages/admin/src/components/DeviceAuthorizePage.tsx:111
 msgid "Could not check this code"
@@ -3549,7 +3549,7 @@ msgstr "自動的にコピーできませんでした。上のURLを選択して
 
 #: packages/admin/src/components/BulkTagDialog.tsx:176
 msgid "Could not create {singularLower}"
-msgstr ""
+msgstr "{singularLower}を作成できませんでした"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4564
 msgid "Could not insert section"
@@ -3557,7 +3557,7 @@ msgstr "セクションを挿入できませんでした"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:364
 msgid "Could not load {pluralLower}."
-msgstr ""
+msgstr "{pluralLower}を読み込めませんでした。"
 
 #: packages/admin/src/components/Dashboard.tsx:307
 msgid "Could not load dashboard data"
@@ -3597,7 +3597,7 @@ msgstr ""
 
 #: packages/admin/src/components/BulkTagDialog.tsx:194
 msgid "Could not review posts"
-msgstr ""
+msgstr "投稿を確認できませんでした"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:826
 msgid "Couldn’t confirm whether the media item or selected folder still exists. Try again."
@@ -3728,7 +3728,7 @@ msgstr "{0}の翻訳を作成"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:321
 msgid "Create {singularLower}"
-msgstr ""
+msgstr "{singularLower}を作成"
 
 #: packages/admin/src/components/FieldEditor.tsx:1096
 msgid "Create a block type before adding a blocks field."
@@ -3786,7 +3786,7 @@ msgstr "メニューを作成"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:355
 msgid "Create new {singularLower}"
-msgstr ""
+msgstr "新しい{singularLower}を作成"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:244
 msgid "Create New Token"
@@ -5459,7 +5459,7 @@ msgstr "example.com"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:266
 msgid "Existing {pluralLower} stay in place."
-msgstr ""
+msgstr "既存の{pluralLower}はそのまま残ります。"
 
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:478
 msgid "Existing content is indexed. New changes are tracked automatically."
@@ -7261,7 +7261,7 @@ msgstr ""
 
 #: packages/admin/src/components/BulkTagDialog.tsx:404
 msgid "https://example.com/blog/my-post"
-msgstr ""
+msgstr "https://example.com/blog/my-post"
 
 #: packages/admin/src/components/MediaPickerModal.tsx:1130
 msgid "https://example.com/image.jpg"
@@ -8188,7 +8188,7 @@ msgstr "読み込み中"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:360
 msgid "Loading {pluralLower}…"
-msgstr ""
+msgstr "{pluralLower}を読み込み中…"
 
 #: packages/admin/src/components/settings/transfer/ApprovalsSection.tsx:59
 msgid "Loading approval requests…"
@@ -8862,7 +8862,7 @@ msgstr ""
 
 #: packages/admin/src/components/BulkTagDialog.tsx:464
 msgid "More than one post matches this link"
-msgstr ""
+msgstr "このリンクに一致する投稿が複数あります"
 
 #: packages/admin/src/components/MarketplaceBrowse.tsx:42
 msgid "Most Popular"
@@ -9154,7 +9154,7 @@ msgstr "新しい{itemLabel}"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:309
 msgid "New {singularLower} name"
-msgstr ""
+msgstr "新しい{singularLower}の名前"
 
 #: packages/admin/src/components/BylineFormDialog.tsx:360
 #: packages/admin/src/routes/bylines.tsx:309
@@ -9429,7 +9429,7 @@ msgstr ""
 
 #: packages/admin/src/components/BulkTagDialog.tsx:465
 msgid "No exact match on this site"
-msgstr ""
+msgstr "このサイトに完全一致する投稿がありません"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:33
 msgid "No expiry"
@@ -9721,7 +9721,7 @@ msgstr ""
 
 #: packages/admin/src/components/BulkTagDialog.tsx:71
 msgid "Not matched"
-msgstr ""
+msgstr "一致なし"
 
 #: packages/admin/src/components/revisions/RevisionFieldValue.tsx:499
 msgid "Not recorded in this version"
@@ -10462,7 +10462,7 @@ msgstr "投稿"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:399
 msgid "Post URLs (one per line)"
-msgstr ""
+msgstr "投稿のURL（1行に1件）"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:479
 #: packages/admin/src/components/RelationForm.tsx:297
@@ -11523,7 +11523,7 @@ msgstr ""
 
 #: packages/admin/src/components/BulkTagDialog.tsx:444
 msgid "Results"
-msgstr ""
+msgstr "結果"
 
 #: packages/admin/src/components/BlocksField.tsx:365
 #: packages/admin/src/components/FieldEditor.tsx:1126
@@ -11562,7 +11562,7 @@ msgstr "{0}を再試行"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:541
 msgid "Retry cache refresh"
-msgstr ""
+msgstr "キャッシュの更新を再試行"
 
 #: packages/admin/src/components/editor/CodeBlockNode.tsx:254
 #: packages/admin/src/components/editor/CodeBlockNode.tsx:261
@@ -11575,11 +11575,11 @@ msgstr "再試行に失敗しました"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:522
 msgid "Retry failures"
-msgstr ""
+msgstr "失敗した項目を再試行"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:371
 msgid "Retry loading {pluralLower}"
-msgstr ""
+msgstr "{pluralLower}の読み込みを再試行"
 
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:417
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:578
@@ -11621,7 +11621,7 @@ msgstr "新しい権限を確認"
 #: packages/admin/src/components/BulkTagDialog.tsx:444
 #: packages/admin/src/components/BulkTagDialog.tsx:573
 msgid "Review posts"
-msgstr ""
+msgstr "投稿を確認"
 
 #: packages/admin/src/components/EditorDraftPatchPreview.tsx:51
 msgid "Review proposed changes"
@@ -11645,7 +11645,7 @@ msgstr ""
 
 #: packages/admin/src/components/BulkTagDialog.tsx:573
 msgid "Reviewing…"
-msgstr ""
+msgstr "確認中…"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:1338
 #: packages/admin/src/components/ContentTypeEditor.tsx:96
@@ -12476,7 +12476,7 @@ msgstr ""
 
 #: packages/admin/src/components/BulkTagDialog.tsx:379
 msgid "Selected posts"
-msgstr ""
+msgstr "選択済みの投稿"
 
 #: packages/admin/src/components/editor/TableControls.tsx:24
 msgid "Selection"
@@ -13314,7 +13314,7 @@ msgstr "分類グループと分類項目の管理"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:285
 msgid "Taxonomy"
-msgstr ""
+msgstr "分類"
 
 #. placeholder {0}: blocker.name
 #: packages/admin/src/components/settings/transfer/labels.ts:110
@@ -13385,7 +13385,7 @@ msgstr "分類項目を削除しました"
 #: packages/admin/src/components/BulkTagDialog.tsx:112
 #: packages/admin/src/components/settings/transfer/labels.ts:18
 msgid "Terms"
-msgstr ""
+msgstr "分類項目"
 
 #: packages/admin/src/components/settings/EmailSettings.tsx:111
 msgid "test@example.com"
