@@ -72,12 +72,12 @@ msgstr "{0, plural, one {（#件）} other {（#件）}}"
 #. placeholder {0}: bounds.max
 #: packages/admin/src/components/ContentEditor.tsx:3093
 msgid "{0, plural, one {{counted} of # character, at least {min}} other {{counted} of # characters, at least {min}}}"
-msgstr ""
+msgstr "{0, plural, one {{counted}/#文字（最低{min}文字）} other {{counted}/#文字（最低{min}文字）}}"
 
 #. placeholder {0}: bounds.max
 #: packages/admin/src/components/ContentEditor.tsx:3098
 msgid "{0, plural, one {{counted} of # character} other {{counted} of # characters}}"
-msgstr ""
+msgstr "{0, plural, one {{counted}/#文字} other {{counted}/#文字}}"
 
 #. placeholder {0}: 1
 #. placeholder {0}: value.bylineIds.length
@@ -269,7 +269,7 @@ msgstr ""
 #. placeholder {0}: bounds.min
 #: packages/admin/src/components/ContentEditor.tsx:3103
 msgid "{0, plural, one {At least # character} other {At least # characters}}"
-msgstr ""
+msgstr "{0, plural, one {#文字以上} other {#文字以上}}"
 
 #. placeholder {0}: state.columns
 #: packages/admin/src/components/editor/TableControls.tsx:230
@@ -494,7 +494,7 @@ msgstr "{characters, plural, one {#文字} other {#文字}}"
 
 #: packages/admin/src/components/ContentList.tsx:896
 msgid "{collectionLabel} pagination"
-msgstr ""
+msgstr "{collectionLabel}のページ切り替え"
 
 #: packages/admin/src/components/editor/TableControls.tsx:199
 msgid "{columns, plural, one {Column deleted} other {# columns deleted}}"
@@ -1079,11 +1079,11 @@ msgstr ""
 #: packages/admin/src/components/ContentSettingsPanel.tsx:228
 #: packages/admin/src/components/ContentSettingsPanel.tsx:254
 msgid "A publication time has not been selected"
-msgstr ""
+msgstr "公開日時が選択されていません"
 
 #: packages/admin/src/components/ContentEditor.tsx:1320
 msgid "A publishing action is already in progress"
-msgstr ""
+msgstr "公開に関する操作が進行中です"
 
 #: packages/admin/src/components/settings/transfer/labels.ts:124
 msgid "A record in the package is not valid"
@@ -1397,7 +1397,7 @@ msgstr "パスキーを追加"
 #: packages/admin/src/components/ContentEditor.tsx:3015
 #: packages/admin/src/components/ContentEditor.tsx:3015
 msgid "Add reference"
-msgstr ""
+msgstr "参照を追加"
 
 #: packages/admin/src/components/ContentPickerModal.tsx:215
 msgid "Add references"
@@ -1435,7 +1435,7 @@ msgstr ""
 
 #: packages/admin/src/components/ContentList.tsx:623
 msgid "Add term"
-msgstr ""
+msgstr "分類項目を追加"
 
 #: packages/admin/src/components/TaxonomyManager.tsx:1320
 #: packages/admin/src/components/TaxonomyManager.tsx:1336
@@ -2004,11 +2004,11 @@ msgstr "Astro"
 
 #: packages/admin/src/components/ContentEditor.tsx:3126
 msgid "At least {min}"
-msgstr ""
+msgstr "{min}以上"
 
 #: packages/admin/src/components/ContentEditor.tsx:3123
 msgid "At most {max}"
-msgstr ""
+msgstr "{max}以下"
 
 #: packages/admin/src/components/RelationForm.tsx:407
 msgid "At most…"
@@ -2284,7 +2284,7 @@ msgstr "続行する前に、次の点を確認してください。"
 
 #: packages/admin/src/components/ContentEditor.tsx:3120
 msgid "Between {min} and {max}"
-msgstr ""
+msgstr "{min}〜{max}"
 
 #: packages/admin/src/components/settings/SeoSettings.tsx:242
 #: packages/admin/src/components/settings/SeoSettings.tsx:256
@@ -3369,7 +3369,7 @@ msgstr "コンテンツを公開しました"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:1093
 msgid "Content language"
-msgstr ""
+msgstr "コンテンツの言語"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:47
 msgid "Content Read"
@@ -3609,7 +3609,7 @@ msgstr "WordPressを検出できませんでした"
 
 #: packages/admin/src/components/ContentEditor.tsx:2994
 msgid "Couldn't load all references."
-msgstr ""
+msgstr "参照先をすべて読み込むことができませんでした。"
 
 #: packages/admin/src/components/settings/transfer/ApprovalsSection.tsx:67
 msgid "Couldn’t load approval requests"
@@ -3925,7 +3925,7 @@ msgstr "{0}の翻訳を作成しました"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:1024
 msgid "Created and updated"
-msgstr ""
+msgstr "作成・更新日時"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:143
 msgid "Created At"
@@ -4758,11 +4758,11 @@ msgstr "下書き"
 #: packages/admin/src/components/ContentSettingsPanel.tsx:201
 #: packages/admin/src/components/ContentSettingsPanel.tsx:227
 msgid "Draft changes"
-msgstr ""
+msgstr "下書きの変更"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:167
 msgid "Draft version"
-msgstr ""
+msgstr "下書き版"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:139
 msgid "draft, published, or archived"
@@ -5291,7 +5291,7 @@ msgstr "有効"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:1098
 msgid "English is used because no content language is configured. Content language is stored with the entry and is separate from your admin language."
-msgstr ""
+msgstr "コンテンツの言語が設定されていないため、英語を使用しています。コンテンツの言語は各コンテンツに保存され、管理画面の言語とは別に扱われます。"
 
 #: packages/admin/src/components/BylineFormDialog.tsx:281
 msgid "Enter a display name."
@@ -5475,7 +5475,7 @@ msgstr "集中モードを終了"
 
 #: packages/admin/src/components/ContentEditor.tsx:1664
 msgid "Exit distraction-free mode (⌘⇧\\)"
-msgstr ""
+msgstr "集中モードを終了（⌘⇧\\）"
 
 #: packages/admin/src/components/BlocksField.tsx:350
 msgid "Expand block"
@@ -6817,7 +6817,7 @@ msgstr "最初のページ"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:176
 msgid "First publication"
-msgstr ""
+msgstr "初回公開"
 
 #: packages/admin/src/components/revisions/change-labels.ts:153
 msgid "First version"
@@ -6829,11 +6829,11 @@ msgstr "初回コメント投稿者のみ"
 
 #: packages/admin/src/components/ContentEditor.tsx:1383
 msgid "Fix invalid fields before changing the publication date"
-msgstr ""
+msgstr "公開日時を変更する前に、入力に誤りがあるフィールドを修正してください"
 
 #: packages/admin/src/components/ContentEditor.tsx:1327
 msgid "Fix invalid fields before changing the schedule"
-msgstr ""
+msgstr "公開予約を変更する前に、入力に誤りがあるフィールドを修正してください"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1644
 #: packages/admin/src/components/MediaDetailPanel.tsx:1655
@@ -6997,7 +6997,7 @@ msgstr "Go"
 
 #: packages/admin/src/components/ContentEditor.tsx:1323
 msgid "Go back to editing first."
-msgstr ""
+msgstr "先に編集画面に戻ってください。"
 
 #: packages/admin/src/components/calendar/CalendarEntryPanel.tsx:393
 msgid "Go live {countdown}"
@@ -7182,7 +7182,7 @@ msgstr ""
 
 #: packages/admin/src/components/ContentEditor.tsx:2685
 msgid "Holds an entry ID. Set a target collection under Content Types to pick entries instead."
-msgstr ""
+msgstr "コンテンツのIDを保持します。コンテンツを選択するには、コンテンツタイプで参照先のコンテンツタイプを設定してください。"
 
 #: packages/admin/src/components/MenuEditor.tsx:520
 msgid "Home"
@@ -8272,7 +8272,7 @@ msgstr "リダイレクトを読み込み中…"
 
 #: packages/admin/src/components/ContentEditor.tsx:3002
 msgid "Loading references..."
-msgstr ""
+msgstr "参照先を読み込み中…"
 
 #: packages/admin/src/components/RelationList.tsx:110
 #: packages/admin/src/components/RelationsPanel.tsx:68
@@ -9618,7 +9618,7 @@ msgstr "リダイレクトはまだありません"
 
 #: packages/admin/src/components/ContentEditor.tsx:2914
 msgid "No references selected."
-msgstr ""
+msgstr "参照先が選択されていません。"
 
 #: packages/admin/src/components/RelationsPanel.tsx:85
 msgid "No relations yet"
@@ -9856,7 +9856,7 @@ msgstr ""
 #. placeholder {0}: referenceRowLabel(row)
 #: packages/admin/src/components/ContentEditor.tsx:2947
 msgid "Open {0} in a new tab"
-msgstr ""
+msgstr "{0}を新しいタブで開く"
 
 #. placeholder {0}: folder.name
 #: packages/admin/src/components/media/MediaBrowserItems.tsx:182
@@ -10323,7 +10323,7 @@ msgstr ""
 
 #: packages/admin/src/components/ContentEditor.tsx:1734
 msgid "Plugin changes were not applied"
-msgstr ""
+msgstr "プラグインの変更は適用されませんでした"
 
 #: packages/admin/src/lib/content-list-columns.tsx:236
 msgid "Plugin column unavailable"
@@ -10719,7 +10719,7 @@ msgstr ""
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:961
 msgid "Publishing summary"
-msgstr ""
+msgstr "公開状況の概要"
 
 #. js-lingui-explicit-id
 #: packages/admin/src/locales/server.ts:40
@@ -10850,7 +10850,7 @@ msgstr "準備完了"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:202
 msgid "Ready to publish now or schedule for later"
-msgstr ""
+msgstr "今すぐ公開、または公開予約ができる状態です"
 
 #: packages/admin/src/components/settings/transfer/labels.ts:64
 msgid "Rebuilding search and caches"
@@ -11333,7 +11333,7 @@ msgstr ""
 
 #: packages/admin/src/components/ContentEditor.tsx:3015
 msgid "Replace reference"
-msgstr ""
+msgstr "参照を置き換え"
 
 #: packages/admin/src/components/settings/transfer/ImportSection.tsx:211
 msgid "Replace this site’s content with a package exported from another EmDash site."
@@ -11807,7 +11807,7 @@ msgstr "代替テキストを保存"
 
 #: packages/admin/src/components/ContentEditor.tsx:1762
 msgid "Save anyway"
-msgstr ""
+msgstr "そのまま保存"
 
 #: packages/admin/src/components/BylineFieldEditor.tsx:313
 msgid "Save changes"
@@ -11958,12 +11958,12 @@ msgstr ""
 #. placeholder {0}: isolate(formattedSchedule)
 #: packages/admin/src/components/ContentSettingsPanel.tsx:146
 msgid "Scheduled for {0}"
-msgstr ""
+msgstr "公開予定日時：{0}"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:154
 #: packages/admin/src/components/ContentSettingsPanel.tsx:253
 msgid "Scheduled publication"
-msgstr ""
+msgstr "公開予約"
 
 #: packages/admin/src/components/Dashboard.tsx:228
 msgid "Scheduled publishing needs attention"
@@ -12367,7 +12367,7 @@ msgstr "表示中の項目をすべて選択"
 
 #: packages/admin/src/components/ContentEditor.tsx:2910
 msgid "Select at least one entry."
-msgstr ""
+msgstr "コンテンツを1件以上選択してください。"
 
 #: packages/admin/src/components/editor/TableControls.tsx:24
 msgid "Select column"
@@ -12439,7 +12439,7 @@ msgstr ""
 
 #: packages/admin/src/components/ContentList.tsx:628
 msgid "Select up to 50 posts at a time."
-msgstr ""
+msgstr "一度に選択できる投稿は50件までです。"
 
 #: packages/admin/src/components/MediaPickerModal.tsx:232
 #: packages/admin/src/components/PortableTextEditor.tsx:4692
@@ -12720,7 +12720,7 @@ msgstr ""
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:1152
 msgid "Shown to readers in this order."
-msgstr ""
+msgstr "この順序で閲覧者に表示されます。"
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:764
 msgid "Shown when hovering over the image."
@@ -13701,7 +13701,7 @@ msgstr ""
 #: packages/admin/src/components/ContentEditor.tsx:1035
 #: packages/admin/src/components/ContentEditor.tsx:1051
 msgid "The plugin result is stale because the editor changed while it was working."
-msgstr ""
+msgstr "プラグインの処理中に編集内容が変わったため、結果が古くなっています。"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:297
 msgid "The public address of your site, used for links in emails and plugins, sitemaps, and absolute URLs in search and social metadata"
@@ -13903,12 +13903,12 @@ msgstr "有効な移行キーではないようです。プラグインで新し
 
 #: packages/admin/src/components/ContentEditor.tsx:1758
 msgid "This entry changed somewhere else after you opened it."
-msgstr ""
+msgstr "このコンテンツは、開いた後に別の場所で変更されています。"
 
 #: packages/admin/src/components/ContentEditor.tsx:1333
 #: packages/admin/src/router.tsx:1121
 msgid "This entry changed somewhere else. Save anyway, or reload to get the newer version."
-msgstr ""
+msgstr "このコンテンツは別の場所で変更されています。そのまま保存するか、再読み込みして新しい版を取得してください。"
 
 #: packages/admin/src/router.tsx:1950
 msgid "This entry doesn't exist or isn't published. Your role can only view published content."
@@ -13928,7 +13928,7 @@ msgstr ""
 
 #: packages/admin/src/components/ContentEditor.tsx:1745
 msgid "This entry is read-only because its schema uses field types this version of EmDash does not support."
-msgstr ""
+msgstr "このコンテンツは、スキーマでこのバージョンのEmDashが対応していないフィールド形式を使っているため、読み取り専用です。"
 
 #: packages/admin/src/components/calendar/CalendarEntryPanel.tsx:363
 msgid "This entry was due {lateness} but hasn't published. Scheduled publishing may not be running."
@@ -14229,7 +14229,7 @@ msgstr ""
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:168
 msgid "This version is not visible on the site"
-msgstr ""
+msgstr "この版はサイトに表示されません"
 
 #: packages/admin/src/components/editor/VideoNode.tsx:315
 msgid "This video can't be played."
@@ -14446,7 +14446,7 @@ msgstr "ゴミ箱は空です。"
 
 #: packages/admin/src/components/ContentList.tsx:972
 msgid "Trash pagination"
-msgstr ""
+msgstr "ゴミ箱のページ切り替え"
 
 #: packages/admin/src/components/FieldEditor.tsx:415
 msgid "True/false toggle"
@@ -14969,7 +14969,7 @@ msgstr "URL"
 #: packages/admin/src/components/ContentSettingsPanel.tsx:1078
 #: packages/admin/src/components/ContentSettingsPanel.tsx:1081
 msgid "URL & language"
-msgstr ""
+msgstr "URLと言語"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:536
 msgid "URL Pattern"
@@ -15279,16 +15279,16 @@ msgstr "これらのパスにアクセスするとエラーが表示されます
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:222
 msgid "Visitors see the published version until the scheduled update"
-msgstr ""
+msgstr "予約した更新日時までは、閲覧者には公開版が表示されます"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:186
 #: packages/admin/src/components/ContentSettingsPanel.tsx:248
 msgid "Visitors see this published version"
-msgstr ""
+msgstr "閲覧者にはこの公開版が表示されます"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:196
 msgid "Visitors still see the published version"
-msgstr ""
+msgstr "閲覧者には引き続き公開版が表示されます"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:514
 msgid "Visitors will see these changes immediately."
@@ -15406,7 +15406,7 @@ msgstr "インポート時の動作"
 
 #: packages/admin/src/components/ContentEditor.tsx:1759
 msgid "What you typed is still here. Saving replaces the newer version."
-msgstr ""
+msgstr "入力した内容はこの画面に残っています。保存すると、新しい版を上書きします。"
 
 #: packages/admin/src/components/MediaUsedIn.tsx:226
 msgid "What’s tracked"
@@ -15443,7 +15443,7 @@ msgstr "整数"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:1165
 msgid "Why are bylines shown in this order?"
-msgstr ""
+msgstr "執筆者がこの順序で表示される理由"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:531
 msgid "Why can't this be changed?"
