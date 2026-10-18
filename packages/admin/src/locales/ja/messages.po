@@ -2886,7 +2886,7 @@ msgstr "期間を選択"
 
 #: packages/admin/src/components/MediaPickerModal.tsx:234
 msgid "Choose a file from the library or upload a new one."
-msgstr ""
+msgstr "ライブラリからファイルを選択するか、新しいファイルをアップロードしてください。"
 
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:476
 msgid "Choose a new publication time for this draft."
@@ -2907,11 +2907,11 @@ msgstr ""
 
 #: packages/admin/src/components/MediaPickerModal.tsx:236
 msgid "Choose a video from the library or upload a new one."
-msgstr ""
+msgstr "ライブラリから動画を選択するか、新しい動画をアップロードしてください。"
 
 #: packages/admin/src/components/MediaPickerModal.tsx:237
 msgid "Choose an image from the library or upload a new one."
-msgstr ""
+msgstr "ライブラリから画像を選択するか、新しい画像をアップロードしてください。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:567
 msgid "Choose another option"
@@ -3569,7 +3569,7 @@ msgstr "URLから画像を読み込めませんでした"
 
 #: packages/admin/src/components/MediaPickerModal.tsx:1399
 msgid "Could not load media."
-msgstr ""
+msgstr "メディアを読み込めませんでした。"
 
 #: packages/admin/src/routes/calendar.tsx:341
 msgid "Could not load the calendar"
@@ -6936,7 +6936,7 @@ msgstr ""
 
 #: packages/admin/src/components/MediaPickerModal.tsx:371
 msgid "From URL"
-msgstr ""
+msgstr "URLから"
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:280
 #: packages/admin/src/components/WordPressImport.tsx:1205
@@ -8244,7 +8244,7 @@ msgstr ""
 
 #: packages/admin/src/components/MediaPickerModal.tsx:1394
 msgid "Loading media"
-msgstr ""
+msgstr "メディアを読み込み中"
 
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:619
 msgid "Loading media usage tracking settings…"
@@ -12444,7 +12444,7 @@ msgstr ""
 #: packages/admin/src/components/MediaPickerModal.tsx:232
 #: packages/admin/src/components/PortableTextEditor.tsx:4692
 msgid "Select video"
-msgstr ""
+msgstr "動画を選択"
 
 #: packages/admin/src/components/WordPressImport.tsx:1786
 msgid "Select which content types to import."
@@ -14880,7 +14880,7 @@ msgstr "アップロードに失敗しました"
 
 #: packages/admin/src/components/MediaPickerModal.tsx:1084
 msgid "Upload files"
-msgstr ""
+msgstr "ファイルをアップロード"
 
 #: packages/admin/src/components/MediaLibrary.tsx:686
 #: packages/admin/src/components/MediaLibrary.tsx:1042
@@ -15054,7 +15054,7 @@ msgstr ""
 
 #: packages/admin/src/components/MediaPickerModal.tsx:1149
 msgid "Use URL"
-msgstr ""
+msgstr "URLを使用"
 
 #: packages/admin/src/components/auth/PasskeyLogin.tsx:333
 msgid "Use your device's biometric authentication, security key, or PIN to sign in."
