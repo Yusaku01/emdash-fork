@@ -29,7 +29,7 @@ msgstr "選択してください"
 #: packages/admin/src/components/revisions/RevisionViewBar.tsx:156
 msgctxt "Read aloud between a version's author and status"
 msgid ", "
-msgstr ""
+msgstr "、"
 
 #. placeholder {0}: item.filename
 #: packages/admin/src/components/MediaDetailPanel.tsx:1924
@@ -512,11 +512,11 @@ msgstr "全{0}件中、{completedCount}件のアップロードが完了"
 
 #: packages/admin/src/components/revisions/RevisionFieldValue.tsx:419
 msgid "{count, plural, one {# block} other {# blocks}}"
-msgstr ""
+msgstr "{count, plural, one {#ブロック} other {#ブロック}}"
 
 #: packages/admin/src/components/revisions/RevisionFieldValue.tsx:420
 msgid "{count, plural, one {# entry} other {# entries}}"
-msgstr ""
+msgstr "{count, plural, one {#件} other {#件}}"
 
 #: packages/admin/src/components/WordPressImport.tsx:2126
 msgid "{count, plural, one {# file} other {# files}}"
@@ -537,7 +537,7 @@ msgstr ""
 
 #: packages/admin/src/components/revisions/revision-format.ts:123
 msgid "{dayLabel}, {timeLabel}"
-msgstr ""
+msgstr "{dayLabel} {timeLabel}"
 
 #: packages/admin/src/components/calendar/CalendarAgenda.tsx:120
 msgid "{earlierCount, plural, one {Show # earlier entry} other {Show # earlier entries}}"
@@ -571,7 +571,7 @@ msgstr ""
 
 #: packages/admin/src/components/revisions/RevisionList.tsx:390
 msgid "{hiddenCount, plural, one {Show # more} other {Show # more}}"
-msgstr ""
+msgstr "{hiddenCount, plural, one {さらに#件を表示} other {さらに#件を表示}}"
 
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:38
 msgid "{host} does not resolve to a public address"
@@ -610,7 +610,7 @@ msgstr ""
 
 #: packages/admin/src/components/revisions/RevisionList.tsx:246
 msgid "{label}, {restored}"
-msgstr ""
+msgstr "{label}、{restored}"
 
 #: packages/admin/src/components/calendar/CalendarEntry.tsx:366
 msgid "{lateness} late"
@@ -842,19 +842,19 @@ msgstr "{totalScheduled, plural, one {公開予定} other {公開予定}}"
 
 #: packages/admin/src/components/revisions/RevisionList.tsx:239
 msgid "{when}, {author}"
-msgstr ""
+msgstr "{when}、{author}"
 
 #: packages/admin/src/components/revisions/RevisionList.tsx:236
 msgid "{when}, Current version, {author}"
-msgstr ""
+msgstr "{when}、現在の版、{author}"
 
 #: packages/admin/src/components/revisions/RevisionList.tsx:234
 msgid "{when}, Current version, Published, {author}"
-msgstr ""
+msgstr "{when}、現在の版、公開済み、{author}"
 
 #: packages/admin/src/components/revisions/RevisionList.tsx:238
 msgid "{when}, Published, {author}"
-msgstr ""
+msgstr "{when}、公開済み、{author}"
 
 #: packages/admin/src/components/settings/transfer/labels.ts:268
 msgid "{widgetType} in {areaName}"
@@ -1456,60 +1456,60 @@ msgstr ""
 
 #: packages/admin/src/components/revisions/change-labels.ts:133
 msgid "Added “{snippet}”"
-msgstr ""
+msgstr "「{snippet}」を追加しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:121
 msgid "Added {label}"
-msgstr ""
+msgstr "{label}を追加しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:51
 msgid "Added a code block"
-msgstr ""
+msgstr "コードブロックを追加しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:87
 msgid "Added a divider"
-msgstr ""
+msgstr "区切り線を追加しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:63
 msgid "Added a gallery"
-msgstr ""
+msgstr "ギャラリーを追加しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:24
 msgid "Added a heading"
-msgstr ""
+msgstr "見出しを追加しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:38
 msgid "Added a list item"
-msgstr ""
+msgstr "リスト項目を追加しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:17
 msgid "Added a paragraph"
-msgstr ""
+msgstr "段落を追加しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:31
 msgid "Added a quote"
-msgstr ""
+msgstr "引用を追加しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:57
 msgid "Added a table"
-msgstr ""
+msgstr "テーブルを追加しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:69
 msgid "Added a video"
-msgstr ""
+msgstr "動画を追加しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:75
 msgid "Added an embed"
-msgstr ""
+msgstr "埋め込みを追加しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:81
 msgid "Added an HTML block"
-msgstr ""
+msgstr "HTMLブロックを追加しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:45
 #: packages/admin/src/components/revisions/change-labels.ts:95
 msgid "Added an image"
-msgstr ""
+msgstr "画像を追加しました"
 
 #: packages/admin/src/components/revisions/RevisionDocument.tsx:108
 #: packages/admin/src/components/revisions/RevisionDocument.tsx:230
@@ -1518,7 +1518,7 @@ msgstr ""
 #: packages/admin/src/components/revisions/RevisionFieldValue.tsx:270
 #: packages/admin/src/components/revisions/RevisionSegments.tsx:139
 msgid "Added:"
-msgstr ""
+msgstr "追加："
 
 #: packages/admin/src/components/MenuEditor.tsx:551
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:315
@@ -2185,15 +2185,15 @@ msgstr "コンテンツタイプに戻る"
 
 #: packages/admin/src/components/revisions/RevisionViewBar.tsx:206
 msgid "Back to editing"
-msgstr ""
+msgstr "編集に戻る"
 
 #: packages/admin/src/components/revisions/RevisionViewBar.tsx:196
 msgid "Back to editing (Esc)"
-msgstr ""
+msgstr "編集に戻る（Esc）"
 
 #: packages/admin/src/components/revisions/useRevisionView.ts:392
 msgid "Back to editing."
-msgstr ""
+msgstr "編集に戻りました。"
 
 #: packages/admin/src/components/InviteAcceptPage.tsx:171
 #: packages/admin/src/components/LoginPage.tsx:118
@@ -2694,56 +2694,56 @@ msgstr ""
 
 #: packages/admin/src/components/revisions/change-labels.ts:110
 msgid "Changed {label}"
-msgstr ""
+msgstr "{label}を変更しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:89
 msgid "Changed a divider"
-msgstr ""
+msgstr "区切り線を変更しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:65
 msgid "Changed a gallery"
-msgstr ""
+msgstr "ギャラリーを変更しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:71
 msgid "Changed a video"
-msgstr ""
+msgstr "動画を変更しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:77
 msgid "Changed an embed"
-msgstr ""
+msgstr "埋め込みを変更しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:47
 #: packages/admin/src/components/revisions/change-labels.ts:100
 msgid "Changed an image"
-msgstr ""
+msgstr "画像を変更しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:177
 msgid "Changed the slug to “{slug}”"
-msgstr ""
+msgstr "スラッグを「{slug}」に変更しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:139
 msgid "Changed the style of “{snippet}”"
-msgstr ""
+msgstr "「{snippet}」のスタイルを変更しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:27
 msgid "Changed the style of a heading"
-msgstr ""
+msgstr "見出しのスタイルを変更しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:41
 msgid "Changed the style of a list item"
-msgstr ""
+msgstr "リスト項目のスタイルを変更しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:20
 msgid "Changed the style of a paragraph"
-msgstr ""
+msgstr "段落のスタイルを変更しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:34
 msgid "Changed the style of a quote"
-msgstr ""
+msgstr "引用のスタイルを変更しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:165
 msgid "Changed the title"
-msgstr ""
+msgstr "タイトルを変更しました"
 
 #: packages/admin/src/components/revisions/RevisionDocument.tsx:126
 #: packages/admin/src/components/revisions/RevisionDocument.tsx:254
@@ -2752,7 +2752,7 @@ msgstr ""
 #: packages/admin/src/components/revisions/RevisionFieldValue.tsx:59
 #: packages/admin/src/components/revisions/RevisionFieldValue.tsx:110
 msgid "Changed:"
-msgstr ""
+msgstr "変更："
 
 #: packages/admin/src/components/RegistryPluginDetail.tsx:901
 msgid "Changelog"
@@ -2768,7 +2768,7 @@ msgstr "変更を破棄しました"
 
 #: packages/admin/src/components/revisions/RevisionList.tsx:347
 msgid "Changes in this version"
-msgstr ""
+msgstr "この版の変更内容"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:478
 msgid "Changes were saved, but cached pages may still show old {pluralLower}. Retry the cache refresh."
@@ -3007,7 +3007,7 @@ msgstr "{fieldKey}の保存済みの値をクリア"
 
 #: packages/admin/src/components/revisions/change-labels.ts:123
 msgid "Cleared {label}"
-msgstr ""
+msgstr "{label}をクリアしました"
 
 #: packages/admin/src/locales/emails.ts:56
 msgid "Click the button below to create your account:"
@@ -3649,7 +3649,7 @@ msgstr ""
 
 #: packages/admin/src/components/revisions/useRevisionView.ts:564
 msgid "Couldn't load this version. Back to editing."
-msgstr ""
+msgstr "この版を読み込めませんでした。編集に戻ります。"
 
 #: packages/admin/src/components/MediaUsedIn.tsx:274
 msgid "Couldn’t load usage."
@@ -4004,7 +4004,7 @@ msgstr ""
 #: packages/admin/src/components/revisions/RevisionList.tsx:265
 #: packages/admin/src/components/revisions/RevisionViewBar.tsx:84
 msgid "Current version"
-msgstr ""
+msgstr "現在の版"
 
 #: packages/admin/src/components/PluginSettings.tsx:340
 msgid "Currently set — enter a new value to replace"
@@ -4884,7 +4884,7 @@ msgstr ""
 
 #: packages/admin/src/components/revisions/change-labels.ts:155
 msgid "Earliest saved version"
-msgstr ""
+msgstr "保存されている最も古い版"
 
 #: packages/admin/src/components/editor/PluginBlockNode.tsx:352
 #: packages/admin/src/components/editor/PluginBlockNode.tsx:353
@@ -5034,47 +5034,47 @@ msgstr "URLを編集"
 
 #: packages/admin/src/components/revisions/change-labels.ts:137
 msgid "Edited “{snippet}”"
-msgstr ""
+msgstr "「{snippet}」を編集しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:125
 msgid "Edited {label}"
-msgstr ""
+msgstr "{label}を編集しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:53
 msgid "Edited a code block"
-msgstr ""
+msgstr "コードブロックを編集しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:26
 msgid "Edited a heading"
-msgstr ""
+msgstr "見出しを編集しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:40
 msgid "Edited a list item"
-msgstr ""
+msgstr "リスト項目を編集しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:19
 msgid "Edited a paragraph"
-msgstr ""
+msgstr "段落を編集しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:33
 msgid "Edited a quote"
-msgstr ""
+msgstr "引用を編集しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:59
 msgid "Edited a table"
-msgstr ""
+msgstr "テーブルを編集しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:83
 msgid "Edited an HTML block"
-msgstr ""
+msgstr "HTMLブロックを編集しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:98
 msgid "Edited an image caption"
-msgstr ""
+msgstr "画像のキャプションを編集しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:99
 msgid "Edited an image description"
-msgstr ""
+msgstr "画像の代替テキストを編集しました"
 
 #: packages/admin/src/components/settings/transfer/ImportSection.tsx:301
 msgid "Editing is paused until the import finishes. Keep this page open; if you leave, the import continues when you come back."
@@ -5174,7 +5174,7 @@ msgstr "メールアドレスを確認しました。"
 #: packages/admin/src/components/editor/BlockMenu.tsx:49
 #: packages/admin/src/components/revisions/RevisionDocument.tsx:501
 msgid "Embed"
-msgstr ""
+msgstr "埋め込み"
 
 #. placeholder {0}: block.label
 #: packages/admin/src/components/PortableTextEditor.tsx:3729
@@ -5242,7 +5242,7 @@ msgstr "EmDashが既存コンテンツを確認し、メディアが使用され
 #: packages/admin/src/components/revisions/RevisionDocument.tsx:442
 #: packages/admin/src/components/revisions/RevisionSegments.tsx:21
 msgid "Empty"
-msgstr ""
+msgstr "空"
 
 #: packages/admin/src/components/editor/GalleryNode.tsx:191
 msgid "Empty gallery — open settings to add images"
@@ -6821,7 +6821,7 @@ msgstr ""
 
 #: packages/admin/src/components/revisions/change-labels.ts:153
 msgid "First version"
-msgstr ""
+msgstr "最初の版"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:84
 msgid "First-time commenters only"
@@ -7364,7 +7364,7 @@ msgstr "画像が見つかりません"
 
 #: packages/admin/src/components/revisions/RevisionDocument.tsx:254
 msgid "Image replaced:"
-msgstr ""
+msgstr "画像の置換："
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:717
 msgid "Image replaced."
@@ -8981,7 +8981,7 @@ msgstr ""
 
 #: packages/admin/src/components/revisions/change-labels.ts:141
 msgid "Moved “{snippet}”"
-msgstr ""
+msgstr "「{snippet}」を移動しました"
 
 #. placeholder {0}: to + 1
 #: packages/admin/src/components/MediaPickerModal.tsx:701
@@ -8998,51 +8998,51 @@ msgstr "{total}件をゴミ箱に移動しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:54
 msgid "Moved a code block"
-msgstr ""
+msgstr "コードブロックを移動しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:90
 msgid "Moved a divider"
-msgstr ""
+msgstr "区切り線を移動しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:66
 msgid "Moved a gallery"
-msgstr ""
+msgstr "ギャラリーを移動しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:28
 msgid "Moved a heading"
-msgstr ""
+msgstr "見出しを移動しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:42
 msgid "Moved a list item"
-msgstr ""
+msgstr "リスト項目を移動しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:21
 msgid "Moved a paragraph"
-msgstr ""
+msgstr "段落を移動しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:35
 msgid "Moved a quote"
-msgstr ""
+msgstr "引用を移動しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:60
 msgid "Moved a table"
-msgstr ""
+msgstr "テーブルを移動しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:72
 msgid "Moved a video"
-msgstr ""
+msgstr "動画を移動しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:78
 msgid "Moved an embed"
-msgstr ""
+msgstr "埋め込みを移動しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:84
 msgid "Moved an HTML block"
-msgstr ""
+msgstr "HTMLブロックを移動しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:48
 msgid "Moved an image"
-msgstr ""
+msgstr "画像を移動しました"
 
 #. placeholder {0}: folder.name
 #: packages/admin/src/components/MediaLibrary.tsx:568
@@ -9235,7 +9235,7 @@ msgstr "新しいウィンドウ"
 
 #: packages/admin/src/components/revisions/RevisionViewBar.tsx:188
 msgid "Newer version"
-msgstr ""
+msgstr "新しい版"
 
 #: packages/admin/src/components/MarketplaceBrowse.tsx:44
 #: packages/admin/src/components/ThemeMarketplaceBrowse.tsx:36
@@ -9360,7 +9360,7 @@ msgstr ""
 
 #: packages/admin/src/components/revisions/change-labels.ts:163
 msgid "No changes"
-msgstr ""
+msgstr "変更なし"
 
 #: packages/admin/src/components/Dashboard.tsx:485
 msgid "No collections configured"
@@ -9725,7 +9725,7 @@ msgstr ""
 
 #: packages/admin/src/components/revisions/RevisionFieldValue.tsx:499
 msgid "Not recorded in this version"
-msgstr ""
+msgstr "この版には記録されていません"
 
 #: packages/admin/src/components/ContentList.tsx:1569
 #: packages/admin/src/components/PluginSettings.tsx:341
@@ -9793,11 +9793,11 @@ msgstr "OG画像"
 
 #: packages/admin/src/components/revisions/RevisionViewBar.tsx:178
 msgid "Older version"
-msgstr ""
+msgstr "古い版"
 
 #: packages/admin/src/components/revisions/RevisionFieldValue.tsx:425
 msgid "On"
-msgstr ""
+msgstr "オン"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:185
 msgid "On the site"
@@ -11148,7 +11148,7 @@ msgstr "この画像をドキュメントから削除しますか？"
 
 #: packages/admin/src/components/revisions/change-labels.ts:135
 msgid "Removed “{snippet}”"
-msgstr ""
+msgstr "「{snippet}」を削除しました"
 
 #. placeholder {0}: selected.item.filename
 #: packages/admin/src/components/MediaPickerModal.tsx:706
@@ -11157,56 +11157,56 @@ msgstr ""
 
 #: packages/admin/src/components/revisions/change-labels.ts:52
 msgid "Removed a code block"
-msgstr ""
+msgstr "コードブロックを削除しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:88
 msgid "Removed a divider"
-msgstr ""
+msgstr "区切り線を削除しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:64
 msgid "Removed a gallery"
-msgstr ""
+msgstr "ギャラリーを削除しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:25
 msgid "Removed a heading"
-msgstr ""
+msgstr "見出しを削除しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:39
 msgid "Removed a list item"
-msgstr ""
+msgstr "リスト項目を削除しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:18
 msgid "Removed a paragraph"
-msgstr ""
+msgstr "段落を削除しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:32
 msgid "Removed a quote"
-msgstr ""
+msgstr "引用を削除しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:58
 msgid "Removed a table"
-msgstr ""
+msgstr "テーブルを削除しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:70
 msgid "Removed a video"
-msgstr ""
+msgstr "動画を削除しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:76
 msgid "Removed an embed"
-msgstr ""
+msgstr "埋め込みを削除しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:82
 msgid "Removed an HTML block"
-msgstr ""
+msgstr "HTMLブロックを削除しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:46
 #: packages/admin/src/components/revisions/change-labels.ts:96
 msgid "Removed an image"
-msgstr ""
+msgstr "画像を削除しました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:175
 msgid "Removed the slug"
-msgstr ""
+msgstr "スラッグを削除しました"
 
 #: packages/admin/src/components/revisions/RevisionDocument.tsx:117
 #: packages/admin/src/components/revisions/RevisionDocument.tsx:232
@@ -11215,7 +11215,7 @@ msgstr ""
 #: packages/admin/src/components/revisions/RevisionFieldValue.tsx:265
 #: packages/admin/src/components/revisions/RevisionSegments.tsx:140
 msgid "Removed:"
-msgstr ""
+msgstr "削除："
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:590
 msgid "Removes the sidebar entry, command palette link, and dashboard quick action; entries stay reachable by URL, API, and plugins"
@@ -11351,7 +11351,7 @@ msgstr ""
 
 #: packages/admin/src/components/revisions/change-labels.ts:97
 msgid "Replaced an image"
-msgstr ""
+msgstr "画像を置き換えました"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:942
 #: packages/admin/src/components/MediaDetailPanel.tsx:1966
@@ -11503,23 +11503,23 @@ msgstr "復元に失敗しました"
 
 #: packages/admin/src/components/revisions/RevisionRestoreDialog.tsx:109
 msgid "Restore this version?"
-msgstr ""
+msgstr "この版を復元しますか？"
 
 #: packages/admin/src/components/revisions/change-labels.ts:158
 msgid "Restored an earlier version"
-msgstr ""
+msgstr "以前の版を復元しました"
 
 #: packages/admin/src/components/revisions/RevisionList.tsx:242
 msgid "Restored from {restoredDate}"
-msgstr ""
+msgstr "{restoredDate}の版から復元"
 
 #: packages/admin/src/components/revisions/change-labels.ts:160
 msgid "Restored the version from {date}"
-msgstr ""
+msgstr "{date}の版を復元しました"
 
 #: packages/admin/src/components/revisions/RevisionRestoreDialog.tsx:130
 msgid "Restoring…"
-msgstr ""
+msgstr "復元中…"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:444
 msgid "Results"
@@ -11770,7 +11770,7 @@ msgstr "Rust"
 
 #: packages/admin/src/components/revisions/RevisionViewBar.tsx:86
 msgid "Same as current version"
-msgstr ""
+msgstr "現在の版と同じ"
 
 #: packages/admin/src/components/MenuEditor.tsx:534
 #: packages/admin/src/components/MenuEditor.tsx:536
@@ -12675,7 +12675,7 @@ msgstr "短文テキスト"
 
 #: packages/admin/src/components/revisions/RevisionViewBar.tsx:223
 msgid "Show changes"
-msgstr ""
+msgstr "変更箇所を表示"
 
 #: packages/admin/src/components/Widgets.tsx:147
 msgid "Show count"
@@ -12691,7 +12691,7 @@ msgstr "階層を表示"
 
 #: packages/admin/src/components/revisions/RevisionList.tsx:192
 msgid "Show older versions"
-msgstr ""
+msgstr "古い版を表示"
 
 #: packages/admin/src/components/Widgets.tsx:139
 msgid "Show post count"
@@ -13175,7 +13175,7 @@ msgstr "構造化データ"
 #: packages/admin/src/components/revisions/RevisionDocument.tsx:135
 #: packages/admin/src/components/revisions/RevisionSegments.tsx:163
 msgid "Style changed:"
-msgstr ""
+msgstr "スタイルの変更："
 
 #: packages/admin/src/components/FieldEditor.tsx:1305
 msgid "Sub-field slugs cannot be changed after creation."
@@ -13397,7 +13397,7 @@ msgstr "テキスト書式"
 
 #: packages/admin/src/components/revisions/useRevisionView.ts:546
 msgid "That version is no longer available. Back to editing."
-msgstr ""
+msgstr "その版は利用できなくなりました。編集に戻ります。"
 
 #. placeholder {0}: bound.fieldSlug
 #. placeholder {1}: bound.collectionSlug
@@ -13783,19 +13783,19 @@ msgstr ""
 
 #: packages/admin/src/components/revisions/RevisionRestoreDialog.tsx:117
 msgid "The version from {when} becomes your draft and goes live at the scheduled time."
-msgstr ""
+msgstr "{when}の版が下書きになり、予約日時に公開されます。"
 
 #: packages/admin/src/components/revisions/RevisionRestoreDialog.tsx:118
 msgid "The version from {when} becomes your draft. The live site won't change until you publish."
-msgstr ""
+msgstr "{when}の版が下書きになります。公開するまでサイトの表示は変わりません。"
 
 #: packages/admin/src/components/revisions/RevisionRestoreDialog.tsx:82
 msgid "The version from {when} is now your draft. It goes live at the scheduled time."
-msgstr ""
+msgstr "{when}の版を下書きにしました。予約日時に公開されます。"
 
 #: packages/admin/src/components/revisions/RevisionRestoreDialog.tsx:83
 msgid "The version from {when} is now your draft. Publish when you're ready."
-msgstr ""
+msgstr "{when}の版を下書きにしました。準備ができたら公開してください。"
 
 #: packages/admin/src/components/editor/ImageUploadExtension.ts:211
 msgid "The video is in the Media Library, but this entry is now read-only."
@@ -13941,7 +13941,7 @@ msgstr ""
 #: packages/admin/src/components/ContentEditor.tsx:2301
 #: packages/admin/src/components/revisions/RevisionFieldValue.tsx:478
 msgid "This field cannot be edited by this version of EmDash."
-msgstr ""
+msgstr "このバージョンのEmDashでは、このフィールドを編集できません。"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4484
 msgid "This field contains table content that the editor cannot preserve. Update it through the API before editing or saving this content."
@@ -14225,7 +14225,7 @@ msgstr "この更新により、次のルートが認証なしで公開されま
 
 #: packages/admin/src/components/revisions/RevisionViewErrorBoundary.tsx:7
 msgid "This version can't be shown."
-msgstr ""
+msgstr "この版を表示できません。"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:168
 msgid "This version is not visible on the site"
@@ -14319,7 +14319,7 @@ msgstr "選択"
 #: packages/admin/src/components/calendar/CalendarToolbar.tsx:71
 #: packages/admin/src/components/revisions/revision-format.ts:107
 msgid "Today"
-msgstr ""
+msgstr "今日"
 
 #: packages/admin/src/components/TaxonomySidebar.tsx:600
 msgid "Toggle"
@@ -14542,11 +14542,11 @@ msgstr "メディア使用状況の記録を有効にしますか？"
 
 #: packages/admin/src/components/revisions/change-labels.ts:170
 msgid "Turned off {label}"
-msgstr ""
+msgstr "{label}をオフにしました"
 
 #: packages/admin/src/components/revisions/change-labels.ts:170
 msgid "Turned on {label}"
-msgstr ""
+msgstr "{label}をオンにしました"
 
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:579
 msgid "Turning on…"
@@ -14658,7 +14658,7 @@ msgstr "不明"
 
 #: packages/admin/src/components/revisions/revision-format.ts:129
 msgid "Unknown author"
-msgstr ""
+msgstr "編集者不明"
 
 #: packages/admin/src/components/users/roleDefinitions.ts:62
 msgid "Unknown role"
@@ -14680,7 +14680,7 @@ msgstr "名前のないパスキー"
 
 #: packages/admin/src/components/revisions/revision-format.ts:129
 msgid "Unnamed user"
-msgstr ""
+msgstr "名前未設定のユーザー"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:501
 msgid "Unpublish {itemLabel}"
@@ -15212,11 +15212,11 @@ msgstr ""
 
 #: packages/admin/src/components/revisions/useRevisionView.ts:652
 msgid "Version from {when}"
-msgstr ""
+msgstr "{when}の版"
 
 #: packages/admin/src/components/revisions/RevisionRestoreDialog.tsx:80
 msgid "Version restored"
-msgstr ""
+msgstr "版を復元しました"
 
 #: packages/admin/src/components/AllowedTypesEditor.tsx:70
 #: packages/admin/src/components/editor/BlockMenu.tsx:43
@@ -15271,7 +15271,7 @@ msgstr "spdx.orgで{license}ライセンスを表示"
 
 #: packages/admin/src/components/revisions/useRevisionView.ts:517
 msgid "Viewing the version from {when} by {name}."
-msgstr ""
+msgstr "{name}による{when}の版を表示しています。"
 
 #: packages/admin/src/components/Redirects.tsx:469
 msgid "Visitors hitting these paths will see an error."
@@ -15626,7 +15626,7 @@ msgstr "はい"
 
 #: packages/admin/src/components/revisions/revision-format.ts:109
 msgid "Yesterday"
-msgstr ""
+msgstr "昨日"
 
 #: packages/admin/src/components/WordPressImport.tsx:1210
 msgid "Yoast/RankMath"
@@ -15786,11 +15786,11 @@ msgstr ""
 
 #: packages/admin/src/components/revisions/RevisionRestoreDialog.tsx:115
 msgid "Your draft will be replaced with the version from {when}. Your current draft stays in Revisions, and the live site won't change until you publish."
-msgstr ""
+msgstr "下書きを{when}の版に置き換えます。現在の下書きは変更履歴に残り、公開するまでサイトの表示は変わりません。"
 
 #: packages/admin/src/components/revisions/RevisionRestoreDialog.tsx:114
 msgid "Your draft will be replaced with the version from {when}. Your current draft stays in Revisions, and the restored version goes live at the scheduled time."
-msgstr ""
+msgstr "下書きを{when}の版に置き換えます。現在の下書きは変更履歴に残り、復元した版は予約日時に公開されます。"
 
 #: packages/admin/src/components/SetupWizard.tsx:260
 msgid "Your Email"
@@ -15854,7 +15854,7 @@ msgstr "Twitter/Xのハンドル名（例：@username）"
 
 #: packages/admin/src/components/revisions/RevisionRestoreDialog.tsx:123
 msgid "Your unsaved changes will be lost."
-msgstr ""
+msgstr "保存していない変更は失われます。"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1903
 msgid "Your unsaved media changes will be lost."
