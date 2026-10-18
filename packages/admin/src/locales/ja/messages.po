@@ -778,7 +778,7 @@ msgstr ""
 
 #: packages/admin/src/components/PortableTextEditor.tsx:3563
 msgid "{rows} × {columns} table pasted"
-msgstr ""
+msgstr "{rows}行 × {columns}列のテーブルを貼り付けました"
 
 #: packages/admin/src/components/ContentList.tsx:573
 msgid "{selectedCount, plural, one {# selected} other {# selected}}"
@@ -909,19 +909,19 @@ msgstr ""
 
 #: packages/admin/src/components/editor/DragHandleWrapper.tsx:231
 msgid "<0>Alt-click</0> to add above"
-msgstr ""
+msgstr "<0>Altキーを押しながらクリック</0>して上に追加"
 
 #: packages/admin/src/components/editor/DragHandleWrapper.tsx:227
 msgid "<0>Click</0> to add below"
-msgstr ""
+msgstr "<0>クリック</0>して下に追加"
 
 #: packages/admin/src/components/editor/DragHandleWrapper.tsx:273
 msgid "<0>Click</0> to open menu"
-msgstr ""
+msgstr "<0>クリック</0>してメニューを開く"
 
 #: packages/admin/src/components/editor/DragHandleWrapper.tsx:269
 msgid "<0>Drag</0> to move"
-msgstr ""
+msgstr "<0>ドラッグ</0>して移動"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:426
 msgid "1 post updated"
@@ -1561,7 +1561,7 @@ msgstr "管理者"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:1989
 msgid "Advanced"
-msgstr ""
+msgstr "高度なブロック"
 
 #: packages/admin/src/components/EditorDraftPatchPreview.tsx:67
 msgid "After"
@@ -2268,7 +2268,7 @@ msgstr "Bash"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:1987
 msgid "Basic blocks"
-msgstr ""
+msgstr "基本ブロック"
 
 #: packages/admin/src/components/EditorDraftPatchPreview.tsx:61
 msgid "Before"
@@ -2297,7 +2297,7 @@ msgstr "プロフィール"
 
 #: packages/admin/src/components/editor/BlockMenu.tsx:92
 msgid "Block"
-msgstr ""
+msgstr "ブロック"
 
 #. placeholder {0}: index + 1
 #: packages/admin/src/components/BlocksField.tsx:415
@@ -2306,7 +2306,7 @@ msgstr ""
 
 #: packages/admin/src/components/editor/BlockMenu.tsx:138
 msgid "Block actions"
-msgstr ""
+msgstr "ブロックの操作"
 
 #: packages/admin/src/components/editor/DragHandleWrapper.tsx:291
 msgid "Block actions - drag to reorder, click for menu"
@@ -3205,7 +3205,7 @@ msgstr ""
 
 #: packages/admin/src/components/PortableTextEditor.tsx:3563
 msgid "Column width resized"
-msgstr ""
+msgstr "列幅を変更しました"
 
 #: packages/admin/src/components/editor/TableControls.tsx:29
 msgid "Column widths reset"
@@ -3991,7 +3991,7 @@ msgstr ""
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:59
 msgid "CSS code"
-msgstr ""
+msgstr "CSSコード"
 
 #: packages/admin/src/components/TranslationsPanel.tsx:84
 msgid "current"
@@ -4203,7 +4203,7 @@ msgstr "バックアップを削除しますか？"
 #: packages/admin/src/components/BlocksField.tsx:391
 #: packages/admin/src/components/editor/EmbedBlockShell.tsx:358
 msgid "Delete block"
-msgstr ""
+msgstr "ブロックを削除"
 
 #: packages/admin/src/routes/bylines.tsx:427
 #: packages/admin/src/routes/bylines.tsx:534
@@ -4332,7 +4332,7 @@ msgstr ""
 #: packages/admin/src/components/editor/VideoNode.tsx:379
 #: packages/admin/src/components/editor/VideoNode.tsx:380
 msgid "Delete video"
-msgstr ""
+msgstr "動画を削除"
 
 #: packages/admin/src/components/Widgets.tsx:717
 msgid "Delete Widget Area?"
@@ -4583,7 +4583,7 @@ msgstr "セクションエラーを閉じる"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4552
 msgid "Dismiss table paste error"
-msgstr ""
+msgstr "テーブルの貼り付けエラーを閉じる"
 
 #: packages/admin/src/components/Widgets.tsx:127
 msgid "Display a list of recent posts"
@@ -5183,15 +5183,15 @@ msgstr "{0}を埋め込む"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:2114
 msgid "Embed a page from another site"
-msgstr ""
+msgstr "別のサイトのページを埋め込む"
 
 #: packages/admin/src/components/editor/IframeBlockNode.tsx:246
 msgid "Embed code"
-msgstr ""
+msgstr "埋め込みコード"
 
 #: packages/admin/src/components/editor/IframeBlockNode.tsx:100
 msgid "Embedded content"
-msgstr ""
+msgstr "埋め込みコンテンツ"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:1990
 msgid "Embeds"
@@ -5418,7 +5418,7 @@ msgstr "ウィジェットを更新できませんでした"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:2571
 msgid "esc"
-msgstr ""
+msgstr "Esc"
 
 #: packages/admin/src/components/TaxonomySidebar.tsx:604
 msgid "Esc"
@@ -7232,19 +7232,19 @@ msgstr "HTML"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:182
 msgid "HTML block options"
-msgstr ""
+msgstr "HTMLブロックのオプション"
 
 #: packages/admin/src/components/editor/HtmlBlockPreview.tsx:193
 msgid "HTML block preview"
-msgstr ""
+msgstr "HTMLブロックのプレビュー"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:52
 msgid "HTML code"
-msgstr ""
+msgstr "HTMLコード"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:202
 msgid "HTML only, cleaned, using your site's styles."
-msgstr ""
+msgstr "HTMLのみを使用し、不要なコードを除去してサイトのスタイルで表示します。"
 
 #: packages/admin/src/components/BylineFormDialog.tsx:432
 msgid "https://example.com"
@@ -7307,11 +7307,11 @@ msgstr ""
 #: packages/admin/src/components/editor/BlockMenu.tsx:48
 #: packages/admin/src/components/PortableTextEditor.tsx:2113
 msgid "Iframe"
-msgstr ""
+msgstr "iframe"
 
 #: packages/admin/src/components/editor/IframeBlockNode.tsx:210
 msgid "Iframe block options"
-msgstr ""
+msgstr "iframeブロックのオプション"
 
 #. js-lingui-explicit-id
 #: packages/admin/src/locales/server.ts:63
@@ -7588,11 +7588,11 @@ msgstr "既存コンテンツを確認中"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:200
 msgid "Inline"
-msgstr ""
+msgstr "インライン"
 
 #: packages/admin/src/components/editor/HtmlBlockPreview.tsx:128
 msgid "Inline blocks use your site's styles. Your site removes scripts, style tags and style attributes, and empties iframes other than YouTube and Vimeo."
-msgstr ""
+msgstr "インラインのブロックには、サイトのスタイルが適用されます。サイト側でスクリプト・styleタグ・style属性を取り除き、YouTubeとVimeo以外のiframeは空にします。"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4773
 #: packages/admin/src/components/PortableTextEditor.tsx:6318
@@ -7681,7 +7681,7 @@ msgstr ""
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4693
 msgid "Insert video"
-msgstr ""
+msgstr "動画を挿入"
 
 #: packages/admin/src/components/settings/SocialSettings.tsx:163
 msgid "Instagram"
@@ -7792,7 +7792,7 @@ msgstr "このプラグインで有効なMCPツールのみを呼び出す"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:192
 msgid "Isolated frame"
-msgstr ""
+msgstr "隔離されたフレーム"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:507
 msgid "It is stored by the authenticator or credential manager you selected in the secure system prompt."
@@ -7845,7 +7845,7 @@ msgstr "JavaScript"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:66
 msgid "JavaScript code"
-msgstr ""
+msgstr "JavaScriptコード"
 
 #: packages/admin/src/components/BylineFieldEditor.tsx:229
 msgid "Job title"
@@ -7857,7 +7857,7 @@ msgstr "job_title"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:65
 msgid "JS"
-msgstr ""
+msgstr "JS"
 
 #: packages/admin/src/components/editor/codeBlockLanguages.ts:41
 #: packages/admin/src/components/FieldEditor.tsx:462
@@ -8041,7 +8041,7 @@ msgstr "最大表示件数"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:6478
 msgid "Link"
-msgstr ""
+msgstr "リンク"
 
 #: packages/admin/src/components/SignupPage.tsx:274
 msgid "Link expired"
@@ -8133,7 +8133,7 @@ msgstr ""
 
 #: packages/admin/src/components/PortableTextEditor.tsx:3484
 msgid "List"
-msgstr ""
+msgstr "リスト"
 
 #: packages/admin/src/components/MediaLibrary.tsx:890
 #: packages/admin/src/components/MediaPickerModal.tsx:1251
@@ -8179,7 +8179,7 @@ msgstr "さらにフォルダーを読み込む"
 
 #: packages/admin/src/components/editor/IframeBlockNode.tsx:229
 msgid "Load preview"
-msgstr ""
+msgstr "プレビューを読み込む"
 
 #: packages/admin/src/components/calendar/CalendarToolbar.tsx:59
 #: packages/admin/src/router.tsx:3300
@@ -9457,7 +9457,7 @@ msgstr "ドキュメントに見出しがありません"
 
 #: packages/admin/src/components/editor/IframeBlockNode.tsx:45
 msgid "No iframe found in this code. For an embed that runs a script, use an HTML block."
-msgstr ""
+msgstr "このコードにはiframeがありません。スクリプトを実行する埋め込みには、HTMLブロックを使用してください。"
 
 #. js-lingui-explicit-id
 #: packages/admin/src/locales/server.ts:64
@@ -9752,7 +9752,7 @@ msgstr ""
 #: packages/admin/src/components/editor/HtmlBlockPreview.tsx:110
 #: packages/admin/src/components/editor/IframeBlockNode.tsx:233
 msgid "Nothing to preview yet."
-msgstr ""
+msgstr "プレビューする内容はまだありません。"
 
 #: packages/admin/src/components/calendar/CalendarAgenda.tsx:104
 #: packages/admin/src/components/calendar/CalendarEntry.tsx:419
@@ -9801,7 +9801,7 @@ msgstr ""
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:185
 msgid "On the site"
-msgstr ""
+msgstr "サイトでの表示"
 
 #: packages/admin/src/components/SetupWizard.tsx:179
 msgid "Once setup is done, upload a .emdash package exported from another EmDash site."
@@ -9822,7 +9822,7 @@ msgstr "許可されたドメインのメールアドレスのみ登録できま
 
 #: packages/admin/src/components/editor/IframeBlockNode.tsx:46
 msgid "Only https links can be embedded."
-msgstr ""
+msgstr "埋め込めるのはhttpsのリンクのみです。"
 
 #: packages/admin/src/components/MediaUsedIn.tsx:216
 msgid "Only image and file fields, images in rich text, and site settings are tracked. Custom rich text blocks and template code aren’t checked."
@@ -10171,7 +10171,7 @@ msgstr "パスキーにはHTTPSまたはhttp://localhost（ポート付き）が
 
 #: packages/admin/src/components/editor/IframeBlockNode.tsx:247
 msgid "Paste an embed code or an https link…"
-msgstr ""
+msgstr "埋め込みコードまたはhttpsのリンクを貼り付け…"
 
 #: packages/admin/src/components/WordPressImport.tsx:1084
 msgid "Paste your migration key"
@@ -10505,7 +10505,7 @@ msgstr "準備中…"
 
 #: packages/admin/src/components/editor/CodeEditor.tsx:165
 msgid "Press Escape to leave the code editor."
-msgstr ""
+msgstr "コードエディターから戻るには、Escキーを押してください。"
 
 #: packages/admin/src/components/editor/GalleryDetailPanel.tsx:179
 msgid "Press Space to pick up an image. Use the Arrow keys to move it, then press Space to drop it."
@@ -11023,7 +11023,7 @@ msgstr "EmDashを更新した後、ページを再読み込みしてからもう
 
 #: packages/admin/src/components/editor/EmbedBlockShell.tsx:116
 msgid "Reload page"
-msgstr ""
+msgstr "ページを再読み込み"
 
 #: packages/admin/src/components/settings/transfer/ImportReview.tsx:489
 msgid "Reloading the plan…"
@@ -11343,7 +11343,7 @@ msgstr ""
 #: packages/admin/src/components/editor/VideoNode.tsx:366
 #: packages/admin/src/components/editor/VideoNode.tsx:402
 msgid "Replace video"
-msgstr ""
+msgstr "動画を置き換え"
 
 #: packages/admin/src/components/NonListFieldValue.tsx:30
 msgid "Replace with empty list"
@@ -11758,11 +11758,11 @@ msgstr "Ruby"
 
 #: packages/admin/src/components/editor/HtmlBlockPreview.tsx:120
 msgid "Run preview"
-msgstr ""
+msgstr "プレビューを実行"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:194
 msgid "Runs HTML, CSS and JavaScript in a sandbox."
-msgstr ""
+msgstr "サンドボックス内でHTML・CSS・JavaScriptを実行します。"
 
 #: packages/admin/src/components/editor/codeBlockLanguages.ts:50
 msgid "Rust"
@@ -13091,7 +13091,7 @@ msgstr ""
 
 #: packages/admin/src/components/PortableTextEditor.tsx:2019
 msgid "Start writing with plain text"
-msgstr ""
+msgstr "プレーンテキストで書き始める"
 
 #: packages/admin/src/components/ContentEditor.tsx:2473
 #: packages/admin/src/components/PortableTextEditor.tsx:3471
@@ -13244,7 +13244,7 @@ msgstr "テーブル"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4529
 msgid "Table cells accept text, links, and formatting only."
-msgstr ""
+msgstr "テーブルのセルで使用できるのは、テキスト・リンク・書式設定のみです。"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:5366
 msgid "Table controls"
@@ -13265,7 +13265,7 @@ msgstr ""
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4526
 msgid "Tables cannot be pasted inside lists or quotes. Paste the table into its own paragraph and try again."
-msgstr ""
+msgstr "リストや引用の中にはテーブルを貼り付けられません。独立した段落にテーブルを貼り付けて、もう一度お試しください。"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:286
 #: packages/admin/src/components/settings/transfer/ImportReview.tsx:375
@@ -13413,7 +13413,7 @@ msgstr ""
 
 #: packages/admin/src/components/editor/HtmlBlockPreview.tsx:201
 msgid "The admin's security policy blocked some resources this block loads, such as external scripts, fonts or frames. Your site may still load them."
-msgstr ""
+msgstr "管理画面のセキュリティポリシーにより、このブロックが読み込む外部スクリプト・フォント・フレームなどの一部リソースがブロックされました。サイト側では読み込める場合があります。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:200
 msgid "the Android passkey prompt"
@@ -13449,7 +13449,7 @@ msgstr ""
 
 #: packages/admin/src/components/editor/EmbedBlockShell.tsx:114
 msgid "The code editor couldn't load. Save your work, then reload the page."
-msgstr ""
+msgstr "コードエディターを読み込めませんでした。作業内容を保存してから、ページを再読み込みしてください。"
 
 #: packages/admin/src/components/RelationForm.tsx:335
 msgid "The content types and slug cannot be changed after a relation is created."
@@ -13853,11 +13853,11 @@ msgstr ""
 #. placeholder {0}: url.host
 #: packages/admin/src/components/editor/IframeBlockNode.tsx:219
 msgid "This block embeds a page from {0}."
-msgstr ""
+msgstr "このブロックには、{0}のページが埋め込まれています。"
 
 #: packages/admin/src/components/editor/HtmlBlockPreview.tsx:113
 msgid "This block runs JavaScript."
-msgstr ""
+msgstr "このブロックはJavaScriptを実行します。"
 
 #: packages/admin/src/components/settings/transfer/ExportSection.tsx:225
 msgid "This browser keeps the whole package in memory until the download finishes. For an export this size, use a Chromium-based browser, which saves straight to disk, or run emdash site export from the CLI."
@@ -13945,7 +13945,7 @@ msgstr ""
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4484
 msgid "This field contains table content that the editor cannot preserve. Update it through the API before editing or saving this content."
-msgstr ""
+msgstr "このフィールドには、エディターで保持できないテーブルの内容が含まれています。このコンテンツを編集・保存する前に、API経由で更新してください。"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4503
 msgid "This field contains unsupported Portable Text marks: <0>{markList}</0>. Remove them through the API before editing or saving this content."
@@ -14078,7 +14078,7 @@ msgstr "このパスキーはこのデバイスに既に登録されています
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4522
 msgid "This paste is too large. Paste fewer cells or less text at a time."
-msgstr ""
+msgstr "貼り付ける内容が大きすぎます。一度に貼り付けるセル数やテキスト量を減らしてください。"
 
 #. placeholder {0}: archiveToDelete?.name ?? ""
 #: packages/admin/src/components/settings/BackupSettings.tsx:366
@@ -14151,7 +14151,7 @@ msgstr ""
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4567
 msgid "This section contains table content that the editor cannot preserve. Update the section before inserting it."
-msgstr ""
+msgstr "このセクションには、エディターで保持できないテーブルの内容が含まれています。挿入する前にセクションを更新してください。"
 
 #. placeholder {0}: sectionInsertErrorMarks.join(", ")
 #: packages/admin/src/components/PortableTextEditor.tsx:4569
@@ -14209,15 +14209,15 @@ msgstr ""
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4524
 msgid "This spreadsheet data has invalid quoted cells. Fix the quotes or remove the tab separators and try again."
-msgstr ""
+msgstr "この表計算データには、引用符が正しくないセルがあります。引用符を修正するか、タブ区切りを取り除いてから、もう一度お試しください。"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4482
 msgid "This table cannot be edited safely"
-msgstr ""
+msgstr "このテーブルは安全に編集できません"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4528
 msgid "This table has unsupported cell formatting, merged cells, or column widths. Paste it as plain text or simplify the table and try again."
-msgstr ""
+msgstr "このテーブルには、対応していないセルの書式設定・結合セル・列幅が含まれています。プレーンテキストとして貼り付けるか、テーブルを簡素化してから、もう一度お試しください。"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:280
 msgid "This update exposes the following routes without authentication:"
@@ -14233,7 +14233,7 @@ msgstr ""
 
 #: packages/admin/src/components/editor/VideoNode.tsx:315
 msgid "This video can't be played."
-msgstr ""
+msgstr "この動画を再生できません。"
 
 #: packages/admin/src/components/Widgets.tsx:718
 msgid "This will delete the widget area and all its widgets. This action cannot be undone."
@@ -14578,7 +14578,7 @@ msgstr ""
 
 #: packages/admin/src/components/editor/VideoNode.tsx:326
 msgid "Type caption for video (optional)"
-msgstr ""
+msgstr "動画のキャプションを入力（任意）"
 
 #. placeholder {0}: status.existingType
 #: packages/admin/src/components/WordPressImport.tsx:2072
@@ -14587,11 +14587,11 @@ msgstr "型の不一致（{0}）"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:2568
 msgid "Type to filter"
-msgstr ""
+msgstr "入力して絞り込み"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4639
 msgid "Type to search"
-msgstr ""
+msgstr "入力して検索"
 
 #: packages/admin/src/components/MediaLibrary.tsx:1447
 msgid "Type: Folder"
@@ -14906,7 +14906,7 @@ msgstr ""
 
 #: packages/admin/src/components/PortableTextEditor.tsx:3694
 msgid "Upload or choose a video"
-msgstr ""
+msgstr "動画をアップロードまたは選択"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:108
 msgid "Upload site packages and check whether they can be imported. Admin includes this; choose it instead of Admin to give an agent narrower access."
@@ -15229,7 +15229,7 @@ msgstr "動画"
 
 #: packages/admin/src/components/editor/VideoNode.tsx:349
 msgid "Video actions"
-msgstr ""
+msgstr "動画の操作"
 
 #: packages/admin/src/components/editor/ImageUploadExtension.ts:261
 msgid "Video upload failed. Try again."
@@ -15575,19 +15575,19 @@ msgstr ""
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:60
 msgid "Write CSS…"
-msgstr ""
+msgstr "CSSを入力…"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:74
 msgid "Write HTML, or paste a snippet with its styles and scripts…"
-msgstr ""
+msgstr "HTMLを入力するか、スタイルやスクリプトを含むコードを貼り付け…"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:53
 msgid "Write HTML…"
-msgstr ""
+msgstr "HTMLを入力…"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:67
 msgid "Write JavaScript…"
-msgstr ""
+msgstr "JavaScriptを入力…"
 
 #: packages/admin/src/components/Widgets.tsx:907
 msgid "Write widget content..."
