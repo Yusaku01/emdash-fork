@@ -1600,19 +1600,19 @@ msgstr "エージェントから呼び出し可能なMCPツール"
 #: packages/admin/src/components/editor/BlockMenu.tsx:165
 #: packages/admin/src/components/PortableTextEditor.tsx:5275
 msgid "Align"
-msgstr ""
+msgstr "配置"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:6426
 msgid "Align center"
-msgstr ""
+msgstr "中央揃え"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:6418
 msgid "Align left"
-msgstr ""
+msgstr "左揃え"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:6434
 msgid "Align right"
-msgstr ""
+msgstr "右揃え"
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:484
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:723
@@ -2989,7 +2989,7 @@ msgstr "フィルターをクリア"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:5289
 msgid "Clear formatting"
-msgstr ""
+msgstr "書式をクリア"
 
 #: packages/admin/src/components/MediaLibrary.tsx:1020
 #: packages/admin/src/components/MediaLibrary.tsx:1055
@@ -6907,7 +6907,7 @@ msgstr "よりスムーズにインポートするには、WordPressサイトに
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4967
 msgid "Format selection"
-msgstr ""
+msgstr "選択範囲の書式設定"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1358
 msgid "Format:"
@@ -8049,7 +8049,7 @@ msgstr "リンクの有効期限が切れました"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:5099
 msgid "Link options"
-msgstr ""
+msgstr "リンクのオプション"
 
 #: packages/admin/src/components/BylineFormDialog.tsx:456
 msgid "Link this byline to a user or mark it as a guest profile."
@@ -8838,7 +8838,7 @@ msgstr ""
 
 #: packages/admin/src/components/PortableTextEditor.tsx:5245
 msgid "More formatting"
-msgstr ""
+msgstr "その他の書式設定"
 
 #: packages/admin/src/components/ImageFieldRenderer.tsx:516
 msgid "More information about {label}"
