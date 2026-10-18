@@ -6575,7 +6575,7 @@ msgstr "メディアの更新に失敗しました"
 
 #: packages/admin/src/lib/api/menus.ts:153
 msgid "Failed to update menu"
-msgstr ""
+msgstr "メニューの更新に失敗しました"
 
 #: packages/admin/src/lib/api/menus.ts:202
 msgid "Failed to update menu item"
@@ -8725,7 +8725,7 @@ msgstr "メニューの順序を更新しました。"
 
 #: packages/admin/src/components/MenuEditor.tsx:174
 msgid "Menu renamed"
-msgstr ""
+msgstr "メニュー名を変更しました"
 
 #: packages/admin/src/components/AdminCommandPalette.tsx:173
 #: packages/admin/src/components/MenuList.tsx:101
@@ -11243,7 +11243,7 @@ msgstr "{0}の名前を変更"
 #: packages/admin/src/components/MenuEditor.tsx:423
 #: packages/admin/src/components/MenuEditor.tsx:430
 msgid "Rename menu"
-msgstr ""
+msgstr "メニュー名を変更"
 
 #: packages/admin/src/components/settings/PasskeyItem.tsx:150
 msgid "Rename passkey"
@@ -12716,7 +12716,7 @@ msgstr "全{0}件中{pageShowingRange}件を表示"
 #: packages/admin/src/components/MenuEditor.tsx:455
 #: packages/admin/src/components/MenuList.tsx:159
 msgid "Shown in the admin. Some themes also show it on the site."
-msgstr ""
+msgstr "管理画面に表示されます。テーマによってはサイトにも表示されます。"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:1152
 msgid "Shown to readers in this order."
@@ -13592,7 +13592,7 @@ msgstr "メニューを削除しました。"
 #. placeholder {0}: renamed.label
 #: packages/admin/src/components/MenuEditor.tsx:175
 msgid "The menu is now called \"{0}\"."
-msgstr ""
+msgstr "メニュー名を「{0}」に変更しました。"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:281
 msgid "The name of your site, used in the header and metadata"
