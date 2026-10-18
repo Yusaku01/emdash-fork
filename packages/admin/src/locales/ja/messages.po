@@ -219,7 +219,7 @@ msgstr ""
 #: packages/admin/src/components/editor/TableControls.tsx:223
 #: packages/admin/src/components/PortableTextEditor.tsx:5372
 msgid "{0, plural, one {# row} other {# rows}} × {1, plural, one {# column} other {# columns}} selected"
-msgstr ""
+msgstr "{0, plural, one {#行} other {#行}} × {1, plural, one {#列} other {#列}}を選択中"
 
 #. placeholder {0}: selected.size
 #: packages/admin/src/components/comments/CommentInbox.tsx:261
@@ -274,7 +274,7 @@ msgstr ""
 #. placeholder {0}: state.columns
 #: packages/admin/src/components/editor/TableControls.tsx:230
 msgid "{0, plural, one {Column deleted} other {# columns deleted}}"
-msgstr ""
+msgstr "{0, plural, one {列を削除しました} other {#列を削除しました}}"
 
 #. placeholder {0}: fields.length
 #: packages/admin/src/components/ContentTypeEditor.tsx:756
@@ -294,7 +294,7 @@ msgstr ""
 #. placeholder {0}: state.rows
 #: packages/admin/src/components/editor/TableControls.tsx:228
 msgid "{0, plural, one {Row deleted} other {# rows deleted}}"
-msgstr ""
+msgstr "{0, plural, one {行を削除しました} other {#行を削除しました}}"
 
 #. placeholder {0}: names.length - SCAFFOLD_NAMES_SHOWN
 #: packages/admin/src/components/settings/transfer/ImportReview.tsx:575
@@ -498,7 +498,7 @@ msgstr ""
 
 #: packages/admin/src/components/editor/TableControls.tsx:199
 msgid "{columns, plural, one {Column deleted} other {# columns deleted}}"
-msgstr ""
+msgstr "{columns, plural, one {列を削除しました} other {#列を削除しました}}"
 
 #. placeholder {0}: rows.length
 #: packages/admin/src/components/MediaUploadDialog.tsx:311
@@ -744,7 +744,7 @@ msgstr ""
 
 #: packages/admin/src/components/editor/TableControls.tsx:122
 msgid "{previewRows} × {previewColumns} table"
-msgstr ""
+msgstr "{previewRows}行 × {previewColumns}列のテーブル"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:3323
 #: packages/admin/src/components/PortableTextEditor.tsx:3334
@@ -770,11 +770,11 @@ msgstr "<contentCount>{updatedContentItems}</contentCount>件のコンテンツ�
 
 #: packages/admin/src/components/editor/TableControls.tsx:142
 msgid "{row} × {column} table"
-msgstr ""
+msgstr "{row}行 × {column}列のテーブル"
 
 #: packages/admin/src/components/editor/TableControls.tsx:197
 msgid "{rows, plural, one {Row deleted} other {# rows deleted}}"
-msgstr ""
+msgstr "{rows, plural, one {行を削除しました} other {#行を削除しました}}"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:3563
 msgid "{rows} × {columns} table pasted"
@@ -1405,12 +1405,12 @@ msgstr ""
 
 #: packages/admin/src/components/editor/TableControls.tsx:25
 msgid "Add row above"
-msgstr ""
+msgstr "上に行を追加"
 
 #: packages/admin/src/components/editor/TableControls.tsx:25
 #: packages/admin/src/components/PortableTextEditor.tsx:5378
 msgid "Add row below"
-msgstr ""
+msgstr "下に行を追加"
 
 #: packages/admin/src/lib/api/marketplace.ts:447
 #: packages/admin/src/lib/api/marketplace.ts:458
@@ -2627,15 +2627,15 @@ msgstr "カテゴリーとタグ"
 
 #: packages/admin/src/components/editor/TableControls.tsx:28
 msgid "Cell split"
-msgstr ""
+msgstr "セルを分割しました"
 
 #: packages/admin/src/components/editor/TableControls.tsx:28
 msgid "Cells"
-msgstr ""
+msgstr "セル"
 
 #: packages/admin/src/components/editor/TableControls.tsx:28
 msgid "Cells merged"
-msgstr ""
+msgstr "セルを結合しました"
 
 #: packages/admin/src/components/editor/BlockMenu.tsx:54
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:277
@@ -3189,19 +3189,19 @@ msgstr "作成したコンテンツタイプ："
 #: packages/admin/src/components/editor/TableControls.tsx:26
 #: packages/admin/src/components/PortableTextEditor.tsx:5383
 msgid "Column added after"
-msgstr ""
+msgstr "後に列を追加しました"
 
 #: packages/admin/src/components/editor/TableControls.tsx:26
 msgid "Column added before"
-msgstr ""
+msgstr "前に列を追加しました"
 
 #: packages/admin/src/components/editor/TableControls.tsx:29
 msgid "Column width decreased"
-msgstr ""
+msgstr "列幅を縮小しました"
 
 #: packages/admin/src/components/editor/TableControls.tsx:29
 msgid "Column width increased"
-msgstr ""
+msgstr "列幅を拡大しました"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:3563
 msgid "Column width resized"
@@ -3209,7 +3209,7 @@ msgstr ""
 
 #: packages/admin/src/components/editor/TableControls.tsx:29
 msgid "Column widths reset"
-msgstr ""
+msgstr "列幅をリセットしました"
 
 #: packages/admin/src/components/editor/GalleryDetailPanel.tsx:249
 #: packages/admin/src/components/editor/TableControls.tsx:26
@@ -3219,7 +3219,7 @@ msgstr "列"
 
 #: packages/admin/src/components/editor/TableControls.tsx:29
 msgid "Columns distributed evenly"
-msgstr ""
+msgstr "列幅を均等にしました"
 
 #: packages/admin/src/components/SectionEditor.tsx:309
 msgid "Comma-separated keywords for search."
@@ -3999,7 +3999,7 @@ msgstr "現在"
 
 #: packages/admin/src/components/editor/TableControls.tsx:224
 msgid "Current cell"
-msgstr ""
+msgstr "現在のセル"
 
 #: packages/admin/src/components/revisions/RevisionList.tsx:265
 #: packages/admin/src/components/revisions/RevisionViewBar.tsx:84
@@ -4087,7 +4087,7 @@ msgstr "宣言された権限"
 
 #: packages/admin/src/components/editor/TableControls.tsx:29
 msgid "Decrease column width"
-msgstr ""
+msgstr "列幅を縮小"
 
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:299
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:354
@@ -4225,7 +4225,7 @@ msgstr "列を削除"
 
 #: packages/admin/src/components/editor/TableControls.tsx:253
 msgid "Delete columns"
-msgstr ""
+msgstr "列を削除"
 
 #: packages/admin/src/components/comments/CommentInbox.tsx:430
 msgid "Delete Comment?"
@@ -4298,7 +4298,7 @@ msgstr "行を削除"
 
 #: packages/admin/src/components/editor/TableControls.tsx:251
 msgid "Delete rows"
-msgstr ""
+msgstr "行を削除"
 
 #: packages/admin/src/components/Sections.tsx:469
 msgid "Delete section"
@@ -4624,7 +4624,7 @@ msgstr "集中モード（⌘⇧\\）"
 
 #: packages/admin/src/components/editor/TableControls.tsx:29
 msgid "Distribute columns evenly"
-msgstr ""
+msgstr "列幅を均等にする"
 
 #: packages/admin/src/components/editor/BlockMenu.tsx:46
 #: packages/admin/src/components/PortableTextEditor.tsx:2070
@@ -4637,7 +4637,7 @@ msgstr "Dockerfile"
 
 #: packages/admin/src/components/editor/TableControls.tsx:30
 msgid "Document"
-msgstr ""
+msgstr "文書"
 
 #: packages/admin/src/components/AllowedTypesEditor.tsx:66
 #: packages/admin/src/components/MediaLibrary.tsx:924
@@ -7064,27 +7064,27 @@ msgstr ""
 
 #: packages/admin/src/components/editor/TableControls.tsx:234
 msgid "Header column added"
-msgstr ""
+msgstr "ヘッダー列を設定しました"
 
 #: packages/admin/src/components/editor/TableControls.tsx:234
 msgid "Header column removed"
-msgstr ""
+msgstr "ヘッダー列の設定を解除しました"
 
 #: packages/admin/src/components/editor/TableControls.tsx:167
 msgid "Header row"
-msgstr ""
+msgstr "ヘッダー行"
 
 #: packages/admin/src/components/editor/TableControls.tsx:232
 msgid "Header row added"
-msgstr ""
+msgstr "ヘッダー行を設定しました"
 
 #: packages/admin/src/components/editor/TableControls.tsx:232
 msgid "Header row removed"
-msgstr ""
+msgstr "ヘッダー行の設定を解除しました"
 
 #: packages/admin/src/components/editor/TableControls.tsx:27
 msgid "Headers"
-msgstr ""
+msgstr "ヘッダー"
 
 #: packages/admin/src/components/editor/blockTypes.ts:85
 #: packages/admin/src/components/editor/HeadingDropdownMenu.tsx:33
@@ -7567,7 +7567,7 @@ msgstr "非互換"
 
 #: packages/admin/src/components/editor/TableControls.tsx:29
 msgid "Increase column width"
-msgstr ""
+msgstr "列幅を拡大"
 
 #: packages/admin/src/components/MediaLibrary.tsx:822
 msgid "Index existing content and keep Used in results up to date."
@@ -7660,11 +7660,11 @@ msgstr ""
 
 #: packages/admin/src/components/editor/TableControls.tsx:30
 msgid "Insert paragraph after"
-msgstr ""
+msgstr "後に段落を挿入"
 
 #: packages/admin/src/components/editor/TableControls.tsx:30
 msgid "Insert paragraph before"
-msgstr ""
+msgstr "前に段落を挿入"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:2104
 msgid "Insert raw HTML"
@@ -7677,7 +7677,7 @@ msgstr "セクションを挿入"
 #: packages/admin/src/components/editor/TableControls.tsx:169
 #: packages/admin/src/components/editor/TableControls.tsx:397
 msgid "Insert table"
-msgstr ""
+msgstr "テーブルを挿入"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4693
 msgid "Insert video"
@@ -8746,7 +8746,7 @@ msgstr "メニュー管理"
 
 #: packages/admin/src/components/editor/TableControls.tsx:28
 msgid "Merge selected cells"
-msgstr ""
+msgstr "選択したセルを結合"
 
 #: packages/admin/src/components/SeoPanel.tsx:199
 #: packages/admin/src/components/SeoPanel.tsx:203
@@ -8799,7 +8799,7 @@ msgstr ""
 
 #: packages/admin/src/components/editor/TableControls.tsx:269
 msgid "Mixed"
-msgstr ""
+msgstr "混在"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:675
 msgid "Moderation"
@@ -8858,7 +8858,7 @@ msgstr ""
 
 #: packages/admin/src/components/editor/TableControls.tsx:368
 msgid "More table actions"
-msgstr ""
+msgstr "その他のテーブル操作"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:464
 msgid "More than one post matches this link"
@@ -9051,11 +9051,11 @@ msgstr "{0}に移動しました"
 
 #: packages/admin/src/components/editor/TableControls.tsx:236
 msgid "Moved to paragraph after table"
-msgstr ""
+msgstr "テーブルの後の段落に移動しました"
 
 #: packages/admin/src/components/editor/TableControls.tsx:235
 msgid "Moved to paragraph before table"
-msgstr ""
+msgstr "テーブルの前の段落に移動しました"
 
 #. placeholder {0}: newIndex + 1
 #. placeholder {1}: images.length
@@ -10069,11 +10069,11 @@ msgstr "段落"
 
 #: packages/admin/src/components/editor/TableControls.tsx:30
 msgid "Paragraph inserted after table"
-msgstr ""
+msgstr "テーブルの後に段落を挿入しました"
 
 #: packages/admin/src/components/editor/TableControls.tsx:30
 msgid "Paragraph inserted before table"
-msgstr ""
+msgstr "テーブルの前に段落を挿入しました"
 
 #: packages/admin/src/components/MenuEditor.tsx:745
 #: packages/admin/src/components/TaxonomyManager.tsx:815
@@ -11429,7 +11429,7 @@ msgstr "リセット"
 
 #: packages/admin/src/components/editor/TableControls.tsx:29
 msgid "Reset column widths"
-msgstr ""
+msgstr "列幅をリセット"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1725
 msgid "Reset crop"
@@ -11740,17 +11740,17 @@ msgstr "ルート：{0} · 権限：{1}"
 
 #: packages/admin/src/components/editor/TableControls.tsx:25
 msgid "Row added above"
-msgstr ""
+msgstr "上に行を追加しました"
 
 #: packages/admin/src/components/editor/TableControls.tsx:25
 #: packages/admin/src/components/PortableTextEditor.tsx:5376
 msgid "Row added below"
-msgstr ""
+msgstr "下に行を追加しました"
 
 #: packages/admin/src/components/editor/TableControls.tsx:25
 #: packages/admin/src/components/editor/TableControls.tsx:162
 msgid "Rows"
-msgstr ""
+msgstr "行"
 
 #: packages/admin/src/components/editor/codeBlockLanguages.ts:49
 msgid "Ruby"
@@ -12371,7 +12371,7 @@ msgstr ""
 
 #: packages/admin/src/components/editor/TableControls.tsx:24
 msgid "Select column"
-msgstr ""
+msgstr "列を選択"
 
 #. placeholder {0}: comment.authorName
 #: packages/admin/src/components/comments/CommentInbox.tsx:481
@@ -12431,11 +12431,11 @@ msgstr "メディアを選択"
 
 #: packages/admin/src/components/editor/TableControls.tsx:24
 msgid "Select row"
-msgstr ""
+msgstr "行を選択"
 
 #: packages/admin/src/components/editor/TableControls.tsx:24
 msgid "Select table"
-msgstr ""
+msgstr "テーブルを選択"
 
 #: packages/admin/src/components/ContentList.tsx:628
 msgid "Select up to 50 posts at a time."
@@ -12480,7 +12480,7 @@ msgstr ""
 
 #: packages/admin/src/components/editor/TableControls.tsx:24
 msgid "Selection"
-msgstr ""
+msgstr "選択範囲"
 
 #: packages/admin/src/components/Settings.tsx:93
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:158
@@ -13046,7 +13046,7 @@ msgstr "スパム"
 
 #: packages/admin/src/components/editor/TableControls.tsx:28
 msgid "Split merged cell"
-msgstr ""
+msgstr "結合したセルを分割"
 
 #: packages/admin/src/components/AllowedTypesEditor.tsx:67
 msgid "Spreadsheets"
@@ -13252,16 +13252,16 @@ msgstr "テーブル操作"
 
 #: packages/admin/src/components/editor/TableControls.tsx:31
 msgid "Table deleted"
-msgstr ""
+msgstr "テーブルを削除しました"
 
 #: packages/admin/src/components/editor/TableControls.tsx:401
 #: packages/admin/src/components/PortableTextEditor.tsx:4419
 msgid "Table inserted"
-msgstr ""
+msgstr "テーブルを挿入しました"
 
 #: packages/admin/src/components/editor/TableControls.tsx:127
 msgid "Table size"
-msgstr ""
+msgstr "テーブルのサイズ"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4526
 msgid "Tables cannot be pasted inside lists or quotes. Paste the table into its own paragraph and try again."
@@ -14327,7 +14327,7 @@ msgstr ""
 
 #: packages/admin/src/components/editor/TableControls.tsx:27
 msgid "Toggle header column"
-msgstr ""
+msgstr "ヘッダー列を切り替え"
 
 #: packages/admin/src/components/editor/TableControls.tsx:27
 msgid "Toggle header row"
@@ -15531,7 +15531,7 @@ msgstr "幅"
 
 #: packages/admin/src/components/editor/TableControls.tsx:29
 msgid "Widths"
-msgstr ""
+msgstr "列幅"
 
 #: packages/admin/src/components/PluginSettings.tsx:338
 msgid "Will be cleared on save"
