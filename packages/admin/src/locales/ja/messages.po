@@ -10631,11 +10631,11 @@ msgstr "公開"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:509
 msgid "Publish changes"
-msgstr ""
+msgstr "変更を公開"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:510
 msgid "Publish changes?"
-msgstr ""
+msgstr "変更を公開しますか？"
 
 #. js-lingui-explicit-id
 #: packages/admin/src/locales/server.ts:46
@@ -10645,11 +10645,11 @@ msgstr ""
 #: packages/admin/src/components/calendar/CalendarEntryPanel.tsx:408
 #: packages/admin/src/components/ContentSettingsPanel.tsx:509
 msgid "Publish now"
-msgstr ""
+msgstr "今すぐ公開"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:510
 msgid "Publish now?"
-msgstr ""
+msgstr "今すぐ公開しますか？"
 
 #: packages/admin/src/lib/api/marketplace.ts:424
 msgid "Publish, unpublish, schedule, and unschedule content"
@@ -13887,7 +13887,7 @@ msgstr "このコンテンツは安全に編集できません"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:515
 msgid "This content will be visible on the site immediately."
-msgstr ""
+msgstr "このコンテンツはすぐにサイトに表示されます。"
 
 #: packages/admin/src/components/calendar/CalendarMonth.tsx:599
 msgid "This day wasn't loaded. The range has more entries than the calendar can show."
@@ -14143,7 +14143,7 @@ msgstr ""
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:512
 msgid "This removes the schedule and publishes immediately."
-msgstr ""
+msgstr "公開予約を解除して、今すぐ公開します。"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:515
 msgid "This saved timezone isn't recognized. Choose a suggestion for reliable date display."
@@ -15292,7 +15292,7 @@ msgstr ""
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:514
 msgid "Visitors will see these changes immediately."
-msgstr ""
+msgstr "変更内容はすぐに閲覧者に表示されます。"
 
 #: packages/admin/src/components/editor/codeBlockLanguages.ts:58
 msgid "Vue"
