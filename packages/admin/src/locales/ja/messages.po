@@ -13592,7 +13592,7 @@ msgstr "メニューを削除しました。"
 #. placeholder {0}: renamed.label
 #: packages/admin/src/components/MenuEditor.tsx:175
 msgid "The menu is now called \"{0}\"."
-msgstr ""
+msgstr "メニューの名前を「{0}」に変更しました。"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:281
 msgid "The name of your site, used in the header and metadata"
