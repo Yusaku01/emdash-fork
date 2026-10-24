@@ -183,7 +183,7 @@ msgstr "{0, plural, one {#件のメニューがインポートされます} othe
 #. placeholder {0}: capabilities.length
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:226
 msgid "{0, plural, one {# permission requested} other {# permissions requested}}"
-msgstr ""
+msgstr "{0, plural, one {#件の権限が要求されています} other {#件の権限が要求されています}}"
 
 #. placeholder {0}: plugin.capabilities.length
 #: packages/admin/src/components/MarketplaceBrowse.tsx:290
@@ -466,7 +466,7 @@ msgstr "{0}が表示されるすべての箇所を更新しました。"
 #. placeholder {0}: plugin.name
 #: packages/admin/src/components/PluginManager.tsx:307
 msgid "{0} updated to v{installedVersion}"
-msgstr ""
+msgstr "{0}をv{installedVersion}に更新しました"
 
 #. placeholder {0}: draft.description.length
 #: packages/admin/src/components/SeoPanel.tsx:215
@@ -1421,7 +1421,7 @@ msgstr "下に行を追加"
 #: packages/admin/src/lib/api/marketplace.ts:447
 #: packages/admin/src/lib/api/marketplace.ts:458
 msgid "Add scripts and styles to your site's pages"
-msgstr ""
+msgstr "サイトのページにスクリプトとスタイルを追加"
 
 #: packages/admin/src/components/ContentPickerModal.tsx:390
 msgid "Add selected"
@@ -1571,7 +1571,7 @@ msgstr "高度なブロック"
 
 #: packages/admin/src/components/EditorDraftPatchPreview.tsx:67
 msgid "After"
-msgstr ""
+msgstr "変更後"
 
 #: packages/admin/src/components/settings/EmailSettings.tsx:192
 msgid "After send:"
@@ -1579,12 +1579,12 @@ msgstr "送信後："
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:136
 msgid "After you explicitly invoke this plugin, it can send selected unsaved editor content to external websites without a host restriction."
-msgstr ""
+msgstr "このプラグインを明示的に実行すると、エディターで選択した未保存のコンテンツを、ホストの制限なく外部サイトに送信できるようになります。"
 
 #. placeholder {0}: allowedHosts.join(", ")
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:135
 msgid "After you explicitly invoke this plugin, it can send selected unsaved editor content to: {0}"
-msgstr ""
+msgstr "このプラグインを明示的に実行すると、エディターで選択した未保存のコンテンツを次の送信先に送信できるようになります：{0}"
 
 #: packages/admin/src/routes/calendar.tsx:308
 msgid "Agenda"
@@ -1904,7 +1904,7 @@ msgstr "適用"
 
 #: packages/admin/src/components/EditorDraftPatchPreview.tsx:81
 msgid "Apply changes"
-msgstr ""
+msgstr "変更を適用"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:5017
 #: packages/admin/src/components/PortableTextEditor.tsx:5793
@@ -1925,7 +1925,7 @@ msgstr "承認"
 
 #: packages/admin/src/lib/api/marketplace.ts:427
 msgid "Approve comments and mark them as pending or spam"
-msgstr ""
+msgstr "コメントを承認し、承認待ちまたはスパムに設定"
 
 #: packages/admin/src/components/settings/transfer/ApprovalsSection.tsx:155
 msgid "Approve this export?"
@@ -2084,7 +2084,7 @@ msgstr "デバイスを承認"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:208
 msgid "Authorized approvers"
-msgstr ""
+msgstr "承認権限の付与先"
 
 #: packages/admin/src/components/DeviceAuthorizePage.tsx:297
 msgid "Authorizing..."
@@ -2278,7 +2278,7 @@ msgstr "基本ブロック"
 
 #: packages/admin/src/components/EditorDraftPatchPreview.tsx:61
 msgid "Before"
-msgstr ""
+msgstr "変更前"
 
 #: packages/admin/src/components/settings/EmailSettings.tsx:187
 msgid "Before send:"
@@ -2394,7 +2394,7 @@ msgstr "アップロードするファイルを選択"
 
 #: packages/admin/src/components/PluginManager.tsx:74
 msgid "Browse the <0>registry</0> to install plugins."
-msgstr ""
+msgstr "<0>レジストリ</0>でプラグインを探してインストールできます。"
 
 #: packages/admin/src/components/ThemeMarketplaceBrowse.tsx:79
 msgid "Browse themes and preview them with your own content."
@@ -2402,7 +2402,7 @@ msgstr "テーマを探し、サイトのコンテンツでプレビューでき
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:159
 msgid "Build provenance verified"
-msgstr ""
+msgstr "ビルド来歴を検証済み"
 
 #: packages/admin/src/components/editor/blockTypes.ts:93
 #: packages/admin/src/components/PortableTextEditor.tsx:2051
@@ -2696,7 +2696,7 @@ msgstr "予約を変更"
 
 #: packages/admin/src/lib/api/marketplace.ts:436
 msgid "Change where visitors are sent"
-msgstr ""
+msgstr "訪問者のリダイレクト先を変更"
 
 #: packages/admin/src/components/revisions/change-labels.ts:110
 msgid "Changed {label}"
@@ -2794,19 +2794,19 @@ msgstr "更新を確認"
 
 #: packages/admin/src/components/RegistryConfigurationBanner.tsx:23
 msgid "Check registry in astro.config.mjs, then restart EmDash."
-msgstr ""
+msgstr "astro.config.mjsのregistryを確認し、EmDashを再起動してください。"
 
 #: packages/admin/src/components/RegistryConfigurationBanner.tsx:14
 msgid "Check registry.aggregatorUrl in astro.config.mjs, then restart EmDash."
-msgstr ""
+msgstr "astro.config.mjsのregistry.aggregatorUrlを確認し、EmDashを再起動してください。"
 
 #: packages/admin/src/components/RegistryConfigurationBanner.tsx:17
 msgid "Check registry.policy.minimumReleaseAge in astro.config.mjs, then restart EmDash."
-msgstr ""
+msgstr "astro.config.mjsのregistry.policy.minimumReleaseAgeを確認し、EmDashを再起動してください。"
 
 #: packages/admin/src/components/RegistryConfigurationBanner.tsx:20
 msgid "Check registry.policy.minimumReleaseAgeExclude in astro.config.mjs, then restart EmDash."
-msgstr ""
+msgstr "astro.config.mjsのregistry.policy.minimumReleaseAgeExcludeを確認し、EmDashを再起動してください。"
 
 #: packages/admin/src/components/WordPressImport.tsx:1145
 msgid "Check Site"
@@ -3310,12 +3310,12 @@ msgstr "{0}に接続"
 #: packages/admin/src/lib/api/marketplace.ts:443
 #: packages/admin/src/lib/api/marketplace.ts:455
 msgid "Connect to any network host and load external plugin admin images (unrestricted)"
-msgstr ""
+msgstr "任意のネットワークホストへの接続と、プラグイン管理画面の外部画像の読み込み（制限なし）"
 
 #: packages/admin/src/lib/api/marketplace.ts:442
 #: packages/admin/src/lib/api/marketplace.ts:454
 msgid "Connect to network hosts and load external plugin admin images"
-msgstr ""
+msgstr "ネットワークホストへの接続と、プラグイン管理画面の外部画像の読み込み"
 
 #: packages/admin/src/components/WordPressImport.tsx:1427
 msgid "Connect with WordPress"
@@ -3864,7 +3864,7 @@ msgstr "分類グループを作成"
 
 #: packages/admin/src/lib/api/marketplace.ts:433
 msgid "Create taxonomy terms and change content classifications"
-msgstr ""
+msgstr "分類項目を作成し、コンテンツの分類を変更"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:253
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:561
@@ -4389,7 +4389,7 @@ msgstr "削除中…"
 #: packages/admin/src/lib/api/marketplace.ts:446
 #: packages/admin/src/lib/api/marketplace.ts:457
 msgid "Deliver all email your site sends"
-msgstr ""
+msgstr "サイトが送信するすべてのメールを配信"
 
 #: packages/admin/src/components/ThemeMarketplaceBrowse.tsx:254
 #: packages/admin/src/components/ThemeMarketplaceDetail.tsx:147
@@ -5012,7 +5012,7 @@ msgstr "編集中のロック"
 
 #: packages/admin/src/lib/api/marketplace.ts:439
 msgid "Edit media alt text, captions, and focal points"
-msgstr ""
+msgstr "メディアの代替テキスト、キャプション、画像の焦点を編集"
 
 #: packages/admin/src/components/MenuEditor.tsx:696
 msgid "Edit Menu Item"
@@ -5634,7 +5634,7 @@ msgstr "ドメインの変更に失敗しました"
 
 #: packages/admin/src/lib/api/marketplace.ts:401
 msgid "Failed to check for updates"
-msgstr ""
+msgstr "更新の確認に失敗しました"
 
 #: packages/admin/src/components/SandboxedPluginPage.tsx:78
 msgid "Failed to communicate with plugin"
@@ -6146,7 +6146,7 @@ msgstr "サイトのドメインの取得に失敗しました"
 
 #: packages/admin/src/lib/api/theme-marketplace.ts:99
 msgid "Failed to fetch theme"
-msgstr ""
+msgstr "テーマの取得に失敗しました"
 
 #: packages/admin/src/lib/api/content.ts:113
 msgid "Failed to fetch translations"
@@ -6673,7 +6673,7 @@ msgstr "認証の検証に失敗しました"
 
 #: packages/admin/src/lib/api/registry.ts:734
 msgid "Failed to verify plugin"
-msgstr ""
+msgstr "プラグインの検証に失敗しました"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:412
 msgid "Failed to verify registration"
@@ -7084,7 +7084,7 @@ msgstr "ゲスト執筆者のみ"
 
 #: packages/admin/src/components/RegistryPluginIdentity.tsx:98
 msgid "Handle unavailable"
-msgstr ""
+msgstr "ハンドルが利用できません"
 
 #: packages/admin/src/components/editor/TableControls.tsx:234
 msgid "Header column added"
@@ -7734,7 +7734,7 @@ msgstr "インストール"
 
 #: packages/admin/src/components/RegistryBrowse.tsx:226
 msgid "Installation is unavailable."
-msgstr ""
+msgstr "インストールできません。"
 
 #: packages/admin/src/components/MarketplaceBrowse.tsx:263
 #: packages/admin/src/components/MarketplacePluginDetail.tsx:195
@@ -7763,7 +7763,7 @@ msgstr "整数"
 
 #: packages/admin/src/components/RegistryPluginIdentity.tsx:79
 msgid "INVALID HANDLE"
-msgstr ""
+msgstr "無効なハンドル"
 
 #: packages/admin/src/components/InviteAcceptPage.tsx:157
 msgid "Invalid invite link"
@@ -8029,7 +8029,7 @@ msgstr "これ以降のコンテンツは読み込まれていません。この
 
 #: packages/admin/src/components/PluginManager.tsx:88
 msgid "Learn how to install plugins in the <0>documentation<1/></0>."
-msgstr ""
+msgstr "プラグインのインストール方法は<0>ドキュメント<1/></0>を参照してください。"
 
 #: packages/admin/src/components/settings/BackupSettings.tsx:354
 msgid "Learn more"
@@ -8293,7 +8293,7 @@ msgstr "メニューを読み込み中…"
 
 #: packages/admin/src/components/SandboxedContentEditorPanel.tsx:258
 msgid "Loading plugin panel"
-msgstr ""
+msgstr "プラグインパネルを読み込み中"
 
 #: packages/admin/src/components/PluginManager.tsx:181
 msgid "Loading plugins..."
@@ -8567,11 +8567,11 @@ msgstr "マーケットプレイスの閲覧は終了しました。インスト
 
 #: packages/admin/src/components/MarketplaceMigrationBanner.tsx:14
 msgid "Marketplace configuration is deprecated"
-msgstr ""
+msgstr "マーケットプレイスの設定は非推奨です"
 
 #: packages/admin/src/lib/api/marketplace.ts:311
 msgid "Marketplace search failed"
-msgstr ""
+msgstr "マーケットプレイスの検索に失敗しました"
 
 #: packages/admin/src/components/settings/transfer/ImportReview.tsx:339
 msgid "Matched by email"
@@ -8800,7 +8800,7 @@ msgstr "メタタイトル、ディスクリプション、ソーシャル画像
 
 #: packages/admin/src/components/MarketplaceMigrationBanner.tsx:18
 msgid "Migration guide"
-msgstr ""
+msgstr "移行ガイド"
 
 #: packages/admin/src/components/WordPressImport.tsx:1099
 msgid "Migration key"
@@ -9222,7 +9222,7 @@ msgstr "新しいフォルダー"
 
 #: packages/admin/src/components/MarketplaceMigrationBanner.tsx:15
 msgid "New plugin discovery uses the registry. Existing marketplace plugins can still be updated or uninstalled while you switch over."
-msgstr ""
+msgstr "新しいプラグインはレジストリで探せます。移行中も、既存のマーケットプレイスのプラグインは更新やアンインストールが可能です。"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:276
 msgid "New public routes"
@@ -10352,11 +10352,11 @@ msgstr ""
 #: packages/admin/src/components/SandboxedContentEditorActions.tsx:121
 #: packages/admin/src/components/SandboxedContentEditorActions.tsx:154
 msgid "Plugin action failed"
-msgstr ""
+msgstr "プラグインのアクションに失敗しました"
 
 #: packages/admin/src/components/SandboxedContentEditorActions.tsx:242
 msgid "Plugin actions"
-msgstr ""
+msgstr "プラグインのアクション"
 
 #: packages/admin/src/components/ContentEditor.tsx:1836
 msgid "Plugin changes were not applied"
@@ -10389,7 +10389,7 @@ msgstr "プラグインエラー（{0}）"
 
 #: packages/admin/src/lib/api/marketplace.ts:120
 msgid "Plugin installation requires explicit consent"
-msgstr ""
+msgstr "プラグインのインストールには明示的な同意が必要です"
 
 #: packages/admin/src/components/PluginManager.tsx:408
 msgid "Plugin MCP access updated"
@@ -10432,7 +10432,7 @@ msgstr "プラグインレジストリ"
 #: packages/admin/src/components/RegistryConfigurationBanner.tsx:30
 #: packages/admin/src/components/RegistryConfigurationBanner.tsx:31
 msgid "Plugin registry configuration error"
-msgstr ""
+msgstr "プラグインレジストリの設定エラー"
 
 #: packages/admin/src/router.tsx:2675
 #: packages/admin/src/router.tsx:2706
@@ -10612,7 +10612,7 @@ msgstr "非公開"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:183
 msgid "Profile CID"
-msgstr ""
+msgstr "プロフィールCID"
 
 #: packages/admin/src/components/settings/transfer/ExportSection.tsx:347
 #: packages/admin/src/components/settings/transfer/ImportSection.tsx:477
@@ -10625,15 +10625,15 @@ msgstr "処理が停止しました"
 
 #: packages/admin/src/lib/api/marketplace.ts:430
 msgid "Propose unsaved changes to selected editor fields for your review"
-msgstr ""
+msgstr "エディターで選択したフィールドへの未保存の変更を提案し、確認を求める"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:199
 msgid "Provenance optional"
-msgstr ""
+msgstr "ビルド来歴は任意"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:198
 msgid "Provenance required"
-msgstr ""
+msgstr "ビルド来歴は必須"
 
 #: packages/admin/src/components/settings/EmailSettings.tsx:168
 msgid "Provider:"
@@ -10641,7 +10641,7 @@ msgstr "使用中のメール送信サービス："
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:276
 msgid "Public routes"
-msgstr ""
+msgstr "公開ルート"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:987
 #: packages/admin/src/components/ContentSettingsPanel.tsx:992
@@ -10690,7 +10690,7 @@ msgstr "今すぐ公開しますか？"
 
 #: packages/admin/src/lib/api/marketplace.ts:424
 msgid "Publish, unpublish, schedule, and unschedule content"
-msgstr ""
+msgstr "コンテンツの公開、非公開化、公開予約、予約取り消し"
 
 #: packages/admin/src/components/calendar/CalendarEntry.tsx:43
 #: packages/admin/src/components/calendar/CalendarEntryPanel.tsx:180
@@ -10736,19 +10736,19 @@ msgstr "公開者：<0/>"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:202
 msgid "Publisher approval required for every delegated release"
-msgstr ""
+msgstr "委任されたリリースには毎回公開者の承認が必要"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:203
 msgid "Publisher approval required only for permission escalation"
-msgstr ""
+msgstr "権限を拡張する場合のみ公開者の承認が必要"
 
 #: packages/admin/src/components/RegistryPluginDetail.tsx:663
 msgid "Publisher handle verification failed"
-msgstr ""
+msgstr "公開者のハンドルの検証に失敗しました"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:195
 msgid "Publisher release policy"
-msgstr ""
+msgstr "公開者のリリースポリシー"
 
 #: packages/admin/src/components/calendar/CalendarEntryPanel.tsx:355
 msgid "Publishing"
@@ -10797,15 +10797,15 @@ msgstr "未加工のメタデータ"
 #: packages/admin/src/lib/api/marketplace.ts:445
 #: packages/admin/src/lib/api/marketplace.ts:456
 msgid "Read and change email your site sends"
-msgstr ""
+msgstr "サイトが送信するメールの読み取りと変更"
 
 #: packages/admin/src/lib/api/marketplace.ts:425
 msgid "Read and restore trashed content"
-msgstr ""
+msgstr "ゴミ箱にあるコンテンツの読み取りと復元"
 
 #: packages/admin/src/lib/api/marketplace.ts:428
 msgid "Read collection and field definitions"
-msgstr ""
+msgstr "コンテンツタイプとフィールドの定義の読み取り"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:68
 msgid "Read collection schemas"
@@ -10813,7 +10813,7 @@ msgstr "コンテンツタイプの構造を参照する"
 
 #: packages/admin/src/lib/api/marketplace.ts:426
 msgid "Read comment bodies, author email addresses, pseudonymous IP hashes, user agents, and moderation metadata"
-msgstr ""
+msgstr "コメント本文、投稿者のメールアドレス、仮名化されたIPハッシュ、ユーザーエージェント、モデレーションのメタデータの読み取り"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:48
 msgid "Read content entries"
@@ -10821,7 +10821,7 @@ msgstr "コンテンツを取得する"
 
 #: packages/admin/src/lib/api/marketplace.ts:438
 msgid "Read media file contents"
-msgstr ""
+msgstr "メディアファイルの内容の読み取り"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:58
 msgid "Read media files"
@@ -10829,19 +10829,19 @@ msgstr "メディアファイルを取得する"
 
 #: packages/admin/src/lib/api/marketplace.ts:434
 msgid "Read public byline profiles and content credits"
-msgstr ""
+msgstr "公開されている執筆者プロフィールとコンテンツの執筆者表記の読み取り"
 
 #: packages/admin/src/lib/api/marketplace.ts:435
 msgid "Read redirect rules"
-msgstr ""
+msgstr "リダイレクトルールの読み取り"
 
 #: packages/admin/src/lib/api/marketplace.ts:422
 msgid "Read retained content revision history"
-msgstr ""
+msgstr "保存されているコンテンツの変更履歴の読み取り"
 
 #: packages/admin/src/lib/api/marketplace.ts:429
 msgid "Read selected unsaved editor content after you explicitly invoke the plugin"
-msgstr ""
+msgstr "プラグインを明示的に実行した後に、エディターで選択した未保存のコンテンツを読み取る"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:88
 msgid "Read site settings"
@@ -11045,7 +11045,7 @@ msgstr "関連付け"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:189
 msgid "Release CID"
-msgstr ""
+msgstr "リリースCID"
 
 #: packages/admin/src/components/RegistryPluginDetail.tsx:694
 msgid "Release is too new to install"
@@ -11519,7 +11519,7 @@ msgstr "続行するには、インポートを妨げる問題を解決してく
 
 #: packages/admin/src/components/RegistryPluginIdentity.tsx:100
 msgid "Resolving publisher handle..."
-msgstr ""
+msgstr "公開者のハンドルを解決中..."
 
 #: packages/admin/src/components/editor/BlockMenu.tsx:193
 #: packages/admin/src/components/PortableTextEditor.tsx:6403
@@ -11646,7 +11646,7 @@ msgstr "確認"
 
 #: packages/admin/src/lib/api/marketplace.ts:431
 msgid "Review and block publishing, scheduling, and unpublishing content"
-msgstr ""
+msgstr "コンテンツの公開、公開予約、非公開化の確認とブロック"
 
 #: packages/admin/src/components/comments/CommentInbox.tsx:163
 msgid "Review and moderate comments across your content."
@@ -11663,7 +11663,7 @@ msgstr "投稿を確認"
 
 #: packages/admin/src/components/EditorDraftPatchPreview.tsx:51
 msgid "Review proposed changes"
-msgstr ""
+msgstr "提案された変更を確認"
 
 #: packages/admin/src/components/settings/transfer/ImportReview.tsx:249
 msgid "Review the import"
@@ -11671,15 +11671,15 @@ msgstr "インポート内容を確認"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:113
 msgid "Review the independently verified release evidence and permissions for {pluginName} before continuing."
-msgstr ""
+msgstr "続行する前に、{pluginName}のリリースに関する独立した検証の結果と、要求する権限を確認してください。"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:106
 msgid "Review Verified Plugin"
-msgstr ""
+msgstr "検証済みプラグインを確認"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:105
 msgid "Review Verified Update"
-msgstr ""
+msgstr "検証済み更新を確認"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:574
 msgid "Reviewing…"
@@ -11858,7 +11858,7 @@ msgstr "変更を保存"
 #: packages/admin/src/components/SandboxedContentEditorActions.tsx:226
 #: packages/admin/src/components/SandboxedContentEditorActions.tsx:245
 msgid "Save changes before running plugin actions"
-msgstr ""
+msgstr "プラグインのアクションを実行する前に変更を保存してください"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:92
 msgid "Save content as draft before publishing"
@@ -12063,7 +12063,7 @@ msgstr "スクリーンショット"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:234
 msgid "Scroll to review all"
-msgstr ""
+msgstr "スクロールしてすべて確認"
 
 #: packages/admin/src/components/editor/codeBlockLanguages.ts:51
 msgid "SCSS"
@@ -12397,7 +12397,7 @@ msgstr "関連付けを選択"
 
 #: packages/admin/src/components/RegistryPluginDetail.tsx:401
 msgid "Select a release before verifying it"
-msgstr ""
+msgstr "検証するリリースを選択してください"
 
 #: packages/admin/src/components/comments/CommentInbox.tsx:321
 msgid "Select all"
@@ -12540,7 +12540,7 @@ msgstr "新しいチームメンバーに招待メールを送信します。"
 
 #: packages/admin/src/lib/api/marketplace.ts:444
 msgid "Send email through your site"
-msgstr ""
+msgstr "サイトを通じてメールを送信"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:583
 msgid "Send emails"
@@ -12826,7 +12826,7 @@ msgstr "{0}としてログイン中"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:160
 msgid "Signed release verified"
-msgstr ""
+msgstr "署名付きリリースを検証済み"
 
 #: packages/admin/src/components/MagicLinkConfirmPage.tsx:56
 msgid "Signing in failed. Please try again."
@@ -13397,7 +13397,7 @@ msgstr "技術的な詳細"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:172
 msgid "Technical verification details"
-msgstr ""
+msgstr "技術的な検証の詳細"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:340
 msgid "Tell users where to sign in"
@@ -13491,7 +13491,7 @@ msgstr "通常、ブラウザーにQRコードが表示されます。"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:164
 msgid "The build provenance matches this release and its package."
-msgstr ""
+msgstr "ビルド来歴は、このリリースとパッケージに一致しています。"
 
 #: packages/admin/src/routes/calendar.tsx:356
 msgid "The calendar shows the first {maxEntries}, which end on {cutOffDay}."
@@ -13750,7 +13750,7 @@ msgstr "プラグインのフィールドウィジェットを表示できませ
 
 #: packages/admin/src/components/EditorDraftPatchPreview.tsx:53
 msgid "The plugin has not saved these changes. Review them before updating the editor."
-msgstr ""
+msgstr "プラグインはこれらの変更を保存していません。エディターに反映する前に確認してください。"
 
 #: packages/admin/src/components/ContentEditor.tsx:1089
 #: packages/admin/src/components/ContentEditor.tsx:1105
@@ -13764,7 +13764,7 @@ msgstr "メールとプラグイン内のリンク、サイトマップ、検索
 #: packages/admin/src/components/RegistryBrowse.tsx:219
 #: packages/admin/src/components/RegistryPluginDetail.tsx:544
 msgid "The publisher identity cannot be verified."
-msgstr ""
+msgstr "公開者の識別情報を検証できません。"
 
 #: packages/admin/src/components/calendar/CalendarAgenda.tsx:71
 msgid "The range has more entries than the calendar can show."
@@ -13813,7 +13813,7 @@ msgstr "処理中にサーバーが更新されました。ページを再読み
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:165
 msgid "The signed publisher records and package are valid. Build provenance was not provided."
-msgstr ""
+msgstr "署名付きの公開者レコードとパッケージは有効です。ビルド来歴は提供されていません。"
 
 #: packages/admin/src/components/settings/transfer/labels.ts:179
 msgid "The site kept changing while it was exported. Try again when editing is quieter."
@@ -13878,7 +13878,7 @@ msgstr "テーマが見つかりません"
 
 #: packages/admin/src/lib/api/theme-marketplace.ts:87
 msgid "Theme search failed"
-msgstr ""
+msgstr "テーマの検索に失敗しました"
 
 #: packages/admin/src/components/SectionEditor.tsx:205
 msgid "Theme Section"
@@ -14145,19 +14145,19 @@ msgstr "ストレージからバックアップ「{0}」を完全に削除しま
 
 #: packages/admin/src/lib/api/registry.ts:748
 msgid "This plugin cannot be installed because its publisher profile is missing valid verification metadata. Ask the publisher to republish it with the latest EmDash plugin CLI."
-msgstr ""
+msgstr "公開者プロフィールに有効な検証メタデータがないため、このプラグインはインストールできません。最新のEmDashプラグインCLIで再公開するよう、公開者に依頼してください。"
 
 #: packages/admin/src/lib/api/registry.ts:756
 msgid "This plugin cannot be installed because its release provenance could not be verified. Ask the publisher to publish a new verified release."
-msgstr ""
+msgstr "リリースの来歴を検証できなかったため、このプラグインはインストールできません。検証可能な新しいリリースを公開するよう、公開者に依頼してください。"
 
 #: packages/admin/src/lib/api/registry.ts:760
 msgid "This plugin cannot be installed because its signed publisher records failed verification. Ask the publisher to publish a corrected release."
-msgstr ""
+msgstr "署名付きの公開者レコードの検証に失敗したため、このプラグインはインストールできません。修正したリリースを公開するよう、公開者に依頼してください。"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:281
 msgid "This plugin exposes the following routes without authentication:"
-msgstr ""
+msgstr "このプラグインでは、次のルートに認証なしでアクセスできます："
 
 #: packages/admin/src/components/PluginSettings.tsx:177
 msgid "This plugin has no configurable settings."
@@ -14173,11 +14173,11 @@ msgstr "このプラグインに特別な権限は不要です。"
 
 #: packages/admin/src/components/PluginManager.tsx:470
 msgid "This publisher identity no longer resolves."
-msgstr ""
+msgstr "この公開者のIDは解決できなくなっています。"
 
 #: packages/admin/src/components/RegistryPluginDetail.tsx:665
 msgid "This publisher's handle does not resolve back to its identity. Installation is disabled until the publisher fixes their handle."
-msgstr ""
+msgstr "この公開者のハンドルの解決結果が、公開者のIDと一致しません。公開者がハンドルを修正するまでインストールは無効です。"
 
 #: packages/admin/src/routes/calendar.tsx:353
 msgid "This range has more than {maxEntries} entries"
@@ -14768,7 +14768,7 @@ msgstr "未保存"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:131
 msgid "Unsaved content may leave your site"
-msgstr ""
+msgstr "未保存のコンテンツがサイトの外部に送信される可能性があります"
 
 #: packages/admin/src/router.tsx:1610
 msgid "Unscheduled"
@@ -15224,11 +15224,11 @@ msgstr "検証済み"
 
 #: packages/admin/src/components/RegistryPluginIdentity.tsx:68
 msgid "Verified publisher"
-msgstr ""
+msgstr "検証済みの公開者"
 
 #: packages/admin/src/components/RegistryPluginDetail.tsx:418
 msgid "Verify the plugin before installing it"
-msgstr ""
+msgstr "インストールする前にプラグインを検証してください"
 
 #: packages/admin/src/components/settings/transfer/labels.ts:65
 msgid "Verifying the import"
@@ -15629,7 +15629,7 @@ msgstr "{selectedCount}件を処理中…"
 
 #: packages/admin/src/components/SandboxedContentEditorActions.tsx:282
 msgid "Working…"
-msgstr ""
+msgstr "処理中…"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:60
 msgid "Write CSS…"
