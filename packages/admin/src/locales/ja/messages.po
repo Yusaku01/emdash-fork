@@ -545,7 +545,7 @@ msgstr "{earlierCount, plural, one {以前の#件を表示} other {以前の#件
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:162
 msgid "{failed, plural, one {# email could not be sent. Check the email provider.} other {# emails could not be sent. Check the email provider.}}"
-msgstr ""
+msgstr "{failed, plural, one {#件のメールを送信できませんでした。メールプロバイダーを確認してください。} other {#件のメールを送信できませんでした。メールプロバイダーを確認してください。}}"
 
 #: packages/admin/src/components/MediaUploadDialog.tsx:198
 msgid "{failedCount, plural, one {# upload failed} other {# uploads failed}}"
@@ -575,7 +575,7 @@ msgstr "{hiddenCount, plural, one {さらに#件を表示} other {さらに#件�
 
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:38
 msgid "{host} does not resolve to a public address"
-msgstr ""
+msgstr "{host}の名前解決結果が公開アドレスではありません"
 
 #: packages/admin/src/components/MediaImportSummary.tsx:9
 msgid "{importedFiles, plural, one {<count>#</count> file imported} other {<count>#</count> files imported}}"
@@ -694,15 +694,15 @@ msgstr "{needsNewFields, plural, one {既存のコンテンツタイプ#件に�
 
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:49
 msgid "{origin} does not serve this site yet"
-msgstr ""
+msgstr "{origin}ではまだこのサイトが配信されていません"
 
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:47
 msgid "{origin} redirects elsewhere"
-msgstr ""
+msgstr "{origin}は別の場所にリダイレクトされます"
 
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:46
 msgid "{origin} redirects to {target}. Enter that address instead."
-msgstr ""
+msgstr "{origin}は{target}にリダイレクトされます。代わりにそちらのアドレスを入力してください。"
 
 #: packages/admin/src/components/Dashboard.tsx:158
 msgid "{overdueCount, plural, one {One scheduled item is overdue and the scheduler heartbeat is stale. Run `npx emdash doctor` and verify the deployed Cron Trigger.} other {# scheduled items are overdue and the scheduler heartbeat is stale. Run `npx emdash doctor` and verify the deployed Cron Trigger.}}"
@@ -790,7 +790,7 @@ msgstr "{selectedCount, plural, one {#件のコンテンツをゴミ箱に移動
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:159
 msgid "{sent, plural, one {Emailed # user} other {Emailed # users}}"
-msgstr ""
+msgstr "{sent, plural, one {#人のユーザーにメールを送信しました} other {#人のユーザーにメールを送信しました}}"
 
 #: packages/admin/src/locales/emails.ts:71
 msgid "{siteName} has moved to {siteHost}"
@@ -1545,7 +1545,7 @@ msgstr "追加情報"
 
 #: packages/admin/src/components/settings/SeoSettings.tsx:282
 msgid "Adds rules to robots.txt that ask AI crawlers not to use this site for training. Search engines can still index it."
-msgstr ""
+msgstr "AIクローラーにこのサイトを学習に使用しないよう求めるルールをrobots.txtに追加します。検索エンジンによるインデックス登録は引き続き可能です。"
 
 #: packages/admin/src/components/WordPressImport.tsx:1538
 msgid "admin"
@@ -2666,7 +2666,7 @@ msgstr "<0>{0}</0>を<1>{1}</1>から<2>{2}</2>に変更しますか？上位レ
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:109
 #: packages/admin/src/components/settings/GeneralSettings.tsx:315
 msgid "Change domain"
-msgstr ""
+msgstr "ドメインを変更"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:451
 msgid "Change Favicon"
@@ -2786,7 +2786,7 @@ msgstr "ページタイトルとサイト名の間に表示する文字（例：
 
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:182
 msgid "Check and switch"
-msgstr ""
+msgstr "確認して切り替え"
 
 #: packages/admin/src/components/PluginManager.tsx:212
 msgid "Check for updates"
@@ -2873,7 +2873,7 @@ msgstr "このサイトを確認中"
 
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:182
 msgid "Checking…"
-msgstr ""
+msgstr "確認中…"
 
 #: packages/admin/src/components/TaxonomySidebar.tsx:395
 #: packages/admin/src/components/TaxonomySidebar.tsx:396
@@ -2905,7 +2905,7 @@ msgstr "空ではない{0}画像を選んでください。"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:517
 msgid "Choose a recognized timezone for reliable date display."
-msgstr ""
+msgstr "日付を正しく表示するには、有効なタイムゾーンを選択してください。"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:184
 msgid "Choose a term and enter between 1 and 50 posts."
@@ -3458,7 +3458,7 @@ msgstr "番号を継続"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:332
 msgid "Continue on {handoverHost}"
-msgstr ""
+msgstr "{handoverHost}で続行"
 
 #: packages/admin/src/components/MagicLinkConfirmPage.tsx:72
 msgid "Continue to finish signing in. The link works only once."
@@ -3600,7 +3600,7 @@ msgstr "公開できませんでした"
 
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:43
 msgid "Could not reach {origin}"
-msgstr ""
+msgstr "{origin}に接続できませんでした"
 
 #: packages/admin/src/components/calendar/CalendarEntryPanel.tsx:198
 msgid "Could not remove the schedule"
@@ -4549,7 +4549,7 @@ msgstr "無効化中…"
 #: packages/admin/src/components/settings/SeoSettings.tsx:280
 #: packages/admin/src/components/settings/SeoSettings.tsx:290
 msgid "Disallow AI training"
-msgstr ""
+msgstr "AIの学習を許可しない"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1906
 msgid "Discard"
@@ -4666,7 +4666,7 @@ msgstr "ドメインを追加しました"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:216
 msgid "Domain changed to {url}"
-msgstr ""
+msgstr "ドメインを{url}に変更しました"
 
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:120
 msgid "Domain removed"
@@ -5148,11 +5148,11 @@ msgstr "メールアドレス"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:581
 msgid "Email all users?"
-msgstr ""
+msgstr "すべてのユーザーにメールを送信しますか？"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:344
 msgid "Email every other user a link to the sign-in page at {siteHost}."
-msgstr ""
+msgstr "自分以外のすべてのユーザーに、{siteHost}のログインページへのリンクをメールで送信します。"
 
 #: packages/admin/src/components/SetupWizard.tsx:242
 #: packages/admin/src/components/SignupPage.tsx:69
@@ -5178,7 +5178,7 @@ msgstr "メール設定"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:354
 msgid "Email users"
-msgstr ""
+msgstr "ユーザーにメールを送信"
 
 #: packages/admin/src/components/users/UserDetail.tsx:254
 msgid "Email verified"
@@ -5316,7 +5316,7 @@ msgstr "表示名を入力してください。"
 
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:89
 msgid "Enter a domain such as example.com, without a path or port"
-msgstr ""
+msgstr "example.comのように、パスやポートを含めずにドメインを入力してください"
 
 #: packages/admin/src/components/BylineFormDialog.tsx:288
 msgid "Enter a full URL that starts with https:// or http://."
@@ -5324,7 +5324,7 @@ msgstr "https://またはhttp://で始まる完全なURLを入力してくださ
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:521
 msgid "Enter a recognized timezone to save"
-msgstr ""
+msgstr "保存するには有効なタイムゾーンを入力してください"
 
 #: packages/admin/src/components/BylineFormDialog.tsx:283
 msgid "Enter a slug."
@@ -5373,7 +5373,7 @@ msgstr "ターミナルに表示されたコードを入力"
 
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:121
 msgid "Enter the domain below. EmDash checks that it serves this site before switching."
-msgstr ""
+msgstr "下にドメインを入力してください。EmDashは切り替え前に、そのドメインでこのサイトが配信されているか確認します。"
 
 #: packages/admin/src/components/editor/PluginBlockNode.tsx:127
 #: packages/admin/src/components/editor/PluginBlockNode.tsx:136
@@ -5455,7 +5455,7 @@ msgstr "インポートしたすべてのレコードとメディアファイル
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:582
 msgid "Every other user with an active account gets an email saying the site is now at {siteHost}, with a link to sign in there. Passkeys from another address don't work at {siteHost}, so users sign in with an email link and add a new passkey."
-msgstr ""
+msgstr "自分以外の有効なアカウントを持つすべてのユーザーに、サイトが{siteHost}に移転したことを知らせるメールとログイン用のリンクが送信されます。別のアドレスで作成したパスキーは{siteHost}で使えないため、ユーザーはメールのリンクでログインし、新しいパスキーを追加します。"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1998
 msgid "Every place using this image will update to the cropped version."
@@ -5475,7 +5475,7 @@ msgstr "このコンテンツタイプが含まれるすべての関連付けも
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:502
 msgid "Example: {pattern} → {preview}"
-msgstr ""
+msgstr "例：{pattern} → {preview}"
 
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:295
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:127
@@ -5630,7 +5630,7 @@ msgstr "インポートのキャンセルに失敗しました"
 
 #: packages/admin/src/lib/api/settings.ts:119
 msgid "Failed to change the domain"
-msgstr ""
+msgstr "ドメインの変更に失敗しました"
 
 #: packages/admin/src/lib/api/marketplace.ts:401
 msgid "Failed to check for updates"
@@ -5664,7 +5664,7 @@ msgstr "{0}の作成に失敗しました"
 #: packages/admin/src/components/settings/GeneralSettings.tsx:146
 #: packages/admin/src/lib/api/settings.ts:96
 msgid "Failed to create a sign-in link"
-msgstr ""
+msgstr "ログインリンクの作成に失敗しました"
 
 #: packages/admin/src/components/SetupWizard.tsx:561
 msgid "Failed to create admin"
@@ -5911,7 +5911,7 @@ msgstr "コンテンツの複製に失敗しました"
 
 #: packages/admin/src/lib/api/settings.ts:106
 msgid "Failed to email users"
-msgstr ""
+msgstr "ユーザーへのメール送信に失敗しました"
 
 #: packages/admin/src/components/PluginManager.tsx:142
 #: packages/admin/src/lib/api/plugins.ts:147
@@ -6142,7 +6142,7 @@ msgstr "分類項目の取得に失敗しました"
 
 #: packages/admin/src/lib/api/settings.ts:88
 msgid "Failed to fetch the site domain"
-msgstr ""
+msgstr "サイトのドメインの取得に失敗しました"
 
 #: packages/admin/src/lib/api/theme-marketplace.ts:99
 msgid "Failed to fetch theme"
@@ -7322,7 +7322,7 @@ msgstr "<0>{email}</0>のアカウントが存在する場合、ログインリ�
 
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:150
 msgid "If the site can't be reached from the internet yet, for example on localhost or behind a login, you can use the address without the check."
-msgstr ""
+msgstr "localhostやログインが必要な環境など、まだインターネットからサイトに接続できない場合は、確認せずにアドレスを使用できます。"
 
 #: packages/admin/src/locales/emails.ts:67
 msgid "If you didn't request this, you can safely ignore this email."
@@ -8149,11 +8149,11 @@ msgstr "参照元"
 #. placeholder {0}: siteDomain.configuredUrl
 #: packages/admin/src/components/settings/GeneralSettings.tsx:301
 msgid "Links in emails and plugins use {0}, set by the deployment configuration."
-msgstr ""
+msgstr "メールとプラグイン内のリンクには、デプロイ設定で指定された{0}が使用されます。"
 
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:114
 msgid "Links in emails and plugins, sitemaps, and absolute URLs in search and social metadata will use the new domain."
-msgstr ""
+msgstr "メールとプラグイン内のリンク、サイトマップ、検索用・ソーシャル用メタデータの絶対URLには、新しいドメインが使用されます。"
 
 #: packages/admin/src/components/RelationForm.tsx:275
 msgid "Links to"
@@ -8978,7 +8978,7 @@ msgstr "焦点を動かして、切り抜かれたときに残す部分を選ん
 
 #: packages/admin/src/components/Settings.tsx:126
 msgid "Move this site to another EmDash installation, or import a site package"
-msgstr ""
+msgstr "このサイトを別のEmDash環境に移行するか、サイトパッケージをインポートします"
 
 #: packages/admin/src/components/settings/TransferSettings.tsx:47
 msgid "Move this site to another EmDash installation, or import a site package into this one."
@@ -9210,7 +9210,7 @@ msgstr "コンテンツタイプを作成"
 
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:126
 msgid "New domain"
-msgstr ""
+msgstr "新しいドメイン"
 
 #: packages/admin/src/routes/byline-schema.tsx:224
 msgid "New field"
@@ -9576,7 +9576,7 @@ msgstr ""
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:534
 msgid "No matching timezones"
-msgstr ""
+msgstr "一致するタイムゾーンがありません"
 
 #: packages/admin/src/components/FieldEditor.tsx:911
 #: packages/admin/src/components/FieldEditor.tsx:942
@@ -10184,7 +10184,7 @@ msgstr "この環境ではパスキーを利用できません"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:217
 msgid "Passkeys only work at the address where they were created."
-msgstr ""
+msgstr "パスキーは作成したアドレスでのみ使用できます。"
 
 #: packages/admin/src/components/settings/SecuritySettings.tsx:172
 msgid "Passkeys only work at the address where they were created. Add one here so you can sign in at this address next time."
@@ -10192,11 +10192,11 @@ msgstr "パスキーは作成したアドレスでのみ使用できます。次
 
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:143
 msgid "Passkeys only work at the address where they were created. After switching, keep signing in at the current address, or use an email sign-in link at the new one."
-msgstr ""
+msgstr "パスキーは作成したアドレスでのみ使用できます。切り替え後も現在のアドレスでログインするか、新しいアドレスではメールのログインリンクを使用してください。"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:323
 msgid "Passkeys only work at the address where they were created. Continue on {handoverHost} to sign in there without a passkey, then add one for that address."
-msgstr ""
+msgstr "パスキーは作成したアドレスでのみ使用できます。{handoverHost}で続行してパスキーなしでログインし、そのアドレス用のパスキーを追加してください。"
 
 #: packages/admin/src/components/auth/PasskeyContextMessage.tsx:5
 msgid "Passkeys require a <0>secure context</0>: use <1>HTTPS</1>, or open the admin at <2>http://localhost</2> (with your dev port). Plain <3>http://</3> on a custom hostname is not treated as secure, even on loopback."
@@ -10478,7 +10478,7 @@ msgstr "プラグイン"
 
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:119
 msgid "Point the domain at this site. On Cloudflare, open your Worker in Workers & Pages, go to the Domains tab, and add the domain."
-msgstr ""
+msgstr "ドメインの接続先をこのサイトに設定してください。Cloudflareでは「Workers & Pages」でWorkerを開き、「Domains」タブでドメインを追加します。"
 
 #: packages/admin/src/components/settings/BackupSettings.tsx:344
 msgid "Point-in-Time Restore"
@@ -10577,7 +10577,7 @@ msgstr ""
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:501
 msgid "Preview unavailable for this format"
-msgstr ""
+msgstr "この形式ではプレビューを表示できません"
 
 #: packages/admin/src/components/ThemeMarketplaceDetail.tsx:308
 msgid "Previous"
@@ -12166,7 +12166,7 @@ msgstr ""
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:514
 msgid "Search for an IANA timezone (e.g., Europe/London)"
-msgstr ""
+msgstr "IANAタイムゾーンを検索（例：Europe/London）"
 
 #: packages/admin/src/components/Widgets.tsx:161
 msgid "Search form"
@@ -12227,7 +12227,7 @@ msgstr "テーマを検索…"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:525
 msgid "Search timezones…"
-msgstr ""
+msgstr "タイムゾーンを検索…"
 
 #: packages/admin/src/components/BylineFilter.tsx:169
 msgid "Search to narrow the list"
@@ -12430,11 +12430,11 @@ msgstr "{label}のダークモード用の画像を選択"
 
 #: packages/admin/src/components/settings/SeoSettings.tsx:313
 msgid "Select default social image"
-msgstr ""
+msgstr "デフォルトのソーシャル画像を選択"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:564
 msgid "Select favicon"
-msgstr ""
+msgstr "ファビコンを選択"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:472
 msgid "Select Favicon"
@@ -12461,7 +12461,7 @@ msgstr "画像を選択"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:556
 msgid "Select logo"
-msgstr ""
+msgstr "ロゴを選択"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:412
 msgid "Select Logo"
@@ -12544,7 +12544,7 @@ msgstr ""
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:583
 msgid "Send emails"
-msgstr ""
+msgstr "メールを送信"
 
 #: packages/admin/src/components/users/InviteUserModal.tsx:205
 msgid "Send Invite"
@@ -12640,7 +12640,7 @@ msgstr "下書きに設定"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:343
 msgid "Set up an email provider in Email settings to email users."
-msgstr ""
+msgstr "ユーザーにメールを送るには、メール設定でメールプロバイダーを設定してください。"
 
 #: packages/admin/src/components/MediaLibrary.tsx:815
 msgid "Set up media usage tracking"
@@ -12919,11 +12919,11 @@ msgstr "サイトURL"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:216
 msgid "Site URL set to {url}"
-msgstr ""
+msgstr "サイトURLを{url}に設定しました"
 
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:113
 msgid "Sitemaps and absolute URLs in search and social metadata will use the new domain. Links in emails and plugins keep using {configuredUrl}, set by the deployment configuration."
-msgstr ""
+msgstr "サイトマップ、検索用・ソーシャル用メタデータの絶対URLには、新しいドメインが使用されます。メールとプラグイン内のリンクには、引き続きデプロイ設定で指定された{configuredUrl}が使用されます。"
 
 #: packages/admin/src/components/settings/BackupSettings.tsx:347
 msgid "Sites on Cloudflare D1 can additionally restore the database to any minute within the last 30 days using D1 Time Travel — always on, no setup required."
@@ -13262,11 +13262,11 @@ msgstr "Swift"
 
 #: packages/admin/src/components/ThemeToggle.tsx:19
 msgid "Switch to dark"
-msgstr ""
+msgstr "ダークモードに切り替え"
 
 #: packages/admin/src/components/ThemeToggle.tsx:19
 msgid "Switch to light"
-msgstr ""
+msgstr "ライトモードに切り替え"
 
 #: packages/admin/src/components/users/UserDetail.tsx:275
 msgid "Synced"
@@ -13401,7 +13401,7 @@ msgstr ""
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:340
 msgid "Tell users where to sign in"
-msgstr ""
+msgstr "ログイン先をユーザーに通知"
 
 #: packages/admin/src/components/SetupWizard.tsx:218
 msgid "Template:"
@@ -13759,7 +13759,7 @@ msgstr "プラグインの処理中に内容が変更されたため、その結
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:297
 msgid "The public address of your site, used for links in emails and plugins, sitemaps, and absolute URLs in search and social metadata"
-msgstr ""
+msgstr "メールとプラグイン内のリンク、サイトマップ、検索用・ソーシャル用メタデータの絶対URLに使用する、サイトの公開アドレス"
 
 #: packages/admin/src/components/RegistryBrowse.tsx:219
 #: packages/admin/src/components/RegistryPluginDetail.tsx:544
@@ -14205,7 +14205,7 @@ msgstr "公開予約を解除して、今すぐ公開します。"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:516
 msgid "This saved timezone isn't recognized. Choose a suggestion for reliable date display."
-msgstr ""
+msgstr "保存されているタイムゾーンは認識できません。日付を正しく表示するには、候補から選択してください。"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4589
 msgid "This section contains table content that the editor cannot preserve. Update the section before inserting it."
@@ -14366,7 +14366,7 @@ msgstr "閉じる"
 
 #: packages/admin/src/components/settings/BackupSettings.tsx:203
 msgid "To move a site to another EmDash installation, use <0>Transfer</0>."
-msgstr ""
+msgstr "サイトを別のEmDash環境に移行するには、<0>サイト移行</0>を使用してください。"
 
 #: packages/admin/src/components/AdminCommandPalette.tsx:502
 msgid "to select"
@@ -15084,7 +15084,7 @@ msgstr "パスのパターンには[param]や[...rest]を使用できます。"
 
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:160
 msgid "Use {fallbackUrl} anyway"
-msgstr ""
+msgstr "確認せずに{fallbackUrl}を使用"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:623
 msgid "Use a security key"
@@ -15784,7 +15784,7 @@ msgstr "<0>{roleName}</0>として登録します"
 #. placeholder {0}: window.location.host
 #: packages/admin/src/components/settings/GeneralSettings.tsx:322
 msgid "You're signed in at {0}"
-msgstr ""
+msgstr "{0}にログインしています"
 
 #: packages/admin/src/components/SetupWizard.tsx:632
 msgid "You're signed in via Cloudflare Access"
@@ -15902,7 +15902,7 @@ msgstr "現在のロールでは、このデバイスが要求した権限をど
 
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:111
 msgid "Your site is currently at {currentUrl}."
-msgstr ""
+msgstr "サイトの現在のアドレスは{currentUrl}です。"
 
 #. placeholder {0}: formatHoldback(config.policy?.minimumReleaseAgeSeconds ?? 0)
 #: packages/admin/src/components/RegistryPluginDetail.tsx:696
