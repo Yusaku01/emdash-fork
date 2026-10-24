@@ -4,7 +4,7 @@
  * Defines all admin routes and their components.
  */
 
-import { Button, Loader, Toast, useKumoToastManager } from "@cloudflare/kumo";
+import { Banner, Button, Loader, useKumoToastManager } from "@cloudflare/kumo";
 import { plural } from "@lingui/core/macro";
 import { useLingui } from "@lingui/react/macro";
 import type { QueryClient } from "@tanstack/react-query";
@@ -156,6 +156,7 @@ import {
 } from "./lib/api/comments";
 import { runBulkAction } from "./lib/bulk";
 import { parseCalendarSearch } from "./lib/calendar";
+import { canDuplicateEntry, canPublishEntry, entryEditAccess } from "./lib/content-permissions";
 import { describeContentValidationError } from "./lib/content-validation-errors";
 import { usePluginPage } from "./lib/plugin-context";
 import { getPluginBlocks } from "./lib/pluginBlocks";
@@ -525,7 +526,7 @@ function ContentListPage() {
 	const { locale: localeParam } = useSearch({ from: "/_admin/content/$collection" });
 	const queryClient = useQueryClient();
 	const navigate = useNavigate();
-	const toastManager = Toast.useToastManager();
+	const toastManager = useKumoToastManager();
 
 	const { data: manifest } = useQuery({
 		queryKey: ["manifest"],
@@ -644,7 +645,7 @@ function ContentListPage() {
 			toastManager.add({
 				title: t`Failed to delete`,
 				description: mutationError instanceof Error ? mutationError.message : t`An error occurred`,
-				type: "error",
+				variant: "error",
 			});
 		},
 	});
@@ -659,7 +660,7 @@ function ContentListPage() {
 			toastManager.add({
 				title: t`Failed to restore`,
 				description: mutationError instanceof Error ? mutationError.message : t`An error occurred`,
-				type: "error",
+				variant: "error",
 			});
 		},
 	});
@@ -673,7 +674,7 @@ function ContentListPage() {
 			toastManager.add({
 				title: t`Failed to delete`,
 				description: mutationError instanceof Error ? mutationError.message : t`An error occurred`,
-				type: "error",
+				variant: "error",
 			});
 		},
 	});
@@ -687,7 +688,7 @@ function ContentListPage() {
 			toastManager.add({
 				title: t`Failed to duplicate`,
 				description: mutationError instanceof Error ? mutationError.message : t`An error occurred`,
-				type: "error",
+				variant: "error",
 			});
 		},
 	});
@@ -707,12 +708,12 @@ function ContentListPage() {
 		},
 		onSuccess: ({ total, failedIds }) => {
 			if (failedIds.length === 0) {
-				toastManager.add({ title: t`Published ${total} items`, type: "success" });
+				toastManager.add({ title: t`Published ${total} items`, variant: "success" });
 			} else {
 				toastManager.add({
 					title: t`Failed to publish`,
 					description: t`${failedIds.length} of ${total} could not be published`,
-					type: "error",
+					variant: "error",
 				});
 			}
 		},
@@ -730,12 +731,12 @@ function ContentListPage() {
 		},
 		onSuccess: ({ total, failedIds }) => {
 			if (failedIds.length === 0) {
-				toastManager.add({ title: t`Moved ${total} items to draft`, type: "success" });
+				toastManager.add({ title: t`Moved ${total} items to draft`, variant: "success" });
 			} else {
 				toastManager.add({
 					title: t`Failed to update`,
 					description: t`${failedIds.length} of ${total} could not be updated`,
-					type: "error",
+					variant: "error",
 				});
 			}
 		},
@@ -751,12 +752,12 @@ function ContentListPage() {
 		},
 		onSuccess: ({ total, failedIds }) => {
 			if (failedIds.length === 0) {
-				toastManager.add({ title: t`Moved ${total} items to trash`, type: "success" });
+				toastManager.add({ title: t`Moved ${total} items to trash`, variant: "success" });
 			} else {
 				toastManager.add({
 					title: t`Failed to delete`,
 					description: t`${failedIds.length} of ${total} could not be deleted`,
-					type: "error",
+					variant: "error",
 				});
 			}
 		},
@@ -821,6 +822,7 @@ function ContentListPage() {
 			onRestore={(id) => restoreMutation.mutate(id)}
 			onPermanentDelete={(id) => permanentDeleteMutation.mutate(id)}
 			onDuplicate={(id) => duplicateMutation.mutate(id)}
+			canDuplicate={(item) => !currentUser || canDuplicateEntry(currentUser, item)}
 			i18n={i18n}
 			activeLocale={activeLocale}
 			onLocaleChange={handleLocaleChange}
@@ -900,6 +902,7 @@ function ContentNewPage() {
 				to: "/content/$collection/$id",
 				params: { collection, id: result.id },
 				search: { locale: result.locale },
+				ignoreBlocker: true,
 			});
 		},
 		onError: (error) => {
@@ -1032,7 +1035,7 @@ function ContentEditPage() {
 	});
 	const queryClient = useQueryClient();
 	const navigate = useNavigate();
-	const toastManager = Toast.useToastManager();
+	const toastManager = useKumoToastManager();
 	const isEditorDirtyRef = React.useRef(false);
 	const [isEditorDirty, setIsEditorDirty] = React.useState(false);
 	const [editorItemReset, setEditorItemReset] = React.useState({ entryId: "", token: 0 });
@@ -1067,11 +1070,17 @@ function ContentEditPage() {
 		retry: (failureCount, queryError) =>
 			!(queryError instanceof ApiResponseError && queryError.status === 404) && failureCount < 1,
 	});
+	const { data: currentUser } = useCurrentUser();
+
+	// Nothing is withheld until the current user has loaded; the server still
+	// refuses what the role can't do.
+	const editAccess = rawItem && currentUser ? entryEditAccess(currentUser, rawItem) : "full";
+	const canPublish = !rawItem || !currentUser || canPublishEntry(currentUser, rawItem);
 	const entryLock = useEntryLock({
 		collection,
 		entryId: id,
 		locale: activeLocale,
-		ready: Boolean(rawItem),
+		ready: Boolean(rawItem) && editAccess !== null,
 	});
 	const revisionTokensRef = React.useRef(new Map<string, string | undefined>());
 	const revisionVersionsRef = React.useRef(new Map<string, number>());
@@ -1109,6 +1118,14 @@ function ContentEditPage() {
 	// Written together with the conflict state rather than on render, so a save
 	// that runs before the next render still sees the conflict.
 	const conflictedEntryIdRef = React.useRef("");
+	/** The entry the editor shows, or null once the page has closed. */
+	const openEntryIdRef = React.useRef<string | null>(id);
+	React.useEffect(() => {
+		openEntryIdRef.current = id;
+		return () => {
+			openEntryIdRef.current = null;
+		};
+	}, [id]);
 	const serializeEditorSave = React.useCallback(
 		<T,>(operation: () => Promise<T>, { explicitSave = false, allowConflict = false } = {}) => {
 			const savesOverConflict = explicitSave && conflictedEntryIdRef.current === id;
@@ -1186,16 +1203,6 @@ function ContentEditPage() {
 			data: { ...rawItem.data, ...draftData },
 		};
 	}, [rawItem, draftRevision]);
-
-	// Fetch current user for permission checks
-	const { data: currentUser } = useQuery({
-		queryKey: ["currentUser"],
-		queryFn: async (): Promise<{ id: string; role: number }> => {
-			const response = await apiFetch("/_emdash/api/auth/me");
-			return parseApiResponse<{ id: string; role: number }>(response, t`Failed to fetch user`);
-		},
-		staleTime: 5 * 60 * 1000,
-	});
 
 	// Fetch users list for author selector (only if user is editor+)
 	const { data: usersData } = useQuery({
@@ -1307,18 +1314,31 @@ function ContentEditPage() {
 		},
 		[activeLocale, collection, rawItem?.locale, recordWriteRevision],
 	);
+	// Once the editor has moved off an entry, only a toast can tell the writer a save failed.
+	const editorShows = React.useCallback(
+		(entryId: string) => openEntryIdRef.current === entryId,
+		[],
+	);
+	const recoverInEditor = React.useCallback(
+		async (error: unknown, entryId: string) =>
+			editorShows(entryId) &&
+			isSaveConflict(error) &&
+			(await recoverFromSaveConflict(entryId)) &&
+			editorShows(entryId),
+		[editorShows, recoverFromSaveConflict],
+	);
 	const handleContentUpdateError = React.useCallback(
 		(error: unknown, targetId: string) => {
-			if (entryLock.reportWriteError(error, targetId)) return;
+			if (editorShows(targetId) && entryLock.reportWriteError(error, targetId)) return;
 			toastManager.add({
 				title: t`Failed to save`,
 				description:
 					describeContentValidationError(error, collectionFields) ??
 					(error instanceof Error ? error.message : t`An error occurred`),
-				type: "error",
+				variant: "error",
 			});
 		},
-		[collectionFields, entryLock.reportWriteError, t, toastManager],
+		[collectionFields, editorShows, entryLock.reportWriteError, t, toastManager],
 	);
 
 	const updateMutation = useMutation({
@@ -1343,6 +1363,9 @@ function ContentEditPage() {
 			// would hand the editor's stale copy a token the server accepts.
 			if (variables.source === "editor") {
 				setConflictedEntryId((current) => (current === variables.targetId ? "" : current));
+				// The editor holds back autosave on leaving while the last one counts as failed.
+				if (autosaveMutation.isError && autosaveMutation.variables?.targetId === variables.targetId)
+					autosaveMutation.reset();
 			}
 			void handleContentUpdateSuccess(variables.targetId).then(() => {
 				if (variables.source === "editor") resetEditorItem(variables.targetId);
@@ -1350,7 +1373,7 @@ function ContentEditPage() {
 			});
 		},
 		onError: async (error, variables) => {
-			if (isSaveConflict(error) && (await recoverFromSaveConflict(variables.targetId))) return;
+			if (await recoverInEditor(error, variables.targetId)) return;
 			handleContentUpdateError(error, variables.targetId);
 		},
 		onSettled: (_, __, variables) => {
@@ -1426,15 +1449,16 @@ function ContentEditPage() {
 			// while the user is still typing.
 		},
 		onError: async (err, variables) => {
-			if (isSaveConflict(err) && (await recoverFromSaveConflict(variables.targetId))) return;
+			if (await recoverInEditor(err, variables.targetId)) return;
 			if (isTerminalRequestError(err)) recordAutosaveRejection(variables.targetId);
-			if (entryLock.reportWriteError(err, variables.targetId)) return;
+			if (editorShows(variables.targetId) && entryLock.reportWriteError(err, variables.targetId))
+				return;
 			toastManager.add({
 				title: t`Autosave failed`,
 				description:
 					describeContentValidationError(err, collectionFields) ??
 					(err instanceof Error ? err.message : t`An error occurred`),
-				type: "error",
+				variant: "error",
 			});
 		},
 	});
@@ -1468,7 +1492,7 @@ function ContentEditPage() {
 			toastManager.add({
 				title: t`Failed to publish`,
 				description: error instanceof Error ? error.message : t`An error occurred`,
-				type: "error",
+				variant: "error",
 			});
 		},
 	});
@@ -1492,7 +1516,7 @@ function ContentEditPage() {
 			toastManager.add({
 				title: t`Failed to unpublish`,
 				description: error instanceof Error ? error.message : t`An error occurred`,
-				type: "error",
+				variant: "error",
 			});
 		},
 	});
@@ -1517,7 +1541,7 @@ function ContentEditPage() {
 			toastManager.add({
 				title: t`Failed to discard changes`,
 				description: error instanceof Error ? error.message : t`An error occurred`,
-				type: "error",
+				variant: "error",
 			});
 		},
 	});
@@ -1573,7 +1597,7 @@ function ContentEditPage() {
 			toastManager.add({
 				title: t`Failed to schedule`,
 				description: error instanceof Error ? error.message : t`An error occurred`,
-				type: "error",
+				variant: "error",
 			});
 		},
 	});
@@ -1592,7 +1616,7 @@ function ContentEditPage() {
 			toastManager.add({
 				title: t`Failed to unschedule`,
 				description: error instanceof Error ? error.message : t`An error occurred`,
-				type: "error",
+				variant: "error",
 			});
 		},
 	});
@@ -1625,7 +1649,7 @@ function ContentEditPage() {
 				description:
 					describeContentValidationError(error, collectionFields) ??
 					(error instanceof Error ? error.message : t`An error occurred`),
-				type: "error",
+				variant: "error",
 			});
 		},
 	});
@@ -1639,6 +1663,7 @@ function ContentEditPage() {
 				to: "/content/$collection",
 				params: { collection },
 				search: { locale: activeLocale },
+				ignoreBlocker: true,
 			});
 		},
 		onError: (error) => {
@@ -1646,7 +1671,7 @@ function ContentEditPage() {
 			toastManager.add({
 				title: t`Failed to delete`,
 				description: error instanceof Error ? error.message : t`An error occurred`,
-				type: "error",
+				variant: "error",
 			});
 		},
 	});
@@ -1663,8 +1688,8 @@ function ContentEditPage() {
 			slug?: string;
 			bylines?: BylineCreditInput[];
 			references?: Record<string, string[]>;
-		}) => {
-			void serializeEditorSave(
+		}) =>
+			serializeEditorSave(
 				() =>
 					updateMutation.mutateAsync({
 						targetId: id,
@@ -1673,8 +1698,7 @@ function ContentEditPage() {
 						changes: payload,
 					}),
 				{ explicitSave: true },
-			).catch(() => undefined);
-		},
+			),
 		[activeLocale, id, rawItem?.locale, serializeEditorSave, updateMutation.mutateAsync],
 	);
 
@@ -1922,6 +1946,7 @@ function ContentEditPage() {
 	);
 	const handlePluginEntryRefresh = React.useCallback(async () => {
 		await Promise.all([
+			queryClient.invalidateQueries({ queryKey: ["entry-terms", collection, id] }),
 			queryClient.invalidateQueries({ queryKey: ["content", collection, id] }),
 			queryClient.invalidateQueries({ queryKey: ["revisions", collection, id] }),
 			queryClient.invalidateQueries({ queryKey: ["translations", collection, id] }),
@@ -1975,13 +2000,14 @@ function ContentEditPage() {
 			}
 			autosaveCompletionToken={autosaveCompletion.entryId === id ? autosaveCompletion.token : 0}
 			autosaveRejectionToken={autosaveRejection.entryId === id ? autosaveRejection.token : 0}
+			hasAutosaveError={autosaveMutation.isError && autosaveMutation.variables?.targetId === id}
 			hasSaveConflict={conflictedEntryId === id}
-			onPublish={handlePublish}
-			onUnpublish={handleUnpublish}
+			onPublish={canPublish ? handlePublish : undefined}
+			onUnpublish={canPublish ? handleUnpublish : undefined}
 			onDiscardDraft={handleDiscardDraft}
 			onRevisionRestored={handleRevisionRestored}
-			onSchedule={handleSchedule}
-			onUnschedule={handleUnschedule}
+			onSchedule={canPublish ? handleSchedule : undefined}
+			onUnschedule={canPublish ? handleUnschedule : undefined}
 			isScheduling={scheduleMutation.isPending}
 			isUnscheduling={unscheduleMutation.isPending}
 			onPublishedAtChange={handlePublishedAtChange}
@@ -2006,14 +2032,27 @@ function ContentEditPage() {
 			onQuickEditByline={handleQuickEditByline}
 			manifest={manifest ?? null}
 			onEntryRefresh={handlePluginEntryRefresh}
-			readOnly={entryLock.readOnly}
+			readOnly={entryLock.readOnly || editAccess === null}
 			notice={
-				<EntryLockNotice
-					state={entryLock.state}
-					onTakeOver={entryLock.takeOver}
-					onReadInstead={entryLock.readInstead}
-					isTakingOver={entryLock.isTakingOver}
-				/>
+				editAccess === null ? (
+					<Banner
+						title={t`Read-only`}
+						description={
+							rawItem &&
+							currentUser &&
+							entryEditAccess(currentUser, { ...rawItem, status: "draft" })
+								? t`Your role can edit your own entries only while they are drafts.`
+								: t`Your role can't edit this entry.`
+						}
+					/>
+				) : (
+					<EntryLockNotice
+						state={entryLock.state}
+						onTakeOver={entryLock.takeOver}
+						onReadInstead={entryLock.readInstead}
+						isTakingOver={entryLock.isTakingOver}
+					/>
+				)
 			}
 		/>
 	);
@@ -2037,7 +2076,7 @@ function MediaPage() {
 	const queryClient = useQueryClient();
 	const navigate = useNavigate();
 	const { folder } = useSearch({ from: "/_admin/media" });
-	const toastManager = Toast.useToastManager();
+	const toastManager = useKumoToastManager();
 	const { data: currentUser } = useCurrentUser();
 
 	const [search, setSearch] = React.useState("");
@@ -2065,7 +2104,7 @@ function MediaPage() {
 		void navigate({ to: "/media", search: { folder: undefined }, replace: true });
 		toastManager.add({
 			title: t`Folder no longer exists`,
-			type: "warning",
+			variant: "warning",
 			timeout: 4000,
 		});
 	}, [folder, missingFolder, navigate, t, toastManager]);
@@ -2329,7 +2368,7 @@ const ROLE_ADMIN = 50;
 function CommentsPage() {
 	const { t } = useLingui();
 	const queryClient = useQueryClient();
-	const toastManager = Toast.useToastManager();
+	const toastManager = useKumoToastManager();
 
 	const { data: manifest } = useQuery({
 		queryKey: ["manifest"],
@@ -2396,7 +2435,7 @@ function CommentsPage() {
 			toastManager.add({
 				title: t`Failed to update status`,
 				description: error instanceof Error ? error.message : t`An error occurred`,
-				type: "error",
+				variant: "error",
 			});
 		},
 	});
@@ -2412,7 +2451,7 @@ function CommentsPage() {
 			toastManager.add({
 				title: t`Failed to delete comment`,
 				description: error instanceof Error ? error.message : t`An error occurred`,
-				type: "error",
+				variant: "error",
 			});
 		},
 	});
@@ -2437,7 +2476,7 @@ function CommentsPage() {
 			toastManager.add({
 				title: t`Failed to perform bulk action`,
 				description: error instanceof Error ? error.message : t`An error occurred`,
-				type: "error",
+				variant: "error",
 			});
 		},
 	});
@@ -3002,7 +3041,7 @@ const contentTypesEditRoute = createRoute({
 function ContentTypesEditPage() {
 	const { slug } = useParams({ from: "/_admin/content-types/$slug" });
 	const queryClient = useQueryClient();
-	const toastManager = Toast.useToastManager();
+	const toastManager = useKumoToastManager();
 	const { t } = useLingui();
 
 	const {
@@ -3048,7 +3087,7 @@ function ContentTypesEditPage() {
 			toastManager.add({
 				title: t`Failed to save`,
 				description: mutationError instanceof Error ? mutationError.message : t`An error occurred`,
-				type: "error",
+				variant: "error",
 			});
 		},
 	});
