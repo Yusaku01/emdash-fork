@@ -14209,7 +14209,7 @@ msgstr ""
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4524
 msgid "This spreadsheet data has invalid quoted cells. Fix the quotes or remove the tab separators and try again."
-msgstr "この表計算データには、引用符が正しくないセルがあります。引用符を修正するか、タブ区切りを取り除いてから、もう一度お試しください。"
+msgstr "このスプレッドシートのデータには、引用符が正しくないセルがあります。引用符を修正するか、タブ区切りを取り除いてから、もう一度お試しください。"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4482
 msgid "This table cannot be edited safely"
