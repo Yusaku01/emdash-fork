@@ -1265,7 +1265,7 @@ msgstr "新しいパスキーを追加"
 #. placeholder {0}: window.location.host
 #: packages/admin/src/components/settings/SecuritySettings.tsx:171
 msgid "Add a passkey for {0}"
-msgstr ""
+msgstr "{0}用のパスキーを追加"
 
 #: packages/admin/src/components/BylineFormDialog.tsx:340
 msgid "Add a person or team to credit on your content."
@@ -1735,7 +1735,7 @@ msgstr "執筆者が設定されていない場合、コンテンツの投稿者
 
 #: packages/admin/src/components/DeviceAuthorizePage.tsx:382
 msgid "Also requested, but not available to your role:"
-msgstr ""
+msgstr "次の権限も要求されていますが、現在のロールでは利用できません："
 
 #. js-lingui-explicit-id
 #: packages/admin/src/locales/server.ts:65
@@ -1780,7 +1780,7 @@ msgstr ""
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:236
 msgid "An encrypted digital key you unlock using your fingerprint, face, PIN, or device password."
-msgstr ""
+msgstr "指紋、顔、PIN、またはデバイスのパスワードでロックを解除する、暗号化されたデジタルキーです。"
 
 #: packages/admin/src/components/DialogError.tsx:14
 #: packages/admin/src/components/MarketplaceBrowse.tsx:135
@@ -1937,7 +1937,7 @@ msgstr ""
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:646
 msgid "Approve with that device's face, fingerprint, PIN, or passcode."
-msgstr ""
+msgstr "そのデバイスの顔認証、指紋認証、PIN、またはパスコードで承認してください。"
 
 #: packages/admin/src/components/comments/CommentDetail.tsx:198
 msgid "approved"
@@ -2836,7 +2836,7 @@ msgstr "認証を確認中…"
 
 #: packages/admin/src/components/DeviceAuthorizePage.tsx:341
 msgid "Checking code..."
-msgstr ""
+msgstr "コードを確認中..."
 
 #. placeholder {0}: deletingField.label
 #: packages/admin/src/routes/byline-schema.tsx:362
@@ -2865,7 +2865,7 @@ msgstr ""
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:493
 msgid "Checking this device for passkey support..."
-msgstr ""
+msgstr "このデバイスがパスキーに対応しているか確認中..."
 
 #: packages/admin/src/components/settings/transfer/labels.ts:55
 msgid "Checking this site"
@@ -2883,7 +2883,7 @@ msgstr "{label}を選択"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:577
 msgid "Choose a credential manager on this device, another device, or a security key."
-msgstr ""
+msgstr "このデバイスの認証情報マネージャー、別のデバイス、またはセキュリティキーを選択してください。"
 
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:36
 msgid "Choose a date"
@@ -2929,7 +2929,7 @@ msgstr "ライブラリから画像を選ぶか、新しくアップロードし
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:567
 msgid "Choose another option"
-msgstr ""
+msgstr "別の方法を選択"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:567
 #: packages/admin/src/components/BylineCreditsEditor.tsx:582
@@ -2955,11 +2955,11 @@ msgstr ""
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:187
 msgid "Choose Touch ID or another available credential manager, then confirm with your fingerprint or Mac password."
-msgstr ""
+msgstr "Touch IDまたは利用可能な別の認証情報マネージャーを選択し、指紋またはMacのパスワードで確認してください。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:180
 msgid "Choose Windows Hello or another available credential manager, then confirm with your PIN, fingerprint, or face."
-msgstr ""
+msgstr "Windows Helloまたは利用可能な別の認証情報マネージャーを選択し、PIN、指紋、または顔で確認してください。"
 
 #: packages/admin/src/components/Settings.tsx:144
 msgid "Choose your preferred admin language"
@@ -3283,15 +3283,15 @@ msgstr "確認"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:208
 msgid "Confirm using the secure prompt from your device or credential manager."
-msgstr ""
+msgstr "デバイスまたは認証情報マネージャーが表示する安全な確認画面で承認してください。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:194
 msgid "Confirm with Face ID, Touch ID, or your device passcode."
-msgstr ""
+msgstr "Face ID、Touch ID、またはデバイスのパスコードで確認してください。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:201
 msgid "Confirm with your fingerprint, face, or PIN."
-msgstr ""
+msgstr "指紋、顔、またはPINで確認してください。"
 
 #: packages/admin/src/components/WordPressImport.tsx:746
 #: packages/admin/src/components/WordPressImport.tsx:1102
@@ -3475,11 +3475,11 @@ msgstr "{0}でログインします。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:673
 msgid "Continue with another device"
-msgstr ""
+msgstr "別のデバイスで続行"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:710
 msgid "Continue with security key"
-msgstr ""
+msgstr "セキュリティキーで続行"
 
 #: packages/admin/src/components/users/roleDefinitions.ts:24
 #: packages/admin/src/components/WelcomeModal.tsx:29
@@ -3548,11 +3548,11 @@ msgstr ""
 
 #: packages/admin/src/components/DeviceAuthorizePage.tsx:111
 msgid "Could not check this code"
-msgstr ""
+msgstr "このコードを確認できませんでした"
 
 #: packages/admin/src/components/DeviceAuthorizePage.tsx:347
 msgid "Could not check this code."
-msgstr ""
+msgstr "このコードを確認できませんでした。"
 
 #: packages/admin/src/components/users/InviteUserModal.tsx:139
 msgid "Could not copy automatically. Please select the URL above and copy manually."
@@ -3813,7 +3813,7 @@ msgstr ""
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:741
 msgid "Create passkey"
-msgstr ""
+msgstr "パスキーを作成"
 
 #: packages/admin/src/components/Settings.tsx:104
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:211
@@ -4704,7 +4704,7 @@ msgstr "サイト全体のバックアップをダウンロードします。す
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:103
 msgid "Download a copy of the entire site, including drafts, media, settings, and author emails. Admin includes this; choose it instead of Admin to give an agent narrower access."
-msgstr ""
+msgstr "下書き、メディア、設定、投稿者のメールアドレスを含むサイト全体のコピーをダウンロードします。管理者権限にも含まれています。エージェントのアクセス範囲を制限するには、管理者権限の代わりにこの権限を選択してください。"
 
 #: packages/admin/src/components/settings/transfer/ExportSection.tsx:212
 msgid "Download as one file"
@@ -5242,7 +5242,7 @@ msgstr "EmDashが既存コンテンツを確認しています。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:744
 msgid "EmDash never receives your PIN, password, or biometric information."
-msgstr ""
+msgstr "PIN、パスワード、生体認証情報がEmDashに送信されることはありません。"
 
 #: packages/admin/src/components/settings/transfer/ExportDownload.tsx:39
 msgid "EmDash site package"
@@ -5672,11 +5672,11 @@ msgstr "管理者の作成に失敗しました"
 
 #: packages/admin/src/lib/api/users.ts:313
 msgid "Failed to create allowed domain"
-msgstr ""
+msgstr "許可ドメインの作成に失敗しました"
 
 #: packages/admin/src/lib/api/api-tokens.ts:91
 msgid "Failed to create API token"
-msgstr ""
+msgstr "APIトークンの作成に失敗しました"
 
 #: packages/admin/src/components/settings/BackupSettings.tsx:123
 #: packages/admin/src/lib/api/backups.ts:51
@@ -5936,11 +5936,11 @@ msgstr ""
 
 #: packages/admin/src/lib/api/users.ts:297
 msgid "Failed to fetch allowed domains"
-msgstr ""
+msgstr "許可ドメインの取得に失敗しました"
 
 #: packages/admin/src/lib/api/api-tokens.ts:76
 msgid "Failed to fetch API tokens"
-msgstr ""
+msgstr "APIトークンの取得に失敗しました"
 
 #: packages/admin/src/lib/api/client.ts:373
 msgid "Failed to fetch auth mode"
@@ -6062,7 +6062,7 @@ msgstr ""
 
 #: packages/admin/src/lib/api/users.ts:234
 msgid "Failed to fetch passkeys"
-msgstr ""
+msgstr "パスキーの取得に失敗しました"
 
 #: packages/admin/src/lib/api/marketplace.ts:324
 #: packages/admin/src/lib/api/plugins.ts:71
@@ -6169,7 +6169,7 @@ msgstr "ユーザーの取得に失敗しました"
 
 #: packages/admin/src/lib/api/users.ts:77
 msgid "Failed to fetch users"
-msgstr ""
+msgstr "ユーザーの取得に失敗しました"
 
 #: packages/admin/src/lib/api/widgets.ts:86
 msgid "Failed to fetch widget area"
@@ -6226,7 +6226,7 @@ msgstr "プラグインのインストールに失敗しました"
 
 #: packages/admin/src/lib/api/users.ts:168
 msgid "Failed to invite user"
-msgstr ""
+msgstr "ユーザーの招待に失敗しました"
 
 #: packages/admin/src/lib/api/byline-fields.ts:98
 msgid "Failed to list byline fields"
@@ -6555,7 +6555,7 @@ msgstr "{0}の更新に失敗しました"
 
 #: packages/admin/src/lib/api/users.ts:335
 msgid "Failed to update allowed domain"
-msgstr ""
+msgstr "許可ドメインの更新に失敗しました"
 
 #: packages/admin/src/lib/api/backups.ts:46
 msgid "Failed to update backup settings"
@@ -6645,7 +6645,7 @@ msgstr ""
 
 #: packages/admin/src/lib/api/users.ts:112
 msgid "Failed to update user"
-msgstr ""
+msgstr "ユーザーの更新に失敗しました"
 
 #: packages/admin/src/lib/api/widgets.ts:136
 msgid "Failed to update widget"
@@ -7301,7 +7301,7 @@ msgstr "上記の手順を完了し、使用状況の記録を一度有効にす
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:554
 msgid "I've set it up — check again"
-msgstr ""
+msgstr "設定したので再確認"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:578
 msgid "Icon"
@@ -7442,7 +7442,7 @@ msgstr "サイトパッケージをインポート"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:113
 msgid "Import a site package into this site while it is empty, overwriting its initial setup. Admin includes this; choose it instead of Admin to give an agent narrower access."
-msgstr ""
+msgstr "このサイトが空の状態でサイトパッケージをインポートし、初期設定を上書きします。管理者権限にも含まれています。エージェントのアクセス範囲を制限するには、管理者権限の代わりにこの権限を選択してください。"
 
 #: packages/admin/src/components/WordPressImport.tsx:1420
 msgid "Import all content directly including drafts, custom post types, ACF fields, and SEO data. No file download needed."
@@ -7570,7 +7570,7 @@ msgstr "ゴミ箱内"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:536
 msgid "In Windows Settings, open Accounts, then Sign-in options, and set up a PIN. Fingerprint and face recognition are optional."
-msgstr ""
+msgstr "Windowsの設定で「アカウント」→「サインイン オプション」を開き、PINを設定してください。指紋認証と顔認証の設定は任意です。"
 
 #: packages/admin/src/components/BlocksField.tsx:364
 msgid "Inactive version"
@@ -7680,7 +7680,7 @@ msgstr "画像を挿入"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:691
 msgid "Insert or tap your security key when the browser asks."
-msgstr ""
+msgstr "ブラウザーの指示に従って、セキュリティキーを挿入するかタッチしてください。"
 
 #: packages/admin/src/components/editor/TableControls.tsx:30
 msgid "Insert paragraph after"
@@ -7796,7 +7796,7 @@ msgstr "ユーザーを招待"
 
 #: packages/admin/src/lib/api/users.ts:194
 msgid "Invite validation failed"
-msgstr ""
+msgstr "招待の検証に失敗しました"
 
 #: packages/admin/src/components/users/UserList.tsx:133
 msgid "Invite your first team member"
@@ -7808,7 +7808,7 @@ msgstr "有効なすべてのプラグインからMCPツールを呼び出す"
 
 #: packages/admin/src/components/DeviceAuthorizePage.tsx:411
 msgid "Invoke MCP tools from the {pluginId} plugin"
-msgstr ""
+msgstr "{pluginId}プラグインのMCPツールを呼び出す"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:538
 msgid "Invoke only this plugin's enabled MCP tools"
@@ -7820,7 +7820,7 @@ msgstr ""
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:507
 msgid "It is stored by the authenticator or credential manager you selected in the secure system prompt."
-msgstr ""
+msgstr "システムの安全な確認画面で選択した認証器または認証情報マネージャーに保存されます。"
 
 #: packages/admin/src/components/settings/transfer/ImportReview.tsx:459
 msgid "It was started somewhere else, so its plan can no longer be changed. Its progress will appear here."
@@ -8520,7 +8520,7 @@ msgstr "外部メディアサービスで管理"
 
 #: packages/admin/src/components/users/UserDetail.tsx:155
 msgid "Managed by your identity provider. Change the name there."
-msgstr ""
+msgstr "IDプロバイダーが管理しています。名前はそちらで変更してください。"
 
 #: packages/admin/src/components/Redirects.tsx:406
 msgid "Manual"
@@ -9302,12 +9302,12 @@ msgstr "次のスクリーンショット"
 #. placeholder {0}: platformCopy.name
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:726
 msgid "Next, {0} will open"
-msgstr ""
+msgstr "次に{0}が開きます"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:652
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:689
 msgid "Next, the browser's passkey window will open"
-msgstr ""
+msgstr "次にブラウザーのパスキー画面が開きます"
 
 #: packages/admin/src/components/ContentList.tsx:1575
 #: packages/admin/src/components/users/UserDetail.tsx:255
@@ -9361,7 +9361,7 @@ msgstr ""
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:585
 msgid "No built-in passkey authenticator found"
-msgstr ""
+msgstr "内蔵のパスキー認証器が見つかりません"
 
 #: packages/admin/src/components/BylineFilter.tsx:101
 msgid "No byline"
@@ -9728,7 +9728,7 @@ msgstr "ウィジェットエリアを作成しましょう。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:584
 msgid "No Windows Hello authenticator found"
-msgstr ""
+msgstr "Windows Hello認証器が見つかりません"
 
 #: packages/admin/src/routes/bylines.tsx:330
 msgid "Non-guest"
@@ -9938,7 +9938,7 @@ msgstr "新しいアドレスのログイン画面を開いてください："
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:545
 msgid "Open Windows settings"
-msgstr ""
+msgstr "Windowsの設定を開く"
 
 #: packages/admin/src/components/WordPressImport.tsx:1589
 msgid "Open WordPress Profile"
@@ -10132,7 +10132,7 @@ msgstr "パスキーを追加しました"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:505
 msgid "Passkey created"
-msgstr ""
+msgstr "パスキーを作成しました"
 
 #: packages/admin/src/components/settings/PasskeyItem.tsx:103
 #: packages/admin/src/components/settings/PasskeyItem.tsx:104
@@ -10184,7 +10184,7 @@ msgstr ""
 
 #: packages/admin/src/components/settings/SecuritySettings.tsx:172
 msgid "Passkeys only work at the address where they were created. Add one here so you can sign in at this address next time."
-msgstr ""
+msgstr "パスキーは作成したアドレスでのみ使用できます。次回このアドレスでログインできるよう、ここでパスキーを追加してください。"
 
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:143
 msgid "Passkeys only work at the address where they were created. After switching, keep signing in at the current address, or use an email sign-in link at the new one."
@@ -11953,7 +11953,7 @@ msgstr "SBOM · {0}"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:645
 msgid "Scan it with a nearby phone or tablet."
-msgstr ""
+msgstr "近くにあるスマートフォンまたはタブレットで読み取ってください。"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:623
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:522
@@ -12645,7 +12645,7 @@ msgstr "メディアの使用状況を設定"
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:534
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:602
 msgid "Set up Windows Hello"
-msgstr ""
+msgstr "Windows Helloを設定"
 
 #: packages/admin/src/components/SetupWizard.tsx:627
 msgid "Set up your site"
@@ -12830,11 +12830,11 @@ msgstr "ログインに失敗しました。もう一度お試しください。
 
 #: packages/admin/src/lib/api/users.ts:431
 msgid "Signup completion failed"
-msgstr ""
+msgstr "ユーザー登録の完了に失敗しました"
 
 #: packages/admin/src/lib/api/users.ts:377
 msgid "Signup request failed"
-msgstr ""
+msgstr "ユーザー登録のリクエストに失敗しました"
 
 #: packages/admin/src/components/FieldEditor.tsx:427
 msgid "Single choice from options"
@@ -12851,7 +12851,7 @@ msgstr "サイト"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:102
 msgid "Site Export"
-msgstr ""
+msgstr "サイトのエクスポート"
 
 #: packages/admin/src/components/settings/transfer/ImportReview.tsx:365
 msgid "Site identity"
@@ -12872,11 +12872,11 @@ msgstr "サイト情報、ロゴ、ファビコン、閲覧設定"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:112
 msgid "Site Import"
-msgstr ""
+msgstr "サイトのインポート"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:107
 msgid "Site Import Analysis"
-msgstr ""
+msgstr "サイトのインポート分析"
 
 #: packages/admin/src/components/settings/transfer/labels.ts:36
 msgid "Site settings"
@@ -13467,7 +13467,7 @@ msgstr ""
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:200
 msgid "the Android passkey prompt"
-msgstr ""
+msgstr "Androidのパスキー画面"
 
 #: packages/admin/src/components/settings/transfer/ApprovalsSection.tsx:159
 msgid "The assistant can start one export of this site, within 15 minutes. The package includes all content and authors’ names and email addresses."
@@ -13479,11 +13479,11 @@ msgstr ""
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:654
 msgid "The browser controls the exact prompt and may offer another compatible method."
-msgstr ""
+msgstr "実際に表示される画面はブラウザーによって異なり、対応する別の方法が提示されることもあります。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:644
 msgid "The browser will usually show a QR code."
-msgstr ""
+msgstr "通常、ブラウザーにQRコードが表示されます。"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:164
 msgid "The build provenance matches this release and its package."
@@ -13511,7 +13511,7 @@ msgstr ""
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:639
 msgid "The credential manager on the phone or tablet you choose saves it. EmDash does not receive the passkey."
-msgstr ""
+msgstr "選択したスマートフォンまたはタブレットの認証情報マネージャーに保存されます。パスキーがEmDashに送信されることはありません。"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:833
 msgid "The cropped image could not be created."
@@ -13629,7 +13629,7 @@ msgstr "リンクの有効期限は15分です。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:186
 msgid "the macOS passkey prompt"
-msgstr ""
+msgstr "macOSのパスキー画面"
 
 #: packages/admin/src/components/MarketplaceBrowse.tsx:179
 msgid "The marketplace is empty. Check back later for new plugins."
@@ -13734,7 +13734,7 @@ msgstr "お探しのページは存在しません。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:684
 msgid "The passkey is saved on your physical security key and can be used on compatible devices."
-msgstr ""
+msgstr "パスキーは物理的なセキュリティキーに保存され、対応するデバイスで使用できます。"
 
 #: packages/admin/src/components/settings/transfer/ImportReview.tsx:451
 msgid "The plan was changed somewhere else, such as from the command line or an AI assistant, after this page loaded it. Review it again, then start the import."
@@ -13857,7 +13857,7 @@ msgstr "動画はメディアライブラリに追加されましたが、この
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:179
 msgid "the Windows passkey prompt"
-msgstr ""
+msgstr "Windowsのパスキー画面"
 
 #: packages/admin/src/components/Sections.tsx:58
 msgid "Theme"
@@ -13925,11 +13925,11 @@ msgstr "この操作は取り消せません"
 
 #: packages/admin/src/components/DeviceAuthorizePage.tsx:351
 msgid "This code has expired. Start the sign-in again from your terminal to get a new one."
-msgstr ""
+msgstr "このコードは有効期限が切れています。ターミナルからログインをやり直して、新しいコードを取得してください。"
 
 #: packages/admin/src/components/DeviceAuthorizePage.tsx:349
 msgid "This code is invalid or has already been used."
-msgstr ""
+msgstr "このコードは無効か、すでに使用されています。"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:456
 msgid "This collection is defined in code. Some settings cannot be changed here. Edit your live.config.ts file to modify the schema."
@@ -13949,7 +13949,7 @@ msgstr ""
 
 #: packages/admin/src/components/DeviceAuthorizePage.tsx:371
 msgid "This device is requesting permission to use:"
-msgstr ""
+msgstr "このデバイスは次の権限を要求しています："
 
 #: packages/admin/src/components/WordPressImport.tsx:1107
 msgid "This doesn't look like a valid migration key. Generate a new one in the plugin and paste the full string starting with \"em1.\"."
@@ -14403,7 +14403,7 @@ msgstr "トークン名"
 
 #: packages/admin/src/lib/api/users.ts:393
 msgid "Token verification failed"
-msgstr ""
+msgstr "トークンの検証に失敗しました"
 
 #: packages/admin/src/components/editor/codeBlockLanguages.ts:55
 msgid "TOML"
@@ -14964,7 +14964,7 @@ msgstr "動画をアップロードまたは選択"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:108
 msgid "Upload site packages and check whether they can be imported. Admin includes this; choose it instead of Admin to give an agent narrower access."
-msgstr ""
+msgstr "サイトパッケージをアップロードし、インポートできるか確認します。管理者権限にも含まれています。エージェントのアクセス範囲を制限するには、管理者権限の代わりにこの権限を選択してください。"
 
 #. placeholder {0}: activeProviderInfo?.name || t`Library`
 #: packages/admin/src/components/MediaLibrary.tsx:687
@@ -15084,7 +15084,7 @@ msgstr ""
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:623
 msgid "Use a security key"
-msgstr ""
+msgstr "セキュリティキーを使用"
 
 #: packages/admin/src/components/MediaPickerModal.tsx:647
 msgid "Use a URL ending in a recognized image extension, such as .jpg or .png."
@@ -15092,7 +15092,7 @@ msgstr ".jpg や .png など、画像の拡張子で終わるURLを使ってく�
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:613
 msgid "Use another device"
-msgstr ""
+msgstr "別のデバイスを使用"
 
 #: packages/admin/src/components/ContentList.tsx:1229
 msgid "Use as end date"
@@ -15376,7 +15376,7 @@ msgstr ""
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:588
 msgid "We checked before opening the browser's passkey prompt so you can choose what happens next."
-msgstr ""
+msgstr "次に行う操作を選べるよう、ブラウザーのパスキー画面を開く前に対応状況を確認しました。"
 
 #. placeholder {0}: result.url
 #: packages/admin/src/components/WordPressImport.tsx:1320
@@ -15428,7 +15428,7 @@ msgstr ""
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:642
 msgid "What happens next?"
-msgstr ""
+msgstr "次の手順は？"
 
 #: packages/admin/src/components/WordPressImport.tsx:2148
 msgid "What happens when you import:"
@@ -15436,7 +15436,7 @@ msgstr "インポート時の動作："
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:234
 msgid "What is a passkey?"
-msgstr ""
+msgstr "パスキーとは？"
 
 #: packages/admin/src/components/settings/transfer/ExportSection.tsx:107
 msgid "What it leaves out"
@@ -15485,7 +15485,7 @@ msgstr "コンテンツの公開日時"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:246
 msgid "Where is it saved?"
-msgstr ""
+msgstr "保存先は？"
 
 #: packages/admin/src/components/TaxonomyManager.tsx:1074
 msgid "Which content types can use this taxonomy"
@@ -15597,15 +15597,15 @@ msgstr "作成予定"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:558
 msgid "Windows Hello still isn't available to this browser. You can try another device or a security key instead."
-msgstr ""
+msgstr "このブラウザーでは、まだWindows Helloを利用できません。別のデバイスまたはセキュリティキーをお試しください。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:181
 msgid "Windows will show which credential manager will save it before creating it."
-msgstr ""
+msgstr "パスキーを作成する前に、保存先の認証情報マネージャーがWindowsに表示されます。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:224
 msgid "With a passkey, you don’t need to remember complex passwords"
-msgstr ""
+msgstr "パスキーを使えば、複雑なパスワードを覚える必要はありません"
 
 #: packages/admin/src/components/settings/EmailSettings.tsx:149
 msgid "Without an email provider, invite links must be shared manually."
@@ -15708,7 +15708,7 @@ msgstr "サイトの閲覧と投稿ができます。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:511
 msgid "You can view, rename, or add more passkeys later in Security settings."
-msgstr ""
+msgstr "パスキーの確認、名前の変更、追加は、後からセキュリティ設定で行えます。"
 
 #: packages/admin/src/components/users/UserDetail.tsx:188
 msgid "You cannot change your own role"
@@ -15817,12 +15817,12 @@ msgstr "お使いのブラウザーはパスキーに対応していません。
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:202
 msgid "Your credential manager, such as Google Password Manager, saves it and may sync it to your other devices."
-msgstr ""
+msgstr "Google パスワード マネージャーなどの認証情報マネージャーに保存され、他のデバイスにも同期される場合があります。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:188
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:195
 msgid "Your credential manager, such as iCloud Keychain, saves it and may sync it to your other devices."
-msgstr ""
+msgstr "iCloudキーチェーンなどの認証情報マネージャーに保存され、他のデバイスにも同期される場合があります。"
 
 #: packages/admin/src/components/auth/PasskeyLogin.tsx:264
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:432
@@ -15831,12 +15831,12 @@ msgstr "お使いのデバイスは必要なセキュリティ機能に対応し
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:209
 msgid "Your device's credential manager saves it and will show you where before creating it."
-msgstr ""
+msgstr "デバイスの認証情報マネージャーに保存されます。作成前に保存先が表示されます。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:193
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:207
 msgid "your device's passkey prompt"
-msgstr ""
+msgstr "デバイスのパスキー画面"
 
 #: packages/admin/src/components/revisions/RevisionRestoreDialog.tsx:115
 msgid "Your draft will be replaced with the version from {when}. Your current draft stays in Revisions, and the live site won't change until you publish."
@@ -15894,7 +15894,7 @@ msgstr "あなたの権限では、このコンテンツを編集できません
 
 #: packages/admin/src/components/DeviceAuthorizePage.tsx:376
 msgid "Your role does not permit any of the permissions this device requested."
-msgstr ""
+msgstr "現在のロールでは、このデバイスが要求した権限をどれも許可できません。"
 
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:111
 msgid "Your site is currently at {currentUrl}."
