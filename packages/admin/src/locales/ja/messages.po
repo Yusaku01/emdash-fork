@@ -316,7 +316,7 @@ msgstr "{0} {1}が必要です。現在は{2}です。"
 #. placeholder {0}: byline.displayName
 #: packages/admin/src/components/BylineCreditsEditor.tsx:221
 msgid "{0} added to this post."
-msgstr ""
+msgstr "この投稿に{0}を追加しました。"
 
 #. placeholder {0}: displayName ?? slug
 #: packages/admin/src/components/RegistryPluginDetail.tsx:519
@@ -444,7 +444,7 @@ msgstr "{0}プレビュー"
 #. placeholder {0}: byline.displayName
 #: packages/admin/src/components/BylineCreditsEditor.tsx:528
 msgid "{0} removed from this post."
-msgstr ""
+msgstr "この投稿から{0}を削除しました。"
 
 #. placeholder {0}: SYSTEM_FIELDS.length
 #. placeholder {1}: fields.length
@@ -461,7 +461,7 @@ msgstr "{0}を更新しました"
 #. placeholder {0}: saved.displayName
 #: packages/admin/src/components/BylineCreditsEditor.tsx:274
 msgid "{0} updated everywhere it appears."
-msgstr ""
+msgstr "{0}が表示されるすべての箇所を更新しました。"
 
 #. placeholder {0}: plugin.name
 #: packages/admin/src/components/PluginManager.tsx:307
@@ -602,7 +602,7 @@ msgstr ""
 #. placeholder {0}: to + 1
 #: packages/admin/src/components/BylineCreditsEditor.tsx:240
 msgid "{label} moved to position {0}."
-msgstr ""
+msgstr "{label}を{0}番目に移動しました。"
 
 #: packages/admin/src/components/TaxonomySidebar.tsx:533
 msgid "{label} options"
@@ -1113,7 +1113,7 @@ msgstr ""
 #: packages/admin/src/components/ContentTypeEditor.tsx:235
 #: packages/admin/src/components/FieldEditor.tsx:657
 msgid "A slug cannot be generated from this label. Type one manually using lowercase letters, numbers, and underscores."
-msgstr ""
+msgstr "このラベルからスラッグを生成できません。半角英小文字・数字・アンダースコアを使って入力してください。"
 
 #: packages/admin/src/components/FieldEditor.tsx:1246
 msgid "A slug cannot be generated from this label. Type one manually."
@@ -1269,11 +1269,11 @@ msgstr ""
 
 #: packages/admin/src/components/BylineFormDialog.tsx:340
 msgid "Add a person or team to credit on your content."
-msgstr ""
+msgstr "コンテンツに執筆者として表示する個人やチームを追加してください。"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:467
 msgid "Add another byline"
-msgstr ""
+msgstr "別の執筆者を追加"
 
 #: packages/admin/src/components/BlocksField.tsx:275
 msgid "Add at least {minItems} blocks."
@@ -1289,7 +1289,7 @@ msgstr ""
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:316
 msgid "Add byline"
-msgstr ""
+msgstr "執筆者を追加"
 
 #: packages/admin/src/components/editor/VideoNode.tsx:387
 #: packages/admin/src/components/editor/VideoNode.tsx:389
@@ -1541,7 +1541,7 @@ msgstr "インポートする追加データ。"
 
 #: packages/admin/src/components/BylineFormDialog.tsx:492
 msgid "Additional details"
-msgstr ""
+msgstr "追加情報"
 
 #: packages/admin/src/components/settings/SeoSettings.tsx:282
 msgid "Adds rules to robots.txt that ask AI crawlers not to use this site for training. Search engines can still index it."
@@ -2022,7 +2022,7 @@ msgstr ""
 
 #: packages/admin/src/components/BylineFormDialog.tsx:454
 msgid "Attribution"
-msgstr ""
+msgstr "執筆者の設定"
 
 #: packages/admin/src/components/AllowedTypesEditor.tsx:69
 #: packages/admin/src/components/MediaLibrary.tsx:923
@@ -2123,7 +2123,7 @@ msgstr ""
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:550
 msgid "Automatic"
-msgstr ""
+msgstr "自動"
 
 #: packages/admin/src/components/settings/BackupSettings.tsx:219
 #: packages/admin/src/components/settings/BackupSettings.tsx:275
@@ -2141,7 +2141,7 @@ msgstr "自動保存に失敗しました"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:353
 msgid "Available bylines"
-msgstr ""
+msgstr "選択可能な執筆者"
 
 #. placeholder {0}: assignment.availableLocales.map((locale) => locale.toUpperCase()).join(", ")
 #: packages/admin/src/components/TaxonomySidebar.tsx:846
@@ -2412,16 +2412,16 @@ msgstr "箇条書きリスト"
 
 #: packages/admin/src/routes/bylines.tsx:532
 msgid "byline"
-msgstr ""
+msgstr "執筆者"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:239
 #: packages/admin/src/routes/bylines.tsx:342
 msgid "Byline"
-msgstr ""
+msgstr "執筆者"
 
 #: packages/admin/src/routes/bylines.tsx:278
 msgid "Byline created"
-msgstr ""
+msgstr "執筆者を作成しました"
 
 #: packages/admin/src/components/settings/transfer/labels.ts:25
 #: packages/admin/src/components/settings/transfer/labels.ts:83
@@ -2430,7 +2430,7 @@ msgstr ""
 
 #: packages/admin/src/routes/bylines.tsx:204
 msgid "Byline deleted"
-msgstr ""
+msgstr "執筆者を削除しました"
 
 #: packages/admin/src/components/settings/transfer/labels.ts:21
 msgid "Byline field group values"
@@ -2458,7 +2458,7 @@ msgstr "執筆者情報に追加する項目"
 
 #: packages/admin/src/routes/bylines.tsx:278
 msgid "Byline updated"
-msgstr ""
+msgstr "執筆者を更新しました"
 
 #: packages/admin/src/components/BylineFilter.tsx:145
 #: packages/admin/src/components/calendar/CalendarEntryPanel.tsx:339
@@ -2766,7 +2766,7 @@ msgstr "更新履歴"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:626
 msgid "Changes apply everywhere this byline appears."
-msgstr ""
+msgstr "変更は、この執筆者が表示されるすべての箇所に反映されます。"
 
 #: packages/admin/src/router.tsx:1535
 msgid "Changes discarded"
@@ -2934,7 +2934,7 @@ msgstr ""
 #: packages/admin/src/components/BylineCreditsEditor.tsx:567
 #: packages/admin/src/components/BylineCreditsEditor.tsx:582
 msgid "Choose bylines"
-msgstr ""
+msgstr "執筆者を選択"
 
 #: packages/admin/src/components/MediaPickerModal.tsx:1103
 msgid "Choose files to upload"
@@ -2971,7 +2971,7 @@ msgstr "選択…"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:556
 msgid "Choosing a byline replaces this automatic credit."
-msgstr ""
+msgstr "執筆者を選択すると、この自動表示を置き換えます。"
 
 #: packages/admin/src/components/ContentList.tsx:687
 #: packages/admin/src/components/ContentList.tsx:1224
@@ -3105,7 +3105,7 @@ msgstr "閉じる"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:326
 msgid "Close byline search"
-msgstr ""
+msgstr "執筆者の検索を閉じる"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:694
 msgid "Close comments after (days)"
@@ -3684,7 +3684,7 @@ msgstr ""
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:368
 msgid "Couldn’t search bylines."
-msgstr ""
+msgstr "執筆者を検索できませんでした。"
 
 #: packages/admin/src/components/settings/transfer/ExportSection.tsx:139
 msgid "Couldn’t start the export"
@@ -3721,7 +3721,7 @@ msgstr "作成"
 #. placeholder {0}: option.label
 #: packages/admin/src/components/BylineCreditsEditor.tsx:412
 msgid "Create “{0}”"
-msgstr ""
+msgstr "「{0}」を作成"
 
 #: packages/admin/src/components/TaxonomySidebar.tsx:584
 msgid "Create \"{trimmedInput}\""
@@ -3730,7 +3730,7 @@ msgstr "「{trimmedInput}」を作成"
 #. placeholder {0}: option.label
 #: packages/admin/src/components/BylineCreditsEditor.tsx:423
 msgid "Create {0}"
-msgstr ""
+msgstr "{0}を作成"
 
 #. placeholder {0}: resolvedEntryLocale.toUpperCase()
 #: packages/admin/src/components/TaxonomySidebar.tsx:857
@@ -3764,7 +3764,7 @@ msgstr "番号付きリストを作成"
 
 #: packages/admin/src/routes/bylines.tsx:452
 msgid "Create a profile for someone credited on your content."
-msgstr ""
+msgstr "コンテンツに執筆者として表示する人のプロフィールを作成してください。"
 
 #: packages/admin/src/components/SignupPage.tsx:426
 msgid "Create an account"
@@ -3772,7 +3772,7 @@ msgstr "アカウントを作成"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:625
 msgid "Create and add"
-msgstr ""
+msgstr "作成して追加"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:736
 msgid "Create Content Type"
@@ -4219,12 +4219,12 @@ msgstr "ブロックを削除"
 #: packages/admin/src/routes/bylines.tsx:427
 #: packages/admin/src/routes/bylines.tsx:534
 msgid "Delete byline"
-msgstr ""
+msgstr "執筆者を削除"
 
 #. placeholder {0}: item.displayName
 #: packages/admin/src/routes/bylines.tsx:424
 msgid "Delete byline {0}"
-msgstr ""
+msgstr "執筆者「{0}」を削除"
 
 #: packages/admin/src/routes/byline-schema.tsx:358
 msgid "Delete byline field?"
@@ -4955,7 +4955,7 @@ msgstr "画像を編集"
 #: packages/admin/src/components/BylineCreditsEditor.tsx:735
 #: packages/admin/src/components/BylineFormDialog.tsx:360
 msgid "Edit byline"
-msgstr ""
+msgstr "執筆者を編集"
 
 #: packages/admin/src/components/BylineFieldEditor.tsx:203
 msgid "Edit byline field"
@@ -5042,7 +5042,7 @@ msgstr "リダイレクト{0}を編集"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:727
 msgid "Edit role"
-msgstr ""
+msgstr "役割を編集"
 
 #: packages/admin/src/components/editor/PluginBlockNode.tsx:354
 #: packages/admin/src/components/editor/PluginBlockNode.tsx:355
@@ -5312,7 +5312,7 @@ msgstr "コンテンツの言語が設定されていないため、英語にな
 
 #: packages/admin/src/components/BylineFormDialog.tsx:281
 msgid "Enter a display name."
-msgstr ""
+msgstr "表示名を入力してください。"
 
 #: packages/admin/src/components/settings/ChangeDomainDialog.tsx:89
 msgid "Enter a domain such as example.com, without a path or port"
@@ -5320,7 +5320,7 @@ msgstr ""
 
 #: packages/admin/src/components/BylineFormDialog.tsx:288
 msgid "Enter a full URL that starts with https:// or http://."
-msgstr ""
+msgstr "https://またはhttp://で始まる完全なURLを入力してください。"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:521
 msgid "Enter a recognized timezone to save"
@@ -5328,7 +5328,7 @@ msgstr ""
 
 #: packages/admin/src/components/BylineFormDialog.tsx:283
 msgid "Enter a slug."
-msgstr ""
+msgstr "スラッグを入力してください。"
 
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:38
 msgid "Enter a time"
@@ -6777,7 +6777,7 @@ msgstr "ファイルを追加すると、自動的にアップロードが始ま
 
 #: packages/admin/src/components/BylineFormDialog.tsx:420
 msgid "Filled in from the display name. Use lowercase letters, numbers, and hyphens."
-msgstr ""
+msgstr "表示名から自動入力されます。半角英小文字・数字・ハイフンを使用してください。"
 
 #: packages/admin/src/components/calendar/CalendarFilters.tsx:131
 msgid "Filter"
@@ -6956,7 +6956,7 @@ msgstr ""
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:553
 msgid "From the post owner"
-msgstr ""
+msgstr "投稿の所有者から自動設定"
 
 #: packages/admin/src/components/MediaPickerModal.tsx:371
 msgid "From URL"
@@ -7072,7 +7072,7 @@ msgstr "表示単位"
 
 #: packages/admin/src/routes/bylines.tsx:378
 msgid "Guest"
-msgstr ""
+msgstr "ゲスト"
 
 #: packages/admin/src/components/BylineFormDialog.tsx:478
 msgid "Guest byline"
@@ -7935,7 +7935,7 @@ msgstr "このタブを開いたままにしてください。インポートは
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:437
 msgid "Keep typing to narrow the list."
-msgstr ""
+msgstr "入力を続けると一覧を絞り込めます。"
 
 #: packages/admin/src/components/MarketplacePluginDetail.tsx:315
 #: packages/admin/src/components/SectionEditor.tsx:305
@@ -8086,7 +8086,7 @@ msgstr "リンクの設定"
 
 #: packages/admin/src/components/BylineFormDialog.tsx:456
 msgid "Link this byline to a user or mark it as a guest profile."
-msgstr ""
+msgstr "この執筆者をユーザーにリンクするか、ゲストのプロフィールとして設定してください。"
 
 #: packages/admin/src/components/FieldEditor.tsx:457
 msgid "Link to another content item"
@@ -8499,7 +8499,7 @@ msgstr "サイトのナビゲーションメニューを管理"
 
 #: packages/admin/src/routes/bylines.tsx:287
 msgid "Manage the people and teams credited on your content."
-msgstr ""
+msgstr "コンテンツに執筆者として表示する個人やチームを管理します。"
 
 #: packages/admin/src/components/Redirects.tsx:374
 msgid "Manage URL redirects and view 404 errors."
@@ -8867,7 +8867,7 @@ msgstr "月別・年別のアーカイブを表示"
 #: packages/admin/src/components/TaxonomyManager.tsx:1352
 #: packages/admin/src/routes/bylines.tsx:413
 msgid "More actions for {0}"
-msgstr ""
+msgstr "{0}のその他の操作"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:5271
 msgid "More formatting"
@@ -9193,7 +9193,7 @@ msgstr "新しい{singularLower}の名前"
 #: packages/admin/src/routes/bylines.tsx:309
 #: packages/admin/src/routes/bylines.tsx:467
 msgid "New byline"
-msgstr ""
+msgstr "新しい執筆者"
 
 #: packages/admin/src/components/BylineFieldEditor.tsx:203
 msgid "New byline field"
@@ -9241,7 +9241,7 @@ msgstr ""
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:415
 msgid "New reusable profile"
-msgstr ""
+msgstr "新しい共通プロフィール"
 
 #: packages/admin/src/components/Sections.tsx:159
 msgid "New section"
@@ -9381,7 +9381,7 @@ msgstr "{entryLocale}で利用できる執筆者がいません。このコン�
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:445
 msgid "No bylines available."
-msgstr ""
+msgstr "選択できる執筆者がいません。"
 
 #: packages/admin/src/components/BylineFilter.tsx:150
 msgid "No bylines found"
@@ -9389,7 +9389,7 @@ msgstr "一致する執筆者はありません"
 
 #: packages/admin/src/routes/bylines.tsx:447
 msgid "No bylines yet"
-msgstr ""
+msgstr "執筆者はまだいません"
 
 #: packages/admin/src/components/revisions/change-labels.ts:163
 msgid "No changes"
@@ -9547,7 +9547,7 @@ msgstr ""
 
 #: packages/admin/src/routes/bylines.tsx:447
 msgid "No matching bylines"
-msgstr ""
+msgstr "一致する執筆者がいません"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:445
 msgid "No matching bylines."
@@ -9732,7 +9732,7 @@ msgstr ""
 
 #: packages/admin/src/routes/bylines.tsx:330
 msgid "Non-guest"
-msgstr ""
+msgstr "ゲスト以外"
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:275
 #: packages/admin/src/components/PortableTextEditor.tsx:5421
@@ -10259,7 +10259,7 @@ msgstr "未公開の変更"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:544
 msgid "People shown publicly on this post."
-msgstr ""
+msgstr "この投稿に表示される執筆者です。"
 
 #: packages/admin/src/components/ListPaginationFooter.tsx:128
 msgid "Per page"
@@ -11131,7 +11131,7 @@ msgstr "ドメインを削除しますか？"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:745
 msgid "Remove from post"
-msgstr ""
+msgstr "投稿から削除"
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:596
 #: packages/admin/src/components/ImageFieldRenderer.tsx:327
@@ -11750,12 +11750,12 @@ msgstr "ユーザー権限：{role}"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:760
 msgid "Role on this post (optional)"
-msgstr ""
+msgstr "この投稿での役割（任意）"
 
 #. placeholder {0}: byline.displayName
 #: packages/admin/src/components/BylineCreditsEditor.tsx:514
 msgid "Role updated for {0}."
-msgstr ""
+msgstr "{0}の役割を更新しました。"
 
 #: packages/admin/src/components/RelationForm.tsx:287
 msgid "Roles"
@@ -12116,7 +12116,7 @@ msgstr "執筆者を検索"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:336
 msgid "Search bylines to add…"
-msgstr ""
+msgstr "追加する執筆者を検索…"
 
 #: packages/admin/src/components/BylineFilter.tsx:129
 msgid "Search bylines…"
@@ -12194,7 +12194,7 @@ msgstr "プラグインを検索…"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:317
 msgid "Search reusable public profiles."
-msgstr ""
+msgstr "複数のコンテンツで使える公開プロフィールを検索します。"
 
 #: packages/admin/src/components/SectionPickerModal.tsx:82
 #: packages/admin/src/components/Sections.tsx:143
@@ -12250,7 +12250,7 @@ msgstr "検索可能"
 #: packages/admin/src/components/BylineCreditsEditor.tsx:362
 #: packages/admin/src/components/BylineCreditsEditor.tsx:451
 msgid "Searching…"
-msgstr ""
+msgstr "検索中…"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:3729
 msgid "Section"
@@ -12624,7 +12624,7 @@ msgstr "言語を設定（現在：{label}）"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:727
 msgid "Set role"
-msgstr ""
+msgstr "役割を設定"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:705
 msgid "Set to 0 to never close comments automatically."
@@ -14516,7 +14516,7 @@ msgstr ""
 
 #: packages/admin/src/routes/bylines.tsx:451
 msgid "Try a different search or filter."
-msgstr ""
+msgstr "検索語句やフィルターを変更してください。"
 
 #: packages/admin/src/components/ContentPickerModal.tsx:287
 #: packages/admin/src/components/SectionPickerModal.tsx:103
@@ -14720,7 +14720,7 @@ msgstr "不明なユーザー権限"
 
 #: packages/admin/src/routes/bylines.tsx:378
 msgid "Unlinked"
-msgstr ""
+msgstr "ユーザーとのリンクなし"
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:696
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:697
@@ -14846,7 +14846,7 @@ msgstr ""
 #. placeholder {0}: source.displayName
 #: packages/admin/src/components/BylineFormDialog.tsx:337
 msgid "Update the profile for {0}."
-msgstr ""
+msgstr "{0}のプロフィールを更新します。"
 
 #: packages/admin/src/components/Redirects.tsx:112
 msgid "Update this redirect rule."
@@ -15100,11 +15100,11 @@ msgstr "終了日に設定"
 
 #: packages/admin/src/components/BylineFormDialog.tsx:285
 msgid "Use lowercase letters, numbers, and hyphens, starting with a letter."
-msgstr ""
+msgstr "先頭を半角英小文字にし、半角英小文字・数字・ハイフンを使用してください。"
 
 #: packages/admin/src/components/BylineFormDialog.tsx:421
 msgid "Use lowercase letters, numbers, and hyphens."
-msgstr ""
+msgstr "半角英小文字・数字・ハイフンを使用してください。"
 
 #: packages/admin/src/components/MediaPickerModal.tsx:1149
 msgid "Use URL"
