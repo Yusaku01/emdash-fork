@@ -7388,7 +7388,7 @@ msgstr "画像が見つかりません"
 
 #: packages/admin/src/components/revisions/RevisionDocument.tsx:254
 msgid "Image replaced:"
-msgstr "画像の置換："
+msgstr "画像を置き換えました："
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:718
 msgid "Image replaced."
