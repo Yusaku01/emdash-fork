@@ -13314,7 +13314,7 @@ msgstr "分類グループと分類項目の管理"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:285
 msgid "Taxonomy"
-msgstr "分類"
+msgstr "分類グループ"
 
 #. placeholder {0}: blocker.name
 #: packages/admin/src/components/settings/transfer/labels.ts:110
