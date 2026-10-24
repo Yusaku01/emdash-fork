@@ -9830,7 +9830,7 @@ msgstr "古い版"
 
 #: packages/admin/src/components/revisions/RevisionFieldValue.tsx:425
 msgid "On"
-msgstr "オン"
+msgstr "有効"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:185
 msgid "On the site"
@@ -15346,7 +15346,7 @@ msgstr "サイトには引き続き公開版が表示されています"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:514
 msgid "Visitors will see these changes immediately."
-msgstr "変更内容はすぐに閲覧者に表示されます。"
+msgstr "変更内容はすぐにサイトの訪問者に表示されます。"
 
 #: packages/admin/src/components/editor/codeBlockLanguages.ts:58
 msgid "Vue"
