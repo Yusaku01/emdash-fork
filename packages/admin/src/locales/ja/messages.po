@@ -5418,7 +5418,7 @@ msgstr "ウィジェットを更新できませんでした"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:2571
 msgid "esc"
-msgstr "Esc"
+msgstr "esc"
 
 #: packages/admin/src/components/TaxonomySidebar.tsx:604
 msgid "Esc"
