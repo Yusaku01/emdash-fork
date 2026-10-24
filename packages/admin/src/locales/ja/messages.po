@@ -7574,7 +7574,7 @@ msgstr ""
 
 #: packages/admin/src/components/BlocksField.tsx:364
 msgid "Inactive version"
-msgstr "無効なバージョン"
+msgstr "非アクティブなバージョン"
 
 #: packages/admin/src/components/settings/transfer/ExportSection.tsx:116
 msgid "Include comments"
