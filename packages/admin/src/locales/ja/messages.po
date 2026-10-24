@@ -209,7 +209,7 @@ msgstr ""
 #. placeholder {0}: participating.length
 #: packages/admin/src/components/RelationsPanel.tsx:69
 msgid "{0, plural, one {# relation this content type takes part in} other {# relations this content type takes part in}}"
-msgstr ""
+msgstr "{0, plural, one {このコンテンツタイプに関わる#件の関連付け} other {このコンテンツタイプに関わる#件の関連付け}}"
 
 #. placeholder {0}: controls.rows
 #. placeholder {0}: state.rows
@@ -1095,11 +1095,11 @@ msgstr ""
 
 #: packages/admin/src/components/RelationFormPanel.tsx:87
 msgid "A relation defines how two content types link. Reference fields on either side then pick entries through it."
-msgstr ""
+msgstr "関連付けは、2つのコンテンツタイプのつながりを定義します。各側の参照フィールドでは、この関連付けを通じてコンテンツを選択します。"
 
 #: packages/admin/src/components/FieldEditor.tsx:792
 msgid "A relationship is required"
-msgstr ""
+msgstr "関連付けを選択してください"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:289
 msgid "A short description of your site"
@@ -1107,7 +1107,7 @@ msgstr "サイトの概要"
 
 #: packages/admin/src/components/RelationForm.tsx:249
 msgid "A slug cannot be generated from these role names. Type one manually using lowercase letters, numbers, and underscores."
-msgstr ""
+msgstr "これらの役割名からスラッグを生成できません。半角英小文字・数字・アンダースコアを使って入力してください。"
 
 #: packages/admin/src/components/BylineFieldEditor.tsx:195
 #: packages/admin/src/components/ContentTypeEditor.tsx:235
@@ -1117,7 +1117,7 @@ msgstr "このラベルからスラッグを生成できません。半角英小
 
 #: packages/admin/src/components/FieldEditor.tsx:1246
 msgid "A slug cannot be generated from this label. Type one manually."
-msgstr ""
+msgstr "このラベルからスラッグを生成できません。手動で入力してください。"
 
 #: packages/admin/src/components/TaxonomySidebar.tsx:762
 msgid "A source and target locale are required"
@@ -1227,7 +1227,7 @@ msgstr "有効"
 #: packages/admin/src/components/BlockTypeList.tsx:34
 #: packages/admin/src/components/FieldEditor.tsx:1174
 msgid "Active v{0}"
-msgstr ""
+msgstr "有効なバージョン：v{0}"
 
 #: packages/admin/src/components/AllowedTypesEditor.tsx:175
 #: packages/admin/src/components/BylineCreditsEditor.tsx:402
@@ -1277,7 +1277,7 @@ msgstr "別の執筆者を追加"
 
 #: packages/admin/src/components/BlocksField.tsx:275
 msgid "Add at least {minItems} blocks."
-msgstr ""
+msgstr "ブロックを{minItems}個以上追加してください。"
 
 #: packages/admin/src/components/FieldEditor.tsx:1238
 msgid "Add at least one sub-field to define the repeater structure."
@@ -1285,7 +1285,7 @@ msgstr "リピーター構造を定義するには、少なくとも1つのサ�
 
 #: packages/admin/src/components/BlocksField.tsx:176
 msgid "Add block"
-msgstr ""
+msgstr "ブロックを追加"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:316
 msgid "Add byline"
@@ -1690,7 +1690,7 @@ msgstr "plugin-toolスコープを持つMCPトークンに、これらのルー�
 
 #: packages/admin/src/components/FieldEditor.tsx:1057
 msgid "Allow multiple references"
-msgstr ""
+msgstr "複数の参照を許可"
 
 #: packages/admin/src/components/Settings.tsx:94
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:159
@@ -1703,7 +1703,7 @@ msgstr "訪問者がこのコンテンツタイプのコンテンツにコメン
 
 #: packages/admin/src/components/FieldEditor.tsx:1085
 msgid "Allowed block types"
-msgstr ""
+msgstr "使用できるブロックタイプ"
 
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:204
 msgid "Allowed Domains"
@@ -1880,7 +1880,7 @@ msgstr "この項目ではファイル形式を制限しません。ただし、
 #: packages/admin/src/components/RelationForm.tsx:352
 #: packages/admin/src/components/RelationForm.tsx:361
 msgid "Any number"
-msgstr ""
+msgstr "制限なし"
 
 #: packages/admin/src/components/Settings.tsx:99
 #: packages/admin/src/components/Settings.tsx:103
@@ -2018,7 +2018,7 @@ msgstr "{max}以下"
 
 #: packages/admin/src/components/RelationForm.tsx:408
 msgid "At most…"
-msgstr ""
+msgstr "上限を指定…"
 
 #: packages/admin/src/components/BylineFormDialog.tsx:454
 msgid "Attribution"
@@ -2308,7 +2308,7 @@ msgstr "ブロック"
 #. placeholder {0}: index + 1
 #: packages/admin/src/components/BlocksField.tsx:415
 msgid "Block {0}"
-msgstr ""
+msgstr "ブロック{0}"
 
 #: packages/admin/src/components/editor/BlockMenu.tsx:138
 msgid "Block actions"
@@ -2330,11 +2330,11 @@ msgstr ""
 #: packages/admin/src/components/BlockTypeList.tsx:16
 #: packages/admin/src/components/settings/transfer/labels.ts:9
 msgid "Block types"
-msgstr ""
+msgstr "ブロックタイプ"
 
 #: packages/admin/src/components/FieldEditor.tsx:1094
 msgid "Block types could not be loaded."
-msgstr ""
+msgstr "ブロックタイプを読み込めませんでした。"
 
 #: packages/admin/src/components/settings/transfer/ImportReview.tsx:432
 msgid "Blockers"
@@ -2342,7 +2342,7 @@ msgstr ""
 
 #: packages/admin/src/components/FieldEditor.tsx:486
 msgid "Blocks"
-msgstr ""
+msgstr "ブロック"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4795
 #: packages/admin/src/components/PortableTextEditor.tsx:6320
@@ -2361,7 +2361,7 @@ msgstr ""
 
 #: packages/admin/src/components/RelationForm.tsx:345
 msgid "Both reference fields bound to this relation share these limits, so the two sides cannot disagree about the same links."
-msgstr ""
+msgstr "この関連付けを使う両側の参照フィールドで制限を共有するため、同じリンクに異なる制限が設定されることはありません。"
 
 #: packages/admin/src/components/SeoPanel.tsx:195
 msgid "Brief summary shown below the title in search results"
@@ -3149,7 +3149,7 @@ msgstr "コードブロックの操作"
 
 #: packages/admin/src/components/BlocksField.tsx:350
 msgid "Collapse block"
-msgstr ""
+msgstr "ブロックを折りたたむ"
 
 #: packages/admin/src/components/PluginManager.tsx:571
 #: packages/admin/src/components/PluginManager.tsx:576
@@ -3328,7 +3328,7 @@ msgstr "接続日：{0}"
 
 #: packages/admin/src/components/RelationList.tsx:93
 msgid "Connects"
-msgstr ""
+msgstr "関連付けるコンテンツタイプ"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:481
 msgid "content"
@@ -3412,7 +3412,7 @@ msgstr "インポートするコンテンツ"
 
 #: packages/admin/src/components/RelationForm.tsx:261
 msgid "Content types"
-msgstr ""
+msgstr "コンテンツタイプ"
 
 #: packages/admin/src/components/AdminCommandPalette.tsx:198
 #: packages/admin/src/components/ContentTypeList.tsx:131
@@ -3422,7 +3422,7 @@ msgstr "コンテンツタイプ"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:572
 msgid "Content types with the same group share a collapsible folder in the sidebar"
-msgstr ""
+msgstr "同じグループのコンテンツタイプは、サイドバーで同じ折りたたみ式フォルダーに表示されます"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1946
 msgid "Content using this media item may show a broken reference."
@@ -3743,7 +3743,7 @@ msgstr "{singularLower}を作成"
 
 #: packages/admin/src/components/FieldEditor.tsx:1098
 msgid "Create a block type before adding a blocks field."
-msgstr ""
+msgstr "ブロックフィールドを追加する前に、ブロックタイプを作成してください。"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:2052
 msgid "Create a bullet list"
@@ -3809,7 +3809,7 @@ msgstr "WordPressで作成：ユーザー → プロフィール → アプリ�
 
 #: packages/admin/src/components/RelationsPanel.tsx:87
 msgid "Create one to let entries here link to entries in another content type."
-msgstr ""
+msgstr "関連付けを作成すると、このコンテンツタイプから別のコンテンツタイプのコンテンツを参照できます。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:741
 msgid "Create passkey"
@@ -3837,11 +3837,11 @@ msgstr "URLを変更した際の転送ルールを作成できます。"
 
 #: packages/admin/src/components/FieldEditor.tsx:788
 msgid "Create relation"
-msgstr ""
+msgstr "関連付けを作成"
 
 #: packages/admin/src/components/RelationFormPanel.tsx:110
 msgid "Create Relation"
-msgstr ""
+msgstr "関連付けを作成"
 
 #: packages/admin/src/components/WordPressImport.tsx:1978
 msgid "Create Schema & Import"
@@ -4060,7 +4060,7 @@ msgstr "ダッシュボード"
 
 #: packages/admin/src/components/BlockTypeList.tsx:18
 msgid "Database-owned definitions available to blocks fields."
-msgstr ""
+msgstr "ブロックフィールドで使用できる、データベースで管理される定義です。"
 
 #: packages/admin/src/components/comments/CommentInbox.tsx:334
 #: packages/admin/src/components/ContentList.tsx:767
@@ -4128,7 +4128,7 @@ msgstr "役職、代名詞、SNSアカウントなど、執筆者情報に含め
 
 #: packages/admin/src/components/RelationList.tsx:70
 msgid "Define how content types link to each other"
-msgstr ""
+msgstr "コンテンツタイプ同士のつながりを定義します"
 
 #: packages/admin/src/components/ContentTypeList.tsx:133
 msgid "Define the structure of your content"
@@ -4858,7 +4858,7 @@ msgstr "{title}を複製"
 
 #: packages/admin/src/components/BlocksField.tsx:382
 msgid "Duplicate block"
-msgstr ""
+msgstr "ブロックを複製"
 
 #: packages/admin/src/components/settings/transfer/labels.ts:156
 msgid "Duplicate redirects were left out"
@@ -4882,16 +4882,16 @@ msgstr "例：MacBook Pro、iPhone"
 
 #: packages/admin/src/components/RelationForm.tsx:359
 msgid "Each {linkedSideName} is linked from"
-msgstr ""
+msgstr "各{linkedSideName}の参照元の件数"
 
 #: packages/admin/src/components/RelationForm.tsx:350
 msgid "Each {linkingSideName} links to"
-msgstr ""
+msgstr "各{linkingSideName}の参照先の件数"
 
 #. placeholder {0}: "/{year}/{slug}"
 #: packages/admin/src/components/ContentTypeEditor.tsx:553
 msgid "Each path segment can contain at most one placeholder, e.g. {0}"
-msgstr ""
+msgstr "パスの各区切りに指定できるプレースホルダーは1つまでです（例：{0}）"
 
 #: packages/admin/src/components/revisions/change-labels.ts:155
 msgid "Earliest saved version"
@@ -5008,7 +5008,7 @@ msgstr "リンクを編集"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:529
 msgid "Edit locking"
-msgstr ""
+msgstr "編集中のロック"
 
 #: packages/admin/src/lib/api/marketplace.ts:439
 msgid "Edit media alt text, captions, and focal points"
@@ -5127,7 +5127,7 @@ msgstr ""
 
 #: packages/admin/src/components/FieldEditor.tsx:1374
 msgid "Editors can select a second image that the site shows in dark mode."
-msgstr ""
+msgstr "編集者は、サイトのダークモードで表示する別の画像を選択できます。"
 
 #: packages/admin/src/components/WordPressImport.tsx:1092
 msgid "em1.…"
@@ -5400,20 +5400,20 @@ msgstr ""
 #: packages/admin/src/components/FieldEditor.tsx:814
 #: packages/admin/src/components/FieldEditor.tsx:1022
 msgid "Entries that link to this one"
-msgstr ""
+msgstr "このコンテンツを参照するコンテンツ"
 
 #: packages/admin/src/components/FieldEditor.tsx:813
 #: packages/admin/src/components/FieldEditor.tsx:1021
 msgid "Entries this one links to"
-msgstr ""
+msgstr "このコンテンツの参照先"
 
 #: packages/admin/src/components/RelationForm.tsx:255
 msgid "entry on the linked side"
-msgstr ""
+msgstr "参照先のコンテンツ"
 
 #: packages/admin/src/components/RelationForm.tsx:254
 msgid "entry on the linking side"
-msgstr ""
+msgstr "参照元のコンテンツ"
 
 #: packages/admin/src/components/MenuEditor.tsx:158
 #: packages/admin/src/components/MenuEditor.tsx:226
@@ -5504,7 +5504,7 @@ msgstr "集中モードを終了（⌘⇧\\）"
 
 #: packages/admin/src/components/BlocksField.tsx:350
 msgid "Expand block"
-msgstr ""
+msgstr "ブロックを展開"
 
 #: packages/admin/src/components/PluginManager.tsx:571
 #: packages/admin/src/components/PluginManager.tsx:576
@@ -5593,7 +5593,7 @@ msgstr ""
 
 #: packages/admin/src/lib/api/schema.ts:319
 msgid "Failed to activate block type version"
-msgstr ""
+msgstr "ブロックタイプのバージョンの有効化に失敗しました"
 
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:84
 msgid "Failed to add domain"
@@ -5685,7 +5685,7 @@ msgstr "バックアップを作成できませんでした"
 
 #: packages/admin/src/lib/api/schema.ts:283
 msgid "Failed to create block type"
-msgstr ""
+msgstr "ブロックタイプの作成に失敗しました"
 
 #: packages/admin/src/lib/api/bylines.ts:127
 msgid "Failed to create byline"
@@ -5701,7 +5701,7 @@ msgstr ""
 
 #: packages/admin/src/lib/api/schema.ts:371
 msgid "Failed to create collection"
-msgstr ""
+msgstr "コンテンツタイプの作成に失敗しました"
 
 #: packages/admin/src/lib/api/content.ts:306
 msgid "Failed to create content"
@@ -5734,7 +5734,7 @@ msgstr ""
 
 #: packages/admin/src/lib/api/relations.ts:119
 msgid "Failed to create relation"
-msgstr ""
+msgstr "関連付けの作成に失敗しました"
 
 #: packages/admin/src/lib/api/sections.ts:88
 msgid "Failed to create section"
@@ -5952,11 +5952,11 @@ msgstr "バックアップ設定の取得に失敗しました"
 
 #: packages/admin/src/lib/api/schema.ts:270
 msgid "Failed to fetch block type"
-msgstr ""
+msgstr "ブロックタイプの取得に失敗しました"
 
 #: packages/admin/src/lib/api/schema.ts:261
 msgid "Failed to fetch block types"
-msgstr ""
+msgstr "ブロックタイプ一覧の取得に失敗しました"
 
 #: packages/admin/src/lib/api/bylines.ts:118
 msgid "Failed to fetch byline"
@@ -5977,7 +5977,7 @@ msgstr "コンテンツタイプの取得に失敗しました"
 
 #: packages/admin/src/lib/api/schema.ts:331
 msgid "Failed to fetch collections"
-msgstr ""
+msgstr "コンテンツタイプ一覧の取得に失敗しました"
 
 #: packages/admin/src/lib/api/comments.ts:85
 msgid "Failed to fetch comment"
@@ -6014,7 +6014,7 @@ msgstr "コンテンツに設定された分類項目の取得に失敗しまし
 
 #: packages/admin/src/lib/api/schema.ts:413
 msgid "Failed to fetch fields"
-msgstr ""
+msgstr "フィールドの取得に失敗しました"
 
 #: packages/admin/src/lib/api/client.ts:356
 msgid "Failed to fetch manifest"
@@ -6058,7 +6058,7 @@ msgstr ""
 
 #: packages/admin/src/lib/api/schema.ts:525
 msgid "Failed to fetch orphaned tables"
-msgstr ""
+msgstr "未登録テーブルの取得に失敗しました"
 
 #: packages/admin/src/lib/api/users.ts:234
 msgid "Failed to fetch passkeys"
@@ -6088,19 +6088,19 @@ msgstr ""
 
 #: packages/admin/src/lib/api/relations.ts:174
 msgid "Failed to fetch reference children"
-msgstr ""
+msgstr "参照先の取得に失敗しました"
 
 #: packages/admin/src/lib/api/relations.ts:193
 msgid "Failed to fetch reference parents"
-msgstr ""
+msgstr "参照元の取得に失敗しました"
 
 #: packages/admin/src/lib/api/relations.ts:106
 msgid "Failed to fetch relation"
-msgstr ""
+msgstr "関連付けの取得に失敗しました"
 
 #: packages/admin/src/lib/api/relations.ts:94
 msgid "Failed to fetch relations"
-msgstr ""
+msgstr "関連付け一覧の取得に失敗しました"
 
 #: packages/admin/src/lib/api/content.ts:652
 #: packages/admin/src/lib/api/content.ts:657
@@ -6388,7 +6388,7 @@ msgstr "{slug}の登録に失敗しました"
 
 #: packages/admin/src/lib/api/schema.ts:548
 msgid "Failed to register orphaned table"
-msgstr ""
+msgstr "未登録テーブルの登録に失敗しました"
 
 #: packages/admin/src/lib/api/entry-lock.ts:70
 msgid "Failed to release the entry lock"
@@ -6563,7 +6563,7 @@ msgstr "バックアップ設定の更新に失敗しました"
 
 #: packages/admin/src/lib/api/schema.ts:299
 msgid "Failed to update block type"
-msgstr ""
+msgstr "ブロックタイプの更新に失敗しました"
 
 #: packages/admin/src/lib/api/bylines.ts:139
 msgid "Failed to update byline"
@@ -6575,7 +6575,7 @@ msgstr "執筆者情報の項目の更新に失敗しました"
 
 #: packages/admin/src/lib/api/schema.ts:390
 msgid "Failed to update collection"
-msgstr ""
+msgstr "コンテンツタイプの更新に失敗しました"
 
 #: packages/admin/src/lib/api/comments.ts:104
 msgid "Failed to update comment status"
@@ -6591,7 +6591,7 @@ msgstr "ドメインの設定を更新できませんでした"
 
 #: packages/admin/src/lib/api/schema.ts:455
 msgid "Failed to update field"
-msgstr ""
+msgstr "フィールドの更新に失敗しました"
 
 #: packages/admin/src/lib/api/media.ts:648
 msgid "Failed to update media"
@@ -6625,7 +6625,7 @@ msgstr ""
 
 #: packages/admin/src/lib/api/relations.ts:132
 msgid "Failed to update relation"
-msgstr ""
+msgstr "関連付けの更新に失敗しました"
 
 #: packages/admin/src/lib/api/sections.ts:100
 msgid "Failed to update section"
@@ -7060,7 +7060,7 @@ msgstr "グリッド表示"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:565
 msgid "Group"
-msgstr ""
+msgstr "グループ"
 
 #: packages/admin/src/components/Redirects.tsx:171
 msgid "Group (optional)"
@@ -7170,7 +7170,7 @@ msgstr "以前のコンテンツを非表示"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:593
 msgid "Hide from navigation"
-msgstr ""
+msgstr "ナビゲーションに表示しない"
 
 #: packages/admin/src/components/SeoPanel.tsx:244
 #: packages/admin/src/components/SeoPanel.tsx:247
@@ -7202,7 +7202,7 @@ msgstr "アクセス数"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:531
 msgid "Hold an entry while someone is editing it, and refuse other writers"
-msgstr ""
+msgstr "編集中のコンテンツをロックし、ほかのユーザーによる書き込みを防ぎます"
 
 #: packages/admin/src/components/ContentEditor.tsx:2791
 msgid "Holds an entry ID. Set a target collection under Content Types to pick entries instead."
@@ -7240,7 +7240,7 @@ msgstr ""
 
 #: packages/admin/src/components/RelationForm.tsx:342
 msgid "How many"
-msgstr ""
+msgstr "件数の制限"
 
 #: packages/admin/src/components/WordPressImport.tsx:1575
 msgid "How to create an Application Password"
@@ -7305,7 +7305,7 @@ msgstr ""
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:578
 msgid "Icon"
-msgstr ""
+msgstr "アイコン"
 
 #: packages/admin/src/components/MarketplaceBrowse.tsx:243
 #: packages/admin/src/components/MarketplacePluginDetail.tsx:164
@@ -7574,7 +7574,7 @@ msgstr ""
 
 #: packages/admin/src/components/BlocksField.tsx:364
 msgid "Inactive version"
-msgstr ""
+msgstr "非アクティブなバージョン"
 
 #: packages/admin/src/components/settings/transfer/ExportSection.tsx:116
 msgid "Include comments"
@@ -8105,15 +8105,15 @@ msgstr "連携済みアカウント（{0}）"
 #. placeholder {0}: relation.parentLabel
 #: packages/admin/src/components/RelationsPanel.tsx:178
 msgid "Linked from {0}"
-msgstr ""
+msgstr "参照元：{0}"
 
 #: packages/admin/src/components/RelationForm.tsx:306
 msgid "Linked side (plural)"
-msgstr ""
+msgstr "参照先の名称（複数形）"
 
 #: packages/admin/src/components/RelationForm.tsx:312
 msgid "Linked side (singular)"
-msgstr ""
+msgstr "参照先の名称（単数形）"
 
 #: packages/admin/src/components/BylineFormDialog.tsx:460
 #: packages/admin/src/components/BylineFormDialog.tsx:461
@@ -8131,11 +8131,11 @@ msgstr ""
 
 #: packages/admin/src/components/RelationForm.tsx:294
 msgid "Linking side (plural)"
-msgstr ""
+msgstr "参照元の名称（複数形）"
 
 #: packages/admin/src/components/RelationForm.tsx:300
 msgid "Linking side (singular)"
-msgstr ""
+msgstr "参照元の名称（単数形）"
 
 #: packages/admin/src/components/RelationList.tsx:99
 #: packages/admin/src/components/ThemeMarketplaceDetail.tsx:210
@@ -8144,7 +8144,7 @@ msgstr "リンク"
 
 #: packages/admin/src/components/RelationForm.tsx:266
 msgid "Links from"
-msgstr ""
+msgstr "参照元"
 
 #. placeholder {0}: siteDomain.configuredUrl
 #: packages/admin/src/components/settings/GeneralSettings.tsx:301
@@ -8157,12 +8157,12 @@ msgstr ""
 
 #: packages/admin/src/components/RelationForm.tsx:275
 msgid "Links to"
-msgstr ""
+msgstr "参照先"
 
 #. placeholder {0}: relation.childLabel
 #: packages/admin/src/components/RelationsPanel.tsx:176
 msgid "Links to {0}"
-msgstr ""
+msgstr "参照先：{0}"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:3506
 msgid "List"
@@ -8230,7 +8230,7 @@ msgstr ""
 #: packages/admin/src/components/BlockTypeList.tsx:22
 #: packages/admin/src/components/FieldEditor.tsx:1091
 msgid "Loading block types…"
-msgstr ""
+msgstr "ブロックタイプを読み込み中…"
 
 #: packages/admin/src/routes/byline-schema.tsx:257
 msgid "Loading byline fields…"
@@ -8310,7 +8310,7 @@ msgstr "参照を読み込み中…"
 #: packages/admin/src/components/RelationList.tsx:110
 #: packages/admin/src/components/RelationsPanel.tsx:68
 msgid "Loading relations..."
-msgstr ""
+msgstr "関連付けを読み込み中…"
 
 #: packages/admin/src/components/SectionPickerModal.tsx:95
 #: packages/admin/src/components/Sections.tsx:275
@@ -8448,7 +8448,7 @@ msgstr "長文テキスト"
 
 #: packages/admin/src/components/RelationForm.tsx:335
 msgid "Lowercase letters, numbers and underscores. Reference fields store this."
-msgstr ""
+msgstr "半角英小文字・数字・アンダースコアを使用してください。参照フィールドにはこの値が保存されます。"
 
 #: packages/admin/src/components/Sections.tsx:214
 msgid "Lowercase letters, numbers, and hyphens only"
@@ -8591,11 +8591,11 @@ msgstr "最大値"
 
 #: packages/admin/src/components/RelationForm.tsx:414
 msgid "Maximum"
-msgstr ""
+msgstr "上限"
 
 #: packages/admin/src/components/FieldEditor.tsx:1195
 msgid "Maximum blocks"
-msgstr ""
+msgstr "ブロック数の上限"
 
 #: packages/admin/src/components/Widgets.tsx:156
 msgid "Maximum tags"
@@ -8820,7 +8820,7 @@ msgstr "最小値"
 
 #: packages/admin/src/components/FieldEditor.tsx:1187
 msgid "Minimum blocks"
-msgstr ""
+msgstr "ブロック数の下限"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:2118
 msgid "Minor section heading"
@@ -9237,7 +9237,7 @@ msgstr "リダイレクト設定を追加"
 #: packages/admin/src/components/RelationList.tsx:75
 #: packages/admin/src/components/RelationsPanel.tsx:77
 msgid "New Relation"
-msgstr ""
+msgstr "新しい関連付け"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:415
 msgid "New reusable profile"
@@ -9353,11 +9353,11 @@ msgstr "承認済みのコメントはまだありません。"
 
 #: packages/admin/src/components/BlockTypeList.tsx:24
 msgid "No block types defined"
-msgstr ""
+msgstr "ブロックタイプが定義されていません"
 
 #: packages/admin/src/components/BlocksField.tsx:229
 msgid "No blocks yet"
-msgstr ""
+msgstr "ブロックはまだありません"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:585
 msgid "No built-in passkey authenticator found"
@@ -9470,11 +9470,11 @@ msgstr "無期限"
 
 #: packages/admin/src/components/RelationsPanel.tsx:182
 msgid "No field on this content type uses it yet"
-msgstr ""
+msgstr "このコンテンツタイプでは、まだどのフィールドも使用していません"
 
 #: packages/admin/src/components/RelationList.tsx:198
 msgid "No fields"
-msgstr ""
+msgstr "フィールドがありません"
 
 #: packages/admin/src/components/MediaUploadDialog.tsx:311
 msgid "No files added"
@@ -9543,7 +9543,7 @@ msgstr ""
 
 #: packages/admin/src/components/BlocksField.tsx:220
 msgid "No matching block types"
-msgstr ""
+msgstr "一致するブロックタイプがありません"
 
 #: packages/admin/src/routes/bylines.tsx:447
 msgid "No matching bylines"
@@ -9655,11 +9655,11 @@ msgstr "参照が選択されていません。"
 
 #: packages/admin/src/components/RelationsPanel.tsx:85
 msgid "No relations yet"
-msgstr ""
+msgstr "関連付けはまだありません"
 
 #: packages/admin/src/components/RelationList.tsx:116
 msgid "No relations yet."
-msgstr ""
+msgstr "関連付けはまだありません。"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:2530
 #: packages/admin/src/components/RepeaterField.tsx:398
@@ -9843,7 +9843,7 @@ msgstr "セットアップの完了後に、ほかのEmDashサイトから書き
 #: packages/admin/src/components/RelationForm.tsx:351
 #: packages/admin/src/components/RelationForm.tsx:360
 msgid "One"
-msgstr ""
+msgstr "1件"
 
 #: packages/admin/src/components/DeviceAuthorizePage.tsx:311
 msgid "Only authorize codes you recognize."
@@ -10016,7 +10016,7 @@ msgstr "順序を保存しました"
 
 #: packages/admin/src/components/FieldEditor.tsx:487
 msgid "Ordered page-building blocks"
-msgstr ""
+msgstr "順序を指定してページを構成するブロック"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:538
 msgid "Original"
@@ -10034,7 +10034,7 @@ msgstr "元のサイズ："
 
 #: packages/admin/src/components/BlocksField.tsx:149
 msgid "Other"
-msgstr ""
+msgstr "その他"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:1315
 #: packages/admin/src/components/editor/DocumentOutline.tsx:248
@@ -10230,7 +10230,7 @@ msgstr "パターン（正規表現）"
 #. placeholder {9}: "/{year}/{month}/{day}/{slug}.html"
 #: packages/admin/src/components/ContentTypeEditor.tsx:557
 msgid "Pattern for generating URLs, e.g. /blog/{0}. Tokens: {1}, {2}, and date tokens {3}/{4}/{5} (also {6}/{7}/{8}) from the publish date — e.g. {9} for WordPress-style permalinks."
-msgstr ""
+msgstr "URLを生成するパターンです（例：/blog/{0}）。{1}、{2}と、公開日時に基づく{3}/{4}/{5}（{6}/{7}/{8}も使用可能）を指定できます。WordPress形式のパーマリンクの例：{9}。"
 
 #. placeholder {0}: "{slug}"
 #: packages/admin/src/components/ContentTypeEditor.tsx:548
@@ -10283,7 +10283,7 @@ msgstr "権限"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:584
 msgid "Phosphor icon name, e.g. calendar-blank or trophy"
-msgstr ""
+msgstr "Phosphorのアイコン名（例：calendar-blank、trophy）"
 
 #: packages/admin/src/components/editor/codeBlockLanguages.ts:47
 msgid "PHP"
@@ -10295,14 +10295,14 @@ msgstr ""
 
 #: packages/admin/src/components/FieldEditor.tsx:1457
 msgid "Picking entries this one links to lets editors drag them into an order. The other direction lists whatever points at the entry and cannot be reordered."
-msgstr ""
+msgstr "参照先のコンテンツを選択する場合は、ドラッグして並べ替えられます。逆方向はこのコンテンツを参照するものの一覧で、並べ替えはできません。"
 
 #. placeholder {0}: relation.childLabel
 #. placeholder {0}: relation.parentLabel
 #: packages/admin/src/components/RelationList.tsx:208
 #: packages/admin/src/components/RelationList.tsx:209
 msgid "picks {0}"
-msgstr ""
+msgstr "{0}を選択"
 
 #: packages/admin/src/components/Widgets.tsx:163
 msgid "Placeholder text"
@@ -10769,15 +10769,15 @@ msgstr "待機中"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:606
 msgid "Quick action on the dashboard"
-msgstr ""
+msgstr "ダッシュボードのクイック操作"
 
 #: packages/admin/src/components/FieldEditor.tsx:995
 msgid "Quick create a relationship"
-msgstr ""
+msgstr "関連付けを簡易作成"
 
 #: packages/admin/src/components/FieldEditor.tsx:1060
 msgid "Quick create names the relationship after this field and this collection, takes how many entries it holds from the switch above, and puts no limit on how many entries link back the other way. <0>Create the relationship yourself</0> to set its slug, the name each side goes by, and both limits, then pick it above."
-msgstr ""
+msgstr "簡易作成では、このフィールドとコンテンツタイプに基づいて関連付けに名前を付けます。参照先の件数は上のスイッチで決まり、逆方向の参照元の件数に制限はありません。スラッグ・両側の名称・件数の制限を指定するには、<0>関連付けを個別に作成</0>してから上で選択してください。"
 
 #: packages/admin/src/components/editor/blockTypes.ts:109
 #: packages/admin/src/components/PortableTextEditor.tsx:2071
@@ -10971,11 +10971,11 @@ msgstr "参照"
 #: packages/admin/src/components/FieldEditor.tsx:1006
 #: packages/admin/src/components/FieldEditor.tsx:1039
 msgid "Referenced collection"
-msgstr ""
+msgstr "参照先のコンテンツタイプ"
 
 #: packages/admin/src/components/FieldEditor.tsx:1047
 msgid "Referenced collection is required"
-msgstr ""
+msgstr "参照先のコンテンツタイプを選択してください"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:440
 msgid "Referenced favicon unavailable."
@@ -11031,13 +11031,13 @@ msgstr "レジストリ"
 #: packages/admin/src/components/settings/transfer/labels.ts:14
 #: packages/admin/src/components/settings/transfer/labels.ts:77
 msgid "Relations"
-msgstr ""
+msgstr "関連付け"
 
 #: packages/admin/src/components/FieldEditor.tsx:779
 #: packages/admin/src/components/FieldEditor.tsx:965
 #: packages/admin/src/components/FieldEditor.tsx:991
 msgid "Relationship"
-msgstr ""
+msgstr "関連付け"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:189
 msgid "Release CID"
@@ -11253,7 +11253,7 @@ msgstr "削除："
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:595
 msgid "Removes the sidebar entry, command palette link, and dashboard quick action; entries stay reachable by URL, API, and plugins"
-msgstr ""
+msgstr "サイドバー・コマンドパレット・ダッシュボードのクイック操作から非表示にします。URL・API・プラグインからは引き続きアクセスできます"
 
 #: packages/admin/src/components/settings/transfer/labels.ts:57
 msgid "Removing starter content"
@@ -11562,7 +11562,7 @@ msgstr "結果"
 #: packages/admin/src/components/BlocksField.tsx:365
 #: packages/admin/src/components/FieldEditor.tsx:1130
 msgid "Retired"
-msgstr ""
+msgstr "使用終了"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:371
 #: packages/admin/src/components/ContentEditor.tsx:3104
@@ -11759,7 +11759,7 @@ msgstr "{0}の役割を更新しました。"
 
 #: packages/admin/src/components/RelationForm.tsx:287
 msgid "Roles"
-msgstr ""
+msgstr "役割名"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:515
 msgid "Routable"
@@ -11883,7 +11883,7 @@ msgstr "切り抜く前に、ほかの変更を保存するか破棄してくだ
 
 #: packages/admin/src/components/RelationFormPanel.tsx:113
 msgid "Save Relation"
-msgstr ""
+msgstr "関連付けを保存"
 
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:522
 msgid "Save schedule"
@@ -11914,7 +11914,7 @@ msgstr "すぐに保存されます。分類項目の変更は「変更を公開
 
 #: packages/admin/src/components/FieldEditor.tsx:1051
 msgid "Saving a collection here turns this field into an entry picker. Its stored entry IDs move to the relationship, and the field can no longer be searched or filtered on."
-msgstr ""
+msgstr "ここでコンテンツタイプを指定して保存すると、このフィールドでコンテンツを選択できるようになります。保存済みのコンテンツIDは関連付けに移され、このフィールドによる検索や絞り込みはできなくなります。"
 
 #: packages/admin/src/components/BylineFormDialog.tsx:549
 #: packages/admin/src/components/FieldEditor.tsx:1401
@@ -12092,11 +12092,11 @@ msgstr "{label}を検索…"
 
 #: packages/admin/src/components/BlocksField.tsx:184
 msgid "Search block types"
-msgstr ""
+msgstr "ブロックタイプを検索"
 
 #: packages/admin/src/components/BlocksField.tsx:187
 msgid "Search blocks"
-msgstr ""
+msgstr "ブロックを検索"
 
 #: packages/admin/src/components/MediaLibrary.tsx:902
 #: packages/admin/src/components/MediaPickerModal.tsx:1264
@@ -12368,7 +12368,7 @@ msgstr "{title}を選択"
 
 #: packages/admin/src/components/FieldEditor.tsx:1046
 msgid "Select a collection"
-msgstr ""
+msgstr "コンテンツタイプを選択"
 
 #: packages/admin/src/components/Widgets.tsx:968
 msgid "Select a component..."
@@ -12377,7 +12377,7 @@ msgstr "コンポーネントを選択…"
 #: packages/admin/src/components/RelationForm.tsx:271
 #: packages/admin/src/components/RelationForm.tsx:280
 msgid "Select a content type"
-msgstr ""
+msgstr "コンテンツタイプを選択"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1496
 msgid "Select a location"
@@ -12389,7 +12389,7 @@ msgstr "メニューを選択…"
 
 #: packages/admin/src/components/FieldEditor.tsx:791
 msgid "Select a relationship"
-msgstr ""
+msgstr "関連付けを選択"
 
 #: packages/admin/src/components/RegistryPluginDetail.tsx:401
 msgid "Select a release before verifying it"
@@ -12770,7 +12770,7 @@ msgstr "画像にカーソルを合わせた時に表示されます。"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:608
 msgid "Shows a button for creating a new entry"
-msgstr ""
+msgstr "新しいコンテンツを作成するボタンを表示します"
 
 #: packages/admin/src/components/SignupPage.tsx:466
 #: packages/admin/src/locales/emails.ts:65
@@ -13225,11 +13225,11 @@ msgstr "スタイルの変更："
 
 #: packages/admin/src/components/FieldEditor.tsx:1310
 msgid "Sub-field slugs cannot be changed after creation."
-msgstr ""
+msgstr "サブフィールドのスラッグは作成後に変更できません。"
 
 #: packages/admin/src/components/FieldEditor.tsx:1244
 msgid "Sub-field slugs must be unique."
-msgstr ""
+msgstr "サブフィールドのスラッグは重複しないようにしてください。"
 
 #: packages/admin/src/components/FieldEditor.tsx:1210
 msgid "Sub-Fields"
@@ -13503,11 +13503,11 @@ msgstr "コードエディターを読み込めませんでした。作業内容
 
 #: packages/admin/src/components/RelationForm.tsx:336
 msgid "The content types and slug cannot be changed after a relation is created."
-msgstr ""
+msgstr "関連付けの作成後は、コンテンツタイプとスラッグを変更できません。"
 
 #: packages/admin/src/components/RelationFormPanel.tsx:88
 msgid "The content types and the slug are fixed. What each side is called and how many entries it holds are not."
-msgstr ""
+msgstr "コンテンツタイプとスラッグは変更できません。各側の名称と件数の制限は変更できます。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:639
 msgid "The credential manager on the phone or tablet you choose saves it. EmDash does not receive the passkey."
@@ -13650,7 +13650,7 @@ msgstr "サイトの名前。ヘッダーとメタデータに使用されます
 
 #: packages/admin/src/components/FieldEditor.tsx:1087
 msgid "The order controls how block types appear in the picker."
-msgstr ""
+msgstr "ブロック選択画面での表示順序を指定します。"
 
 #: packages/admin/src/components/settings/transfer/labels.ts:191
 msgid "The package changed. Choose it again before importing."
@@ -13776,12 +13776,12 @@ msgstr "参照先のロゴは利用できなくなりました。新しいロゴ
 
 #: packages/admin/src/components/FieldEditor.tsx:985
 msgid "The relationship and the referenced collection cannot be changed after creation. How many entries this field accepts is set on the relationship."
-msgstr ""
+msgstr "作成後は、関連付けと参照先のコンテンツタイプを変更できません。このフィールドで選択できる件数は、関連付けで設定します。"
 
 #: packages/admin/src/components/FieldEditor.tsx:825
 #: packages/admin/src/components/FieldEditor.tsx:1033
 msgid "The relationship decides the referenced collection and how many entries this field accepts."
-msgstr ""
+msgstr "参照先のコンテンツタイプと選択できる件数は、関連付けによって決まります。"
 
 #: packages/admin/src/components/SetupWizard.tsx:188
 msgid "The sample content added so far is kept. Continue to add the rest."
@@ -13902,7 +13902,7 @@ msgstr "次の項目も削除されます："
 
 #: packages/admin/src/components/BlocksField.tsx:403
 msgid "This block cannot be edited because its stored definition is unavailable."
-msgstr ""
+msgstr "保存された定義を利用できないため、このブロックは編集できません。"
 
 #. placeholder {0}: url.host
 #: packages/admin/src/components/editor/IframeBlockNode.tsx:219
@@ -14025,25 +14025,25 @@ msgstr "この項目は必須です"
 
 #: packages/admin/src/components/FieldEditor.tsx:1425
 msgid "This field lists entries that link to this one."
-msgstr ""
+msgstr "このフィールドには、このコンテンツを参照するコンテンツが一覧表示されます。"
 
 #: packages/admin/src/components/FieldEditor.tsx:807
 #: packages/admin/src/components/FieldEditor.tsx:1015
 msgid "This field picks"
-msgstr ""
+msgstr "このフィールドの選択対象"
 
 #: packages/admin/src/components/FieldEditor.tsx:1424
 msgid "This field picks entries this one links to."
-msgstr ""
+msgstr "このフィールドで、このコンテンツの参照先を選択します。"
 
 #. placeholder {0}: relation.childLabel
 #: packages/admin/src/components/FieldEditor.tsx:1436
 msgid "This field will show the <0>{0}</0> this {linkingSide} links to"
-msgstr ""
+msgstr "このフィールドには、この{linkingSide}が参照する<0>{0}</0>が表示されます"
 
 #: packages/admin/src/components/FieldEditor.tsx:1441
 msgid "This field will show the <0>{linkingSide}</0> linking to this {linkedSide}"
-msgstr ""
+msgstr "このフィールドには、この{linkedSide}を参照する<0>{linkingSide}</0>が表示されます"
 
 #: packages/admin/src/components/settings/transfer/labels.ts:206
 msgid "This file is not a readable EmDash site package."
@@ -14773,7 +14773,7 @@ msgstr "予約なし"
 #: packages/admin/src/components/BlocksField.tsx:366
 #: packages/admin/src/components/ContentTypeEditor.tsx:953
 msgid "Unsupported"
-msgstr ""
+msgstr "未対応"
 
 #. placeholder {0}: (element as { type: string }).type
 #: packages/admin/src/components/BlockKitFieldWidget.tsx:128
@@ -15262,7 +15262,7 @@ msgstr "バージョン{0}"
 #. placeholder {0}: version.version
 #: packages/admin/src/components/BlockTypeList.tsx:43
 msgid "Version {0} (active)"
-msgstr ""
+msgstr "バージョン{0}（有効）"
 
 #: packages/admin/src/components/revisions/useRevisionView.ts:652
 msgid "Version from {when}"
@@ -15424,7 +15424,7 @@ msgstr "EmDashへようこそ！"
 
 #: packages/admin/src/components/RelationForm.tsx:289
 msgid "What each side is called. These name the fields bound to this relationship."
-msgstr ""
+msgstr "各側の名称です。この関連付けを使用するフィールドの名前になります。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:642
 msgid "What happens next?"
@@ -15444,7 +15444,7 @@ msgstr ""
 
 #: packages/admin/src/components/FieldEditor.tsx:1470
 msgid "What the direction changes"
-msgstr ""
+msgstr "参照の方向による違い"
 
 #: packages/admin/src/components/settings/transfer/ExportSection.tsx:103
 msgid "What the package includes"
