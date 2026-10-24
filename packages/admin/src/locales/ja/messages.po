@@ -2295,7 +2295,7 @@ msgstr "{min}～{max}"
 #: packages/admin/src/components/settings/SeoSettings.tsx:243
 #: packages/admin/src/components/settings/SeoSettings.tsx:259
 msgid "Bing Verification"
-msgstr "Bing Webmaster Tools"
+msgstr "Bingの所有権確認"
 
 #: packages/admin/src/components/BylineFormDialog.tsx:443
 msgid "Bio"
@@ -7047,7 +7047,7 @@ msgstr "{countdown}に公開"
 #: packages/admin/src/components/settings/SeoSettings.tsx:243
 #: packages/admin/src/components/settings/SeoSettings.tsx:250
 msgid "Google Verification"
-msgstr "Google Search Console"
+msgstr "Googleの所有権確認"
 
 #: packages/admin/src/components/editor/codeBlockLanguages.ts:37
 msgid "GraphQL"
@@ -9441,7 +9441,7 @@ msgstr "登録を許可するドメインがありません。ユーザーを個
 
 #: packages/admin/src/components/editor/PluginBlockNode.tsx:310
 msgid "No editor is available for this block type. Its content is preserved."
-msgstr ""
+msgstr "このブロックタイプには対応するエディターがありません。コンテンツは保持されます。"
 
 #: packages/admin/src/components/settings/transfer/ImportReview.tsx:332
 msgid "No email address"
