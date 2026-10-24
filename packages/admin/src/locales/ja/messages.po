@@ -475,12 +475,12 @@ msgstr "{0}/160文字"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:428
 msgid "{added} posts updated"
-msgstr ""
+msgstr "{added}件の投稿を更新しました"
 
 #. placeholder {0}: failed.length
 #: packages/admin/src/components/BulkTagDialog.tsx:425
 msgid "{added} updated · {0} failed"
-msgstr ""
+msgstr "{added}件を更新 · {0}件が失敗"
 
 #. placeholder {0}: allowedHosts.join(", ")
 #: packages/admin/src/lib/api/marketplace.ts:477
@@ -732,7 +732,7 @@ msgstr "{pluginName}の設定"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:489
 msgid "{plural} go live now; draft edits stay unpublished."
-msgstr ""
+msgstr "{plural}はすぐに公開版へ反映されます。下書きの変更は公開されません。"
 
 #: packages/admin/src/components/Dashboard.tsx:168
 msgid "{policyRejected, plural, one {Open the affected entry, resolve the policy reason, and schedule it again. A successful schedule or publish clears this notice.} other {Open the affected entries, resolve the policy reasons, and schedule them again. A successful schedule or publish clears each notice.}}"
@@ -754,7 +754,7 @@ msgstr "{readingTime, plural, one {約#分で読めます} other {約#分で読�
 #. placeholder {0}: results.length
 #: packages/admin/src/components/BulkTagDialog.tsx:440
 msgid "{ready} of {0} ready"
-msgstr ""
+msgstr "{0}件中{ready}件が追加可能"
 
 #: packages/admin/src/components/settings/transfer/ExportSection.tsx:359
 msgid "{records, plural, one {# record written} other {# records written}}"
@@ -925,7 +925,7 @@ msgstr "<0>ドラッグ</0>で移動"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:427
 msgid "1 post updated"
-msgstr ""
+msgstr "1件の投稿を更新しました"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:37
 msgid "1 year"
@@ -1248,15 +1248,15 @@ msgstr "{0}を追加"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:564
 msgid "Add {singularLower} to {ready} posts"
-msgstr ""
+msgstr "{ready}件の投稿に{singularLower}を追加"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:563
 msgid "Add {singularLower} to 1 post"
-msgstr ""
+msgstr "1件の投稿に{singularLower}を追加"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:264
 msgid "Add {singularLower} to posts"
-msgstr ""
+msgstr "投稿に{singularLower}を追加"
 
 #: packages/admin/src/components/settings/SecuritySettings.tsx:165
 msgid "Add a new passkey"
@@ -1446,7 +1446,7 @@ msgstr "分類項目を追加"
 #: packages/admin/src/components/TaxonomyManager.tsx:1324
 #: packages/admin/src/components/TaxonomyManager.tsx:1340
 msgid "Add to posts"
-msgstr ""
+msgstr "投稿に追加"
 
 #: packages/admin/src/components/Widgets.tsx:412
 msgid "Add Widget Area"
@@ -1458,7 +1458,7 @@ msgstr "SNSアカウントを設定します。設定したアカウントへの
 
 #: packages/admin/src/components/BulkTagDialog.tsx:66
 msgid "Added"
-msgstr ""
+msgstr "追加済み"
 
 #: packages/admin/src/components/revisions/change-labels.ts:133
 msgid "Added “{snippet}”"
@@ -1533,7 +1533,7 @@ msgstr "追加中…"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:561
 msgid "Adding…"
-msgstr ""
+msgstr "追加中…"
 
 #: packages/admin/src/components/WordPressImport.tsx:1810
 msgid "Additional data to import."
@@ -1715,7 +1715,7 @@ msgstr "許可する種類"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:68
 msgid "Already assigned or duplicate"
-msgstr ""
+msgstr "設定済み、または重複"
 
 #: packages/admin/src/components/SignupPage.tsx:464
 msgid "Already have an account?"
@@ -2778,7 +2778,7 @@ msgstr "この版の変更内容"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:479
 msgid "Changes were saved, but cached pages may still show old {pluralLower}. Retry the cache refresh."
-msgstr ""
+msgstr "変更は保存されましたが、キャッシュされたページには以前の{pluralLower}が表示される場合があります。キャッシュの更新を再試行してください。"
 
 #: packages/admin/src/components/settings/SeoSettings.tsx:177
 msgid "Character between page title and site name (e.g., \"My Post | My Site\")"
@@ -2909,7 +2909,7 @@ msgstr ""
 
 #: packages/admin/src/components/BulkTagDialog.tsx:184
 msgid "Choose a term and enter between 1 and 50 posts."
-msgstr ""
+msgstr "分類項目を選択し、投稿のURLを1〜50件入力してください。"
 
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:40
 msgid "Choose a time in the future"
@@ -2967,7 +2967,7 @@ msgstr "管理画面の言語を選択"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:333
 msgid "Choose…"
-msgstr ""
+msgstr "選択…"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:556
 msgid "Choosing a byline replaces this automatic credit."
@@ -3544,7 +3544,7 @@ msgstr ""
 
 #: packages/admin/src/components/BulkTagDialog.tsx:241
 msgid "Could not add {singularLower}"
-msgstr ""
+msgstr "{singularLower}を追加できませんでした"
 
 #: packages/admin/src/components/DeviceAuthorizePage.tsx:111
 msgid "Could not check this code"
@@ -3560,7 +3560,7 @@ msgstr "自動的にコピーできませんでした。上のURLを選択して
 
 #: packages/admin/src/components/BulkTagDialog.tsx:176
 msgid "Could not create {singularLower}"
-msgstr ""
+msgstr "{singularLower}を作成できませんでした"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4590
 msgid "Could not insert section"
@@ -3568,7 +3568,7 @@ msgstr "セクションを挿入できませんでした"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:364
 msgid "Could not load {pluralLower}."
-msgstr ""
+msgstr "{pluralLower}を読み込めませんでした。"
 
 #: packages/admin/src/components/Dashboard.tsx:310
 msgid "Could not load dashboard data"
@@ -3608,7 +3608,7 @@ msgstr "公開予約を解除できませんでした"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:194
 msgid "Could not review posts"
-msgstr ""
+msgstr "投稿を確認できませんでした"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:827
 msgid "Couldn’t confirm whether the media item or selected folder still exists. Try again."
@@ -3739,7 +3739,7 @@ msgstr "{0}の翻訳を作成"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:321
 msgid "Create {singularLower}"
-msgstr ""
+msgstr "{singularLower}を作成"
 
 #: packages/admin/src/components/FieldEditor.tsx:1098
 msgid "Create a block type before adding a blocks field."
@@ -3797,7 +3797,7 @@ msgstr "メニューを作成"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:355
 msgid "Create new {singularLower}"
-msgstr ""
+msgstr "新しい{singularLower}を作成"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:244
 msgid "Create New Token"
@@ -4002,7 +4002,7 @@ msgstr ""
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:59
 msgid "CSS code"
-msgstr ""
+msgstr "CSSコード"
 
 #: packages/admin/src/components/TranslationsPanel.tsx:84
 msgid "current"
@@ -4214,7 +4214,7 @@ msgstr "バックアップを削除しますか？"
 #: packages/admin/src/components/BlocksField.tsx:391
 #: packages/admin/src/components/editor/EmbedBlockShell.tsx:358
 msgid "Delete block"
-msgstr ""
+msgstr "ブロックを削除"
 
 #: packages/admin/src/routes/bylines.tsx:427
 #: packages/admin/src/routes/bylines.tsx:534
@@ -4343,7 +4343,7 @@ msgstr ""
 #: packages/admin/src/components/editor/VideoNode.tsx:402
 #: packages/admin/src/components/editor/VideoNode.tsx:403
 msgid "Delete video"
-msgstr ""
+msgstr "動画を削除"
 
 #: packages/admin/src/components/Widgets.tsx:726
 msgid "Delete Widget Area?"
@@ -5204,11 +5204,11 @@ msgstr "ほかのサイトのページを埋め込む"
 
 #: packages/admin/src/components/editor/IframeBlockNode.tsx:246
 msgid "Embed code"
-msgstr ""
+msgstr "埋め込みコード"
 
 #: packages/admin/src/components/editor/IframeBlockNode.tsx:100
 msgid "Embedded content"
-msgstr ""
+msgstr "埋め込みコンテンツ"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:2011
 msgid "Embeds"
@@ -5484,7 +5484,7 @@ msgstr "example.com"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:266
 msgid "Existing {pluralLower} stay in place."
-msgstr ""
+msgstr "既存の{pluralLower}はそのまま残ります。"
 
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:478
 msgid "Existing content is indexed. New changes are tracked automatically."
@@ -7256,19 +7256,19 @@ msgstr "HTML"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:182
 msgid "HTML block options"
-msgstr ""
+msgstr "HTMLブロックのオプション"
 
 #: packages/admin/src/components/editor/HtmlBlockPreview.tsx:193
 msgid "HTML block preview"
-msgstr ""
+msgstr "HTMLブロックのプレビュー"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:52
 msgid "HTML code"
-msgstr ""
+msgstr "HTMLコード"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:202
 msgid "HTML only, cleaned, using your site's styles."
-msgstr ""
+msgstr "HTMLのみを使用し、不要なコードを除去してサイトのスタイルで表示します。"
 
 #: packages/admin/src/components/BylineFormDialog.tsx:432
 msgid "https://example.com"
@@ -7285,7 +7285,7 @@ msgstr "https://example.com または /page"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:405
 msgid "https://example.com/blog/my-post"
-msgstr ""
+msgstr "https://example.com/blog/my-post"
 
 #: packages/admin/src/components/MediaPickerModal.tsx:1130
 msgid "https://example.com/image.jpg"
@@ -7335,7 +7335,7 @@ msgstr "iframe"
 
 #: packages/admin/src/components/editor/IframeBlockNode.tsx:210
 msgid "Iframe block options"
-msgstr ""
+msgstr "iframeブロックのオプション"
 
 #. js-lingui-explicit-id
 #: packages/admin/src/locales/server.ts:63
@@ -7388,7 +7388,7 @@ msgstr "画像が見つかりません"
 
 #: packages/admin/src/components/revisions/RevisionDocument.tsx:254
 msgid "Image replaced:"
-msgstr "画像の置換："
+msgstr "画像を置き換えました："
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:718
 msgid "Image replaced."
@@ -7612,11 +7612,11 @@ msgstr "既存コンテンツを確認中"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:200
 msgid "Inline"
-msgstr ""
+msgstr "インライン"
 
 #: packages/admin/src/components/editor/HtmlBlockPreview.tsx:128
 msgid "Inline blocks use your site's styles. Your site removes scripts, style tags and style attributes, and empties iframes other than YouTube and Vimeo."
-msgstr ""
+msgstr "インラインのブロックには、サイトのスタイルが適用されます。サイト側でスクリプト・styleタグ・style属性を取り除き、YouTubeとVimeo以外のiframeは空にします。"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4799
 #: packages/admin/src/components/PortableTextEditor.tsx:6352
@@ -7816,7 +7816,7 @@ msgstr "このプラグインで有効なMCPツールのみを呼び出す"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:192
 msgid "Isolated frame"
-msgstr ""
+msgstr "隔離されたフレーム"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:507
 msgid "It is stored by the authenticator or credential manager you selected in the secure system prompt."
@@ -7869,7 +7869,7 @@ msgstr "JavaScript"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:66
 msgid "JavaScript code"
-msgstr ""
+msgstr "JavaScriptコード"
 
 #: packages/admin/src/components/BylineFieldEditor.tsx:229
 msgid "Job title"
@@ -7881,7 +7881,7 @@ msgstr "job_title"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:65
 msgid "JS"
-msgstr ""
+msgstr "JS"
 
 #: packages/admin/src/components/editor/codeBlockLanguages.ts:41
 #: packages/admin/src/components/FieldEditor.tsx:462
@@ -8212,7 +8212,7 @@ msgstr "さらにフォルダーを読み込む"
 
 #: packages/admin/src/components/editor/IframeBlockNode.tsx:229
 msgid "Load preview"
-msgstr ""
+msgstr "プレビューを読み込む"
 
 #: packages/admin/src/components/calendar/CalendarToolbar.tsx:59
 #: packages/admin/src/router.tsx:3339
@@ -8221,7 +8221,7 @@ msgstr "読み込み中"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:360
 msgid "Loading {pluralLower}…"
-msgstr ""
+msgstr "{pluralLower}を読み込み中…"
 
 #: packages/admin/src/components/settings/transfer/ApprovalsSection.tsx:59
 msgid "Loading approval requests…"
@@ -8895,7 +8895,7 @@ msgstr "その他のテーブル操作"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:465
 msgid "More than one post matches this link"
-msgstr ""
+msgstr "このリンクに一致する投稿が複数あります"
 
 #: packages/admin/src/components/MarketplaceBrowse.tsx:42
 msgid "Most Popular"
@@ -9187,7 +9187,7 @@ msgstr "新しい{itemLabel}"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:309
 msgid "New {singularLower} name"
-msgstr ""
+msgstr "新しい{singularLower}の名前"
 
 #: packages/admin/src/components/BylineFormDialog.tsx:360
 #: packages/admin/src/routes/bylines.tsx:309
@@ -9462,7 +9462,7 @@ msgstr "この絞り込み条件に一致するコンテンツはありません
 
 #: packages/admin/src/components/BulkTagDialog.tsx:466
 msgid "No exact match on this site"
-msgstr ""
+msgstr "このサイトに完全一致する投稿がありません"
 
 #: packages/admin/src/components/settings/ApiTokenSettings.tsx:33
 msgid "No expiry"
@@ -9490,7 +9490,7 @@ msgstr "ドキュメントに見出しがありません"
 
 #: packages/admin/src/components/editor/IframeBlockNode.tsx:45
 msgid "No iframe found in this code. For an embed that runs a script, use an HTML block."
-msgstr ""
+msgstr "このコードにはiframeがありません。スクリプトを実行する埋め込みには、HTMLブロックを使用してください。"
 
 #. js-lingui-explicit-id
 #: packages/admin/src/locales/server.ts:64
@@ -9754,7 +9754,7 @@ msgstr "未読み込み"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:71
 msgid "Not matched"
-msgstr ""
+msgstr "一致なし"
 
 #: packages/admin/src/components/revisions/RevisionFieldValue.tsx:499
 msgid "Not recorded in this version"
@@ -9785,7 +9785,7 @@ msgstr "{monthTitle}に公開済み・公開予約済みのコンテンツはあ
 #: packages/admin/src/components/editor/HtmlBlockPreview.tsx:110
 #: packages/admin/src/components/editor/IframeBlockNode.tsx:233
 msgid "Nothing to preview yet."
-msgstr ""
+msgstr "プレビューする内容はまだありません。"
 
 #: packages/admin/src/components/calendar/CalendarAgenda.tsx:104
 #: packages/admin/src/components/calendar/CalendarEntry.tsx:419
@@ -9834,7 +9834,7 @@ msgstr "オン"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:185
 msgid "On the site"
-msgstr ""
+msgstr "サイトでの表示"
 
 #: packages/admin/src/components/SetupWizard.tsx:179
 msgid "Once setup is done, upload a .emdash package exported from another EmDash site."
@@ -9855,7 +9855,7 @@ msgstr "許可されたドメインのメールアドレスのみ登録できま
 
 #: packages/admin/src/components/editor/IframeBlockNode.tsx:46
 msgid "Only https links can be embedded."
-msgstr ""
+msgstr "埋め込めるのはhttpsのリンクのみです。"
 
 #: packages/admin/src/components/MediaUsedIn.tsx:216
 msgid "Only image and file fields, images in rich text, and site settings are tracked. Custom rich text blocks and template code aren’t checked."
@@ -10204,7 +10204,7 @@ msgstr "パスキーにはHTTPSまたはhttp://localhost（ポート付き）が
 
 #: packages/admin/src/components/editor/IframeBlockNode.tsx:247
 msgid "Paste an embed code or an https link…"
-msgstr ""
+msgstr "埋め込みコードまたはhttpsのリンクを貼り付け…"
 
 #: packages/admin/src/components/WordPressImport.tsx:1084
 msgid "Paste your migration key"
@@ -10495,7 +10495,7 @@ msgstr "投稿"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:400
 msgid "Post URLs (one per line)"
-msgstr ""
+msgstr "投稿のURL（1行に1件）"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:481
 #: packages/admin/src/components/RelationForm.tsx:297
@@ -10538,7 +10538,7 @@ msgstr "準備中…"
 
 #: packages/admin/src/components/editor/CodeEditor.tsx:165
 msgid "Press Escape to leave the code editor."
-msgstr ""
+msgstr "コードエディターから戻るには、Escキーを押してください。"
 
 #: packages/admin/src/components/editor/GalleryDetailPanel.tsx:179
 msgid "Press Space to pick up an image. Use the Arrow keys to move it, then press Space to drop it."
@@ -11057,7 +11057,7 @@ msgstr "EmDashを更新した後、ページを再読み込みしてからもう
 
 #: packages/admin/src/components/editor/EmbedBlockShell.tsx:116
 msgid "Reload page"
-msgstr ""
+msgstr "ページを再読み込み"
 
 #: packages/admin/src/components/settings/transfer/ImportReview.tsx:489
 msgid "Reloading the plan…"
@@ -11377,7 +11377,7 @@ msgstr ""
 #: packages/admin/src/components/editor/VideoNode.tsx:374
 #: packages/admin/src/components/editor/VideoNode.tsx:425
 msgid "Replace video"
-msgstr ""
+msgstr "動画を置き換え"
 
 #: packages/admin/src/components/NonListFieldValue.tsx:30
 msgid "Replace with empty list"
@@ -11557,7 +11557,7 @@ msgstr "復元中…"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:445
 msgid "Results"
-msgstr ""
+msgstr "結果"
 
 #: packages/admin/src/components/BlocksField.tsx:365
 #: packages/admin/src/components/FieldEditor.tsx:1130
@@ -11596,7 +11596,7 @@ msgstr "{0}を再試行"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:542
 msgid "Retry cache refresh"
-msgstr ""
+msgstr "キャッシュの更新を再試行"
 
 #: packages/admin/src/components/editor/CodeBlockNode.tsx:254
 #: packages/admin/src/components/editor/CodeBlockNode.tsx:261
@@ -11609,11 +11609,11 @@ msgstr "失敗したアップロードを再試行"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:523
 msgid "Retry failures"
-msgstr ""
+msgstr "失敗した項目を再試行"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:371
 msgid "Retry loading {pluralLower}"
-msgstr ""
+msgstr "{pluralLower}の読み込みを再試行"
 
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:417
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:578
@@ -11655,7 +11655,7 @@ msgstr "新しい権限を確認"
 #: packages/admin/src/components/BulkTagDialog.tsx:445
 #: packages/admin/src/components/BulkTagDialog.tsx:574
 msgid "Review posts"
-msgstr ""
+msgstr "投稿を確認"
 
 #: packages/admin/src/components/EditorDraftPatchPreview.tsx:51
 msgid "Review proposed changes"
@@ -11679,7 +11679,7 @@ msgstr ""
 
 #: packages/admin/src/components/BulkTagDialog.tsx:574
 msgid "Reviewing…"
-msgstr ""
+msgstr "確認中…"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:1339
 #: packages/admin/src/components/ContentTypeEditor.tsx:96
@@ -11792,11 +11792,11 @@ msgstr "Ruby"
 
 #: packages/admin/src/components/editor/HtmlBlockPreview.tsx:120
 msgid "Run preview"
-msgstr ""
+msgstr "プレビューを実行"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:194
 msgid "Runs HTML, CSS and JavaScript in a sandbox."
-msgstr ""
+msgstr "サンドボックス内でHTML・CSS・JavaScriptを実行します。"
 
 #: packages/admin/src/components/editor/codeBlockLanguages.ts:50
 msgid "Rust"
@@ -12514,7 +12514,7 @@ msgstr "選択中のメディア"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:379
 msgid "Selected posts"
-msgstr ""
+msgstr "選択済みの投稿"
 
 #: packages/admin/src/components/editor/TableControls.tsx:24
 msgid "Selection"
@@ -13360,7 +13360,7 @@ msgstr "分類グループと分類項目の管理"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:285
 msgid "Taxonomy"
-msgstr ""
+msgstr "分類グループ"
 
 #. placeholder {0}: blocker.name
 #: packages/admin/src/components/settings/transfer/labels.ts:110
@@ -13431,7 +13431,7 @@ msgstr "分類項目を削除しました"
 #: packages/admin/src/components/BulkTagDialog.tsx:112
 #: packages/admin/src/components/settings/transfer/labels.ts:18
 msgid "Terms"
-msgstr ""
+msgstr "分類項目"
 
 #: packages/admin/src/components/settings/EmailSettings.tsx:112
 msgid "test@example.com"
@@ -13463,7 +13463,7 @@ msgstr "「{1}」の「{0}」フィールド（参照先のコンテンツを選
 
 #: packages/admin/src/components/editor/HtmlBlockPreview.tsx:201
 msgid "The admin's security policy blocked some resources this block loads, such as external scripts, fonts or frames. Your site may still load them."
-msgstr ""
+msgstr "管理画面のセキュリティポリシーにより、このブロックが読み込む外部スクリプト・フォント・フレームなどの一部リソースがブロックされました。サイト側では読み込める場合があります。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:200
 msgid "the Android passkey prompt"
@@ -13499,7 +13499,7 @@ msgstr "カレンダーには、先頭{maxEntries}件を表示しています。
 
 #: packages/admin/src/components/editor/EmbedBlockShell.tsx:114
 msgid "The code editor couldn't load. Save your work, then reload the page."
-msgstr ""
+msgstr "コードエディターを読み込めませんでした。作業内容を保存してから、ページを再読み込みしてください。"
 
 #: packages/admin/src/components/RelationForm.tsx:336
 msgid "The content types and slug cannot be changed after a relation is created."
@@ -13907,11 +13907,11 @@ msgstr ""
 #. placeholder {0}: url.host
 #: packages/admin/src/components/editor/IframeBlockNode.tsx:219
 msgid "This block embeds a page from {0}."
-msgstr ""
+msgstr "このブロックには、{0}のページが埋め込まれています。"
 
 #: packages/admin/src/components/editor/HtmlBlockPreview.tsx:113
 msgid "This block runs JavaScript."
-msgstr ""
+msgstr "このブロックはJavaScriptを実行します。"
 
 #: packages/admin/src/components/settings/transfer/ExportSection.tsx:225
 msgid "This browser keeps the whole package in memory until the download finishes. For an export this size, use a Chromium-based browser, which saves straight to disk, or run emdash site export from the CLI."
@@ -14287,7 +14287,7 @@ msgstr "この版はサイトに表示されていません"
 
 #: packages/admin/src/components/editor/VideoNode.tsx:317
 msgid "This video can't be played."
-msgstr ""
+msgstr "この動画を再生できません。"
 
 #: packages/admin/src/components/Widgets.tsx:727
 msgid "This will delete the widget area and all its widgets. This action cannot be undone."
@@ -14632,7 +14632,7 @@ msgstr "画像のキャプションを入力（任意）"
 
 #: packages/admin/src/components/editor/VideoNode.tsx:330
 msgid "Type caption for video (optional)"
-msgstr ""
+msgstr "動画のキャプションを入力（任意）"
 
 #. placeholder {0}: status.existingType
 #: packages/admin/src/components/WordPressImport.tsx:2075
@@ -15283,7 +15283,7 @@ msgstr "動画"
 
 #: packages/admin/src/components/editor/VideoNode.tsx:357
 msgid "Video actions"
-msgstr ""
+msgstr "動画の操作"
 
 #: packages/admin/src/components/editor/ImageUploadExtension.ts:261
 msgid "Video upload failed. Try again."
@@ -15629,19 +15629,19 @@ msgstr ""
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:60
 msgid "Write CSS…"
-msgstr ""
+msgstr "CSSを入力…"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:74
 msgid "Write HTML, or paste a snippet with its styles and scripts…"
-msgstr ""
+msgstr "HTMLを入力するか、スタイルやスクリプトを含むコードを貼り付け…"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:53
 msgid "Write HTML…"
-msgstr ""
+msgstr "HTMLを入力…"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:67
 msgid "Write JavaScript…"
-msgstr ""
+msgstr "JavaScriptを入力…"
 
 #: packages/admin/src/components/Widgets.tsx:916
 msgid "Write widget content..."
