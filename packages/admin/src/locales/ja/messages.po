@@ -153,7 +153,7 @@ msgstr "{0, plural, one {#件のリンク} other {#件のリンク}}"
 #. placeholder {0}: tagMatches?.matchCount ?? 0
 #: packages/admin/src/components/TaxonomyManager.tsx:1392
 msgid "{0, plural, one {# matching tag} other {# matching tags}}"
-msgstr ""
+msgstr "{0, plural, one {一致するタグ#件} other {一致するタグ#件}}"
 
 #. placeholder {0}: mcpTools.length
 #: packages/admin/src/components/PluginManager.tsx:503
@@ -249,7 +249,7 @@ msgstr "{0, plural, one {#件のアップロードに失敗} other {#件のア�
 #. placeholder {0}: section.keywords.length - 3
 #: packages/admin/src/components/Sections.tsx:424
 msgid "{0, plural, one {+# more} other {+# more}}"
-msgstr ""
+msgstr "{0, plural, one {他#件} other {他#件}}"
 
 #. placeholder {0}: selectedItems.length
 #: packages/admin/src/components/MediaPickerModal.tsx:866
@@ -597,7 +597,7 @@ msgstr "{menuName}内の{label}"
 #. placeholder {1}: images.length
 #: packages/admin/src/components/editor/GalleryDetailPanel.tsx:170
 msgid "{label} moved to position {0} of {1}."
-msgstr ""
+msgstr "{label}を{1}件中{0}番目に移動しました。"
 
 #. placeholder {0}: to + 1
 #: packages/admin/src/components/BylineCreditsEditor.tsx:240
@@ -1061,7 +1061,7 @@ msgstr "同じ名前のメディアフォルダーが既に存在します"
 
 #: packages/admin/src/components/TaxonomyManager.tsx:965
 msgid "A name cannot be generated from this label. Type one manually using lowercase letters, numbers, and underscores."
-msgstr ""
+msgstr "このラベルから名前を生成できません。英小文字、数字、アンダースコアを使って手動で入力してください。"
 
 #: packages/admin/src/components/settings/transfer/labels.ts:137
 msgid "A number is too large for this site’s database"
@@ -1407,7 +1407,7 @@ msgstr "参照を追加"
 
 #: packages/admin/src/components/ContentPickerModal.tsx:215
 msgid "Add references"
-msgstr ""
+msgstr "参照を追加"
 
 #: packages/admin/src/components/editor/TableControls.tsx:25
 msgid "Add row above"
@@ -1425,7 +1425,7 @@ msgstr "サイトのページにスクリプトとスタイルを追加"
 
 #: packages/admin/src/components/ContentPickerModal.tsx:390
 msgid "Add selected"
-msgstr ""
+msgstr "選択した項目を追加"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:650
 msgid "Add SEO metadata fields (title, description, image) and include in sitemap"
@@ -1437,7 +1437,7 @@ msgstr "サブフィールドを追加"
 
 #: packages/admin/src/components/TaxonomyManager.tsx:1317
 msgid "Add tag"
-msgstr ""
+msgstr "タグを追加"
 
 #: packages/admin/src/components/ContentList.tsx:627
 msgid "Add term"
@@ -1667,7 +1667,7 @@ msgstr "すべての権限"
 
 #: packages/admin/src/components/Sections.tsx:257
 msgid "All sources"
-msgstr ""
+msgstr "すべてのソース"
 
 #: packages/admin/src/components/ContentList.tsx:1024
 #: packages/admin/src/components/Redirects.tsx:399
@@ -2119,7 +2119,7 @@ msgstr "名前から自動生成されます（編集可能）"
 
 #: packages/admin/src/components/Sections.tsx:217
 msgid "Auto-generated from the title. You can change it."
-msgstr ""
+msgstr "タイトルから自動生成されます。変更もできます。"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:550
 msgid "Automatic"
@@ -2221,7 +2221,7 @@ msgstr "マーケットプレイスに戻る"
 
 #: packages/admin/src/components/MenuEditor.tsx:402
 msgid "Back to menus"
-msgstr ""
+msgstr "メニュー一覧に戻る"
 
 #: packages/admin/src/components/PluginSettings.tsx:118
 #: packages/admin/src/components/RegistryPluginDetail.tsx:922
@@ -2357,7 +2357,7 @@ msgstr "ブール値（true / false）"
 
 #: packages/admin/src/components/WordPressImport.tsx:1314
 msgid "Bot protection blocked the connection"
-msgstr ""
+msgstr "ボット対策により接続がブロックされました"
 
 #: packages/admin/src/components/RelationForm.tsx:345
 msgid "Both reference fields bound to this relation share these limits, so the two sides cannot disagree about the same links."
@@ -3129,7 +3129,7 @@ msgstr "設定を閉じる"
 
 #: packages/admin/src/components/WordPressImport.tsx:93
 msgid "Cloudflare's bot protection answered with a challenge page, so EmDash can't reach the EmDash Exporter API. Allow requests to /wp-json/emdash/v1/ (and ?rest_route=/emdash/v1/ on sites without pretty permalinks), for example with a WAF custom rule that skips bot protection, or pause bot protection during the migration, then try again."
-msgstr ""
+msgstr "Cloudflareのボット対策がチャレンジページを返したため、EmDashからEmDash Exporter APIに接続できません。ボット対策をスキップするWAFカスタムルールなどで、/wp-json/emdash/v1/へのリクエストを許可してください（基本形式のパーマリンクを使うサイトでは?rest_route=/emdash/v1/へのリクエストも許可してください）。または、移行中はボット対策を一時停止してから、もう一度お試しください。"
 
 #: packages/admin/src/components/ContentTypeList.tsx:392
 #: packages/admin/src/components/editor/IframeBlockNode.tsx:40
@@ -3259,7 +3259,7 @@ msgstr "ログイン済みCMSユーザーのコメントを自動承認します
 
 #: packages/admin/src/components/comments/CommentInbox.tsx:582
 msgid "Comments with this status will appear here."
-msgstr ""
+msgstr "このステータスのコメントがここに表示されます。"
 
 #: packages/admin/src/components/MediaUploadDialog.tsx:68
 msgid "Complete"
@@ -3632,7 +3632,7 @@ msgstr "執筆者情報の項目を読み込めませんでした。"
 
 #: packages/admin/src/components/ContentPickerModal.tsx:276
 msgid "Couldn't load content."
-msgstr ""
+msgstr "コンテンツを読み込めませんでした。"
 
 #: packages/admin/src/components/BylineFormDialog.tsx:513
 msgid "Couldn't load custom fields."
@@ -3668,7 +3668,7 @@ msgstr "使用状況を読み込めませんでした。"
 
 #: packages/admin/src/components/RevisionHistory.tsx:91
 msgid "Couldn't load versions"
-msgstr ""
+msgstr "変更履歴を読み込めませんでした"
 
 #: packages/admin/src/components/AllowedTypesEditor.tsx:91
 msgid "Couldn't map \"{draft}\" to a MIME type. Type the MIME directly."
@@ -3788,7 +3788,7 @@ msgstr "フィールドを作成"
 
 #: packages/admin/src/components/MenuList.tsx:131
 msgid "Create menu"
-msgstr ""
+msgstr "メニューを作成"
 
 #: packages/admin/src/components/MenuList.tsx:119
 #: packages/admin/src/components/MenuList.tsx:210
@@ -3851,7 +3851,7 @@ msgstr "スキーマを作成してインポート"
 #: packages/admin/src/components/Sections.tsx:234
 #: packages/admin/src/components/Sections.tsx:312
 msgid "Create section"
-msgstr ""
+msgstr "セクションを作成"
 
 #: packages/admin/src/components/SectionPickerModal.tsx:110
 msgid "Create sections in the Sections library to use them here"
@@ -3994,11 +3994,11 @@ msgstr "CSS"
 #: packages/admin/src/components/MenuEditor.tsx:540
 #: packages/admin/src/components/MenuEditor.tsx:739
 msgid "CSS classes"
-msgstr ""
+msgstr "CSSクラス"
 
 #: packages/admin/src/components/MenuEditor.tsx:639
 msgid "CSS classes:"
-msgstr ""
+msgstr "CSSクラス:"
 
 #: packages/admin/src/components/editor/HtmlBlockNode.tsx:59
 msgid "CSS code"
@@ -4275,7 +4275,7 @@ msgstr "メディアを削除しますか？"
 
 #: packages/admin/src/components/MenuList.tsx:233
 msgid "Delete menu"
-msgstr ""
+msgstr "メニューを削除"
 
 #: packages/admin/src/components/comments/CommentInbox.tsx:550
 msgid "Delete permanently"
@@ -4313,7 +4313,7 @@ msgstr "行を削除"
 
 #: packages/admin/src/components/Sections.tsx:469
 msgid "Delete section"
-msgstr ""
+msgstr "セクションを削除"
 
 #: packages/admin/src/components/Sections.tsx:337
 msgid "Delete Section?"
@@ -4325,20 +4325,20 @@ msgstr "テーブルを削除"
 
 #: packages/admin/src/components/TaxonomyManager.tsx:364
 msgid "Delete tag"
-msgstr ""
+msgstr "タグを削除"
 
 #. placeholder {0}: term.label
 #: packages/admin/src/components/TaxonomyManager.tsx:361
 msgid "Delete tag {0}"
-msgstr ""
+msgstr "タグ「{0}」を削除"
 
 #: packages/admin/src/components/TaxonomyManager.tsx:1373
 msgid "Delete taxonomy"
-msgstr ""
+msgstr "分類グループを削除"
 
 #: packages/admin/src/components/TaxonomyManager.tsx:1552
 msgid "Delete Taxonomy"
-msgstr ""
+msgstr "分類グループを削除"
 
 #: packages/admin/src/components/editor/VideoNode.tsx:403
 #: packages/admin/src/components/editor/VideoNode.tsx:404
@@ -4356,7 +4356,7 @@ msgstr "削除日時"
 #. placeholder {0}: taxonomyDef.label
 #: packages/admin/src/components/TaxonomyManager.tsx:1553
 msgid "Deleting \"{0}\" also deletes every term in it, in all languages, and removes those terms from the content filed under them. The entries themselves are kept. This cannot be undone."
-msgstr ""
+msgstr "「{0}」を削除すると、その中のすべての言語の分類項目も削除され、コンテンツへの割り当ても解除されます。コンテンツ自体は残ります。この操作は元に戻せません。"
 
 #. placeholder {0}: deletingField.label
 #. placeholder {1}: deleteUsageQuery.data.totalAffectedRows
@@ -5217,12 +5217,12 @@ msgstr "埋め込み"
 #. placeholder {0}: plan.origin.createdByEmDashVersion
 #: packages/admin/src/components/settings/transfer/ImportReview.tsx:269
 msgid "EmDash {0}"
-msgstr ""
+msgstr "EmDash {0}"
 
 #. placeholder {0}: status.current
 #: packages/admin/src/components/CoreUpdateBanner.tsx:67
 msgid "EmDash {latest} is available (you're running {0})"
-msgstr ""
+msgstr "EmDash {latest}が利用可能です（現在のバージョン: {0}）"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1982
 msgid "EmDash does not keep the previous image."
@@ -5567,7 +5567,7 @@ msgstr "エクスポート中：{stage}"
 
 #: packages/admin/src/components/editor/codeBlockLanguages.ts:35
 msgid "F#"
-msgstr ""
+msgstr "F#"
 
 #: packages/admin/src/components/settings/SocialSettings.tsx:158
 msgid "Facebook"
@@ -5605,11 +5605,11 @@ msgstr "パスキーを追加できませんでした"
 
 #: packages/admin/src/lib/api/taxonomies.ts:120
 msgid "Failed to add term to entries"
-msgstr ""
+msgstr "コンテンツへの分類項目の追加に失敗しました"
 
 #: packages/admin/src/lib/api/import.ts:378
 msgid "Failed to analyze file"
-msgstr ""
+msgstr "ファイルの解析に失敗しました"
 
 #: packages/admin/src/lib/api/transfer.ts:442
 msgid "Failed to analyze import"
@@ -5689,7 +5689,7 @@ msgstr "ブロックタイプの作成に失敗しました"
 
 #: packages/admin/src/lib/api/bylines.ts:127
 msgid "Failed to create byline"
-msgstr ""
+msgstr "執筆者の作成に失敗しました"
 
 #: packages/admin/src/lib/api/byline-fields.ts:120
 msgid "Failed to create byline field"
@@ -5697,7 +5697,7 @@ msgstr "執筆者情報の項目の作成に失敗しました"
 
 #: packages/admin/src/lib/api/bylines.ts:178
 msgid "Failed to create byline translation"
-msgstr ""
+msgstr "執筆者の翻訳の作成に失敗しました"
 
 #: packages/admin/src/lib/api/schema.ts:371
 msgid "Failed to create collection"
@@ -5718,19 +5718,19 @@ msgstr "メディアフォルダーを作成できませんでした"
 
 #: packages/admin/src/lib/api/menus.ts:137
 msgid "Failed to create menu"
-msgstr ""
+msgstr "メニューの作成に失敗しました"
 
 #: packages/admin/src/lib/api/menus.ts:182
 msgid "Failed to create menu item"
-msgstr ""
+msgstr "メニュー項目の作成に失敗しました"
 
 #: packages/admin/src/lib/api/menus.ts:270
 msgid "Failed to create menu translation"
-msgstr ""
+msgstr "メニューの翻訳の作成に失敗しました"
 
 #: packages/admin/src/lib/api/redirects.ts:89
 msgid "Failed to create redirect"
-msgstr ""
+msgstr "リダイレクトの作成に失敗しました"
 
 #: packages/admin/src/lib/api/relations.ts:119
 msgid "Failed to create relation"
@@ -5746,7 +5746,7 @@ msgstr "一部のコンテンツタイプの作成に失敗しました"
 
 #: packages/admin/src/lib/api/taxonomies.ts:164
 msgid "Failed to create taxonomy"
-msgstr ""
+msgstr "分類グループの作成に失敗しました"
 
 #: packages/admin/src/components/TaxonomySidebar.tsx:732
 #: packages/admin/src/lib/api/taxonomies.ts:215
@@ -5755,7 +5755,7 @@ msgstr "分類項目の作成に失敗しました"
 
 #: packages/admin/src/lib/api/taxonomies.ts:314
 msgid "Failed to create term translation"
-msgstr ""
+msgstr "分類項目の翻訳の作成に失敗しました"
 
 #: packages/admin/src/components/TaxonomySidebar.tsx:782
 #: packages/admin/src/router.tsx:1648
@@ -5764,11 +5764,11 @@ msgstr "翻訳の作成に失敗しました"
 
 #: packages/admin/src/lib/api/widgets.ts:120
 msgid "Failed to create widget"
-msgstr ""
+msgstr "ウィジェットの作成に失敗しました"
 
 #: packages/admin/src/lib/api/widgets.ts:98
 msgid "Failed to create widget area"
-msgstr ""
+msgstr "ウィジェットエリアの作成に失敗しました"
 
 #: packages/admin/src/router.tsx:646
 #: packages/admin/src/router.tsx:675
@@ -5849,7 +5849,7 @@ msgstr "セクションの削除に失敗しました"
 
 #: packages/admin/src/lib/api/taxonomies.ts:176
 msgid "Failed to delete taxonomy"
-msgstr ""
+msgstr "分類グループの削除に失敗しました"
 
 #: packages/admin/src/lib/api/taxonomies.ts:276
 msgid "Failed to delete term"
@@ -5932,7 +5932,7 @@ msgstr "インポートの実行に失敗しました"
 
 #: packages/admin/src/lib/api/redirects.ts:127
 msgid "Failed to fetch 404 summary"
-msgstr ""
+msgstr "404エラーの概要の取得に失敗しました"
 
 #: packages/admin/src/lib/api/users.ts:297
 msgid "Failed to fetch allowed domains"
@@ -5960,15 +5960,15 @@ msgstr "ブロックタイプ一覧の取得に失敗しました"
 
 #: packages/admin/src/lib/api/bylines.ts:118
 msgid "Failed to fetch byline"
-msgstr ""
+msgstr "執筆者の取得に失敗しました"
 
 #: packages/admin/src/lib/api/bylines.ts:157
 msgid "Failed to fetch byline translations"
-msgstr ""
+msgstr "執筆者の翻訳の取得に失敗しました"
 
 #: packages/admin/src/lib/api/bylines.ts:112
 msgid "Failed to fetch bylines"
-msgstr ""
+msgstr "執筆者一覧の取得に失敗しました"
 
 #: packages/admin/src/lib/api/schema.ts:351
 #: packages/admin/src/lib/api/schema.ts:355
@@ -5981,15 +5981,15 @@ msgstr "コンテンツタイプ一覧の取得に失敗しました"
 
 #: packages/admin/src/lib/api/comments.ts:85
 msgid "Failed to fetch comment"
-msgstr ""
+msgstr "コメントの取得に失敗しました"
 
 #: packages/admin/src/lib/api/comments.ts:77
 msgid "Failed to fetch comment counts"
-msgstr ""
+msgstr "コメント数の取得に失敗しました"
 
 #: packages/admin/src/lib/api/comments.ts:68
 msgid "Failed to fetch comments"
-msgstr ""
+msgstr "コメント一覧の取得に失敗しました"
 
 #: packages/admin/src/lib/api/content.ts:237
 #: packages/admin/src/lib/api/content.ts:277
@@ -6046,15 +6046,15 @@ msgstr "メディアの使用状況を取得できませんでした"
 
 #: packages/admin/src/lib/api/menus.ts:125
 msgid "Failed to fetch menu"
-msgstr ""
+msgstr "メニューの取得に失敗しました"
 
 #: packages/admin/src/lib/api/menus.ts:249
 msgid "Failed to fetch menu translations"
-msgstr ""
+msgstr "メニューの翻訳の取得に失敗しました"
 
 #: packages/admin/src/lib/api/menus.ts:117
 msgid "Failed to fetch menus"
-msgstr ""
+msgstr "メニュー一覧の取得に失敗しました"
 
 #: packages/admin/src/lib/api/schema.ts:525
 msgid "Failed to fetch orphaned tables"
@@ -6084,7 +6084,7 @@ msgstr "連携先のメディア取得に失敗しました"
 
 #: packages/admin/src/lib/api/redirects.ts:77
 msgid "Failed to fetch redirects"
-msgstr ""
+msgstr "リダイレクト一覧の取得に失敗しました"
 
 #: packages/admin/src/lib/api/relations.ts:174
 msgid "Failed to fetch reference children"
@@ -6129,11 +6129,11 @@ msgstr "セットアップ状態の取得に失敗しました"
 
 #: packages/admin/src/lib/api/taxonomies.ts:137
 msgid "Failed to fetch taxonomies"
-msgstr ""
+msgstr "分類グループ一覧の取得に失敗しました"
 
 #: packages/admin/src/lib/api/taxonomies.ts:290
 msgid "Failed to fetch term translations"
-msgstr ""
+msgstr "分類項目の翻訳の取得に失敗しました"
 
 #: packages/admin/src/components/TaxonomySidebar.tsx:144
 #: packages/admin/src/lib/api/taxonomies.ts:196
@@ -6158,7 +6158,7 @@ msgstr "ゴミ箱のコンテンツの取得に失敗しました"
 
 #: packages/admin/src/lib/api/core-update.ts:29
 msgid "Failed to fetch update status"
-msgstr ""
+msgstr "更新状況の取得に失敗しました"
 
 #: packages/admin/src/lib/api/current-user.ts:22
 #: packages/admin/src/lib/api/users.ts:91
@@ -6173,15 +6173,15 @@ msgstr "ユーザーの取得に失敗しました"
 
 #: packages/admin/src/lib/api/widgets.ts:86
 msgid "Failed to fetch widget area"
-msgstr ""
+msgstr "ウィジェットエリアの取得に失敗しました"
 
 #: packages/admin/src/lib/api/widgets.ts:76
 msgid "Failed to fetch widget areas"
-msgstr ""
+msgstr "ウィジェットエリア一覧の取得に失敗しました"
 
 #: packages/admin/src/lib/api/widgets.ts:168
 msgid "Failed to fetch widget components"
-msgstr ""
+msgstr "ウィジェットコンポーネントの取得に失敗しました"
 
 #: packages/admin/src/components/ThemeMarketplaceBrowse.tsx:263
 msgid "Failed to generate preview"
@@ -6206,7 +6206,7 @@ msgstr "アップロードURLの取得に失敗しました"
 
 #: packages/admin/src/lib/api/import.ts:432
 msgid "Failed to import"
-msgstr ""
+msgstr "インポートに失敗しました"
 
 #: packages/admin/src/components/WordPressImport.tsx:462
 #: packages/admin/src/lib/api/import.ts:257
@@ -6324,7 +6324,7 @@ msgstr "セットアップの読み込みに失敗しました"
 
 #: packages/admin/src/lib/api/calendar.ts:49
 msgid "Failed to load the calendar"
-msgstr ""
+msgstr "カレンダーの読み込みに失敗しました"
 
 #: packages/admin/src/components/ThemeMarketplaceDetail.tsx:89
 msgid "Failed to load theme"
@@ -6349,7 +6349,7 @@ msgstr "ウィジェットの読み込みに失敗しました"
 
 #: packages/admin/src/lib/api/entry-lock.ts:51
 msgid "Failed to lock the entry"
-msgstr ""
+msgstr "コンテンツのロックに失敗しました"
 
 #: packages/admin/src/lib/api/comments.ts:131
 #: packages/admin/src/router.tsx:2477
@@ -6367,7 +6367,7 @@ msgstr "インポートの準備に失敗しました"
 
 #: packages/admin/src/lib/api/import.ts:712
 msgid "Failed to probe URL"
-msgstr ""
+msgstr "URLの確認に失敗しました"
 
 #: packages/admin/src/router.tsx:714
 #: packages/admin/src/router.tsx:1493
@@ -6392,7 +6392,7 @@ msgstr "未登録テーブルの登録に失敗しました"
 
 #: packages/admin/src/lib/api/entry-lock.ts:70
 msgid "Failed to release the entry lock"
-msgstr ""
+msgstr "コンテンツのロック解除に失敗しました"
 
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:124
 msgid "Failed to remove domain"
@@ -6427,11 +6427,11 @@ msgstr "項目を並べ替えられませんでした"
 
 #: packages/admin/src/lib/api/menus.ts:236
 msgid "Failed to reorder menu items"
-msgstr ""
+msgstr "メニュー項目の並べ替えに失敗しました"
 
 #: packages/admin/src/lib/api/taxonomies.ts:261
 msgid "Failed to reorder terms"
-msgstr ""
+msgstr "分類項目の並べ替えに失敗しました"
 
 #: packages/admin/src/lib/api/widgets.ts:158
 msgid "Failed to reorder widgets"
@@ -6567,7 +6567,7 @@ msgstr "ブロックタイプの更新に失敗しました"
 
 #: packages/admin/src/lib/api/bylines.ts:139
 msgid "Failed to update byline"
-msgstr ""
+msgstr "執筆者の更新に失敗しました"
 
 #: packages/admin/src/lib/api/byline-fields.ts:135
 msgid "Failed to update byline field"
@@ -6579,7 +6579,7 @@ msgstr "コンテンツタイプの更新に失敗しました"
 
 #: packages/admin/src/lib/api/comments.ts:104
 msgid "Failed to update comment status"
-msgstr ""
+msgstr "コメントのステータスの更新に失敗しました"
 
 #: packages/admin/src/lib/api/content.ts:330
 msgid "Failed to update content"
@@ -6603,7 +6603,7 @@ msgstr "メニューの更新に失敗しました"
 
 #: packages/admin/src/lib/api/menus.ts:202
 msgid "Failed to update menu item"
-msgstr ""
+msgstr "メニュー項目の更新に失敗しました"
 
 #: packages/admin/src/components/PluginManager.tsx:339
 #: packages/admin/src/lib/api/marketplace.ts:373
@@ -6621,7 +6621,7 @@ msgstr "プラグイン設定の更新に失敗しました"
 
 #: packages/admin/src/lib/api/redirects.ts:101
 msgid "Failed to update redirect"
-msgstr ""
+msgstr "リダイレクトの更新に失敗しました"
 
 #: packages/admin/src/lib/api/relations.ts:132
 msgid "Failed to update relation"
@@ -6641,7 +6641,7 @@ msgstr "ステータスの更新に失敗しました"
 
 #: packages/admin/src/lib/api/taxonomies.ts:239
 msgid "Failed to update term"
-msgstr ""
+msgstr "分類項目の更新に失敗しました"
 
 #: packages/admin/src/lib/api/users.ts:112
 msgid "Failed to update user"
@@ -6649,7 +6649,7 @@ msgstr "ユーザーの更新に失敗しました"
 
 #: packages/admin/src/lib/api/widgets.ts:136
 msgid "Failed to update widget"
-msgstr ""
+msgstr "ウィジェットの更新に失敗しました"
 
 #: packages/admin/src/lib/api/transfer.ts:431
 msgid "Failed to upload a package file"
@@ -6736,7 +6736,7 @@ msgstr "項目を更新しました"
 
 #: packages/admin/src/components/FieldEditor.tsx:1284
 msgid "field_slug"
-msgstr ""
+msgstr "field_slug"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:757
 #: packages/admin/src/components/RelationList.tsx:96
@@ -7009,7 +7009,7 @@ msgstr "GitHub"
 
 #: packages/admin/src/components/MenuList.tsx:134
 msgid "Give this navigation a label and a site identifier."
-msgstr ""
+msgstr "このナビゲーションのラベルと、サイトで使う識別子を設定してください。"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:769
 msgid "Give this passkey a name to help you identify it later."
@@ -7236,7 +7236,7 @@ msgstr "どのように始めますか？"
 
 #: packages/admin/src/components/TaxonomyManager.tsx:794
 msgid "How is the slug generated?"
-msgstr ""
+msgstr "スラッグはどのように生成されますか？"
 
 #: packages/admin/src/components/RelationForm.tsx:342
 msgid "How many"
@@ -7272,7 +7272,7 @@ msgstr "HTMLのみを使用し、不要なコードを除去してサイトの�
 
 #: packages/admin/src/components/BylineFormDialog.tsx:432
 msgid "https://example.com"
-msgstr ""
+msgstr "https://example.com"
 
 #: packages/admin/src/components/MenuEditor.tsx:528
 msgid "https://example.com or /about"
@@ -7558,7 +7558,7 @@ msgstr "メニュー、ウィジェット、設定をインポート中"
 
 #: packages/admin/src/components/WordPressImport.tsx:951
 msgid "Importing reusable blocks..."
-msgstr ""
+msgstr "再利用可能なブロックをインポートしています..."
 
 #: packages/admin/src/components/settings/transfer/labels.ts:60
 msgid "Importing terms and bylines"
@@ -8966,7 +8966,7 @@ msgstr "下に移動"
 #. placeholder {0}: term.label
 #: packages/admin/src/components/TaxonomyManager.tsx:341
 msgid "Move down {0}"
-msgstr ""
+msgstr "{0}を下に移動"
 
 #: packages/admin/src/components/MediaLibrary.tsx:1028
 msgid "Move media here from Media Details."
@@ -9010,7 +9010,7 @@ msgstr "上に移動"
 #. placeholder {0}: term.label
 #: packages/admin/src/components/TaxonomyManager.tsx:333
 msgid "Move up {0}"
-msgstr ""
+msgstr "{0}を上に移動"
 
 #: packages/admin/src/components/revisions/change-labels.ts:141
 msgid "Moved “{snippet}”"
@@ -9094,12 +9094,12 @@ msgstr "テーブルの前の段落に移動しました"
 #. placeholder {1}: images.length
 #: packages/admin/src/components/editor/GalleryDetailPanel.tsx:156
 msgid "Moving {label} to position {0} of {1}."
-msgstr ""
+msgstr "{label}を{1}件中{0}番目に移動しています。"
 
 #: packages/admin/src/components/editor/GalleryDetailPanel.tsx:169
 #: packages/admin/src/components/editor/GalleryDetailPanel.tsx:175
 msgid "Moving {label} was cancelled."
-msgstr ""
+msgstr "{label}の移動をキャンセルしました。"
 
 #: packages/admin/src/components/Dashboard.tsx:280
 msgid "Moving from another EmDash site?"
@@ -9146,7 +9146,7 @@ msgstr "識別名は半角英小文字で始め、半角英小文字、数字、
 
 #: packages/admin/src/components/Sections.tsx:174
 msgid "Name your section, then add its content in the editor."
-msgstr ""
+msgstr "セクションに名前を付けてから、エディターで内容を追加してください。"
 
 #: packages/admin/src/components/TaxonomySidebar.tsx:594
 msgid "Navigate"
@@ -9245,7 +9245,7 @@ msgstr "新しい共通プロフィール"
 
 #: packages/admin/src/components/Sections.tsx:159
 msgid "New section"
-msgstr ""
+msgstr "新しいセクション"
 
 #: packages/admin/src/components/AdminCommandPalette.tsx:508
 msgid "new tab"
@@ -9253,7 +9253,7 @@ msgstr "新しいタブ"
 
 #: packages/admin/src/components/TaxonomyManager.tsx:1363
 msgid "New taxonomy"
-msgstr ""
+msgstr "新しい分類グループ"
 
 #: packages/admin/src/components/TaxonomyManager.tsx:1330
 msgid "New Taxonomy"
@@ -9405,7 +9405,7 @@ msgstr "承認待ちのコメントはありません。"
 
 #: packages/admin/src/components/comments/CommentInbox.tsx:577
 msgid "No comments match your filters."
-msgstr ""
+msgstr "条件に一致するコメントはありません。"
 
 #: packages/admin/src/components/SandboxedPluginWidget.tsx:102
 msgid "No content"
@@ -9543,7 +9543,7 @@ msgstr "一致なし"
 
 #: packages/admin/src/components/editor/CodeBlockNode.tsx:323
 msgid "No matches. Press Enter to use “{freeFormLanguage}”."
-msgstr ""
+msgstr "一致する言語はありません。Enterキーを押すと「{freeFormLanguage}」を使用できます。"
 
 #: packages/admin/src/components/BlocksField.tsx:220
 msgid "No matching block types"
@@ -9572,7 +9572,7 @@ msgstr "このアカウントに一致するパスキーが見つかりません
 
 #: packages/admin/src/components/TaxonomyManager.tsx:1427
 msgid "No matching tags"
-msgstr ""
+msgstr "一致するタグはありません"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:534
 msgid "No matching timezones"
@@ -9724,7 +9724,7 @@ msgstr "ユーザーはまだいません。"
 
 #: packages/admin/src/components/RevisionHistory.tsx:84
 msgid "No versions yet"
-msgstr ""
+msgstr "変更履歴はまだありません"
 
 #: packages/admin/src/components/Widgets.tsx:515
 msgid "No widget areas yet. Create one to get started."
@@ -10295,7 +10295,7 @@ msgstr "PHP"
 
 #: packages/admin/src/components/editor/GalleryDetailPanel.tsx:143
 msgid "Picked up {label}."
-msgstr ""
+msgstr "{label}を選択して移動を開始しました。"
 
 #: packages/admin/src/components/FieldEditor.tsx:1457
 msgid "Picking entries this one links to lets editors drag them into an order. The other direction lists whatever points at the entry and cannot be reordered."
@@ -10347,7 +10347,7 @@ msgstr "プラグイン「{pluginId}」が見つかりません"
 
 #: packages/admin/src/lib/api/client.ts:68
 msgid "Plugin {pluginId} rejected the save: {reason}"
-msgstr ""
+msgstr "プラグイン{pluginId}が保存を拒否しました: {reason}"
 
 #: packages/admin/src/components/SandboxedContentEditorActions.tsx:122
 #: packages/admin/src/components/SandboxedContentEditorActions.tsx:155
@@ -10521,7 +10521,7 @@ msgstr "プレリリース"
 
 #: packages/admin/src/components/WordPressImport.tsx:943
 msgid "Preparing categories and tags..."
-msgstr ""
+msgstr "カテゴリとタグを準備しています..."
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:326
 msgid "Preparing registration..."
@@ -10546,7 +10546,7 @@ msgstr "コードエディターから戻るには、Escキーを押してくだ
 
 #: packages/admin/src/components/editor/GalleryDetailPanel.tsx:179
 msgid "Press Space to pick up an image. Use the Arrow keys to move it, then press Space to drop it."
-msgstr ""
+msgstr "スペースキーを押して画像の移動を開始します。矢印キーで移動し、もう一度スペースキーを押して配置してください。"
 
 #: packages/admin/src/components/calendar/CalendarEntryPanel.tsx:448
 #: packages/admin/src/components/ContentSettingsPanel.tsx:431
@@ -10573,7 +10573,7 @@ msgstr "下書きをプレビュー"
 #. placeholder {0}: section.title
 #: packages/admin/src/components/Sections.tsx:381
 msgid "Preview of {0}"
-msgstr ""
+msgstr "{0}のプレビュー"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:501
 msgid "Preview unavailable for this format"
@@ -10600,11 +10600,11 @@ msgstr "前のスクリーンショット"
 
 #: packages/admin/src/components/MenuList.tsx:168
 msgid "primary"
-msgstr ""
+msgstr "primary"
 
 #: packages/admin/src/components/MenuList.tsx:156
 msgid "Primary navigation"
-msgstr ""
+msgstr "メインナビゲーション"
 
 #: packages/admin/src/components/ContentStatusBadge.tsx:69
 msgid "Private"
@@ -11053,7 +11053,7 @@ msgstr "リリースが新しすぎるためインストールできません"
 
 #: packages/admin/src/components/CoreUpdateBanner.tsx:75
 msgid "Release notes"
-msgstr ""
+msgstr "リリースノート"
 
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:325
 msgid "Reload after updating EmDash before trying again."
@@ -11385,7 +11385,7 @@ msgstr "動画を置き換え"
 
 #: packages/admin/src/components/NonListFieldValue.tsx:30
 msgid "Replace with empty list"
-msgstr ""
+msgstr "空のリストに置き換える"
 
 #: packages/admin/src/components/revisions/change-labels.ts:97
 msgid "Replaced an image"
@@ -11650,7 +11650,7 @@ msgstr "コンテンツの公開、公開予約、非公開化の確認とブロ
 
 #: packages/admin/src/components/comments/CommentInbox.tsx:163
 msgid "Review and moderate comments across your content."
-msgstr ""
+msgstr "コンテンツ全体のコメントを確認・管理します。"
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:108
 msgid "Review New Permissions"
@@ -11875,7 +11875,7 @@ msgstr "保存できませんでした"
 
 #: packages/admin/src/components/SeoImageField.tsx:241
 msgid "Save image URL"
-msgstr ""
+msgstr "画像URLを保存"
 
 #: packages/admin/src/components/settings/PasskeyItem.tsx:112
 msgid "Save name"
@@ -12162,7 +12162,7 @@ msgstr "フォルダーを検索"
 
 #: packages/admin/src/components/editor/CodeBlockNode.tsx:300
 msgid "Search for a language…"
-msgstr ""
+msgstr "言語を検索…"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:514
 msgid "Search for an IANA timezone (e.g., Europe/London)"
@@ -12211,11 +12211,11 @@ msgstr "転送元または転送先を検索…"
 
 #: packages/admin/src/components/TaxonomyManager.tsx:1386
 msgid "Search tags"
-msgstr ""
+msgstr "タグを検索"
 
 #: packages/admin/src/components/TaxonomyManager.tsx:1385
 msgid "Search tags…"
-msgstr ""
+msgstr "タグを検索…"
 
 #: packages/admin/src/components/ThemeMarketplaceBrowse.tsx:93
 msgid "Search themes"
@@ -12294,7 +12294,7 @@ msgstr "セクション"
 
 #: packages/admin/src/components/Sections.tsx:279
 msgid "Sections could not be loaded."
-msgstr ""
+msgstr "セクションを読み込めませんでした。"
 
 #: packages/admin/src/components/SetupWizard.tsx:629
 msgid "Secure your account"
@@ -12422,7 +12422,7 @@ msgstr "{0}のコメントを選択"
 
 #: packages/admin/src/components/ContentPickerModal.tsx:215
 msgid "Select content"
-msgstr ""
+msgstr "コンテンツを選択"
 
 #: packages/admin/src/components/ImageFieldRenderer.tsx:593
 msgid "Select dark mode variant for {label}"
@@ -12608,7 +12608,7 @@ msgstr "SEOタイトル"
 #: packages/admin/src/components/MenuEditor.tsx:543
 #: packages/admin/src/components/MenuEditor.tsx:743
 msgid "Separate class names with spaces. Themes can use them to style the link."
-msgstr ""
+msgstr "クラス名はスペースで区切ってください。テーマでリンクのスタイル設定に使用できます。"
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:717
 msgid "Set a custom display size for this image instance."
@@ -12708,7 +12708,7 @@ msgstr "同じ執筆者のすべての翻訳で共有されます。"
 
 #: packages/admin/src/components/SeoImageField.tsx:226
 msgid "Sharing image needs a URL"
-msgstr ""
+msgstr "共有用の画像にはURLが必要です"
 
 #: packages/admin/src/components/BylineFieldEditor.tsx:47
 msgid "Short text"
@@ -12911,7 +12911,7 @@ msgstr "サイトタイトルは必須です"
 
 #: packages/admin/src/components/AdminCommandPalette.tsx:260
 msgid "Site Transfer"
-msgstr ""
+msgstr "サイト移行"
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:295
 msgid "Site URL"
@@ -13112,7 +13112,7 @@ msgstr "正方形（1:1）"
 
 #: packages/admin/src/components/MenuList.tsx:173
 msgid "Stable identifier for your site, such as primary or footer."
-msgstr ""
+msgstr "primaryやfooterなど、サイトで継続して使う識別子です。"
 
 #: packages/admin/src/components/settings/transfer/ImportSection.tsx:529
 msgid "Start a new import"
@@ -13377,7 +13377,7 @@ msgstr "分類グループを作成しました"
 
 #: packages/admin/src/components/TaxonomyManager.tsx:1197
 msgid "Taxonomy deleted"
-msgstr ""
+msgstr "分類グループを削除しました"
 
 #: packages/admin/src/components/TaxonomyManager.tsx:67
 msgid "Taxonomy not found: {taxonomyName}"
@@ -13571,11 +13571,11 @@ msgstr "次の問題を解決するまでインポートを開始できません
 
 #: packages/admin/src/lib/api/import.ts:470
 msgid "The import did not return a completion cursor"
-msgstr ""
+msgstr "インポートの完了カーソルが返されませんでした"
 
 #: packages/admin/src/lib/api/import.ts:455
 msgid "The import did not return a preparation cursor"
-msgstr ""
+msgstr "インポートの準備カーソルが返されませんでした"
 
 #: packages/admin/src/components/settings/transfer/ImportSection.tsx:513
 msgid "The import failed"
@@ -13793,7 +13793,7 @@ msgstr "ここまでに追加したサンプルコンテンツは残っていま
 
 #: packages/admin/src/components/SeoImageField.tsx:229
 msgid "The saved media ID may not work in shared links. Save the image URL to use this file for sharing."
-msgstr ""
+msgstr "保存されているメディアIDは、共有リンクでは機能しない場合があります。このファイルを共有用の画像に使うには、画像URLを保存してください。"
 
 #: packages/admin/src/components/calendar/CalendarEntryPanel.tsx:193
 msgid "The scheduled changes to {title} stay as a draft."
@@ -13829,7 +13829,7 @@ msgstr "上記の初期コンテンツを削除し、パッケージのコンテ
 
 #: packages/admin/src/components/NonListFieldValue.tsx:26
 msgid "The stored value doesn't match this field's type"
-msgstr ""
+msgstr "保存されている値がこのフィールドの型と一致しません"
 
 #: packages/admin/src/components/ThemeMarketplaceBrowse.tsx:153
 msgid "The theme marketplace is empty. Check back later."
@@ -14020,7 +14020,7 @@ msgstr "このフィールドには{mimeType}ファイルを設定できませ�
 
 #: packages/admin/src/components/NonListFieldValue.tsx:27
 msgid "This field expects a list. The stored value stays unchanged until you replace it with an empty list, which deletes it. Copy anything you need from it first."
-msgstr ""
+msgstr "このフィールドにはリストが必要です。保存されている値は、空のリストに置き換えるまで変更されません。置き換えると元の値は削除されるため、必要な内容を先にコピーしてください。"
 
 #: packages/admin/src/components/ContentEditor.tsx:3546
 #: packages/admin/src/components/ImageFieldRenderer.tsx:615
@@ -14516,7 +14516,7 @@ msgstr "表示対象を広げるか、フィルターを解除してください
 
 #: packages/admin/src/components/comments/CommentInbox.tsx:581
 msgid "Try a different search or collection filter."
-msgstr ""
+msgstr "検索条件やコンテンツタイプの絞り込みを変更してみてください。"
 
 #: packages/admin/src/routes/bylines.tsx:451
 msgid "Try a different search or filter."
@@ -14845,7 +14845,7 @@ msgstr "{0}の詳細を編集"
 
 #: packages/admin/src/components/CoreUpdateBanner.tsx:68
 msgid "Update the emdash package in your project and redeploy to get the latest fixes."
-msgstr ""
+msgstr "最新の修正を適用するには、プロジェクトのemdashパッケージを更新して再デプロイしてください。"
 
 #. placeholder {0}: source.displayName
 #: packages/admin/src/components/BylineFormDialog.tsx:337
@@ -15035,7 +15035,7 @@ msgstr "URLパターン"
 
 #: packages/admin/src/components/Widgets.tsx:140
 msgid "URL template (e.g. /blog/:slug)"
-msgstr ""
+msgstr "URLテンプレート（例: /blog/:slug）"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:133
 #: packages/admin/src/components/FieldEditor.tsx:469
@@ -15202,7 +15202,7 @@ msgstr "これらのドメインのメールアドレスを持つユーザーは
 #. placeholder {0}: version.version
 #: packages/admin/src/components/FieldEditor.tsx:1175
 msgid "v{0}"
-msgstr ""
+msgstr "v{0}"
 
 #. placeholder {0}: updateInfo.latest
 #: packages/admin/src/components/PluginManager.tsx:463
