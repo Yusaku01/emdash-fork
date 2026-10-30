@@ -324,7 +324,7 @@ msgid "{0, plural, one {# post} other {# posts}}"
 msgstr "{0, plural, one {# نوشته} other {# نوشته}}"
 
 #. placeholder {0}: loopRedirectIds.size
-#: packages/admin/src/components/Redirects.tsx:469
+#: packages/admin/src/components/Redirects.tsx:488
 msgid "{0, plural, one {# redirect is part of a loop.} other {# redirects are part of a loop.}}"
 msgstr "{0, plural, one {#    تغییر مسیر بخشی از یک حلقه است.} other {#    تغییر مسیر بخشی از یک حلقه هستند.}}"
 
@@ -1117,7 +1117,7 @@ msgstr "۴. روی «دریافت فایل برون‌ریزی» کلیک کنی
 msgid "4. Enter \"EmDash\" and click \"Add New\""
 msgstr "۴. «EmDash» را وارد کنید و «افزودن جدید» را بزنید"
 
-#: packages/admin/src/components/Redirects.tsx:444
+#: packages/admin/src/components/Redirects.tsx:463
 msgid "404 Errors"
 msgstr "خطاهای ۴۰۴"
 
@@ -1797,13 +1797,13 @@ msgid "All sources"
 msgstr ""
 
 #: packages/admin/src/components/ContentList.tsx:983
-#: packages/admin/src/components/Redirects.tsx:399
+#: packages/admin/src/components/Redirects.tsx:418
 msgid "All statuses"
 msgstr "همه وضعیت‌ها"
 
 #: packages/admin/src/components/MediaLibrary.tsx:936
 #: packages/admin/src/components/MediaPickerModal.tsx:404
-#: packages/admin/src/components/Redirects.tsx:406
+#: packages/admin/src/components/Redirects.tsx:425
 msgid "All types"
 msgstr "همه انواع"
 
@@ -2228,11 +2228,11 @@ msgstr ""
 msgid "Authors will be assigned to users on this site"
 msgstr ""
 
-#: packages/admin/src/components/Redirects.tsx:547
+#: packages/admin/src/components/Redirects.tsx:587
 msgid "auto"
 msgstr "خودکار"
 
-#: packages/admin/src/components/Redirects.tsx:406
+#: packages/admin/src/components/Redirects.tsx:425
 msgid "Auto (slug change)"
 msgstr "خودکار (تغییر نامک)"
 
@@ -3259,7 +3259,7 @@ msgstr ""
 
 #: packages/admin/src/components/ContentTypeList.tsx:392
 #: packages/admin/src/components/editor/IframeBlockNode.tsx:40
-#: packages/admin/src/components/Redirects.tsx:495
+#: packages/admin/src/components/Redirects.tsx:522
 msgid "Code"
 msgstr "کد"
 
@@ -3963,7 +3963,7 @@ msgstr "ساخت    تغییر مسیر برای {0}"
 msgid "Create redirect for this path"
 msgstr "ساخت    تغییر مسیر برای این مسیر"
 
-#: packages/admin/src/components/Redirects.tsx:486
+#: packages/admin/src/components/Redirects.tsx:510
 msgid "Create redirect rules to manage URL changes."
 msgstr "قوانین    تغییر مسیر برای مدیریت تغییرات آدرس بسازید."
 
@@ -4282,7 +4282,7 @@ msgstr ""
 #: packages/admin/src/components/MenuEditor.tsx:674
 #: packages/admin/src/components/MenuEditor.tsx:692
 #: packages/admin/src/components/MenuList.tsx:235
-#: packages/admin/src/components/Redirects.tsx:620
+#: packages/admin/src/components/Redirects.tsx:661
 #: packages/admin/src/components/RelationDeleteDialog.tsx:40
 #: packages/admin/src/components/Sections.tsx:349
 #: packages/admin/src/components/settings/BackupSettings.tsx:369
@@ -4429,16 +4429,16 @@ msgstr "حذف دائمی"
 msgid "Delete Permanently?"
 msgstr "حذف دائمی؟"
 
-#: packages/admin/src/components/Redirects.tsx:561
+#: packages/admin/src/components/Redirects.tsx:601
 msgid "Delete redirect"
 msgstr "حذف    تغییر مسیر"
 
 #. placeholder {0}: r.source
-#: packages/admin/src/components/Redirects.tsx:562
+#: packages/admin/src/components/Redirects.tsx:602
 msgid "Delete redirect {0}"
 msgstr "حذف    تغییر مسیر {0}"
 
-#: packages/admin/src/components/Redirects.tsx:618
+#: packages/admin/src/components/Redirects.tsx:659
 msgid "Delete Redirect?"
 msgstr "حذف    تغییر مسیر؟"
 
@@ -4515,7 +4515,7 @@ msgstr ""
 #: packages/admin/src/components/MediaFolderDialog.tsx:185
 #: packages/admin/src/components/MenuEditor.tsx:693
 #: packages/admin/src/components/MenuList.tsx:236
-#: packages/admin/src/components/Redirects.tsx:621
+#: packages/admin/src/components/Redirects.tsx:662
 #: packages/admin/src/components/RelationDeleteDialog.tsx:41
 #: packages/admin/src/components/Sections.tsx:350
 #: packages/admin/src/components/settings/BackupSettings.tsx:370
@@ -4597,7 +4597,7 @@ msgstr "توضیحات"
 msgid "Description (optional)"
 msgstr "توضیحات (اختیاری)"
 
-#: packages/admin/src/components/Redirects.tsx:494
+#: packages/admin/src/components/Redirects.tsx:520
 msgid "Destination"
 msgstr "مقصد"
 
@@ -4659,7 +4659,7 @@ msgstr "غیرفعال‌سازی افزونه"
 msgid "Disable plugin MCP tools"
 msgstr ""
 
-#: packages/admin/src/components/Redirects.tsx:530
+#: packages/admin/src/components/Redirects.tsx:570
 msgid "Disable redirect"
 msgstr "غیرفعال‌سازی    تغییر مسیر"
 
@@ -4672,7 +4672,7 @@ msgid "Disable User?"
 msgstr ""
 
 #: packages/admin/src/components/PluginManager.tsx:460
-#: packages/admin/src/components/Redirects.tsx:399
+#: packages/admin/src/components/Redirects.tsx:418
 #: packages/admin/src/components/users/UserDetail.tsx:214
 #: packages/admin/src/components/users/UserList.tsx:209
 msgid "Disabled"
@@ -5166,7 +5166,7 @@ msgstr "ویرایش آیتم‌های فهرست"
 msgid "visualEditing.editMode"
 msgstr ""
 
-#: packages/admin/src/components/Redirects.tsx:553
+#: packages/admin/src/components/Redirects.tsx:593
 msgid "Edit redirect"
 msgstr "ویرایش    تغییر مسیر"
 
@@ -5175,7 +5175,7 @@ msgid "Edit Redirect"
 msgstr "ویرایش    تغییر مسیر"
 
 #. placeholder {0}: r.source
-#: packages/admin/src/components/Redirects.tsx:554
+#: packages/admin/src/components/Redirects.tsx:594
 msgid "Edit redirect {0}"
 msgstr "ویرایش    تغییر مسیر {0}"
 
@@ -5425,7 +5425,7 @@ msgstr "فعال‌سازی افزونه"
 msgid "Enable plugin MCP tools"
 msgstr ""
 
-#: packages/admin/src/components/Redirects.tsx:530
+#: packages/admin/src/components/Redirects.tsx:570
 msgid "Enable redirect"
 msgstr "فعال‌سازی    تغییر مسیر"
 
@@ -5438,7 +5438,7 @@ msgid "Enable tracking to index existing content and keep references up to date.
 msgstr ""
 
 #: packages/admin/src/components/Redirects.tsx:180
-#: packages/admin/src/components/Redirects.tsx:399
+#: packages/admin/src/components/Redirects.tsx:418
 msgid "Enabled"
 msgstr "فعال"
 
@@ -5605,6 +5605,10 @@ msgstr ""
 
 #: packages/admin/src/components/ContentTypeList.tsx:272
 msgid "Every relationship this content type takes part in goes too:"
+msgstr ""
+
+#: packages/admin/src/components/Redirects.tsx:407
+msgid "Exact group name..."
 msgstr ""
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:502
@@ -6937,6 +6941,10 @@ msgstr "فیلتر بر اساس مجموعه"
 msgid "Filter by date range: {rangeLabel}"
 msgstr ""
 
+#: packages/admin/src/components/Redirects.tsx:406
+msgid "Filter by group"
+msgstr ""
+
 #: packages/admin/src/components/users/UserList.tsx:75
 msgid "Filter by role"
 msgstr ""
@@ -6946,13 +6954,13 @@ msgid "Filter by source"
 msgstr ""
 
 #: packages/admin/src/components/ContentList.tsx:1022
-#: packages/admin/src/components/Redirects.tsx:400
+#: packages/admin/src/components/Redirects.tsx:419
 msgid "Filter by status"
 msgstr ""
 
 #: packages/admin/src/components/MediaLibrary.tsx:942
 #: packages/admin/src/components/MediaPickerModal.tsx:1327
-#: packages/admin/src/components/Redirects.tsx:407
+#: packages/admin/src/components/Redirects.tsx:426
 msgid "Filter by type"
 msgstr ""
 
@@ -7192,6 +7200,7 @@ msgid "Grid view"
 msgstr "نمای شبکه‌ای"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:565
+#: packages/admin/src/components/Redirects.tsx:521
 msgid "Group"
 msgstr ""
 
@@ -7329,7 +7338,7 @@ msgid "Hierarchical (like categories, with parent/child relationships)"
 msgstr "سلسله‌مراتبی (مانند دسته‌ها، با روابط والد/فرزند)"
 
 #: packages/admin/src/components/Redirects.tsx:230
-#: packages/admin/src/components/Redirects.tsx:496
+#: packages/admin/src/components/Redirects.tsx:523
 msgid "Hits"
 msgstr "بازدید"
 
@@ -8321,7 +8330,7 @@ msgstr "نمای زنده"
 #: packages/admin/src/components/ContentPickerModal.tsx:374
 #: packages/admin/src/components/MarketplaceBrowse.tsx:200
 #: packages/admin/src/components/MediaUsedIn.tsx:248
-#: packages/admin/src/components/Redirects.tsx:577
+#: packages/admin/src/components/Redirects.tsx:618
 #: packages/admin/src/components/RegistryBrowse.tsx:179
 #: packages/admin/src/components/settings/transfer/ApprovalsSection.tsx:134
 #: packages/admin/src/components/ThemeMarketplaceBrowse.tsx:170
@@ -8432,7 +8441,7 @@ msgstr ""
 msgid "Loading plugins..."
 msgstr "در حال بارگذاری افزونه‌ها..."
 
-#: packages/admin/src/components/Redirects.tsx:481
+#: packages/admin/src/components/Redirects.tsx:500
 msgid "Loading redirects..."
 msgstr "در حال بارگذاری    تغییر مسیر‌ها..."
 
@@ -8491,7 +8500,7 @@ msgstr ""
 #: packages/admin/src/components/MediaLibrary.tsx:1269
 #: packages/admin/src/components/MediaUsedIn.tsx:245
 #: packages/admin/src/components/PortableTextEditor.tsx:3228
-#: packages/admin/src/components/Redirects.tsx:577
+#: packages/admin/src/components/Redirects.tsx:618
 #: packages/admin/src/components/RegistryBrowse.tsx:179
 #: packages/admin/src/components/SandboxedPluginPage.tsx:110
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:169
@@ -8634,7 +8643,7 @@ msgstr "مدیریت فهرستهای ناوبری وبسایت شما"
 msgid "Manage the people and teams credited on your content."
 msgstr ""
 
-#: packages/admin/src/components/Redirects.tsx:374
+#: packages/admin/src/components/Redirects.tsx:385
 msgid "Manage URL redirects and view 404 errors."
 msgstr "مدیریت    تغییر مسیر‌های آدرس و مشاهده خطاهای ۴۰۴."
 
@@ -8655,7 +8664,7 @@ msgstr ""
 msgid "Managed by your identity provider. Change the name there."
 msgstr ""
 
-#: packages/admin/src/components/Redirects.tsx:406
+#: packages/admin/src/components/Redirects.tsx:425
 msgid "Manual"
 msgstr "دستی"
 
@@ -9355,7 +9364,7 @@ msgid "New public routes"
 msgstr ""
 
 #: packages/admin/src/components/Redirects.tsx:108
-#: packages/admin/src/components/Redirects.tsx:381
+#: packages/admin/src/components/Redirects.tsx:392
 msgid "New Redirect"
 msgstr "تغییر مسیر جدید"
 
@@ -9614,6 +9623,10 @@ msgstr ""
 msgid "No folders found"
 msgstr ""
 
+#: packages/admin/src/components/Redirects.tsx:553
+msgid "No group"
+msgstr ""
+
 #: packages/admin/src/components/editor/DocumentOutline.tsx:269
 msgid "No headings in document"
 msgstr "سرتیتری در سند نیست"
@@ -9775,7 +9788,11 @@ msgstr ""
 msgid "No recent activity"
 msgstr "فعالیت اخیری نیست"
 
-#: packages/admin/src/components/Redirects.tsx:485
+#: packages/admin/src/components/Redirects.tsx:505
+msgid "No redirects match these filters"
+msgstr ""
+
+#: packages/admin/src/components/Redirects.tsx:505
 msgid "No redirects yet"
 msgstr "هنوز    تغییر مسیری نیست"
 
@@ -10240,8 +10257,8 @@ msgstr ""
 msgid "Parent"
 msgstr "مادر"
 
-#: packages/admin/src/components/Redirects.tsx:535
-#: packages/admin/src/components/Redirects.tsx:541
+#: packages/admin/src/components/Redirects.tsx:575
+#: packages/admin/src/components/Redirects.tsx:581
 msgid "Part of a redirect loop"
 msgstr "بخشی از حلقه    تغییر مسیر"
 
@@ -11060,7 +11077,7 @@ msgstr ""
 msgid "Recovery link sent to {0}"
 msgstr "لینک بازیابی به {0} ارسال شد"
 
-#: packages/admin/src/components/Redirects.tsx:467
+#: packages/admin/src/components/Redirects.tsx:486
 msgid "Redirect loop detected"
 msgstr "حلقه تغییر مسیر شناسایی شد"
 
@@ -11068,8 +11085,8 @@ msgstr "حلقه تغییر مسیر شناسایی شد"
 msgid "Redirecting to login..."
 msgstr "در حال هدایت به صفحه ورود..."
 
-#: packages/admin/src/components/Redirects.tsx:373
-#: packages/admin/src/components/Redirects.tsx:424
+#: packages/admin/src/components/Redirects.tsx:384
+#: packages/admin/src/components/Redirects.tsx:443
 #: packages/admin/src/components/settings/transfer/labels.ts:33
 #: packages/admin/src/components/settings/transfer/labels.ts:90
 #: packages/admin/src/components/Sidebar.tsx:481
@@ -12326,7 +12343,7 @@ msgstr ""
 msgid "Search sections..."
 msgstr "جستجوی بخش‌ها..."
 
-#: packages/admin/src/components/Redirects.tsx:368
+#: packages/admin/src/components/Redirects.tsx:379
 msgid "Search source or destination..."
 msgstr "جستجوی مبدأ یا مقصد..."
 
@@ -13188,7 +13205,7 @@ msgstr "مرتب‌سازی قالب‌ها"
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:790
 #: packages/admin/src/components/MarketplacePluginDetail.tsx:236
 #: packages/admin/src/components/PluginManager.tsx:651
-#: packages/admin/src/components/Redirects.tsx:492
+#: packages/admin/src/components/Redirects.tsx:518
 #: packages/admin/src/components/SectionEditor.tsx:316
 msgid "Source"
 msgstr "منبع"
@@ -13289,7 +13306,7 @@ msgstr ""
 
 #: packages/admin/src/components/ContentList.tsx:742
 #: packages/admin/src/components/ContentTypeEditor.tsx:137
-#: packages/admin/src/components/Redirects.tsx:497
+#: packages/admin/src/components/Redirects.tsx:524
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:382
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:615
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:641
@@ -14304,7 +14321,7 @@ msgstr ""
 msgid "This range has more than {maxEntries} entries"
 msgstr ""
 
-#: packages/admin/src/components/Redirects.tsx:619
+#: packages/admin/src/components/Redirects.tsx:660
 msgid "This redirect rule will be permanently removed."
 msgstr "این قانون    تغییر مسیر برای همیشه حذف خواهد شد."
 
@@ -14694,6 +14711,10 @@ msgstr ""
 #: packages/admin/src/components/WordPressImport.tsx:1462
 msgid "Try Another URL"
 msgstr "آدرس دیگری را امتحان کنید"
+
+#: packages/admin/src/components/Redirects.tsx:509
+msgid "Try changing or clearing your filters."
+msgstr ""
 
 #: packages/admin/src/components/ThemeMarketplaceBrowse.tsx:244
 #: packages/admin/src/components/ThemeMarketplaceDetail.tsx:143
@@ -15458,7 +15479,7 @@ msgstr ""
 msgid "Viewing the version from {when} by {name}."
 msgstr ""
 
-#: packages/admin/src/components/Redirects.tsx:473
+#: packages/admin/src/components/Redirects.tsx:492
 msgid "Visitors hitting these paths will see an error."
 msgstr "بازدیدکنندگانی که به این مسیرها می‌رسند خطا خواهند دید."
 

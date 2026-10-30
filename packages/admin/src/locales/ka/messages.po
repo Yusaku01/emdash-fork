@@ -322,7 +322,7 @@ msgid "{0, plural, one {# post} other {# posts}}"
 msgstr "{0, plural, one {# პოსტი} other {# პოსტი}}"
 
 #. placeholder {0}: loopRedirectIds.size
-#: packages/admin/src/components/Redirects.tsx:469
+#: packages/admin/src/components/Redirects.tsx:488
 msgid "{0, plural, one {# redirect is part of a loop.} other {# redirects are part of a loop.}}"
 msgstr "{0, plural, one {# გადამისამართება მარყუჟის ნაწილია.} other {# გადამისამართება მარყუჟის ნაწილია.}}"
 
@@ -1115,7 +1115,7 @@ msgstr "4. დააწკაპუნეთ „ექსპორტის ფ�
 msgid "4. Enter \"EmDash\" and click \"Add New\""
 msgstr "4. შეიყვანეთ „EmDash“ და დააწკაპუნეთ „ახლის დამატებაზე“"
 
-#: packages/admin/src/components/Redirects.tsx:444
+#: packages/admin/src/components/Redirects.tsx:463
 msgid "404 Errors"
 msgstr "404 შეცდომები"
 
@@ -1795,13 +1795,13 @@ msgid "All sources"
 msgstr ""
 
 #: packages/admin/src/components/ContentList.tsx:983
-#: packages/admin/src/components/Redirects.tsx:399
+#: packages/admin/src/components/Redirects.tsx:418
 msgid "All statuses"
 msgstr "ყველა სტატუსი"
 
 #: packages/admin/src/components/MediaLibrary.tsx:936
 #: packages/admin/src/components/MediaPickerModal.tsx:404
-#: packages/admin/src/components/Redirects.tsx:406
+#: packages/admin/src/components/Redirects.tsx:425
 msgid "All types"
 msgstr "ყველა ტიპი"
 
@@ -2226,11 +2226,11 @@ msgstr "ავტორები"
 msgid "Authors will be assigned to users on this site"
 msgstr ""
 
-#: packages/admin/src/components/Redirects.tsx:547
+#: packages/admin/src/components/Redirects.tsx:587
 msgid "auto"
 msgstr "ავტო"
 
-#: packages/admin/src/components/Redirects.tsx:406
+#: packages/admin/src/components/Redirects.tsx:425
 msgid "Auto (slug change)"
 msgstr "ავტო (სლაგის ცვლილება)"
 
@@ -3257,7 +3257,7 @@ msgstr ""
 
 #: packages/admin/src/components/ContentTypeList.tsx:392
 #: packages/admin/src/components/editor/IframeBlockNode.tsx:40
-#: packages/admin/src/components/Redirects.tsx:495
+#: packages/admin/src/components/Redirects.tsx:522
 msgid "Code"
 msgstr "კოდი"
 
@@ -3961,7 +3961,7 @@ msgstr "{0}-ისთვის გადამისამართების 
 msgid "Create redirect for this path"
 msgstr "ამ ბილიკისთვის გადამისამართების შექმნა"
 
-#: packages/admin/src/components/Redirects.tsx:486
+#: packages/admin/src/components/Redirects.tsx:510
 msgid "Create redirect rules to manage URL changes."
 msgstr "შექმენით გადამისამართების წესები URL-ის ცვლილებების სამართავად."
 
@@ -4280,7 +4280,7 @@ msgstr "კოდში განსაზღვრული"
 #: packages/admin/src/components/MenuEditor.tsx:674
 #: packages/admin/src/components/MenuEditor.tsx:692
 #: packages/admin/src/components/MenuList.tsx:235
-#: packages/admin/src/components/Redirects.tsx:620
+#: packages/admin/src/components/Redirects.tsx:661
 #: packages/admin/src/components/RelationDeleteDialog.tsx:40
 #: packages/admin/src/components/Sections.tsx:349
 #: packages/admin/src/components/settings/BackupSettings.tsx:369
@@ -4427,16 +4427,16 @@ msgstr "სამუდამოდ წაშლა"
 msgid "Delete Permanently?"
 msgstr "სამუდამოდ წავშალოთ?"
 
-#: packages/admin/src/components/Redirects.tsx:561
+#: packages/admin/src/components/Redirects.tsx:601
 msgid "Delete redirect"
 msgstr "გადამისამართების წაშლა"
 
 #. placeholder {0}: r.source
-#: packages/admin/src/components/Redirects.tsx:562
+#: packages/admin/src/components/Redirects.tsx:602
 msgid "Delete redirect {0}"
 msgstr "გადამისამართება {0}-ის წაშლა"
 
-#: packages/admin/src/components/Redirects.tsx:618
+#: packages/admin/src/components/Redirects.tsx:659
 msgid "Delete Redirect?"
 msgstr "წავშალოთ გადამისამართება?"
 
@@ -4513,7 +4513,7 @@ msgstr "„{0}“-ის წაშლა ასევე მოხსნის {
 #: packages/admin/src/components/MediaFolderDialog.tsx:185
 #: packages/admin/src/components/MenuEditor.tsx:693
 #: packages/admin/src/components/MenuList.tsx:236
-#: packages/admin/src/components/Redirects.tsx:621
+#: packages/admin/src/components/Redirects.tsx:662
 #: packages/admin/src/components/RelationDeleteDialog.tsx:41
 #: packages/admin/src/components/Sections.tsx:350
 #: packages/admin/src/components/settings/BackupSettings.tsx:370
@@ -4595,7 +4595,7 @@ msgstr "აღწერა"
 msgid "Description (optional)"
 msgstr "აღწერა (არასავალდებულო)"
 
-#: packages/admin/src/components/Redirects.tsx:494
+#: packages/admin/src/components/Redirects.tsx:520
 msgid "Destination"
 msgstr "დანიშნულება"
 
@@ -4657,7 +4657,7 @@ msgstr "პლაგინის გამორთვა"
 msgid "Disable plugin MCP tools"
 msgstr "პლაგინის MCP ინსტრუმენტების გამორთვა"
 
-#: packages/admin/src/components/Redirects.tsx:530
+#: packages/admin/src/components/Redirects.tsx:570
 msgid "Disable redirect"
 msgstr "გადამისამართების გამორთვა"
 
@@ -4670,7 +4670,7 @@ msgid "Disable User?"
 msgstr "გამოვრთოთ მომხმარებელი?"
 
 #: packages/admin/src/components/PluginManager.tsx:460
-#: packages/admin/src/components/Redirects.tsx:399
+#: packages/admin/src/components/Redirects.tsx:418
 #: packages/admin/src/components/users/UserDetail.tsx:214
 #: packages/admin/src/components/users/UserList.tsx:209
 msgid "Disabled"
@@ -5164,7 +5164,7 @@ msgstr "მენიუს ელემენტების რედაქტ�
 msgid "visualEditing.editMode"
 msgstr "რედაქტირების რეჟიმი"
 
-#: packages/admin/src/components/Redirects.tsx:553
+#: packages/admin/src/components/Redirects.tsx:593
 msgid "Edit redirect"
 msgstr "გადამისამართების რედაქტირება"
 
@@ -5173,7 +5173,7 @@ msgid "Edit Redirect"
 msgstr "გადამისამართების რედაქტირება"
 
 #. placeholder {0}: r.source
-#: packages/admin/src/components/Redirects.tsx:554
+#: packages/admin/src/components/Redirects.tsx:594
 msgid "Edit redirect {0}"
 msgstr "გადამისამართების რედაქტირება {0}"
 
@@ -5426,7 +5426,7 @@ msgstr "პლაგინის ჩართვა"
 msgid "Enable plugin MCP tools"
 msgstr "პლაგინის MCP ინსტრუმენტების ჩართვა"
 
-#: packages/admin/src/components/Redirects.tsx:530
+#: packages/admin/src/components/Redirects.tsx:570
 msgid "Enable redirect"
 msgstr "გადამისამართების ჩართვა"
 
@@ -5439,7 +5439,7 @@ msgid "Enable tracking to index existing content and keep references up to date.
 msgstr "ჩართეთ თვალყურის დევნება, რომ არსებული შიგთავსი დაინდექსირდეს და მითითებები აქტუალური დარჩეს."
 
 #: packages/admin/src/components/Redirects.tsx:180
-#: packages/admin/src/components/Redirects.tsx:399
+#: packages/admin/src/components/Redirects.tsx:418
 msgid "Enabled"
 msgstr "ჩართული"
 
@@ -5606,6 +5606,10 @@ msgstr "ამ პლაგინის ყველა გამოქვეყ
 
 #: packages/admin/src/components/ContentTypeList.tsx:272
 msgid "Every relationship this content type takes part in goes too:"
+msgstr ""
+
+#: packages/admin/src/components/Redirects.tsx:407
+msgid "Exact group name..."
 msgstr ""
 
 #: packages/admin/src/components/settings/GeneralSettings.tsx:502
@@ -6938,6 +6942,10 @@ msgstr "კოლექციის მიხედვით ფილტრი"
 msgid "Filter by date range: {rangeLabel}"
 msgstr "ფილტრი თარიღის დიაპაზონით: {rangeLabel}"
 
+#: packages/admin/src/components/Redirects.tsx:406
+msgid "Filter by group"
+msgstr ""
+
 #: packages/admin/src/components/users/UserList.tsx:75
 msgid "Filter by role"
 msgstr "როლის მიხედვით ფილტრი"
@@ -6947,13 +6955,13 @@ msgid "Filter by source"
 msgstr "წყაროს მიხედვით ფილტრი"
 
 #: packages/admin/src/components/ContentList.tsx:1022
-#: packages/admin/src/components/Redirects.tsx:400
+#: packages/admin/src/components/Redirects.tsx:419
 msgid "Filter by status"
 msgstr "სტატუსის მიხედვით ფილტრი"
 
 #: packages/admin/src/components/MediaLibrary.tsx:942
 #: packages/admin/src/components/MediaPickerModal.tsx:1327
-#: packages/admin/src/components/Redirects.tsx:407
+#: packages/admin/src/components/Redirects.tsx:426
 msgid "Filter by type"
 msgstr "ტიპის მიხედვით ფილტრი"
 
@@ -7193,6 +7201,7 @@ msgid "Grid view"
 msgstr "ბადის ხედი"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:565
+#: packages/admin/src/components/Redirects.tsx:521
 msgid "Group"
 msgstr "ჯგუფი"
 
@@ -7330,7 +7339,7 @@ msgid "Hierarchical (like categories, with parent/child relationships)"
 msgstr "იერარქიული (კატეგორიების მსგავსად, მშობელი/შვილი ურთიერთობებით)"
 
 #: packages/admin/src/components/Redirects.tsx:230
-#: packages/admin/src/components/Redirects.tsx:496
+#: packages/admin/src/components/Redirects.tsx:523
 msgid "Hits"
 msgstr "მოხვედრები"
 
@@ -8322,7 +8331,7 @@ msgstr "ცოცხალი გადახედვა"
 #: packages/admin/src/components/ContentPickerModal.tsx:374
 #: packages/admin/src/components/MarketplaceBrowse.tsx:200
 #: packages/admin/src/components/MediaUsedIn.tsx:248
-#: packages/admin/src/components/Redirects.tsx:577
+#: packages/admin/src/components/Redirects.tsx:618
 #: packages/admin/src/components/RegistryBrowse.tsx:179
 #: packages/admin/src/components/settings/transfer/ApprovalsSection.tsx:134
 #: packages/admin/src/components/ThemeMarketplaceBrowse.tsx:170
@@ -8433,7 +8442,7 @@ msgstr "პლაგინის პანელი იტვირთება"
 msgid "Loading plugins..."
 msgstr "პლაგინები იტვირთება..."
 
-#: packages/admin/src/components/Redirects.tsx:481
+#: packages/admin/src/components/Redirects.tsx:500
 msgid "Loading redirects..."
 msgstr "გადამისამართებები იტვირთება..."
 
@@ -8492,7 +8501,7 @@ msgstr "ვიჯეტები იტვირთება..."
 #: packages/admin/src/components/MediaLibrary.tsx:1269
 #: packages/admin/src/components/MediaUsedIn.tsx:245
 #: packages/admin/src/components/PortableTextEditor.tsx:3228
-#: packages/admin/src/components/Redirects.tsx:577
+#: packages/admin/src/components/Redirects.tsx:618
 #: packages/admin/src/components/RegistryBrowse.tsx:179
 #: packages/admin/src/components/SandboxedPluginPage.tsx:110
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:169
@@ -8635,7 +8644,7 @@ msgstr "საიტის ნავიგაციის მენიუებ�
 msgid "Manage the people and teams credited on your content."
 msgstr ""
 
-#: packages/admin/src/components/Redirects.tsx:374
+#: packages/admin/src/components/Redirects.tsx:385
 msgid "Manage URL redirects and view 404 errors."
 msgstr "URL გადამისამართებების მართვა და 404 შეცდომების ნახვა."
 
@@ -8656,7 +8665,7 @@ msgstr "იმართება გარე მედია პროვაი
 msgid "Managed by your identity provider. Change the name there."
 msgstr ""
 
-#: packages/admin/src/components/Redirects.tsx:406
+#: packages/admin/src/components/Redirects.tsx:425
 msgid "Manual"
 msgstr "ხელით"
 
@@ -9356,7 +9365,7 @@ msgid "New public routes"
 msgstr "ახალი საჯარო მარშრუტები"
 
 #: packages/admin/src/components/Redirects.tsx:108
-#: packages/admin/src/components/Redirects.tsx:381
+#: packages/admin/src/components/Redirects.tsx:392
 msgid "New Redirect"
 msgstr "ახალი გადამისამართება"
 
@@ -9615,6 +9624,10 @@ msgstr "ფაილები არ დამატებულა"
 msgid "No folders found"
 msgstr "საქაღალდეები ვერ მოიძებნა"
 
+#: packages/admin/src/components/Redirects.tsx:553
+msgid "No group"
+msgstr ""
+
 #: packages/admin/src/components/editor/DocumentOutline.tsx:269
 msgid "No headings in document"
 msgstr "დოკუმენტში სათაურები არ არის"
@@ -9776,7 +9789,11 @@ msgstr "საჯარო URL მიუწვდომელია"
 msgid "No recent activity"
 msgstr "ბოლო დროს აქტივობა არ ყოფილა"
 
-#: packages/admin/src/components/Redirects.tsx:485
+#: packages/admin/src/components/Redirects.tsx:505
+msgid "No redirects match these filters"
+msgstr ""
+
+#: packages/admin/src/components/Redirects.tsx:505
 msgid "No redirects yet"
 msgstr "გადამისამართებები ჯერ არ არის"
 
@@ -10244,8 +10261,8 @@ msgstr "აბზაცი ჩასმულია ცხრილის წი
 msgid "Parent"
 msgstr "მშობელი"
 
-#: packages/admin/src/components/Redirects.tsx:535
-#: packages/admin/src/components/Redirects.tsx:541
+#: packages/admin/src/components/Redirects.tsx:575
+#: packages/admin/src/components/Redirects.tsx:581
 msgid "Part of a redirect loop"
 msgstr "გადამისამართების მარყუჟის ნაწილი"
 
@@ -11064,7 +11081,7 @@ msgstr ""
 msgid "Recovery link sent to {0}"
 msgstr "აღდგენის ბმული გაიგზავნა {0}-ზე"
 
-#: packages/admin/src/components/Redirects.tsx:467
+#: packages/admin/src/components/Redirects.tsx:486
 msgid "Redirect loop detected"
 msgstr "აღმოჩენილია გადამისამართების მარყუჟი"
 
@@ -11072,8 +11089,8 @@ msgstr "აღმოჩენილია გადამისამართ�
 msgid "Redirecting to login..."
 msgstr "გადამისამართება შესვლის გვერდზე..."
 
-#: packages/admin/src/components/Redirects.tsx:373
-#: packages/admin/src/components/Redirects.tsx:424
+#: packages/admin/src/components/Redirects.tsx:384
+#: packages/admin/src/components/Redirects.tsx:443
 #: packages/admin/src/components/settings/transfer/labels.ts:33
 #: packages/admin/src/components/settings/transfer/labels.ts:90
 #: packages/admin/src/components/Sidebar.tsx:481
@@ -12330,7 +12347,7 @@ msgstr "მრავალჯერადი საჯარო პროფი�
 msgid "Search sections..."
 msgstr "სექციების ძებნა..."
 
-#: packages/admin/src/components/Redirects.tsx:368
+#: packages/admin/src/components/Redirects.tsx:379
 msgid "Search source or destination..."
 msgstr "წყაროს ან დანიშნულების ძებნა..."
 
@@ -13192,7 +13209,7 @@ msgstr "თემების დალაგება"
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:790
 #: packages/admin/src/components/MarketplacePluginDetail.tsx:236
 #: packages/admin/src/components/PluginManager.tsx:651
-#: packages/admin/src/components/Redirects.tsx:492
+#: packages/admin/src/components/Redirects.tsx:518
 #: packages/admin/src/components/SectionEditor.tsx:316
 msgid "Source"
 msgstr "წყარო"
@@ -13293,7 +13310,7 @@ msgstr ""
 
 #: packages/admin/src/components/ContentList.tsx:742
 #: packages/admin/src/components/ContentTypeEditor.tsx:137
-#: packages/admin/src/components/Redirects.tsx:497
+#: packages/admin/src/components/Redirects.tsx:524
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:382
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:615
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:641
@@ -14308,7 +14325,7 @@ msgstr "გამომცემლის სახელი მის იდე
 msgid "This range has more than {maxEntries} entries"
 msgstr ""
 
-#: packages/admin/src/components/Redirects.tsx:619
+#: packages/admin/src/components/Redirects.tsx:660
 msgid "This redirect rule will be permanently removed."
 msgstr "ეს გადამისამართების წესი სამუდამოდ წაიშლება."
 
@@ -14698,6 +14715,10 @@ msgstr "სცადეთ სხვა ფაილის სახელი, �
 #: packages/admin/src/components/WordPressImport.tsx:1462
 msgid "Try Another URL"
 msgstr "სხვა URL-ით ცდა"
+
+#: packages/admin/src/components/Redirects.tsx:509
+msgid "Try changing or clearing your filters."
+msgstr ""
 
 #: packages/admin/src/components/ThemeMarketplaceBrowse.tsx:244
 #: packages/admin/src/components/ThemeMarketplaceDetail.tsx:143
@@ -15462,7 +15483,7 @@ msgstr "{license} ლიცენზიის ნახვა spdx.org-ზე"
 msgid "Viewing the version from {when} by {name}."
 msgstr ""
 
-#: packages/admin/src/components/Redirects.tsx:473
+#: packages/admin/src/components/Redirects.tsx:492
 msgid "Visitors hitting these paths will see an error."
 msgstr "ამ ბილიკებზე მისული ვიზიტორები შეცდომას დაინახავენ."
 
