@@ -3,6 +3,8 @@ import starlight from "@astrojs/starlight";
 // @ts-check
 import { defineConfig, fontProviders } from "astro/config";
 
+import internalAnchorCheck from "./scripts/check-internal-anchors.mjs";
+
 // https://astro.build/config
 export default defineConfig({
 	site: "https://docs.emdashcms.com",
@@ -279,6 +281,7 @@ export default defineConfig({
 				},
 			],
 		}),
+		internalAnchorCheck(),
 	],
 
 	fonts: [

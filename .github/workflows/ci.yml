@@ -76,6 +76,8 @@ jobs:
         run: node .github/scripts/check-no-major.mjs
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
+      - run: pnpm --dir docs test
+      - run: pnpm --dir docs build
       - run: pnpm typecheck
       - run: pnpm run --filter emdash-demo --filter @emdash-cms/demo-cloudflare typecheck
       - run: pnpm typecheck:templates
