@@ -159,12 +159,12 @@ msgstr "\"{0}\" हमेशा के लिए हटा दिया जा�
 #. placeholder {0}: item.label
 #: packages/admin/src/components/MenuEditor.tsx:690
 msgid "\"{0}\" will be removed from this menu. This action cannot be undone."
-msgstr ""
+msgstr "\"{0}\" को इस मेनू से हटा दिया जाएगा। इस एक्शन को वापस नहीं किया जा सकता।"
 
 #. placeholder {0}: widget.title || t`Untitled Widget`
 #: packages/admin/src/components/Widgets.tsx:849
 msgid "\"{0}\" will be removed from this widget area. This action cannot be undone."
-msgstr ""
+msgstr "\"{0}\" को इस विजेट एरिया से हटा दिया जाएगा। इस एक्शन को वापस नहीं किया जा सकता।"
 
 #: packages/admin/src/components/OptionalLabel.tsx:13
 msgid "(optional)"
@@ -314,7 +314,7 @@ msgstr "{0, plural, one {# अनुमति} other {# अनुमतिया
 #. placeholder {0}: plugins?.length ?? 0
 #: packages/admin/src/components/PluginManager.tsx:221
 msgid "{0, plural, one {# plugin} other {# plugins}}"
-msgstr ""
+msgstr "{0, plural, one {# प्लगइन} other {# प्लगइन}}"
 
 #. placeholder {0}: mapping.postCount
 #: packages/admin/src/components/WordPressImport.tsx:2545
@@ -852,7 +852,7 @@ msgstr "{pluginName} सेटिंग्स"
 
 #: packages/admin/src/components/BulkTagDialog.tsx:489
 msgid "{plural} go live now; draft edits stay unpublished."
-msgstr "{plural} अभी लाइव हों; ड्राफ़्ट में किए गए बदलाव पब्लिश नहीं होंगे।"
+msgstr "{plural} अभी लाइव हों; ड्राफ़्ट में किए गए बदलाव प्रकाशित नहीं होंगे।"
 
 #: packages/admin/src/components/Dashboard.tsx:172
 msgid "{policyRejected, plural, one {Open the affected entry, resolve the policy reason, and schedule it again. A successful schedule or publish clears this notice.} other {Open the affected entries, resolve the policy reasons, and schedule them again. A successful schedule or publish clears each notice.}}"
@@ -970,11 +970,11 @@ msgstr "{when}, मौजूदा वर्शन, {author}"
 
 #: packages/admin/src/components/revisions/RevisionList.tsx:234
 msgid "{when}, Current version, Published, {author}"
-msgstr "{when}, मौजूदा वर्शन, पब्लिश किया गया, {author}"
+msgstr "{when}, मौजूदा वर्शन, प्रकाशित किया गया, {author}"
 
 #: packages/admin/src/components/revisions/RevisionList.tsx:238
 msgid "{when}, Published, {author}"
-msgstr "{when}, पब्लिश किया गया, {author}"
+msgstr "{when}, प्रकाशित किया गया, {author}"
 
 #: packages/admin/src/components/settings/transfer/labels.ts:268
 msgid "{widgetType} in {areaName}"
@@ -1336,7 +1336,7 @@ msgstr "कार्रवाई"
 #: packages/admin/src/components/ContentList.tsx:1439
 #: packages/admin/src/components/ContentList.tsx:1645
 msgid "Actions for {title}"
-msgstr ""
+msgstr "{title} के लिए एक्शन"
 
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:334
 msgid "Activation cannot be confirmed. Keep editing paused and refresh the status."
@@ -2159,11 +2159,11 @@ msgstr "ऑडियो"
 #: packages/admin/src/components/auth/PasskeyLogin.tsx:274
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:438
 msgid "Authentication error: {0}"
-msgstr "प्रमाणीकरण एरर: {0}"
+msgstr "ऑथेंटिकेशन एरर: {0}"
 
 #: packages/admin/src/components/LoginPage.tsx:200
 msgid "Authentication error: {error}"
-msgstr "प्रमाणीकरण एरर: {error}"
+msgstr "ऑथेंटिकेशन एरर: {error}"
 
 #: packages/admin/src/components/auth/PasskeyLogin.tsx:251
 msgid "Authentication failed"
@@ -2172,11 +2172,11 @@ msgstr "ऑथेंटिकेशन असफल रहा"
 #. placeholder {0}: manifest?.authMode
 #: packages/admin/src/components/settings/SecuritySettings.tsx:116
 msgid "Authentication is managed by an external provider ({0}). Passkey settings are not available when using external authentication."
-msgstr "प्रमाणीकरण एक बाहरी प्रदाता ({0}) द्वारा प्रबंधित किया जाता है। बाहरी प्रमाणीकरण का उपयोग करते समय पासकी सेटिंग्स उपलब्ध नहीं होती हैं।"
+msgstr "ऑथेंटिकेशन एक बाहरी प्रदाता ({0}) द्वारा प्रबंधित किया जाता है। बाहरी ऑथेंटिकेशन का उपयोग करते समय पासकी सेटिंग्स उपलब्ध नहीं होती हैं।"
 
 #: packages/admin/src/components/auth/PasskeyLogin.tsx:258
 msgid "Authentication was cancelled or timed out. Please try again."
-msgstr "प्रमाणीकरण रद्द कर दिया गया था या समय समाप्त हो गया था. कृपया पुन: प्रयास करें।"
+msgstr "ऑथेंटिकेशन रद्द कर दिया गया था या समय समाप्त हो गया था. कृपया पुन: प्रयास करें।"
 
 #: packages/admin/src/components/comments/CommentDetail.tsx:80
 #: packages/admin/src/components/comments/CommentInbox.tsx:325
@@ -2811,7 +2811,7 @@ msgstr "प्रकाशन तिथि बदलें"
 #. placeholder {0}: isolate(formattedValue)
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:649
 msgid "Change publication date: {0}"
-msgstr "पब्लिश करने की तारीख बदलें: {0}"
+msgstr "प्रकाशित करने की तारीख बदलें: {0}"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:624
 #: packages/admin/src/components/PublishingDateTimeEditor.tsx:518
@@ -2956,7 +2956,7 @@ msgstr "जाँच की जा रही है {urlInput}..."
 
 #: packages/admin/src/components/DeviceAuthorizePage.tsx:187
 msgid "Checking authentication..."
-msgstr "प्रमाणीकरण की जाँच की जा रही है..."
+msgstr "ऑथेंटिकेशन की जाँच की जा रही है..."
 
 #: packages/admin/src/components/DeviceAuthorizePage.tsx:341
 msgid "Checking code..."
@@ -3303,7 +3303,7 @@ msgstr "संग्रह “{0}” इस साइट पर बनाया 
 #: packages/admin/src/router.tsx:991
 #: packages/admin/src/router.tsx:1979
 msgid "Collection \"{collection}\" not found"
-msgstr ""
+msgstr "कलेक्शन \"{collection}\" नहीं मिला"
 
 #: packages/admin/src/components/comments/CommentDetail.tsx:109
 msgid "Collection:"
@@ -4411,7 +4411,7 @@ msgstr "मेनू हटाएँ"
 
 #: packages/admin/src/components/MenuEditor.tsx:686
 msgid "Delete menu item?"
-msgstr ""
+msgstr "मेनू आइटम हटाएँ?"
 
 #: packages/admin/src/components/comments/CommentInbox.tsx:550
 #: packages/admin/src/components/ContentList.tsx:1658
@@ -4488,7 +4488,7 @@ msgstr "विजेट क्षेत्र हटाएँ?"
 
 #: packages/admin/src/components/Widgets.tsx:848
 msgid "Delete widget?"
-msgstr ""
+msgstr "विजेट हटाएँ?"
 
 #: packages/admin/src/components/ContentList.tsx:890
 msgid "Deleted"
@@ -6153,7 +6153,7 @@ msgstr "प्रवेश शर्तें लाने में असफ�
 
 #: packages/admin/src/lib/api/schema.ts:413
 msgid "Failed to fetch fields"
-msgstr ""
+msgstr "फ़ील्ड प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/client.ts:356
 msgid "Failed to fetch manifest"
@@ -6165,11 +6165,11 @@ msgstr "मीडिया लाने में असफल"
 
 #: packages/admin/src/lib/api/media.ts:242
 msgid "Failed to fetch media folder"
-msgstr ""
+msgstr "मीडिया फ़ोल्डर प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/media.ts:234
 msgid "Failed to fetch media folders"
-msgstr ""
+msgstr "मीडिया फ़ोल्डर प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/media.ts:195
 msgid "Failed to fetch media item"
@@ -6181,27 +6181,27 @@ msgstr "मीडिया प्रदाता लाने में अस�
 
 #: packages/admin/src/lib/api/media.ts:218
 msgid "Failed to fetch media usage details"
-msgstr ""
+msgstr "मीडिया के उपयोग का विवरण प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/menus.ts:125
 msgid "Failed to fetch menu"
-msgstr ""
+msgstr "मेनू प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/menus.ts:249
 msgid "Failed to fetch menu translations"
-msgstr ""
+msgstr "मेनू के अनुवाद प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/menus.ts:117
 msgid "Failed to fetch menus"
-msgstr ""
+msgstr "मेनू प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/schema.ts:525
 msgid "Failed to fetch orphaned tables"
-msgstr ""
+msgstr "ऑर्फ़न टेबल प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/users.ts:234
 msgid "Failed to fetch passkeys"
-msgstr ""
+msgstr "पासकी प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/marketplace.ts:324
 #: packages/admin/src/lib/api/plugins.ts:71
@@ -6223,23 +6223,23 @@ msgstr "प्रदाता मीडिया लाने में अस�
 
 #: packages/admin/src/lib/api/redirects.ts:77
 msgid "Failed to fetch redirects"
-msgstr ""
+msgstr "रीडायरेक्ट प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/relations.ts:174
 msgid "Failed to fetch reference children"
-msgstr ""
+msgstr "रेफ़रेंस चिल्ड्रन प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/relations.ts:193
 msgid "Failed to fetch reference parents"
-msgstr ""
+msgstr "रेफ़रेंस पैरेंट प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/relations.ts:106
 msgid "Failed to fetch relation"
-msgstr ""
+msgstr "रिलेशन प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/relations.ts:94
 msgid "Failed to fetch relations"
-msgstr ""
+msgstr "रिलेशन प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/content.ts:652
 #: packages/admin/src/lib/api/content.ts:657
@@ -6248,7 +6248,7 @@ msgstr "पुनरीक्षण लाने में असफल"
 
 #: packages/admin/src/lib/api/content.ts:639
 msgid "Failed to fetch revisions"
-msgstr ""
+msgstr "रिविज़न प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/sections.ts:76
 msgid "Failed to fetch section"
@@ -6268,11 +6268,11 @@ msgstr "सेटअप स्थिति लाने में असफल"
 
 #: packages/admin/src/lib/api/taxonomies.ts:137
 msgid "Failed to fetch taxonomies"
-msgstr ""
+msgstr "टैक्सोनॉमी प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/taxonomies.ts:290
 msgid "Failed to fetch term translations"
-msgstr ""
+msgstr "टर्म के अनुवाद प्राप्त करने में असफल"
 
 #: packages/admin/src/components/TaxonomySidebar.tsx:144
 #: packages/admin/src/lib/api/taxonomies.ts:196
@@ -6285,19 +6285,19 @@ msgstr "साइट डोमेन लाने में असफल"
 
 #: packages/admin/src/lib/api/theme-marketplace.ts:99
 msgid "Failed to fetch theme"
-msgstr ""
+msgstr "थीम प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/content.ts:113
 msgid "Failed to fetch translations"
-msgstr ""
+msgstr "अनुवाद प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/content.ts:375
 msgid "Failed to fetch trashed content"
-msgstr ""
+msgstr "ट्रैश में मौजूद कंटेंट प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/core-update.ts:29
 msgid "Failed to fetch update status"
-msgstr ""
+msgstr "अपडेट की स्थिति प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/current-user.ts:22
 #: packages/admin/src/lib/api/users.ts:91
@@ -6308,19 +6308,19 @@ msgstr "उपयोगकर्ता लाने में असफल"
 
 #: packages/admin/src/lib/api/users.ts:77
 msgid "Failed to fetch users"
-msgstr ""
+msgstr "उपयोगकर्ता प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/widgets.ts:86
 msgid "Failed to fetch widget area"
-msgstr ""
+msgstr "विजेट एरिया प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/widgets.ts:76
 msgid "Failed to fetch widget areas"
-msgstr ""
+msgstr "विजेट एरिया प्राप्त करने में असफल"
 
 #: packages/admin/src/lib/api/widgets.ts:168
 msgid "Failed to fetch widget components"
-msgstr ""
+msgstr "विजेट कंपोनेंट प्राप्त करने में असफल"
 
 #: packages/admin/src/components/ThemeMarketplaceBrowse.tsx:263
 msgid "Failed to generate preview"
@@ -6333,7 +6333,7 @@ msgstr "पूर्वावलोकन URL जनरेट करने म�
 
 #: packages/admin/src/components/auth/PasskeyLogin.tsx:173
 msgid "Failed to get authentication options"
-msgstr "प्रमाणीकरण विकल्प प्राप्त करने में असफल"
+msgstr "ऑथेंटिकेशन विकल्प प्राप्त करने में असफल"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:336
 msgid "Failed to get registration options"
@@ -6345,7 +6345,7 @@ msgstr "अपलोड URL प्राप्त करने में अस�
 
 #: packages/admin/src/lib/api/import.ts:432
 msgid "Failed to import"
-msgstr ""
+msgstr "इम्पोर्ट करने में असफल"
 
 #: packages/admin/src/components/WordPressImport.tsx:462
 #: packages/admin/src/lib/api/import.ts:257
@@ -6365,7 +6365,7 @@ msgstr "प्लगइन स्थापित करने में अस�
 
 #: packages/admin/src/lib/api/users.ts:168
 msgid "Failed to invite user"
-msgstr ""
+msgstr "उपयोगकर्ता को आमंत्रित करने में असफल"
 
 #: packages/admin/src/lib/api/byline-fields.ts:98
 msgid "Failed to list byline fields"
@@ -6373,7 +6373,7 @@ msgstr "बायलाइन फ़ील्ड सूचीबद्ध कर
 
 #: packages/admin/src/lib/api/transfer.ts:415
 msgid "Failed to list files to upload"
-msgstr ""
+msgstr "अपलोड की जाने वाली फ़ाइलों की सूची प्राप्त करने में असफल"
 
 #: packages/admin/src/router.tsx:486
 msgid "Failed to load admin"
@@ -6386,7 +6386,7 @@ msgstr "अनुमत डोमेन लोड करने में अस�
 
 #: packages/admin/src/lib/api/transfer.ts:511
 msgid "Failed to load approval requests"
-msgstr ""
+msgstr "अनुमोदन के अनुरोध लोड करने में असफल"
 
 #: packages/admin/src/components/settings/BackupSettings.tsx:166
 msgid "Failed to load backup settings"
@@ -6405,11 +6405,11 @@ msgstr "ईमेल सेटिंग लोड करने में अस�
 #: packages/admin/src/lib/api/transfer.ts:329
 #: packages/admin/src/lib/api/transfer.ts:347
 msgid "Failed to load export manifest"
-msgstr ""
+msgstr "एक्सपोर्ट मैनिफ़ेस्ट लोड करने में असफल"
 
 #: packages/admin/src/lib/api/transfer.ts:298
 msgid "Failed to load exports"
-msgstr ""
+msgstr "एक्सपोर्ट लोड करने में असफल"
 
 #: packages/admin/src/components/MediaPickerModal.tsx:675
 msgid "Failed to load image"
@@ -6417,24 +6417,24 @@ msgstr "छवि लोड करने में असफल"
 
 #: packages/admin/src/lib/api/transfer.ts:388
 msgid "Failed to load import"
-msgstr ""
+msgstr "इम्पोर्ट लोड करने में असफल"
 
 #: packages/admin/src/lib/api/transfer.ts:449
 msgid "Failed to load import plan"
-msgstr ""
+msgstr "इम्पोर्ट प्लान लोड करने में असफल"
 
 #: packages/admin/src/lib/api/transfer.ts:473
 msgid "Failed to load import receipt"
-msgstr ""
+msgstr "इम्पोर्ट रसीद लोड करने में असफल"
 
 #: packages/admin/src/lib/api/transfer.ts:380
 msgid "Failed to load imports"
-msgstr ""
+msgstr "इम्पोर्ट लोड करने में असफल"
 
 #. js-lingui-explicit-id
 #: packages/admin/src/locales/server.ts:77
 msgid "visualEditing.mediaLoadFailed"
-msgstr ""
+msgstr "मीडिया लोड करने में असफल"
 
 #: packages/admin/src/components/settings/SecuritySettings.tsx:128
 msgid "Failed to load passkeys"
@@ -6463,7 +6463,7 @@ msgstr "सेटअप लोड करने में असफल"
 
 #: packages/admin/src/lib/api/calendar.ts:49
 msgid "Failed to load the calendar"
-msgstr ""
+msgstr "कैलेंडर लोड करने में असफल"
 
 #: packages/admin/src/components/ThemeMarketplaceDetail.tsx:89
 msgid "Failed to load theme"
@@ -6471,11 +6471,11 @@ msgstr "थीम लोड करने में असफल"
 
 #: packages/admin/src/lib/api/transfer.ts:284
 msgid "Failed to load transfer capabilities"
-msgstr ""
+msgstr "ट्रांसफ़र की क्षमताएँ लोड करने में असफल"
 
 #: packages/admin/src/components/settings/TransferSettings.tsx:84
 msgid "Failed to load transfer settings"
-msgstr ""
+msgstr "ट्रांसफ़र सेटिंग्स लोड करने में असफल"
 
 #. placeholder {0}: usersQuery.error.message
 #: packages/admin/src/routes/users.tsx:208
@@ -6488,7 +6488,7 @@ msgstr "विजेट लोड करने में असफल"
 
 #: packages/admin/src/lib/api/entry-lock.ts:51
 msgid "Failed to lock the entry"
-msgstr ""
+msgstr "एंट्री लॉक करने में असफल"
 
 #: packages/admin/src/lib/api/comments.ts:131
 #: packages/admin/src/router.tsx:2494
@@ -6506,7 +6506,7 @@ msgstr "आयात तैयार करने में असफल"
 
 #: packages/admin/src/lib/api/import.ts:712
 msgid "Failed to probe URL"
-msgstr ""
+msgstr "URL की जाँच करने में असफल"
 
 #: packages/admin/src/router.tsx:723
 #: packages/admin/src/router.tsx:1509
@@ -6515,7 +6515,7 @@ msgstr "प्रकाशित करने में असफल"
 
 #: packages/admin/src/lib/api/content.ts:529
 msgid "Failed to publish content"
-msgstr ""
+msgstr "कंटेंट प्रकाशित करने में असफल"
 
 #: packages/admin/src/lib/api/byline-fields.ts:106
 msgid "Failed to read byline field usage"
@@ -6523,15 +6523,15 @@ msgstr "बायलाइन फ़ील्ड उपयोग को पढ�
 
 #: packages/admin/src/router.tsx:2920
 msgid "Failed to register {slug}"
-msgstr ""
+msgstr "{slug} को रजिस्टर करने में असफल"
 
 #: packages/admin/src/lib/api/schema.ts:548
 msgid "Failed to register orphaned table"
-msgstr ""
+msgstr "ऑर्फ़न टेबल रजिस्टर करने में असफल"
 
 #: packages/admin/src/lib/api/entry-lock.ts:70
 msgid "Failed to release the entry lock"
-msgstr ""
+msgstr "एंट्री का लॉक हटाने में असफल"
 
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:124
 msgid "Failed to remove domain"
@@ -6544,7 +6544,7 @@ msgstr "पासकी निकालने में असफल"
 
 #: packages/admin/src/lib/api/media.ts:268
 msgid "Failed to rename media folder"
-msgstr ""
+msgstr "मीडिया फ़ोल्डर का नाम बदलने में असफल"
 
 #: packages/admin/src/components/settings/SecuritySettings.tsx:55
 #: packages/admin/src/lib/api/users.ts:250
@@ -6557,7 +6557,7 @@ msgstr "बायलाइन फ़ील्ड को पुन: व्यव�
 
 #: packages/admin/src/lib/api/schema.ts:505
 msgid "Failed to reorder content types"
-msgstr ""
+msgstr "कंटेंट टाइप का क्रम बदलने में असफल"
 
 #: packages/admin/src/lib/api/schema.ts:488
 #: packages/admin/src/routes/byline-schema.tsx:152
@@ -6566,11 +6566,11 @@ msgstr "फ़ील्ड पुन: व्यवस्थित करने �
 
 #: packages/admin/src/lib/api/menus.ts:236
 msgid "Failed to reorder menu items"
-msgstr ""
+msgstr "मेनू आइटम का क्रम बदलने में असफल"
 
 #: packages/admin/src/lib/api/taxonomies.ts:261
 msgid "Failed to reorder terms"
-msgstr ""
+msgstr "टर्म का क्रम बदलने में असफल"
 
 #: packages/admin/src/lib/api/widgets.ts:158
 msgid "Failed to reorder widgets"
@@ -6578,7 +6578,7 @@ msgstr "विजेट्स को पुन: व्यवस्थित क�
 
 #: packages/admin/src/lib/api/media.ts:618
 msgid "Failed to replace media image"
-msgstr ""
+msgstr "मीडिया इमेज बदलने में असफल"
 
 #: packages/admin/src/router.tsx:670
 msgid "Failed to restore"
@@ -6629,7 +6629,7 @@ msgstr "शेड्यूल करने में असफल"
 
 #: packages/admin/src/lib/api/content.ts:433
 msgid "Failed to schedule content"
-msgstr ""
+msgstr "कंटेंट शेड्यूल करने में असफल"
 
 #: packages/admin/src/components/LoginPage.tsx:71
 #: packages/admin/src/components/LoginPage.tsx:76
@@ -6655,12 +6655,12 @@ msgstr "प्रवेश शर्तें निर्धारित कर
 
 #: packages/admin/src/lib/api/transfer.ts:317
 msgid "Failed to start export"
-msgstr ""
+msgstr "एक्सपोर्ट शुरू करने में असफल"
 
 #: packages/admin/src/lib/api/transfer.ts:405
 #: packages/admin/src/lib/api/transfer.ts:459
 msgid "Failed to start import"
-msgstr ""
+msgstr "इम्पोर्ट शुरू करने में असफल"
 
 #: packages/admin/src/lib/api/marketplace.ts:390
 #: packages/admin/src/lib/api/registry.ts:1003
@@ -6673,7 +6673,7 @@ msgstr "अप्रकाशित करने में असफल"
 
 #: packages/admin/src/lib/api/content.ts:552
 msgid "Failed to unpublish content"
-msgstr ""
+msgstr "कंटेंट अप्रकाशित करने में असफल"
 
 #: packages/admin/src/router.tsx:1633
 msgid "Failed to unschedule"
@@ -6681,7 +6681,7 @@ msgstr "शेड्यूल अनिर्धारित करने मे
 
 #: packages/admin/src/lib/api/content.ts:454
 msgid "Failed to unschedule content"
-msgstr ""
+msgstr "कंटेंट का शेड्यूल हटाने में असफल"
 
 #: packages/admin/src/router.tsx:746
 msgid "Failed to update"
@@ -6702,11 +6702,11 @@ msgstr "बैकअप सेटिंग अपडेट करने मे�
 
 #: packages/admin/src/lib/api/schema.ts:299
 msgid "Failed to update block type"
-msgstr ""
+msgstr "ब्लॉक टाइप अपडेट करने में असफल"
 
 #: packages/admin/src/lib/api/bylines.ts:139
 msgid "Failed to update byline"
-msgstr ""
+msgstr "बायलाइन अपडेट करने में असफल"
 
 #: packages/admin/src/lib/api/byline-fields.ts:135
 msgid "Failed to update byline field"
@@ -6714,15 +6714,15 @@ msgstr "बायलाइन फ़ील्ड अपडेट करने �
 
 #: packages/admin/src/lib/api/schema.ts:390
 msgid "Failed to update collection"
-msgstr ""
+msgstr "कलेक्शन अपडेट करने में असफल"
 
 #: packages/admin/src/lib/api/comments.ts:104
 msgid "Failed to update comment status"
-msgstr ""
+msgstr "कमेंट की स्थिति अपडेट करने में असफल"
 
 #: packages/admin/src/lib/api/content.ts:330
 msgid "Failed to update content"
-msgstr ""
+msgstr "कंटेंट अपडेट करने में असफल"
 
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:107
 msgid "Failed to update domain"
@@ -6730,7 +6730,7 @@ msgstr "डोमेन अद्यतन करने में असफल"
 
 #: packages/admin/src/lib/api/schema.ts:455
 msgid "Failed to update field"
-msgstr ""
+msgstr "फ़ील्ड अपडेट करने में असफल"
 
 #: packages/admin/src/lib/api/media.ts:654
 msgid "Failed to update media"
@@ -6738,11 +6738,11 @@ msgstr "मीडिया अपडेट करने में असफल"
 
 #: packages/admin/src/lib/api/menus.ts:153
 msgid "Failed to update menu"
-msgstr ""
+msgstr "मेनू अपडेट करने में असफल"
 
 #: packages/admin/src/lib/api/menus.ts:202
 msgid "Failed to update menu item"
-msgstr ""
+msgstr "मेनू आइटम अपडेट करने में असफल"
 
 #: packages/admin/src/components/PluginManager.tsx:341
 #: packages/admin/src/lib/api/marketplace.ts:373
@@ -6760,11 +6760,11 @@ msgstr "प्लगइन सेटिंग्स अपडेट करने
 
 #: packages/admin/src/lib/api/redirects.ts:101
 msgid "Failed to update redirect"
-msgstr ""
+msgstr "रीडायरेक्ट अपडेट करने में असफल"
 
 #: packages/admin/src/lib/api/relations.ts:132
 msgid "Failed to update relation"
-msgstr ""
+msgstr "रिलेशन अपडेट करने में असफल"
 
 #: packages/admin/src/lib/api/sections.ts:100
 msgid "Failed to update section"
@@ -6780,19 +6780,19 @@ msgstr "स्थिति अपडेट करने में असफल"
 
 #: packages/admin/src/lib/api/taxonomies.ts:239
 msgid "Failed to update term"
-msgstr ""
+msgstr "टर्म अपडेट करने में असफल"
 
 #: packages/admin/src/lib/api/users.ts:112
 msgid "Failed to update user"
-msgstr ""
+msgstr "उपयोगकर्ता अपडेट करने में असफल"
 
 #: packages/admin/src/lib/api/widgets.ts:136
 msgid "Failed to update widget"
-msgstr ""
+msgstr "विजेट अपडेट करने में असफल"
 
 #: packages/admin/src/lib/api/transfer.ts:431
 msgid "Failed to upload a package file"
-msgstr ""
+msgstr "पैकेज फ़ाइल अपलोड करने में असफल"
 
 #: packages/admin/src/lib/api/media.ts:409
 msgid "Failed to upload file"
@@ -6808,11 +6808,11 @@ msgstr "प्रदाता पर अपलोड करने में अ�
 
 #: packages/admin/src/components/auth/PasskeyLogin.tsx:245
 msgid "Failed to verify authentication"
-msgstr "प्रमाणीकरण सत्यापित करने में असफल"
+msgstr "ऑथेंटिकेशन सत्यापित करने में असफल"
 
 #: packages/admin/src/lib/api/registry.ts:734
 msgid "Failed to verify plugin"
-msgstr ""
+msgstr "प्लगइन सत्यापित करने में असफल"
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:412
 msgid "Failed to verify registration"
@@ -6875,7 +6875,7 @@ msgstr "फ़ील्ड अद्यतन किया गया"
 
 #: packages/admin/src/components/FieldEditor.tsx:1284
 msgid "field_slug"
-msgstr ""
+msgstr "field_slug"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:757
 #: packages/admin/src/components/RelationList.tsx:96
@@ -6912,15 +6912,15 @@ msgstr "अपलोड के बाद फ़ाइल का नाम नह
 
 #: packages/admin/src/components/MediaUploadDialog.tsx:228
 msgid "Files upload as soon as you add them."
-msgstr ""
+msgstr "फ़ाइलें जोड़ते ही अपलोड हो जाती हैं।"
 
 #: packages/admin/src/components/BylineFormDialog.tsx:420
 msgid "Filled in from the display name. Use lowercase letters, numbers, and hyphens."
-msgstr ""
+msgstr "डिस्प्ले नाम से भरा गया है। छोटे अंग्रेज़ी अक्षरों, अंकों और हाइफ़न का उपयोग करें।"
 
 #: packages/admin/src/components/calendar/CalendarFilters.tsx:131
 msgid "Filter"
-msgstr ""
+msgstr "फ़िल्टर"
 
 #: packages/admin/src/components/ContentList.tsx:1040
 msgid "Filter by author"
@@ -6928,7 +6928,7 @@ msgstr "लेखक द्वारा फ़िल्टर करें"
 
 #: packages/admin/src/components/BylineFilter.tsx:116
 msgid "Filter by byline"
-msgstr ""
+msgstr "बायलाइन के अनुसार फ़िल्टर करें"
 
 #: packages/admin/src/components/MarketplaceBrowse.tsx:115
 msgid "Filter by capability"
@@ -6940,7 +6940,7 @@ msgstr "संग्रह के अनुसार फ़िल्टर क�
 
 #: packages/admin/src/components/ContentList.tsx:1162
 msgid "Filter by date range: {rangeLabel}"
-msgstr ""
+msgstr "तारीख़ की रेंज के अनुसार फ़िल्टर करें: {rangeLabel}"
 
 #: packages/admin/src/components/Redirects.tsx:406
 msgid "Filter by group"
@@ -6971,24 +6971,24 @@ msgstr "फ़िल्टर बायलाइन प्रकार"
 
 #: packages/admin/src/components/calendar/CalendarFilters.tsx:129
 msgid "Filter: {activeCount} selected"
-msgstr ""
+msgstr "फ़िल्टर: {activeCount} चुने गए"
 
 #: packages/admin/src/components/settings/MediaUsageSettings.tsx:592
 msgid "Finish any current edits."
-msgstr ""
+msgstr "अभी किए जा रहे बदलाव पूरे करें।"
 
 #: packages/admin/src/components/ListPaginationFooter.tsx:109
 #: packages/admin/src/components/MediaPickerModal.tsx:1597
 msgid "First page"
-msgstr ""
+msgstr "पहला पेज"
 
 #: packages/admin/src/components/ContentSettingsPanel.tsx:177
 msgid "First publication"
-msgstr ""
+msgstr "पहला प्रकाशन"
 
 #: packages/admin/src/components/revisions/change-labels.ts:153
 msgid "First version"
-msgstr ""
+msgstr "पहला वर्ज़न"
 
 #: packages/admin/src/components/ContentTypeEditor.tsx:84
 msgid "First-time commenters only"
@@ -6996,20 +6996,20 @@ msgstr "केवल पहली बार टिप्पणी करने �
 
 #: packages/admin/src/components/ContentEditor.tsx:1547
 msgid "Fix invalid fields before changing the publication date"
-msgstr ""
+msgstr "प्रकाशन की तारीख़ बदलने से पहले अमान्य फ़ील्ड ठीक करें"
 
 #: packages/admin/src/components/ContentEditor.tsx:1477
 msgid "Fix invalid fields before changing the schedule"
-msgstr ""
+msgstr "शेड्यूल बदलने से पहले अमान्य फ़ील्ड ठीक करें"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1646
 #: packages/admin/src/components/MediaDetailPanel.tsx:1657
 msgid "Focal point"
-msgstr ""
+msgstr "फ़ोकल पॉइंट"
 
 #: packages/admin/src/components/FocalPointEditor.tsx:205
 msgid "Focal point. Use arrow keys to move it."
-msgstr ""
+msgstr "फ़ोकल पॉइंट। इसे खिसकाने के लिए ऐरो कीज़ का उपयोग करें।"
 
 #: packages/admin/src/components/MediaPickerModal.tsx:1247
 msgid "Folder"
@@ -7017,48 +7017,48 @@ msgstr "फ़ोल्डर"
 
 #: packages/admin/src/components/MediaFolderDialog.tsx:67
 msgid "Folder deleted"
-msgstr ""
+msgstr "फ़ोल्डर हटा दिया गया"
 
 #: packages/admin/src/components/MediaFolderDialog.tsx:84
 #: packages/admin/src/components/MediaFolderDialog.tsx:96
 msgid "Folder name must be between 1 and 200 characters"
-msgstr ""
+msgstr "फ़ोल्डर का नाम 1 से 200 अक्षरों के बीच होना चाहिए"
 
 #: packages/admin/src/router.tsx:2123
 msgid "Folder no longer exists"
-msgstr ""
+msgstr "फ़ोल्डर अब मौजूद नहीं है"
 
 #: packages/admin/src/components/MediaPickerModal.tsx:504
 msgid "Folder no longer exists. Returned to the main library."
-msgstr ""
+msgstr "फ़ोल्डर अब मौजूद नहीं है। मुख्य लाइब्रेरी पर वापस आ गए हैं।"
 
 #: packages/admin/src/components/MediaFolderDialog.tsx:50
 msgid "Folder successfully created"
-msgstr ""
+msgstr "फ़ोल्डर सफलतापूर्वक बनाया गया"
 
 #: packages/admin/src/components/MediaFolderDialog.tsx:50
 msgid "Folder successfully edited"
-msgstr ""
+msgstr "फ़ोल्डर में बदलाव सफलतापूर्वक किए गए"
 
 #: packages/admin/src/components/MediaFolderDialog.tsx:62
 msgid "Folder unavailable"
-msgstr ""
+msgstr "फ़ोल्डर उपलब्ध नहीं है"
 
 #: packages/admin/src/components/MediaLibrary.tsx:969
 #: packages/admin/src/components/MediaPickerModal.tsx:1365
 msgid "Folders"
-msgstr ""
+msgstr "फ़ोल्डर"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1547
 #: packages/admin/src/components/MediaLibrary.tsx:979
 #: packages/admin/src/components/MediaLibrary.tsx:1488
 #: packages/admin/src/components/MediaPickerModal.tsx:1370
 msgid "Folders could not be loaded."
-msgstr ""
+msgstr "फ़ोल्डर लोड नहीं किए जा सके।"
 
 #: packages/admin/src/components/MediaLibrary.tsx:774
 msgid "Folders navigation"
-msgstr ""
+msgstr "फ़ोल्डर नेविगेशन"
 
 #: packages/admin/src/components/AllowedTypesEditor.tsx:72
 msgid "Fonts"
@@ -7070,40 +7070,40 @@ msgstr "ड्राफ्ट और सभी सामग्री सहि�
 
 #: packages/admin/src/components/WordPressImport.tsx:68
 msgid "For the best import experience, install the <0>EmDash Exporter</0> plugin on your WordPress site."
-msgstr ""
+msgstr "बेहतर इम्पोर्ट अनुभव के लिए, अपनी WordPress साइट पर <0>EmDash Exporter</0> प्लगइन इंस्टॉल करें।"
 
 #: packages/admin/src/components/PortableTextEditor.tsx:4992
 msgid "Format selection"
-msgstr ""
+msgstr "चुने हुए टेक्स्ट को फ़ॉर्मैट करें"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1359
 msgid "Format:"
-msgstr ""
+msgstr "फ़ॉर्मैट:"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:539
 msgid "Freeform"
-msgstr ""
+msgstr "फ़्रीफ़ॉर्म"
 
 #. placeholder {0}: formatter.format(from)
 #: packages/admin/src/components/ContentList.tsx:1113
 msgid "From {0}"
-msgstr ""
+msgstr "{0} से"
 
 #: packages/admin/src/components/settings/transfer/ImportReview.tsx:628
 msgid "From the package (empty)"
-msgstr ""
+msgstr "पैकेज से (खाली)"
 
 #: packages/admin/src/components/settings/transfer/ImportReview.tsx:628
 msgid "From the package: “{packageValue}”"
-msgstr ""
+msgstr "पैकेज से: “{packageValue}”"
 
 #: packages/admin/src/components/BylineCreditsEditor.tsx:553
 msgid "From the post owner"
-msgstr ""
+msgstr "पोस्ट के मालिक से"
 
 #: packages/admin/src/components/MediaPickerModal.tsx:386
 msgid "From URL"
-msgstr ""
+msgstr "URL से"
 
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:280
 #: packages/admin/src/components/WordPressImport.tsx:1205
@@ -8651,7 +8651,7 @@ msgstr "URL पुनर्निर्देश प्रबंधित कर
 #: packages/admin/src/components/Settings.tsx:88
 #: packages/admin/src/components/settings/SecuritySettings.tsx:94
 msgid "Manage your passkeys and authentication"
-msgstr "अपनी पासकी और प्रमाणीकरण प्रबंधित करें"
+msgstr "अपनी पासकी और ऑथेंटिकेशन प्रबंधित करें"
 
 #: packages/admin/src/components/MediaDetailPanel.tsx:1412
 msgid "Managed by {providerName}"
@@ -14421,7 +14421,7 @@ msgstr ""
 
 #: packages/admin/src/components/CapabilityConsentDialog.tsx:280
 msgid "This update exposes the following routes without authentication:"
-msgstr "यह अद्यतन प्रमाणीकरण के बिना निम्नलिखित मार्गों को उजागर करता है:"
+msgstr "यह अद्यतन ऑथेंटिकेशन के बिना निम्नलिखित मार्गों को उजागर करता है:"
 
 #: packages/admin/src/components/revisions/RevisionViewErrorBoundary.tsx:7
 msgid "This version can't be shown."
@@ -15268,7 +15268,7 @@ msgstr ""
 
 #: packages/admin/src/components/auth/PasskeyLogin.tsx:333
 msgid "Use your device's biometric authentication, security key, or PIN to sign in."
-msgstr "साइन इन करने के लिए अपने डिवाइस के बायोमेट्रिक प्रमाणीकरण, सुरक्षा कुंजी या पिन का उपयोग करें।"
+msgstr "साइन इन करने के लिए अपने डिवाइस के बायोमेट्रिक ऑथेंटिकेशन, सुरक्षा कुंजी या पिन का उपयोग करें।"
 
 #: packages/admin/src/components/LoginPage.tsx:227
 msgid "Use your registered passkey to sign in securely."
@@ -15314,7 +15314,7 @@ msgstr "उपयोगकर्ता"
 #. placeholder {0}: manifest?.authMode
 #: packages/admin/src/components/settings/AllowedDomainsSettings.tsx:181
 msgid "User access is managed by an external provider ({0}). Self-signup domain settings are not available when using external authentication."
-msgstr "उपयोगकर्ता पहुंच का प्रबंधन एक बाहरी प्रदाता ({0}) द्वारा किया जाता है। बाह्य प्रमाणीकरण का उपयोग करते समय स्व-साइनअप डोमेन सेटिंग्स उपलब्ध नहीं होती हैं।"
+msgstr "उपयोगकर्ता पहुंच का प्रबंधन एक बाहरी प्रदाता ({0}) द्वारा किया जाता है। बाह्य ऑथेंटिकेशन का उपयोग करते समय स्व-साइनअप डोमेन सेटिंग्स उपलब्ध नहीं होती हैं।"
 
 #: packages/admin/src/components/settings/transfer/ExportSection.tsx:109
 msgid "User accounts, passkeys, API tokens, secrets, and plugin data are never exported. Each author’s name and email address are included so they can be matched to users on the other site."
@@ -15931,7 +15931,7 @@ msgstr "आप <0>{0}</0> के रूप में शामिल हों�
 
 #: packages/admin/src/components/auth/PasskeyRegistration.tsx:801
 msgid "You'll be prompted to use your device's biometric authentication, security key, or PIN."
-msgstr "आपको अपने डिवाइस के बायोमेट्रिक प्रमाणीकरण, सुरक्षा कुंजी या पिन का उपयोग करने के लिए प्रेरित किया जाएगा।"
+msgstr "आपको अपने डिवाइस के बायोमेट्रिक ऑथेंटिकेशन, सुरक्षा कुंजी या पिन का उपयोग करने के लिए प्रेरित किया जाएगा।"
 
 #: packages/admin/src/components/WordPressImport.tsx:1423
 msgid "You'll be redirected to WordPress to authorize the connection."
