@@ -1,5 +1,9 @@
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
+
+const LINE_BREAK = /\r?\n/;
+const WHITESPACE = /\s+/;
+const REDIRECT_STATUS = /^30[12378]!?$/;
 
 export function readDocsBuildOutput(docsDirectory = resolve(import.meta.dirname, "../..")) {
 	const deployConfigPath = resolve(docsDirectory, ".wrangler/deploy/config.json");
@@ -11,5 +15,21 @@ export function readDocsBuildOutput(docsDirectory = resolve(import.meta.dirname,
 		typeof workerConfig.assets?.directory === "string"
 			? resolve(workerDirectory, workerConfig.assets.directory)
 			: undefined;
-	return { workerConfig, workerDirectory, assetsDirectory };
+	const redirects = {};
+	const redirectsPath = assetsDirectory && resolve(assetsDirectory, "_redirects");
+	if (redirectsPath && existsSync(redirectsPath)) {
+		for (const line of readFileSync(redirectsPath, "utf8").split(LINE_BREAK)) {
+			const [from, destination, status] = line.trim().split(WHITESPACE);
+			if (
+				!from?.startsWith("/") ||
+				from.includes("*") ||
+				from.includes(":") ||
+				!destination ||
+				!REDIRECT_STATUS.test(status ?? "")
+			)
+				continue;
+			redirects[from] = destination;
+		}
+	}
+	return { assetsDirectory, redirects };
 }

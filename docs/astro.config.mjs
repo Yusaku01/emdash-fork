@@ -3,11 +3,13 @@ import starlight from "@astrojs/starlight";
 // @ts-check
 import { defineConfig, fontProviders } from "astro/config";
 
-import { siteConfig } from "./site.config.mjs";
-
 // https://astro.build/config
 export default defineConfig({
-	...siteConfig,
+	site: "https://docs.emdashcms.com",
+	redirects: {
+		"/": "/getting-started/",
+		"/introduction": "/why-emdash",
+	},
 	session: false,
 	integrations: [
 		starlight({

@@ -189,6 +189,20 @@ void test("the CLI checks the asset directory from the generated deployment conf
 	assert.ok(result.stdout.includes("HTML pages checked: 1; internal links checked: 1."));
 });
 
+void test("the CLI follows redirects emitted in the static build output", (t) => {
+	const directory = builtDocsFixture(
+		t,
+		'<h2 id="section">Section</h2><a href="/old/#section">Link</a>',
+	);
+	writeFileSync(join(directory, "rendered/_redirects"), "# Redirects\n/old/ /guide/ 301\n");
+	let result = spawnSync(process.execPath, [cliPath, directory], { encoding: "utf8" });
+	assert.equal(result.status, 0, result.stderr);
+	writeFileSync(join(directory, "rendered/_redirects"), "/old/ /guide/#missing 302\n");
+	result = spawnSync(process.execPath, [cliPath, directory], { encoding: "utf8" });
+	assert.equal(result.status, 1);
+	assert.ok(result.stderr.includes("missing #missing in /guide/"));
+});
+
 void test("the CLI reports missing pages and anchors and exits unsuccessfully", (t) => {
 	const directory = builtDocsFixture(t, '<a href="/removed/">Removed</a><a href="#old">Old</a>');
 	const result = spawnSync(process.execPath, [cliPath, directory], { encoding: "utf8" });
