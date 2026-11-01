@@ -11,9 +11,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "generate-types": "wrangler types",
-    "test": "node --test scripts/*.test.mjs",
-    "lint:linkcheck": "pnpm build && node scripts/lint-linkcheck.mjs",
-    "lint:linkcheck:nobuild": "node scripts/lint-linkcheck.mjs"
+    "lint:linkcheck": "pnpm build && node scripts/lint-linkcheck.mjs"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^14.3.1",
