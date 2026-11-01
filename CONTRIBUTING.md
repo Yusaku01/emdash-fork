@@ -113,6 +113,8 @@ pnpm test:e2e    # Playwright
 
 Tests use real in-memory SQLite -- no mocking. Each test gets a fresh database. Typecheck and lint must pass.
 
+Run `pnpm --dir docs lint:linkcheck` to build the documentation and check internal links against the generated HTML. The checker verifies pages and anchors, including rendered component IDs, and follows the site's configured static redirects. It does not fetch external URLs or validate fragments in non-HTML files. To check an existing build, run `pnpm --dir docs lint:linkcheck:nobuild`. CI runs the link check and `pnpm --dir docs test`, which tests the checker. Review whether each link points to the right explanation separately.
+
 ### Visual regression tests
 
 The admin UI has a Playwright visual-regression suite (`e2e/tests/visual-regression.spec.ts`) that screenshots key screens in both LTR (English) and RTL (Arabic). It is gated behind `EMDASH_VISUAL=1` so it stays out of the default `pnpm test:e2e` run:
