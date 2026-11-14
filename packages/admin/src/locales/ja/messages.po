@@ -8867,11 +8867,11 @@ msgstr "入力を続けると一覧を絞り込めます。"
 
 #: packages/admin/src/components/co-editing/SyncStatus.tsx:153
 msgid "Keep typing. Your edits stay in this tab and save once EmDash can be reached again, so keep the tab open. Until then, you can’t publish or preview."
-msgstr "編集を続けられます。編集内容はこのタブに残り、EmDashに再接続すると保存されるため、タブを開いたままにしてください。それまでは公開やプレビューはできません。"
+msgstr "編集を続けられます。編集内容はこのタブに残り、EmDashに再接続すると保存されるため、タブを開いたままにしてください。編集内容が保存されるまでは、公開やプレビューはできません。"
 
 #: packages/admin/src/components/co-editing/SyncStatus.tsx:159
 msgid "Keep typing. Your edits stay in this tab and save when you’re back online, so keep the tab open. Until then, you can’t publish or preview."
-msgstr "編集を続けられます。編集内容はこのタブに残り、オンラインに戻ると保存されるため、タブを開いたままにしてください。それまでは公開やプレビューはできません。"
+msgstr "編集を続けられます。編集内容はこのタブに残り、オンラインに戻ると保存されるため、タブを開いたままにしてください。編集内容が保存されるまでは、公開やプレビューはできません。"
 
 #: packages/admin/src/components/MarketplacePluginDetail.tsx:315
 #: packages/admin/src/components/SectionEditor.tsx:305
