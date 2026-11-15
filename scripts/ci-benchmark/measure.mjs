@@ -18,6 +18,10 @@ const started = performance.now();
 const child = spawn("bash", ["--noprofile", "--norc", "-eo", "pipefail", script], {
 	stdio: ["inherit", "pipe", "pipe"],
 });
+const completion = new Promise((resolve) => {
+	child.once("error", (error) => resolve({ code: 1, error: error.message }));
+	child.once("close", (code, signal) => resolve({ code, signal }));
+});
 child.stdout.on("data", (data) => {
 	process.stdout.write(data);
 	log.write(data);
@@ -62,10 +66,7 @@ const timer = setInterval(() => {
 }, 500);
 sample();
 await memory();
-const result = await new Promise((resolve) => {
-	child.once("error", (error) => resolve({ code: 1, error: error.message }));
-	child.once("close", (code, signal) => resolve({ code, signal }));
-});
+const result = await completion;
 clearInterval(timer);
 await new Promise((resolve) => log.end(resolve));
 const report = {

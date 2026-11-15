@@ -76,3 +76,36 @@ test("measurement wrapper preserves output, stops after failure, and records sub
 		await rm(directory, { recursive: true, force: true });
 	}
 });
+
+test("measurement records a fast exit while the initial memory read is pending", async () => {
+	const directory = await mkdtemp(join(tmpdir(), "emdash-ci-fast-exit-"));
+	try {
+		const script = join(directory, "step.sh");
+		const preload = join(directory, "slow-memory.mjs");
+		await writeFile(script, "echo fast-exit\n");
+		await writeFile(
+			preload,
+			`
+import fs from "node:fs/promises";
+import { syncBuiltinESMExports } from "node:module";
+const original = fs.readFile;
+fs.readFile = async (...args) => {
+  if (args[0] === "/proc/meminfo") await new Promise(resolve => setTimeout(resolve, 200));
+  return original(...args);
+};
+syncBuiltinESMExports();
+`,
+		);
+		await execute(
+			process.execPath,
+			["--import", preload, new URL("./measure.mjs", import.meta.url).pathname, script],
+			{ timeout: 3000, env: { ...process.env, RUNNER_TEMP: directory, GITHUB_ACTION: "fast" } },
+		);
+		const measurement = JSON.parse(
+			(await readFile(join(directory, "ci-measurements/steps.jsonl"), "utf8")).trim(),
+		);
+		assert.equal(measurement.code, 0);
+	} finally {
+		await rm(directory, { recursive: true, force: true });
+	}
+});
