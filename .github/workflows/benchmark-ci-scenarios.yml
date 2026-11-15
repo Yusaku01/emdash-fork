@@ -1,0 +1,54 @@
+name: CI scenario benchmark
+on:
+  push:
+    branches: [feat/benchmark-template-typecheck-concurrency]
+    paths:
+      - ".github/workflows/benchmark-ci-*"
+      - scripts/ci-benchmark/**
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  matrix:
+    if: github.repository == 'Yusaku01/emdash-fork'
+    runs-on: ubuntu-latest
+    outputs:
+      cases: ${{ steps.cases.outputs.cases }}
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+      - id: cases
+        run: node scripts/ci-benchmark/run.mjs matrix >> "$GITHUB_OUTPUT"
+  benchmark:
+    name: ${{ matrix.id }}
+    needs: matrix
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix: ${{ fromJSON(needs.matrix.outputs.cases) }}
+    uses: ./.github/workflows/benchmark-ci-case.yml
+    with:
+      case_id: ${{ matrix.id }}
+      profile: ${{ matrix.profile }}
+      workers: ${{ matrix.workers }}
+      cache: ${{ matrix.cache }}
+  results:
+    if: always() && needs.matrix.result == 'success'
+    needs: [matrix, benchmark]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+      - run: node scripts/ci-benchmark/run.mjs collect
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: ci-scenario-summary
+          path: ci-benchmark-results/
+          retention-days: 30

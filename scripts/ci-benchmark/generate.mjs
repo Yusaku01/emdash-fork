@@ -1,0 +1,151 @@
+import { execFileSync } from "node:child_process";
+import { createHash } from "node:crypto";
+import { writeFile } from "node:fs/promises";
+
+const JOB_ID = /^  ([a-z][a-z0-9-]*):/;
+const RUN_STEP = /\brun:/;
+const sourceRef = process.argv[2];
+if (!/^[a-f0-9]{40}$/.test(sourceRef ?? "")) throw new Error("Pass an immutable source commit SHA");
+const source = execFileSync("git", ["show", `${sourceRef}:.github/workflows/ci.yml`], {
+	encoding: "utf8",
+});
+const [, jobs] = source.split("\njobs:\n");
+if (!jobs) throw new Error("Missing source jobs");
+if (source.includes("working-directory:"))
+	throw new Error("Review wrapper paths for working-directory changes");
+const sections = jobs.split(/(?=^  [a-z][a-z0-9-]*:\n)/m).filter(Boolean);
+const checkout = "actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0";
+const instrumented = sections.map((section) => {
+	const id = section.match(JOB_ID)[1];
+	if (section.includes("    if: false") || id === "test") return section;
+	section = section.replace(
+		`      - uses: ${checkout} # v7.0.0\n        with:\n`,
+		`      - uses: ${checkout} # v7.0.0\n        with:\n          repository: emdash-cms/emdash\n          ref: ${sourceRef}\n`,
+	);
+	if (!section.includes(`ref: ${sourceRef}`)) throw new Error(`Checkout not patched: ${id}`);
+	const firstAction = section.indexOf("      - ", section.indexOf(`ref: ${sourceRef}`));
+	const setup = `      - uses: ${checkout} # v7.0.0
+        with:
+          repository: Yusaku01/emdash-fork
+          ref: \${{ github.sha }}
+          path: .benchmark-harness
+          sparse-checkout: scripts/
+          persist-credentials: false
+      - name: Prepare measurement tools
+        shell: bash
+        run: mv .benchmark-harness "$GITHUB_WORKSPACE/../ci-benchmark-tools"
+`;
+	if (firstAction < 0) throw new Error(`No post-checkout action: ${id}`);
+	section = section.slice(0, firstAction) + setup + section.slice(firstAction);
+	section = section.replaceAll(
+		/(      - uses: actions\/setup-node[^\n]*\n)/g,
+		"$1        id: dependency-cache\n",
+	);
+	section = section.replaceAll(
+		"          cache: pnpm",
+		"          cache: ${{ inputs.cache == 'warm' && 'pnpm' || '' }}",
+	);
+	section = section.replaceAll(
+		/(      - uses: actions\/cache(?:\/restore)?@[^\n]*\n)/g,
+		"$1        if: inputs.cache == 'warm'\n",
+	);
+	section = section.replaceAll(
+		/        if: steps\.apt-cache\.outputs\.cache-hit != 'true'/g,
+		"        if: inputs.cache == 'warm' && steps.apt-cache.outputs.cache-hit != 'true'",
+	);
+	section = section.replaceAll(
+		/          name: (playwright[^\n]*)/g,
+		"          name: $1-${{ inputs.case_id }}",
+	);
+	if (id === "change-plan") {
+		const start = section.indexOf("      - name: Select tests for this change");
+		if (start < 0) throw new Error("Missing planning step");
+		section =
+			section.slice(0, start) +
+			`      - name: Select benchmark scenario
+        id: plan
+        env:
+          BENCHMARK_PROFILE: \${{ inputs.profile }}
+        run: node "$GITHUB_WORKSPACE/../ci-benchmark-tools/scripts/ci-benchmark/run.mjs" plan >> "$GITHUB_OUTPUT"
+`;
+	}
+	if (id === "typecheck") {
+		section = section.replace(
+			"      - run: pnpm typecheck:templates",
+			`      - name: Template typecheck
+        env:
+          TEMPLATE_CONCURRENCY: \${{ inputs.workers }}
+        run: pnpm run --stream --workspace-concurrency="$TEMPLATE_CONCURRENCY" --filter '{./templates/*}' typecheck`,
+		);
+	}
+	const lines = section.split("\n");
+	for (let i = 0; i < lines.length; i++) {
+		if (lines[i].startsWith("      - ")) {
+			let end = i + 1;
+			while (end < lines.length && !lines[end].startsWith("      - ")) end++;
+			const step = lines.slice(i, end).join("\n");
+			if (RUN_STEP.test(step) && !step.includes("Prepare measurement tools")) {
+				const original = lines[i].slice("      - ".length);
+				lines.splice(
+					i,
+					1,
+					"      - shell: node ../ci-benchmark-tools/scripts/ci-benchmark/measure.mjs {0}",
+					`        ${original}`,
+				);
+				i++;
+			}
+		}
+	}
+	section = lines.join("\n");
+	const cacheEnv = [
+		["dependency-cache", "DEPENDENCY_CACHE_HIT"],
+		["playwright-cache", "BROWSER_CACHE_HIT"],
+		["apt-cache", "APT_CACHE_HIT"],
+	]
+		.filter(([stepId]) => section.includes(`id: ${stepId}`))
+		.map(
+			([stepId, variable]) => `          ${variable}: \${{ steps.${stepId}.outputs.cache-hit }}\n`,
+		)
+		.join("");
+	section += `      - name: Record cache observations
+        if: always()
+        run: node "$GITHUB_WORKSPACE/../ci-benchmark-tools/scripts/ci-benchmark/run.mjs" context
+${cacheEnv ? `        env:\n${cacheEnv}` : ""}      - name: Upload measurements
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: measurement-\${{ inputs.case_id }}-${id}-\${{ strategy.job-index || 0 }}
+          path: \${{ runner.temp }}/ci-measurements/
+          retention-days: 30
+
+`;
+	return section;
+});
+const header = `# Generated by scripts/ci-benchmark/generate.mjs from ${sourceRef}.
+# Source ci.yml SHA-256: ${createHash("sha256").update(source).digest("hex")}.
+name: CI benchmark case
+on:
+  workflow_call:
+    inputs:
+      case_id:
+        type: string
+        required: true
+      profile:
+        type: string
+        required: true
+      workers:
+        type: number
+        required: true
+      cache:
+        type: string
+        required: true
+permissions:
+  contents: read
+env:
+  CI_BENCH_SOURCE: ${sourceRef}
+  CI_BENCH_CASE: \${{ inputs.case_id }}
+  CI_BENCH_CACHE: \${{ inputs.cache }}
+  CI_BENCH_WORKERS: \${{ inputs.workers }}
+jobs:
+`;
+await writeFile(".github/workflows/benchmark-ci-case.yml", header + instrumented.join(""));

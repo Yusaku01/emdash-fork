@@ -1,0 +1,146 @@
+[
+	{
+		"id": "metadata",
+		"paths": [".gitignore"],
+		"aliases": ["metadata", "docs", "translation"]
+	},
+	{
+		"id": "arabic",
+		"paths": ["packages/admin/src/locales/ar/messages.po"],
+		"aliases": ["arabic"]
+	},
+	{
+		"id": "admin",
+		"paths": ["packages/admin/src/components/Example.tsx"],
+		"aliases": ["admin"]
+	},
+	{
+		"id": "core",
+		"paths": ["packages/core/src/example.ts"],
+		"aliases": ["core", "cloudflare", "workerd"]
+	},
+	{
+		"id": "auth",
+		"paths": ["packages/auth/src/example.ts"],
+		"aliases": ["auth"]
+	},
+	{
+		"id": "marketplace",
+		"paths": ["packages/marketplace/src/example.ts"],
+		"aliases": ["marketplace"]
+	},
+	{
+		"id": "blocks",
+		"paths": ["packages/blocks/src/example.ts"],
+		"aliases": [
+			"blocks",
+			"plugin-cli",
+			"plugin-types",
+			"registry-client",
+			"registry-lexicons",
+			"registry-moderation",
+			"registry-verification",
+			"gutenberg"
+		]
+	},
+	{
+		"id": "aggregator",
+		"paths": ["apps/aggregator/src/example.ts"],
+		"aliases": ["aggregator"]
+	},
+	{
+		"id": "labeler",
+		"paths": ["apps/labeler/src/example.ts"],
+		"aliases": ["labeler"]
+	},
+	{
+		"id": "forms",
+		"paths": ["packages/plugins/forms/src/example.ts"],
+		"aliases": ["forms"]
+	},
+	{
+		"id": "embeds",
+		"paths": ["packages/plugins/embeds/src/example.ts"],
+		"aliases": ["embeds"]
+	},
+	{
+		"id": "marketplace-fixture",
+		"paths": ["packages/plugins/marketplace-test/src/example.ts"],
+		"aliases": ["marketplace-fixture"]
+	},
+	{
+		"id": "plugin-fixture",
+		"paths": ["packages/plugins/example/src/example.ts"],
+		"aliases": ["plugin-fixture"]
+	},
+	{
+		"id": "create",
+		"paths": ["packages/create-emdash/src/example.ts"],
+		"aliases": ["create"]
+	},
+	{
+		"id": "templates",
+		"paths": ["templates/blog/src/pages/index.astro"],
+		"aliases": ["templates"]
+	},
+	{
+		"id": "release-service",
+		"paths": ["apps/release-service/src/example.ts"],
+		"aliases": ["release-service"]
+	},
+	{
+		"id": "release-action",
+		"paths": ["apps/release-action/src/example.ts"],
+		"aliases": ["release-action"]
+	},
+	{
+		"id": "release-verifier",
+		"paths": ["apps/release-verifier/src/example.ts"],
+		"aliases": ["release-verifier"]
+	},
+	{
+		"id": "playground",
+		"paths": ["demos/playground/src/example.ts"],
+		"aliases": ["playground"]
+	},
+	{
+		"id": "cloudflare-fixture",
+		"paths": ["e2e/fixture-cloudflare/src/example.ts"],
+		"aliases": ["cloudflare-fixture"]
+	},
+	{
+		"id": "table",
+		"paths": ["e2e/tests/table.spec.ts"],
+		"aliases": ["table"]
+	},
+	{
+		"id": "visual",
+		"paths": ["e2e/tests/visual-regression.spec.ts"],
+		"aliases": ["visual"]
+	},
+	{
+		"id": "e2e",
+		"paths": ["e2e/tests/example.spec.ts"],
+		"aliases": ["e2e"]
+	},
+	{
+		"id": "query-counts",
+		"paths": ["scripts/query-counts.mjs"],
+		"aliases": ["query-counts"]
+	},
+	{
+		"id": "demos",
+		"paths": ["demos/blog/src/example.ts"],
+		"aliases": ["demos"]
+	},
+	{
+		"id": "design",
+		"paths": ["proposals/example.md"],
+		"aliases": ["design"]
+	},
+	{
+		"id": "shared-config",
+		"paths": ["pnpm-lock.yaml"],
+		"aliases": ["shared-config", "unknown", "main", "merge"]
+	}
+]
