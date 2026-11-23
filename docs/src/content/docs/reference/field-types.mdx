@@ -122,7 +122,6 @@ Text intended to hold a slug-like value. This custom field type does not generat
   label: "Legacy Slug",
   type: "slug",
   required: true,
-  unique: true,
 }
 ```
 
@@ -205,8 +204,8 @@ An instant in time. API, MCP, and CLI writes must include `Z` or an explicit UTC
 
 ```ts
 {
-  slug: "publishedAt",
-  label: "Published At",
+  slug: "event_at",
+  label: "Event Time",
   type: "datetime",
 }
 ```
@@ -223,13 +222,13 @@ Single selection from predefined options.
 
 ```ts
 {
-  slug: "status",
-  label: "Status",
+  slug: "editorial_state",
+  label: "Editorial State",
   type: "select",
   required: true,
   defaultValue: "draft",
   validation: {
-    options: ["draft", "published", "archived"],
+    options: ["draft", "in_review", "archived"],
   },
 }
 ```
@@ -303,7 +302,7 @@ Reference to an uploaded image. Includes metadata like dimensions and alt text.
 
 ```ts
 {
-  slug: "featuredImage",
+  slug: "featured_image",
   label: "Featured Image",
   type: "image",
   validation: {
@@ -589,7 +588,7 @@ All fields support these common properties:
 | `label`        | `string`    | Display name (required)             |
 | `type`         | `FieldType` | Field type (required)               |
 | `required`     | `boolean`   | Require a value (default: false)    |
-| `unique`       | `boolean`   | Enforce uniqueness (default: false) |
+| `unique`       | `boolean`   | Stored as field metadata only; uniqueness is not enforced on writes (default: false) |
 | `searchable`   | `boolean`   | Include the field in full-text search (default: false) |
 | `indexed`      | `boolean`   | Enable indexed field sorting/filtering |
 | `translatable` | `boolean`   | Store a value per locale (default: true) |

@@ -36,7 +36,7 @@ EmDash's query functions follow Astro's [live content collections](https://docs.
 
 ### `getEmDashCollection()`
 
-Fetch all entries from a collection. The following example loads all posts and checks for an error:
+Fetch entries from a collection. By default, `getEmDashCollection()` returns `"published"` entries for the active locale. The following example loads published posts and checks for an error:
 
 ```ts
 import { getEmDashCollection } from "emdash";
@@ -68,7 +68,7 @@ interface WhereRange {
 }
 
 interface CollectionFilter {
-	status?: "draft" | "published" | "archived";
+	status?: "draft" | "published" | "scheduled" | "archived";
 	limit?: number;
 	cursor?: string; // Keyset pagination — pass a previous `nextCursor`
 	offset?: number; // Offset pagination — skip N entries (use with `limit`)
@@ -206,7 +206,7 @@ import { getTranslations } from "emdash";
 const { translations, error } = await getTranslations("posts", post.data.id);
 ```
 
-The result contains the shared `translationGroup`, a `translations` array, and an optional `error`. Each translation summary includes `id`, `locale`, `slug`, and `status`.
+The result contains the shared `translationGroup`, a `translations` array, and an optional `error`. Each translation summary includes `id`, `locale`, `slug`, and `status`. Unlike `getEmDashCollection()`, `getTranslations()` returns all translations in the group regardless of status (including `draft` and `scheduled` entries), so filter by `status === "published"` when building public language switchers.
 
 ### `resolveEmDashPath()`
 
@@ -422,11 +422,11 @@ Convert between Portable Text and ProseMirror formats:
 ```ts
 import { prosemirrorToPortableText, portableTextToProsemirror } from "emdash";
 
-// From ProseMirror (editor) to Portable Text (storage)
-const portableText = prosemirrorToPortableText(prosemirrorDoc);
+// From Portable Text (storage) to ProseMirror (editor)
+const prosemirrorDoc = portableTextToProsemirror(post.data.content);
 
-// From Portable Text to ProseMirror
-const prosemirrorDoc = portableTextToProsemirror(portableText);
+// From ProseMirror back to Portable Text
+const portableText = prosemirrorToPortableText(prosemirrorDoc);
 ```
 
 The ProseMirror document uses EmDash's own nodes for built-in blocks, such as `image`, `table`,
@@ -519,7 +519,7 @@ const { items: comments, total } = await getComments({
 const count = await getCommentCount("posts", post.data.id);
 ```
 
-`threaded` nests replies below their parent. The default `sort` is `"oldest"`; `"best"` ranks top-level comments by reactions and enables reaction counts automatically. Server-rendered comment queries return at most 500 approved comments; use the REST API when a client needs pagination.
+`threaded` nests replies below their parent. The default `sort` is `"oldest"`; `"best"` ranks top-level comments by reactions and enables reaction counts automatically. Server-rendered comment queries are clamped to at most 100 approved comments by the comment repository; use the REST API when a client needs pagination.
 
 ### Translate the comment components
 
@@ -686,7 +686,7 @@ if (sidebar) {
 }
 ```
 
-`getWidgetAreaWithCacheHint(name)` returns `{ data, cacheHint }` for routes using Astro's cache. Widget areas and their widgets are ordered by their configured sort order.
+`getWidgetAreaWithCacheHint(name)` returns `{ data, cacheHint }` for routes using Astro's cache. Widgets within each area are ordered by their configured sort order; `getWidgetAreas()` orders areas by creation time (`created_at`, then `id`).
 
 ## Sections
 
