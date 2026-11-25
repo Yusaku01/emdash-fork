@@ -212,8 +212,8 @@ function checkSiteTemplateApi() {
 	compareInventory("Site-template API contract", siteTemplateImports(), documented);
 }
 
-function cliProgram() {
-	const cliRoot = resolve(repositoryRoot, "packages/core/src/cli");
+function cliProgram(relativeRoot = "packages/core/src/cli") {
+	const cliRoot = resolve(repositoryRoot, relativeRoot);
 	const files = walk(cliRoot).filter((path) => extname(path) === ".ts");
 	return ts.createProgram(files, {
 		allowJs: false,
@@ -222,6 +222,20 @@ function cliProgram() {
 		skipLibCheck: true,
 		target: ts.ScriptTarget.ESNext,
 	});
+}
+
+function loadCliRoot(relativeRoot, entryPath, label) {
+	const program = cliProgram(relativeRoot);
+	const checker = program.getTypeChecker();
+	const entry = program.getSourceFile(resolve(repositoryRoot, entryPath));
+	const main = entry?.statements
+		.filter(ts.isVariableStatement)
+		.flatMap((statement) => statement.declarationList.declarations)
+		.find((declaration) => ts.isIdentifier(declaration.name) && declaration.name.text === "main");
+	if (!main?.initializer) throw new Error(`Could not find the ${label} command tree`);
+	const root = resolveObject(main.initializer, checker);
+	if (!root) throw new Error(`Could not resolve the ${label} root command`);
+	return { program, checker, root };
 }
 
 function unwrapExpression(expression) {
@@ -291,16 +305,11 @@ function literalPropertyValue(expression, checker, name) {
 }
 
 function collectCliContract() {
-	const program = cliProgram();
-	const checker = program.getTypeChecker();
-	const entry = program.getSourceFile(resolve(repositoryRoot, "packages/core/src/cli/index.ts"));
-	const main = entry?.statements
-		.filter(ts.isVariableStatement)
-		.flatMap((statement) => statement.declarationList.declarations)
-		.find((declaration) => ts.isIdentifier(declaration.name) && declaration.name.text === "main");
-	if (!main?.initializer) throw new Error("Could not find the EmDash CLI command tree");
-	const root = resolveObject(main.initializer, checker);
-	if (!root) throw new Error("Could not resolve the EmDash CLI root command");
+	const { program, checker, root } = loadCliRoot(
+		"packages/core/src/cli",
+		"packages/core/src/cli/index.ts",
+		"EmDash CLI",
+	);
 
 	const commands = new Set();
 	const options = new Map();
@@ -422,24 +431,11 @@ const PLUGIN_CLI_COMMAND_LINE_PATTERN =
 const FENCED_TEXT_BLOCK_PATTERN = /```text\r?\n([\s\S]*?)\r?\n```/;
 
 function collectPluginCliCommands() {
-	const cliRoot = resolve(repositoryRoot, "packages/plugin-cli/src");
-	const files = walk(cliRoot).filter((path) => extname(path) === ".ts");
-	const program = ts.createProgram(files, {
-		allowJs: false,
-		module: ts.ModuleKind.NodeNext,
-		moduleResolution: ts.ModuleResolutionKind.NodeNext,
-		skipLibCheck: true,
-		target: ts.ScriptTarget.ESNext,
-	});
-	const checker = program.getTypeChecker();
-	const entry = program.getSourceFile(resolve(repositoryRoot, "packages/plugin-cli/src/index.ts"));
-	const main = entry?.statements
-		.filter(ts.isVariableStatement)
-		.flatMap((statement) => statement.declarationList.declarations)
-		.find((declaration) => ts.isIdentifier(declaration.name) && declaration.name.text === "main");
-	if (!main?.initializer) throw new Error("Could not find the emdash-plugin CLI command tree");
-	const root = resolveObject(main.initializer, checker);
-	if (!root) throw new Error("Could not resolve the emdash-plugin CLI root command");
+	const { checker, root } = loadCliRoot(
+		"packages/plugin-cli/src",
+		"packages/plugin-cli/src/index.ts",
+		"emdash-plugin CLI",
+	);
 
 	const topLevelCommands = [];
 	const leafCommands = new Set();
