@@ -4,6 +4,12 @@ import { fileURLToPath } from "node:url";
 
 import ts from "typescript";
 
+import {
+	collectSourceEnvVars,
+	extractDocumentedEnvVars,
+	findMissingSourceEnvVars,
+} from "./lib/env-inventory.mjs";
+
 const docsDirectory = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const repositoryRoot = resolve(docsDirectory, "..");
 const SECTION_PATTERN = /^### `([^`]+)`$/gm;
@@ -417,10 +423,27 @@ function checkCli() {
 	}
 }
 
+function checkEnvironmentVariables() {
+	const referenceFiles = [
+		"docs/src/content/docs/reference/cli.mdx",
+		"docs/src/content/docs/reference/configuration.mdx",
+	];
+	const documentedByFile = Object.fromEntries(
+		referenceFiles.map((file) => [file, extractDocumentedEnvVars(readRepositoryFile(file))]),
+	);
+	const sourceEnvVars = collectSourceEnvVars(resolve(repositoryRoot, "packages"));
+	const missing = findMissingSourceEnvVars(documentedByFile, sourceEnvVars);
+	if (missing.length === 0) return;
+
+	const details = missing.map(({ file, variable }) => `${file}: ${variable}`).join(", ");
+	throw new Error(`Documented environment variables not found in packages/: ${details}`);
+}
+
 checkFieldTypes();
 checkHooks();
 checkConfiguration();
 checkSiteTemplateApi();
 checkCli();
+checkEnvironmentVariables();
 
 console.log("Reference inventories match their source contracts.");
