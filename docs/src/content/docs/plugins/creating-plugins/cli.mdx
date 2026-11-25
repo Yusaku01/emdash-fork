@@ -35,6 +35,16 @@ emdash-plugin profile setup                  Prepare the signed package profile 
 emdash-plugin release setup                  Create the delegated-release GitHub Actions workflow
 emdash-plugin release plan                   Plan repository releases for GitHub Actions
 emdash-plugin release prepare <slug[@ver]>   Prepare one repository package for GitHub Actions
+emdash-plugin release delegate               Print a publisher delegation browser handoff
+emdash-plugin release revoke                 Print an authority revocation browser handoff
+emdash-plugin release workload               Print a workload policy browser handoff
+emdash-plugin release enrol                  Print a passkey enrolment browser handoff
+emdash-plugin release approve <intent-id>    Print a passkey approval browser handoff
+emdash-plugin release reject <intent-id>     Print a passkey rejection browser handoff
+emdash-plugin release dry-run <release.json> Validate delegated release admission with GitHub OIDC
+emdash-plugin release submit <release.json>  Submit a delegated release with GitHub OIDC
+emdash-plugin release status <intent-id>     Read a delegated release intent
+emdash-plugin release cancel <intent-id>     Cancel an unpublished delegated release intent
 emdash-plugin login <handle-or-did>          Sign in with your Atmosphere account
 emdash-plugin logout [--did <did>]           Revoke the active session
 emdash-plugin whoami                         Show stored sessions

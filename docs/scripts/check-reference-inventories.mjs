@@ -426,9 +426,23 @@ function checkCli() {
 	}
 }
 
+const LINE_BREAK_PATTERN = /\r?\n/;
+const FENCED_TEXT_BLOCK_PATTERN = /```text[^\r\n]*\r?\n([\s\S]*?)\r?\n```/;
 const PLUGIN_CLI_COMMAND_LINE_PATTERN =
-	/^emdash-plugin\s+([a-z0-9-]+(?:\s+[a-z0-9-]+)*?)(?=\s{2,}|\s+[<[]|$)/gm;
-const FENCED_TEXT_BLOCK_PATTERN = /```text\r?\n([\s\S]*?)\r?\n```/;
+	/^emdash-plugin\s+([a-z0-9-]+(?:\s+[a-z0-9-]+)*?)(?=\s{2,}|\s+[<[]|$)/;
+
+function assertNoDuplicates(label, values) {
+	const seen = new Set();
+	const duplicates = new Set();
+	for (const value of values) {
+		if (seen.has(value)) duplicates.add(value);
+		seen.add(value);
+	}
+	if (duplicates.size > 0) {
+		const list = [...duplicates].toSorted((a, b) => a.localeCompare(b)).join(", ");
+		throw new Error(`${label} contains duplicate entries: ${list}`);
+	}
+}
 
 function collectPluginCliCommands() {
 	const { checker, root } = loadCliRoot(
@@ -437,8 +451,7 @@ function collectPluginCliCommands() {
 		"emdash-plugin CLI",
 	);
 
-	const topLevelCommands = [];
-	const leafCommands = new Set();
+	const commands = [];
 	function visit(command, path) {
 		const metaProperty = objectProperty(command, "meta");
 		if (
@@ -448,7 +461,6 @@ function collectPluginCliCommands() {
 		) {
 			return;
 		}
-		if (path.length === 1) topLevelCommands.push(path[0]);
 		const subCommandsProperty = objectProperty(command, "subCommands");
 		const subCommands =
 			subCommandsProperty && ts.isPropertyAssignment(subCommandsProperty)
@@ -468,11 +480,11 @@ function collectPluginCliCommands() {
 			}
 			return;
 		}
-		if (path.length > 0) leafCommands.add(path.join(" "));
+		if (path.length > 0) commands.push(path.join(" "));
 	}
 
 	visit(root, []);
-	return { topLevelCommands, leafCommands };
+	return commands;
 }
 
 function checkPluginCli() {
@@ -480,22 +492,20 @@ function checkPluginCli() {
 	const commandsSection = markdownSection(reference, "## Commands");
 	const commandBlock = FENCED_TEXT_BLOCK_PATTERN.exec(commandsSection)?.[1];
 	if (!commandBlock) throw new Error("Could not find the emdash-plugin command list block");
-	const documented = Array.from(
-		commandBlock.matchAll(PLUGIN_CLI_COMMAND_LINE_PATTERN),
-		(match) => match[1],
-	);
-	const { topLevelCommands, leafCommands } = collectPluginCliCommands();
-	const documentedTopLevel = documented.map((command) => command.split(" ")[0]);
-	compareInventory("Plugin CLI top-level commands", topLevelCommands, documentedTopLevel);
 
-	const unknownDocumented = documented
-		.filter((command) => !leafCommands.has(command))
-		.toSorted((a, b) => a.localeCompare(b));
-	if (unknownDocumented.length > 0) {
-		throw new Error(
-			`Plugin CLI commands documented in cli.mdx do not exist in source: ${unknownDocumented.join(", ")}`,
-		);
+	const documented = [];
+	for (const rawLine of commandBlock.split(LINE_BREAK_PATTERN)) {
+		const line = rawLine.trim();
+		if (!line) continue;
+		const match = PLUGIN_CLI_COMMAND_LINE_PATTERN.exec(line);
+		if (!match) {
+			throw new Error(`Could not parse emdash-plugin command line in cli.mdx: ${line}`);
+		}
+		documented.push(match[1]);
 	}
+
+	assertNoDuplicates("Plugin CLI commands", documented);
+	compareInventory("Plugin CLI commands", collectPluginCliCommands(), documented);
 }
 
 checkFieldTypes();
