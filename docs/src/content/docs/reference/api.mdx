@@ -36,7 +36,7 @@ EmDash's query functions follow Astro's [live content collections](https://docs.
 
 ### `getEmDashCollection()`
 
-Fetch all entries from a collection. The following example loads all posts and checks for an error:
+Fetch entries from a collection. By default, `getEmDashCollection()` returns `"published"` entries (filtered to the resolved locale when i18n is configured). The following example loads published posts and checks for an error:
 
 ```ts
 import { getEmDashCollection } from "emdash";
@@ -419,11 +419,21 @@ Convert between Portable Text and ProseMirror formats:
 ```ts
 import { prosemirrorToPortableText, portableTextToProsemirror } from "emdash";
 
+const storedBlocks = [
+	{
+		_type: "block",
+		_key: "intro",
+		style: "normal",
+		children: [{ _type: "span", _key: "s1", text: "Hello EmDash", marks: [] }],
+		markDefs: [],
+	},
+];
+
+// From Portable Text (storage) to ProseMirror (editor)
+const prosemirrorDoc = portableTextToProsemirror(storedBlocks);
+
 // From ProseMirror (editor) to Portable Text (storage)
 const portableText = prosemirrorToPortableText(prosemirrorDoc);
-
-// From Portable Text to ProseMirror
-const prosemirrorDoc = portableTextToProsemirror(portableText);
 ```
 
 The ProseMirror document uses EmDash's own nodes for built-in blocks, such as `image`, `table`,
@@ -683,7 +693,7 @@ if (sidebar) {
 }
 ```
 
-`getWidgetAreaWithCacheHint(name)` returns `{ data, cacheHint }` for routes using Astro's cache. Widget areas and their widgets are ordered by their configured sort order.
+`getWidgetAreaWithCacheHint(name)` returns `{ data, cacheHint }` for routes using Astro's cache. Widgets within each area are ordered by their configured sort order; `getWidgetAreas()` orders areas by creation time (`created_at`, then `id`).
 
 ## Sections
 
