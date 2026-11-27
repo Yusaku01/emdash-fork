@@ -212,8 +212,8 @@ function checkSiteTemplateApi() {
 	compareInventory("Site-template API contract", siteTemplateImports(), documented);
 }
 
-function cliProgram() {
-	const cliRoot = resolve(repositoryRoot, "packages/core/src/cli");
+function cliProgram(relativeRoot = "packages/core/src/cli") {
+	const cliRoot = resolve(repositoryRoot, relativeRoot);
 	const files = walk(cliRoot).filter((path) => extname(path) === ".ts");
 	return ts.createProgram(files, {
 		allowJs: false,
@@ -222,6 +222,20 @@ function cliProgram() {
 		skipLibCheck: true,
 		target: ts.ScriptTarget.ESNext,
 	});
+}
+
+function loadCliRoot(relativeRoot, entryPath, label) {
+	const program = cliProgram(relativeRoot);
+	const checker = program.getTypeChecker();
+	const entry = program.getSourceFile(resolve(repositoryRoot, entryPath));
+	const main = entry?.statements
+		.filter(ts.isVariableStatement)
+		.flatMap((statement) => statement.declarationList.declarations)
+		.find((declaration) => ts.isIdentifier(declaration.name) && declaration.name.text === "main");
+	if (!main?.initializer) throw new Error(`Could not find the ${label} command tree`);
+	const root = resolveObject(main.initializer, checker);
+	if (!root) throw new Error(`Could not resolve the ${label} root command`);
+	return { program, checker, root };
 }
 
 function unwrapExpression(expression) {
@@ -291,16 +305,11 @@ function literalPropertyValue(expression, checker, name) {
 }
 
 function collectCliContract() {
-	const program = cliProgram();
-	const checker = program.getTypeChecker();
-	const entry = program.getSourceFile(resolve(repositoryRoot, "packages/core/src/cli/index.ts"));
-	const main = entry?.statements
-		.filter(ts.isVariableStatement)
-		.flatMap((statement) => statement.declarationList.declarations)
-		.find((declaration) => ts.isIdentifier(declaration.name) && declaration.name.text === "main");
-	if (!main?.initializer) throw new Error("Could not find the EmDash CLI command tree");
-	const root = resolveObject(main.initializer, checker);
-	if (!root) throw new Error("Could not resolve the EmDash CLI root command");
+	const { program, checker, root } = loadCliRoot(
+		"packages/core/src/cli",
+		"packages/core/src/cli/index.ts",
+		"EmDash CLI",
+	);
 
 	const commands = new Set();
 	const options = new Map();
@@ -417,10 +426,93 @@ function checkCli() {
 	}
 }
 
+const LINE_BREAK_PATTERN = /\r?\n/;
+const FENCED_TEXT_BLOCK_PATTERN = /```text[^\r\n]*\r?\n([\s\S]*?)\r?\n```/;
+const PLUGIN_CLI_COMMAND_LINE_PATTERN =
+	/^emdash-plugin\s+([a-z0-9-]+(?:\s+[a-z0-9-]+)*?)(?=\s{2,}|\s+[<[]|$)/;
+
+function assertNoDuplicates(label, values) {
+	const seen = new Set();
+	const duplicates = new Set();
+	for (const value of values) {
+		if (seen.has(value)) duplicates.add(value);
+		seen.add(value);
+	}
+	if (duplicates.size > 0) {
+		const list = [...duplicates].toSorted((a, b) => a.localeCompare(b)).join(", ");
+		throw new Error(`${label} contains duplicate entries: ${list}`);
+	}
+}
+
+function collectPluginCliCommands() {
+	const { checker, root } = loadCliRoot(
+		"packages/plugin-cli/src",
+		"packages/plugin-cli/src/index.ts",
+		"emdash-plugin CLI",
+	);
+
+	const commands = [];
+	function visit(command, path) {
+		const metaProperty = objectProperty(command, "meta");
+		if (
+			metaProperty &&
+			ts.isPropertyAssignment(metaProperty) &&
+			literalPropertyValue(metaProperty.initializer, checker, "hidden") === true
+		) {
+			return;
+		}
+		const subCommandsProperty = objectProperty(command, "subCommands");
+		const subCommands =
+			subCommandsProperty && ts.isPropertyAssignment(subCommandsProperty)
+				? resolveObject(subCommandsProperty.initializer, checker)
+				: undefined;
+		if (subCommands) {
+			for (const property of subCommands.properties) {
+				if (!ts.isPropertyAssignment(property) && !ts.isShorthandPropertyAssignment(property))
+					continue;
+				const name = propertyName(property.name);
+				if (!name) continue;
+				const childPath = [...path, name];
+				const expression = ts.isPropertyAssignment(property) ? property.initializer : property.name;
+				const child = resolveObject(expression, checker);
+				if (!child) throw new Error(`Could not resolve plugin CLI command ${childPath.join(" ")}`);
+				visit(child, childPath);
+			}
+			return;
+		}
+		if (path.length > 0) commands.push(path.join(" "));
+	}
+
+	visit(root, []);
+	return commands;
+}
+
+function checkPluginCli() {
+	const reference = readRepositoryFile("docs/src/content/docs/plugins/creating-plugins/cli.mdx");
+	const commandsSection = markdownSection(reference, "## Commands");
+	const commandBlock = FENCED_TEXT_BLOCK_PATTERN.exec(commandsSection)?.[1];
+	if (!commandBlock) throw new Error("Could not find the emdash-plugin command list block");
+
+	const documented = [];
+	for (const rawLine of commandBlock.split(LINE_BREAK_PATTERN)) {
+		const line = rawLine.trim();
+		if (!line) continue;
+		const match = PLUGIN_CLI_COMMAND_LINE_PATTERN.exec(line);
+		if (!match) {
+			throw new Error(`Could not parse emdash-plugin command line in cli.mdx: ${line}`);
+		}
+		documented.push(match[1]);
+	}
+
+	assertNoDuplicates("Plugin CLI commands", documented);
+	compareInventory("Plugin CLI commands", collectPluginCliCommands(), documented);
+}
+
 checkFieldTypes();
 checkHooks();
 checkConfiguration();
 checkSiteTemplateApi();
 checkCli();
+checkPluginCli();
 
 console.log("Reference inventories match their source contracts.");
